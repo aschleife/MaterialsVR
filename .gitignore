@@ -5,3 +5,5 @@ Library/
 ProjectSetting/
 
 VESTA_data/
+
+*.meta
