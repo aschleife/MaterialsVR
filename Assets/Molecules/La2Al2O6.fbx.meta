@@ -1,0 +1,969 @@
+fileFormatVersion: 2
+guid: 64525c78041d04e688021a8276d8ebea
+timeCreated: 1529695993
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Aluminium
+    100002: Aluminium|Ball (NURBS)_Aluminium|Dupli|0.0.0.0.0.0.0.0.0
+    100004: Aluminium|Ball (NURBS)_Aluminium|Dupli|1.0.0.0.0.0.0.0.0
+    100006: Aluminium|Ball (NURBS)_Aluminium|Dupli|10.0.0.0.0.0.0.0.0
+    100008: Aluminium|Ball (NURBS)_Aluminium|Dupli|11.0.0.0.0.0.0.0.0
+    100010: Aluminium|Ball (NURBS)_Aluminium|Dupli|12.0.0.0.0.0.0.0.0
+    100012: Aluminium|Ball (NURBS)_Aluminium|Dupli|13.0.0.0.0.0.0.0.0
+    100014: Aluminium|Ball (NURBS)_Aluminium|Dupli|14.0.0.0.0.0.0.0.0
+    100016: Aluminium|Ball (NURBS)_Aluminium|Dupli|15.0.0.0.0.0.0.0.0
+    100018: Aluminium|Ball (NURBS)_Aluminium|Dupli|16.0.0.0.0.0.0.0.0
+    100020: Aluminium|Ball (NURBS)_Aluminium|Dupli|17.0.0.0.0.0.0.0.0
+    100022: Aluminium|Ball (NURBS)_Aluminium|Dupli|18.0.0.0.0.0.0.0.0
+    100024: Aluminium|Ball (NURBS)_Aluminium|Dupli|19.0.0.0.0.0.0.0.0
+    100026: Aluminium|Ball (NURBS)_Aluminium|Dupli|2.0.0.0.0.0.0.0.0
+    100028: Aluminium|Ball (NURBS)_Aluminium|Dupli|20.0.0.0.0.0.0.0.0
+    100030: Aluminium|Ball (NURBS)_Aluminium|Dupli|21.0.0.0.0.0.0.0.0
+    100032: Aluminium|Ball (NURBS)_Aluminium|Dupli|22.0.0.0.0.0.0.0.0
+    100034: Aluminium|Ball (NURBS)_Aluminium|Dupli|23.0.0.0.0.0.0.0.0
+    100036: Aluminium|Ball (NURBS)_Aluminium|Dupli|24.0.0.0.0.0.0.0.0
+    100038: Aluminium|Ball (NURBS)_Aluminium|Dupli|25.0.0.0.0.0.0.0.0
+    100040: Aluminium|Ball (NURBS)_Aluminium|Dupli|26.0.0.0.0.0.0.0.0
+    100042: Aluminium|Ball (NURBS)_Aluminium|Dupli|27.0.0.0.0.0.0.0.0
+    100044: Aluminium|Ball (NURBS)_Aluminium|Dupli|28.0.0.0.0.0.0.0.0
+    100046: Aluminium|Ball (NURBS)_Aluminium|Dupli|29.0.0.0.0.0.0.0.0
+    100048: Aluminium|Ball (NURBS)_Aluminium|Dupli|3.0.0.0.0.0.0.0.0
+    100050: Aluminium|Ball (NURBS)_Aluminium|Dupli|30.0.0.0.0.0.0.0.0
+    100052: Aluminium|Ball (NURBS)_Aluminium|Dupli|31.0.0.0.0.0.0.0.0
+    100054: Aluminium|Ball (NURBS)_Aluminium|Dupli|32.0.0.0.0.0.0.0.0
+    100056: Aluminium|Ball (NURBS)_Aluminium|Dupli|33.0.0.0.0.0.0.0.0
+    100058: Aluminium|Ball (NURBS)_Aluminium|Dupli|34.0.0.0.0.0.0.0.0
+    100060: Aluminium|Ball (NURBS)_Aluminium|Dupli|4.0.0.0.0.0.0.0.0
+    100062: Aluminium|Ball (NURBS)_Aluminium|Dupli|5.0.0.0.0.0.0.0.0
+    100064: Aluminium|Ball (NURBS)_Aluminium|Dupli|6.0.0.0.0.0.0.0.0
+    100066: Aluminium|Ball (NURBS)_Aluminium|Dupli|7.0.0.0.0.0.0.0.0
+    100068: Aluminium|Ball (NURBS)_Aluminium|Dupli|8.0.0.0.0.0.0.0.0
+    100070: Aluminium|Ball (NURBS)_Aluminium|Dupli|9.0.0.0.0.0.0.0.0
+    100072: Ball (NURBS)_Aluminium
+    100074: Ball (NURBS)_Lanthanum
+    100076: Ball (NURBS)_Oxygen
+    100078: //RootNode
+    100080: Lanthanum
+    100082: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|0.0.0.0.0.0.0.0.0
+    100084: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|1.0.0.0.0.0.0.0.0
+    100086: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|10.0.0.0.0.0.0.0.0
+    100088: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|11.0.0.0.0.0.0.0.0
+    100090: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|12.0.0.0.0.0.0.0.0
+    100092: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|13.0.0.0.0.0.0.0.0
+    100094: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|14.0.0.0.0.0.0.0.0
+    100096: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|15.0.0.0.0.0.0.0.0
+    100098: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|2.0.0.0.0.0.0.0.0
+    100100: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|3.0.0.0.0.0.0.0.0
+    100102: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|4.0.0.0.0.0.0.0.0
+    100104: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|5.0.0.0.0.0.0.0.0
+    100106: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|6.0.0.0.0.0.0.0.0
+    100108: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|7.0.0.0.0.0.0.0.0
+    100110: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|8.0.0.0.0.0.0.0.0
+    100112: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|9.0.0.0.0.0.0.0.0
+    100114: Oxygen
+    100116: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    100118: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    100120: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    100122: Oxygen|Ball (NURBS)_Oxygen|Dupli|100.0.0.0.0.0.0.0.0
+    100124: Oxygen|Ball (NURBS)_Oxygen|Dupli|101.0.0.0.0.0.0.0.0
+    100126: Oxygen|Ball (NURBS)_Oxygen|Dupli|102.0.0.0.0.0.0.0.0
+    100128: Oxygen|Ball (NURBS)_Oxygen|Dupli|103.0.0.0.0.0.0.0.0
+    100130: Oxygen|Ball (NURBS)_Oxygen|Dupli|104.0.0.0.0.0.0.0.0
+    100132: Oxygen|Ball (NURBS)_Oxygen|Dupli|105.0.0.0.0.0.0.0.0
+    100134: Oxygen|Ball (NURBS)_Oxygen|Dupli|106.0.0.0.0.0.0.0.0
+    100136: Oxygen|Ball (NURBS)_Oxygen|Dupli|107.0.0.0.0.0.0.0.0
+    100138: Oxygen|Ball (NURBS)_Oxygen|Dupli|108.0.0.0.0.0.0.0.0
+    100140: Oxygen|Ball (NURBS)_Oxygen|Dupli|109.0.0.0.0.0.0.0.0
+    100142: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    100144: Oxygen|Ball (NURBS)_Oxygen|Dupli|110.0.0.0.0.0.0.0.0
+    100146: Oxygen|Ball (NURBS)_Oxygen|Dupli|111.0.0.0.0.0.0.0.0
+    100148: Oxygen|Ball (NURBS)_Oxygen|Dupli|112.0.0.0.0.0.0.0.0
+    100150: Oxygen|Ball (NURBS)_Oxygen|Dupli|113.0.0.0.0.0.0.0.0
+    100152: Oxygen|Ball (NURBS)_Oxygen|Dupli|114.0.0.0.0.0.0.0.0
+    100154: Oxygen|Ball (NURBS)_Oxygen|Dupli|115.0.0.0.0.0.0.0.0
+    100156: Oxygen|Ball (NURBS)_Oxygen|Dupli|116.0.0.0.0.0.0.0.0
+    100158: Oxygen|Ball (NURBS)_Oxygen|Dupli|117.0.0.0.0.0.0.0.0
+    100160: Oxygen|Ball (NURBS)_Oxygen|Dupli|118.0.0.0.0.0.0.0.0
+    100162: Oxygen|Ball (NURBS)_Oxygen|Dupli|119.0.0.0.0.0.0.0.0
+    100164: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    100166: Oxygen|Ball (NURBS)_Oxygen|Dupli|120.0.0.0.0.0.0.0.0
+    100168: Oxygen|Ball (NURBS)_Oxygen|Dupli|121.0.0.0.0.0.0.0.0
+    100170: Oxygen|Ball (NURBS)_Oxygen|Dupli|122.0.0.0.0.0.0.0.0
+    100172: Oxygen|Ball (NURBS)_Oxygen|Dupli|123.0.0.0.0.0.0.0.0
+    100174: Oxygen|Ball (NURBS)_Oxygen|Dupli|124.0.0.0.0.0.0.0.0
+    100176: Oxygen|Ball (NURBS)_Oxygen|Dupli|125.0.0.0.0.0.0.0.0
+    100178: Oxygen|Ball (NURBS)_Oxygen|Dupli|126.0.0.0.0.0.0.0.0
+    100180: Oxygen|Ball (NURBS)_Oxygen|Dupli|127.0.0.0.0.0.0.0.0
+    100182: Oxygen|Ball (NURBS)_Oxygen|Dupli|128.0.0.0.0.0.0.0.0
+    100184: Oxygen|Ball (NURBS)_Oxygen|Dupli|129.0.0.0.0.0.0.0.0
+    100186: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    100188: Oxygen|Ball (NURBS)_Oxygen|Dupli|130.0.0.0.0.0.0.0.0
+    100190: Oxygen|Ball (NURBS)_Oxygen|Dupli|131.0.0.0.0.0.0.0.0
+    100192: Oxygen|Ball (NURBS)_Oxygen|Dupli|132.0.0.0.0.0.0.0.0
+    100194: Oxygen|Ball (NURBS)_Oxygen|Dupli|133.0.0.0.0.0.0.0.0
+    100196: Oxygen|Ball (NURBS)_Oxygen|Dupli|134.0.0.0.0.0.0.0.0
+    100198: Oxygen|Ball (NURBS)_Oxygen|Dupli|135.0.0.0.0.0.0.0.0
+    100200: Oxygen|Ball (NURBS)_Oxygen|Dupli|136.0.0.0.0.0.0.0.0
+    100202: Oxygen|Ball (NURBS)_Oxygen|Dupli|137.0.0.0.0.0.0.0.0
+    100204: Oxygen|Ball (NURBS)_Oxygen|Dupli|138.0.0.0.0.0.0.0.0
+    100206: Oxygen|Ball (NURBS)_Oxygen|Dupli|139.0.0.0.0.0.0.0.0
+    100208: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    100210: Oxygen|Ball (NURBS)_Oxygen|Dupli|140.0.0.0.0.0.0.0.0
+    100212: Oxygen|Ball (NURBS)_Oxygen|Dupli|141.0.0.0.0.0.0.0.0
+    100214: Oxygen|Ball (NURBS)_Oxygen|Dupli|142.0.0.0.0.0.0.0.0
+    100216: Oxygen|Ball (NURBS)_Oxygen|Dupli|143.0.0.0.0.0.0.0.0
+    100218: Oxygen|Ball (NURBS)_Oxygen|Dupli|144.0.0.0.0.0.0.0.0
+    100220: Oxygen|Ball (NURBS)_Oxygen|Dupli|145.0.0.0.0.0.0.0.0
+    100222: Oxygen|Ball (NURBS)_Oxygen|Dupli|146.0.0.0.0.0.0.0.0
+    100224: Oxygen|Ball (NURBS)_Oxygen|Dupli|147.0.0.0.0.0.0.0.0
+    100226: Oxygen|Ball (NURBS)_Oxygen|Dupli|148.0.0.0.0.0.0.0.0
+    100228: Oxygen|Ball (NURBS)_Oxygen|Dupli|149.0.0.0.0.0.0.0.0
+    100230: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    100232: Oxygen|Ball (NURBS)_Oxygen|Dupli|150.0.0.0.0.0.0.0.0
+    100234: Oxygen|Ball (NURBS)_Oxygen|Dupli|151.0.0.0.0.0.0.0.0
+    100236: Oxygen|Ball (NURBS)_Oxygen|Dupli|152.0.0.0.0.0.0.0.0
+    100238: Oxygen|Ball (NURBS)_Oxygen|Dupli|153.0.0.0.0.0.0.0.0
+    100240: Oxygen|Ball (NURBS)_Oxygen|Dupli|154.0.0.0.0.0.0.0.0
+    100242: Oxygen|Ball (NURBS)_Oxygen|Dupli|155.0.0.0.0.0.0.0.0
+    100244: Oxygen|Ball (NURBS)_Oxygen|Dupli|156.0.0.0.0.0.0.0.0
+    100246: Oxygen|Ball (NURBS)_Oxygen|Dupli|157.0.0.0.0.0.0.0.0
+    100248: Oxygen|Ball (NURBS)_Oxygen|Dupli|158.0.0.0.0.0.0.0.0
+    100250: Oxygen|Ball (NURBS)_Oxygen|Dupli|159.0.0.0.0.0.0.0.0
+    100252: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    100254: Oxygen|Ball (NURBS)_Oxygen|Dupli|160.0.0.0.0.0.0.0.0
+    100256: Oxygen|Ball (NURBS)_Oxygen|Dupli|161.0.0.0.0.0.0.0.0
+    100258: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    100260: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    100262: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    100264: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    100266: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    100268: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    100270: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    100272: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    100274: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    100276: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    100278: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    100280: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    100282: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    100284: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    100286: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    100288: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    100290: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    100292: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    100294: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    100296: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    100298: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    100300: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    100302: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    100304: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    100306: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    100308: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    100310: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    100312: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    100314: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    100316: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    100318: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    100320: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    100322: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    100324: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    100326: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    100328: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    100330: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    100332: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    100334: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    100336: Oxygen|Ball (NURBS)_Oxygen|Dupli|52.0.0.0.0.0.0.0.0
+    100338: Oxygen|Ball (NURBS)_Oxygen|Dupli|53.0.0.0.0.0.0.0.0
+    100340: Oxygen|Ball (NURBS)_Oxygen|Dupli|54.0.0.0.0.0.0.0.0
+    100342: Oxygen|Ball (NURBS)_Oxygen|Dupli|55.0.0.0.0.0.0.0.0
+    100344: Oxygen|Ball (NURBS)_Oxygen|Dupli|56.0.0.0.0.0.0.0.0
+    100346: Oxygen|Ball (NURBS)_Oxygen|Dupli|57.0.0.0.0.0.0.0.0
+    100348: Oxygen|Ball (NURBS)_Oxygen|Dupli|58.0.0.0.0.0.0.0.0
+    100350: Oxygen|Ball (NURBS)_Oxygen|Dupli|59.0.0.0.0.0.0.0.0
+    100352: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    100354: Oxygen|Ball (NURBS)_Oxygen|Dupli|60.0.0.0.0.0.0.0.0
+    100356: Oxygen|Ball (NURBS)_Oxygen|Dupli|61.0.0.0.0.0.0.0.0
+    100358: Oxygen|Ball (NURBS)_Oxygen|Dupli|62.0.0.0.0.0.0.0.0
+    100360: Oxygen|Ball (NURBS)_Oxygen|Dupli|63.0.0.0.0.0.0.0.0
+    100362: Oxygen|Ball (NURBS)_Oxygen|Dupli|64.0.0.0.0.0.0.0.0
+    100364: Oxygen|Ball (NURBS)_Oxygen|Dupli|65.0.0.0.0.0.0.0.0
+    100366: Oxygen|Ball (NURBS)_Oxygen|Dupli|66.0.0.0.0.0.0.0.0
+    100368: Oxygen|Ball (NURBS)_Oxygen|Dupli|67.0.0.0.0.0.0.0.0
+    100370: Oxygen|Ball (NURBS)_Oxygen|Dupli|68.0.0.0.0.0.0.0.0
+    100372: Oxygen|Ball (NURBS)_Oxygen|Dupli|69.0.0.0.0.0.0.0.0
+    100374: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    100376: Oxygen|Ball (NURBS)_Oxygen|Dupli|70.0.0.0.0.0.0.0.0
+    100378: Oxygen|Ball (NURBS)_Oxygen|Dupli|71.0.0.0.0.0.0.0.0
+    100380: Oxygen|Ball (NURBS)_Oxygen|Dupli|72.0.0.0.0.0.0.0.0
+    100382: Oxygen|Ball (NURBS)_Oxygen|Dupli|73.0.0.0.0.0.0.0.0
+    100384: Oxygen|Ball (NURBS)_Oxygen|Dupli|74.0.0.0.0.0.0.0.0
+    100386: Oxygen|Ball (NURBS)_Oxygen|Dupli|75.0.0.0.0.0.0.0.0
+    100388: Oxygen|Ball (NURBS)_Oxygen|Dupli|76.0.0.0.0.0.0.0.0
+    100390: Oxygen|Ball (NURBS)_Oxygen|Dupli|77.0.0.0.0.0.0.0.0
+    100392: Oxygen|Ball (NURBS)_Oxygen|Dupli|78.0.0.0.0.0.0.0.0
+    100394: Oxygen|Ball (NURBS)_Oxygen|Dupli|79.0.0.0.0.0.0.0.0
+    100396: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    100398: Oxygen|Ball (NURBS)_Oxygen|Dupli|80.0.0.0.0.0.0.0.0
+    100400: Oxygen|Ball (NURBS)_Oxygen|Dupli|81.0.0.0.0.0.0.0.0
+    100402: Oxygen|Ball (NURBS)_Oxygen|Dupli|82.0.0.0.0.0.0.0.0
+    100404: Oxygen|Ball (NURBS)_Oxygen|Dupli|83.0.0.0.0.0.0.0.0
+    100406: Oxygen|Ball (NURBS)_Oxygen|Dupli|84.0.0.0.0.0.0.0.0
+    100408: Oxygen|Ball (NURBS)_Oxygen|Dupli|85.0.0.0.0.0.0.0.0
+    100410: Oxygen|Ball (NURBS)_Oxygen|Dupli|86.0.0.0.0.0.0.0.0
+    100412: Oxygen|Ball (NURBS)_Oxygen|Dupli|87.0.0.0.0.0.0.0.0
+    100414: Oxygen|Ball (NURBS)_Oxygen|Dupli|88.0.0.0.0.0.0.0.0
+    100416: Oxygen|Ball (NURBS)_Oxygen|Dupli|89.0.0.0.0.0.0.0.0
+    100418: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    100420: Oxygen|Ball (NURBS)_Oxygen|Dupli|90.0.0.0.0.0.0.0.0
+    100422: Oxygen|Ball (NURBS)_Oxygen|Dupli|91.0.0.0.0.0.0.0.0
+    100424: Oxygen|Ball (NURBS)_Oxygen|Dupli|92.0.0.0.0.0.0.0.0
+    100426: Oxygen|Ball (NURBS)_Oxygen|Dupli|93.0.0.0.0.0.0.0.0
+    100428: Oxygen|Ball (NURBS)_Oxygen|Dupli|94.0.0.0.0.0.0.0.0
+    100430: Oxygen|Ball (NURBS)_Oxygen|Dupli|95.0.0.0.0.0.0.0.0
+    100432: Oxygen|Ball (NURBS)_Oxygen|Dupli|96.0.0.0.0.0.0.0.0
+    100434: Oxygen|Ball (NURBS)_Oxygen|Dupli|97.0.0.0.0.0.0.0.0
+    100436: Oxygen|Ball (NURBS)_Oxygen|Dupli|98.0.0.0.0.0.0.0.0
+    100438: Oxygen|Ball (NURBS)_Oxygen|Dupli|99.0.0.0.0.0.0.0.0
+    400000: Aluminium
+    400002: Aluminium|Ball (NURBS)_Aluminium|Dupli|0.0.0.0.0.0.0.0.0
+    400004: Aluminium|Ball (NURBS)_Aluminium|Dupli|1.0.0.0.0.0.0.0.0
+    400006: Aluminium|Ball (NURBS)_Aluminium|Dupli|10.0.0.0.0.0.0.0.0
+    400008: Aluminium|Ball (NURBS)_Aluminium|Dupli|11.0.0.0.0.0.0.0.0
+    400010: Aluminium|Ball (NURBS)_Aluminium|Dupli|12.0.0.0.0.0.0.0.0
+    400012: Aluminium|Ball (NURBS)_Aluminium|Dupli|13.0.0.0.0.0.0.0.0
+    400014: Aluminium|Ball (NURBS)_Aluminium|Dupli|14.0.0.0.0.0.0.0.0
+    400016: Aluminium|Ball (NURBS)_Aluminium|Dupli|15.0.0.0.0.0.0.0.0
+    400018: Aluminium|Ball (NURBS)_Aluminium|Dupli|16.0.0.0.0.0.0.0.0
+    400020: Aluminium|Ball (NURBS)_Aluminium|Dupli|17.0.0.0.0.0.0.0.0
+    400022: Aluminium|Ball (NURBS)_Aluminium|Dupli|18.0.0.0.0.0.0.0.0
+    400024: Aluminium|Ball (NURBS)_Aluminium|Dupli|19.0.0.0.0.0.0.0.0
+    400026: Aluminium|Ball (NURBS)_Aluminium|Dupli|2.0.0.0.0.0.0.0.0
+    400028: Aluminium|Ball (NURBS)_Aluminium|Dupli|20.0.0.0.0.0.0.0.0
+    400030: Aluminium|Ball (NURBS)_Aluminium|Dupli|21.0.0.0.0.0.0.0.0
+    400032: Aluminium|Ball (NURBS)_Aluminium|Dupli|22.0.0.0.0.0.0.0.0
+    400034: Aluminium|Ball (NURBS)_Aluminium|Dupli|23.0.0.0.0.0.0.0.0
+    400036: Aluminium|Ball (NURBS)_Aluminium|Dupli|24.0.0.0.0.0.0.0.0
+    400038: Aluminium|Ball (NURBS)_Aluminium|Dupli|25.0.0.0.0.0.0.0.0
+    400040: Aluminium|Ball (NURBS)_Aluminium|Dupli|26.0.0.0.0.0.0.0.0
+    400042: Aluminium|Ball (NURBS)_Aluminium|Dupli|27.0.0.0.0.0.0.0.0
+    400044: Aluminium|Ball (NURBS)_Aluminium|Dupli|28.0.0.0.0.0.0.0.0
+    400046: Aluminium|Ball (NURBS)_Aluminium|Dupli|29.0.0.0.0.0.0.0.0
+    400048: Aluminium|Ball (NURBS)_Aluminium|Dupli|3.0.0.0.0.0.0.0.0
+    400050: Aluminium|Ball (NURBS)_Aluminium|Dupli|30.0.0.0.0.0.0.0.0
+    400052: Aluminium|Ball (NURBS)_Aluminium|Dupli|31.0.0.0.0.0.0.0.0
+    400054: Aluminium|Ball (NURBS)_Aluminium|Dupli|32.0.0.0.0.0.0.0.0
+    400056: Aluminium|Ball (NURBS)_Aluminium|Dupli|33.0.0.0.0.0.0.0.0
+    400058: Aluminium|Ball (NURBS)_Aluminium|Dupli|34.0.0.0.0.0.0.0.0
+    400060: Aluminium|Ball (NURBS)_Aluminium|Dupli|4.0.0.0.0.0.0.0.0
+    400062: Aluminium|Ball (NURBS)_Aluminium|Dupli|5.0.0.0.0.0.0.0.0
+    400064: Aluminium|Ball (NURBS)_Aluminium|Dupli|6.0.0.0.0.0.0.0.0
+    400066: Aluminium|Ball (NURBS)_Aluminium|Dupli|7.0.0.0.0.0.0.0.0
+    400068: Aluminium|Ball (NURBS)_Aluminium|Dupli|8.0.0.0.0.0.0.0.0
+    400070: Aluminium|Ball (NURBS)_Aluminium|Dupli|9.0.0.0.0.0.0.0.0
+    400072: Ball (NURBS)_Aluminium
+    400074: Ball (NURBS)_Lanthanum
+    400076: Ball (NURBS)_Oxygen
+    400078: //RootNode
+    400080: Lanthanum
+    400082: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|0.0.0.0.0.0.0.0.0
+    400084: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|1.0.0.0.0.0.0.0.0
+    400086: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|10.0.0.0.0.0.0.0.0
+    400088: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|11.0.0.0.0.0.0.0.0
+    400090: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|12.0.0.0.0.0.0.0.0
+    400092: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|13.0.0.0.0.0.0.0.0
+    400094: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|14.0.0.0.0.0.0.0.0
+    400096: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|15.0.0.0.0.0.0.0.0
+    400098: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|2.0.0.0.0.0.0.0.0
+    400100: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|3.0.0.0.0.0.0.0.0
+    400102: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|4.0.0.0.0.0.0.0.0
+    400104: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|5.0.0.0.0.0.0.0.0
+    400106: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|6.0.0.0.0.0.0.0.0
+    400108: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|7.0.0.0.0.0.0.0.0
+    400110: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|8.0.0.0.0.0.0.0.0
+    400112: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|9.0.0.0.0.0.0.0.0
+    400114: Oxygen
+    400116: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    400118: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    400120: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    400122: Oxygen|Ball (NURBS)_Oxygen|Dupli|100.0.0.0.0.0.0.0.0
+    400124: Oxygen|Ball (NURBS)_Oxygen|Dupli|101.0.0.0.0.0.0.0.0
+    400126: Oxygen|Ball (NURBS)_Oxygen|Dupli|102.0.0.0.0.0.0.0.0
+    400128: Oxygen|Ball (NURBS)_Oxygen|Dupli|103.0.0.0.0.0.0.0.0
+    400130: Oxygen|Ball (NURBS)_Oxygen|Dupli|104.0.0.0.0.0.0.0.0
+    400132: Oxygen|Ball (NURBS)_Oxygen|Dupli|105.0.0.0.0.0.0.0.0
+    400134: Oxygen|Ball (NURBS)_Oxygen|Dupli|106.0.0.0.0.0.0.0.0
+    400136: Oxygen|Ball (NURBS)_Oxygen|Dupli|107.0.0.0.0.0.0.0.0
+    400138: Oxygen|Ball (NURBS)_Oxygen|Dupli|108.0.0.0.0.0.0.0.0
+    400140: Oxygen|Ball (NURBS)_Oxygen|Dupli|109.0.0.0.0.0.0.0.0
+    400142: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    400144: Oxygen|Ball (NURBS)_Oxygen|Dupli|110.0.0.0.0.0.0.0.0
+    400146: Oxygen|Ball (NURBS)_Oxygen|Dupli|111.0.0.0.0.0.0.0.0
+    400148: Oxygen|Ball (NURBS)_Oxygen|Dupli|112.0.0.0.0.0.0.0.0
+    400150: Oxygen|Ball (NURBS)_Oxygen|Dupli|113.0.0.0.0.0.0.0.0
+    400152: Oxygen|Ball (NURBS)_Oxygen|Dupli|114.0.0.0.0.0.0.0.0
+    400154: Oxygen|Ball (NURBS)_Oxygen|Dupli|115.0.0.0.0.0.0.0.0
+    400156: Oxygen|Ball (NURBS)_Oxygen|Dupli|116.0.0.0.0.0.0.0.0
+    400158: Oxygen|Ball (NURBS)_Oxygen|Dupli|117.0.0.0.0.0.0.0.0
+    400160: Oxygen|Ball (NURBS)_Oxygen|Dupli|118.0.0.0.0.0.0.0.0
+    400162: Oxygen|Ball (NURBS)_Oxygen|Dupli|119.0.0.0.0.0.0.0.0
+    400164: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    400166: Oxygen|Ball (NURBS)_Oxygen|Dupli|120.0.0.0.0.0.0.0.0
+    400168: Oxygen|Ball (NURBS)_Oxygen|Dupli|121.0.0.0.0.0.0.0.0
+    400170: Oxygen|Ball (NURBS)_Oxygen|Dupli|122.0.0.0.0.0.0.0.0
+    400172: Oxygen|Ball (NURBS)_Oxygen|Dupli|123.0.0.0.0.0.0.0.0
+    400174: Oxygen|Ball (NURBS)_Oxygen|Dupli|124.0.0.0.0.0.0.0.0
+    400176: Oxygen|Ball (NURBS)_Oxygen|Dupli|125.0.0.0.0.0.0.0.0
+    400178: Oxygen|Ball (NURBS)_Oxygen|Dupli|126.0.0.0.0.0.0.0.0
+    400180: Oxygen|Ball (NURBS)_Oxygen|Dupli|127.0.0.0.0.0.0.0.0
+    400182: Oxygen|Ball (NURBS)_Oxygen|Dupli|128.0.0.0.0.0.0.0.0
+    400184: Oxygen|Ball (NURBS)_Oxygen|Dupli|129.0.0.0.0.0.0.0.0
+    400186: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    400188: Oxygen|Ball (NURBS)_Oxygen|Dupli|130.0.0.0.0.0.0.0.0
+    400190: Oxygen|Ball (NURBS)_Oxygen|Dupli|131.0.0.0.0.0.0.0.0
+    400192: Oxygen|Ball (NURBS)_Oxygen|Dupli|132.0.0.0.0.0.0.0.0
+    400194: Oxygen|Ball (NURBS)_Oxygen|Dupli|133.0.0.0.0.0.0.0.0
+    400196: Oxygen|Ball (NURBS)_Oxygen|Dupli|134.0.0.0.0.0.0.0.0
+    400198: Oxygen|Ball (NURBS)_Oxygen|Dupli|135.0.0.0.0.0.0.0.0
+    400200: Oxygen|Ball (NURBS)_Oxygen|Dupli|136.0.0.0.0.0.0.0.0
+    400202: Oxygen|Ball (NURBS)_Oxygen|Dupli|137.0.0.0.0.0.0.0.0
+    400204: Oxygen|Ball (NURBS)_Oxygen|Dupli|138.0.0.0.0.0.0.0.0
+    400206: Oxygen|Ball (NURBS)_Oxygen|Dupli|139.0.0.0.0.0.0.0.0
+    400208: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    400210: Oxygen|Ball (NURBS)_Oxygen|Dupli|140.0.0.0.0.0.0.0.0
+    400212: Oxygen|Ball (NURBS)_Oxygen|Dupli|141.0.0.0.0.0.0.0.0
+    400214: Oxygen|Ball (NURBS)_Oxygen|Dupli|142.0.0.0.0.0.0.0.0
+    400216: Oxygen|Ball (NURBS)_Oxygen|Dupli|143.0.0.0.0.0.0.0.0
+    400218: Oxygen|Ball (NURBS)_Oxygen|Dupli|144.0.0.0.0.0.0.0.0
+    400220: Oxygen|Ball (NURBS)_Oxygen|Dupli|145.0.0.0.0.0.0.0.0
+    400222: Oxygen|Ball (NURBS)_Oxygen|Dupli|146.0.0.0.0.0.0.0.0
+    400224: Oxygen|Ball (NURBS)_Oxygen|Dupli|147.0.0.0.0.0.0.0.0
+    400226: Oxygen|Ball (NURBS)_Oxygen|Dupli|148.0.0.0.0.0.0.0.0
+    400228: Oxygen|Ball (NURBS)_Oxygen|Dupli|149.0.0.0.0.0.0.0.0
+    400230: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    400232: Oxygen|Ball (NURBS)_Oxygen|Dupli|150.0.0.0.0.0.0.0.0
+    400234: Oxygen|Ball (NURBS)_Oxygen|Dupli|151.0.0.0.0.0.0.0.0
+    400236: Oxygen|Ball (NURBS)_Oxygen|Dupli|152.0.0.0.0.0.0.0.0
+    400238: Oxygen|Ball (NURBS)_Oxygen|Dupli|153.0.0.0.0.0.0.0.0
+    400240: Oxygen|Ball (NURBS)_Oxygen|Dupli|154.0.0.0.0.0.0.0.0
+    400242: Oxygen|Ball (NURBS)_Oxygen|Dupli|155.0.0.0.0.0.0.0.0
+    400244: Oxygen|Ball (NURBS)_Oxygen|Dupli|156.0.0.0.0.0.0.0.0
+    400246: Oxygen|Ball (NURBS)_Oxygen|Dupli|157.0.0.0.0.0.0.0.0
+    400248: Oxygen|Ball (NURBS)_Oxygen|Dupli|158.0.0.0.0.0.0.0.0
+    400250: Oxygen|Ball (NURBS)_Oxygen|Dupli|159.0.0.0.0.0.0.0.0
+    400252: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    400254: Oxygen|Ball (NURBS)_Oxygen|Dupli|160.0.0.0.0.0.0.0.0
+    400256: Oxygen|Ball (NURBS)_Oxygen|Dupli|161.0.0.0.0.0.0.0.0
+    400258: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    400260: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    400262: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    400264: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    400266: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    400268: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    400270: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    400272: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    400274: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    400276: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    400278: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    400280: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    400282: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    400284: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    400286: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    400288: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    400290: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    400292: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    400294: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    400296: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    400298: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    400300: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    400302: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    400304: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    400306: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    400308: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    400310: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    400312: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    400314: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    400316: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    400318: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    400320: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    400322: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    400324: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    400326: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    400328: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    400330: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    400332: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    400334: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    400336: Oxygen|Ball (NURBS)_Oxygen|Dupli|52.0.0.0.0.0.0.0.0
+    400338: Oxygen|Ball (NURBS)_Oxygen|Dupli|53.0.0.0.0.0.0.0.0
+    400340: Oxygen|Ball (NURBS)_Oxygen|Dupli|54.0.0.0.0.0.0.0.0
+    400342: Oxygen|Ball (NURBS)_Oxygen|Dupli|55.0.0.0.0.0.0.0.0
+    400344: Oxygen|Ball (NURBS)_Oxygen|Dupli|56.0.0.0.0.0.0.0.0
+    400346: Oxygen|Ball (NURBS)_Oxygen|Dupli|57.0.0.0.0.0.0.0.0
+    400348: Oxygen|Ball (NURBS)_Oxygen|Dupli|58.0.0.0.0.0.0.0.0
+    400350: Oxygen|Ball (NURBS)_Oxygen|Dupli|59.0.0.0.0.0.0.0.0
+    400352: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    400354: Oxygen|Ball (NURBS)_Oxygen|Dupli|60.0.0.0.0.0.0.0.0
+    400356: Oxygen|Ball (NURBS)_Oxygen|Dupli|61.0.0.0.0.0.0.0.0
+    400358: Oxygen|Ball (NURBS)_Oxygen|Dupli|62.0.0.0.0.0.0.0.0
+    400360: Oxygen|Ball (NURBS)_Oxygen|Dupli|63.0.0.0.0.0.0.0.0
+    400362: Oxygen|Ball (NURBS)_Oxygen|Dupli|64.0.0.0.0.0.0.0.0
+    400364: Oxygen|Ball (NURBS)_Oxygen|Dupli|65.0.0.0.0.0.0.0.0
+    400366: Oxygen|Ball (NURBS)_Oxygen|Dupli|66.0.0.0.0.0.0.0.0
+    400368: Oxygen|Ball (NURBS)_Oxygen|Dupli|67.0.0.0.0.0.0.0.0
+    400370: Oxygen|Ball (NURBS)_Oxygen|Dupli|68.0.0.0.0.0.0.0.0
+    400372: Oxygen|Ball (NURBS)_Oxygen|Dupli|69.0.0.0.0.0.0.0.0
+    400374: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    400376: Oxygen|Ball (NURBS)_Oxygen|Dupli|70.0.0.0.0.0.0.0.0
+    400378: Oxygen|Ball (NURBS)_Oxygen|Dupli|71.0.0.0.0.0.0.0.0
+    400380: Oxygen|Ball (NURBS)_Oxygen|Dupli|72.0.0.0.0.0.0.0.0
+    400382: Oxygen|Ball (NURBS)_Oxygen|Dupli|73.0.0.0.0.0.0.0.0
+    400384: Oxygen|Ball (NURBS)_Oxygen|Dupli|74.0.0.0.0.0.0.0.0
+    400386: Oxygen|Ball (NURBS)_Oxygen|Dupli|75.0.0.0.0.0.0.0.0
+    400388: Oxygen|Ball (NURBS)_Oxygen|Dupli|76.0.0.0.0.0.0.0.0
+    400390: Oxygen|Ball (NURBS)_Oxygen|Dupli|77.0.0.0.0.0.0.0.0
+    400392: Oxygen|Ball (NURBS)_Oxygen|Dupli|78.0.0.0.0.0.0.0.0
+    400394: Oxygen|Ball (NURBS)_Oxygen|Dupli|79.0.0.0.0.0.0.0.0
+    400396: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    400398: Oxygen|Ball (NURBS)_Oxygen|Dupli|80.0.0.0.0.0.0.0.0
+    400400: Oxygen|Ball (NURBS)_Oxygen|Dupli|81.0.0.0.0.0.0.0.0
+    400402: Oxygen|Ball (NURBS)_Oxygen|Dupli|82.0.0.0.0.0.0.0.0
+    400404: Oxygen|Ball (NURBS)_Oxygen|Dupli|83.0.0.0.0.0.0.0.0
+    400406: Oxygen|Ball (NURBS)_Oxygen|Dupli|84.0.0.0.0.0.0.0.0
+    400408: Oxygen|Ball (NURBS)_Oxygen|Dupli|85.0.0.0.0.0.0.0.0
+    400410: Oxygen|Ball (NURBS)_Oxygen|Dupli|86.0.0.0.0.0.0.0.0
+    400412: Oxygen|Ball (NURBS)_Oxygen|Dupli|87.0.0.0.0.0.0.0.0
+    400414: Oxygen|Ball (NURBS)_Oxygen|Dupli|88.0.0.0.0.0.0.0.0
+    400416: Oxygen|Ball (NURBS)_Oxygen|Dupli|89.0.0.0.0.0.0.0.0
+    400418: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    400420: Oxygen|Ball (NURBS)_Oxygen|Dupli|90.0.0.0.0.0.0.0.0
+    400422: Oxygen|Ball (NURBS)_Oxygen|Dupli|91.0.0.0.0.0.0.0.0
+    400424: Oxygen|Ball (NURBS)_Oxygen|Dupli|92.0.0.0.0.0.0.0.0
+    400426: Oxygen|Ball (NURBS)_Oxygen|Dupli|93.0.0.0.0.0.0.0.0
+    400428: Oxygen|Ball (NURBS)_Oxygen|Dupli|94.0.0.0.0.0.0.0.0
+    400430: Oxygen|Ball (NURBS)_Oxygen|Dupli|95.0.0.0.0.0.0.0.0
+    400432: Oxygen|Ball (NURBS)_Oxygen|Dupli|96.0.0.0.0.0.0.0.0
+    400434: Oxygen|Ball (NURBS)_Oxygen|Dupli|97.0.0.0.0.0.0.0.0
+    400436: Oxygen|Ball (NURBS)_Oxygen|Dupli|98.0.0.0.0.0.0.0.0
+    400438: Oxygen|Ball (NURBS)_Oxygen|Dupli|99.0.0.0.0.0.0.0.0
+    2300000: Aluminium
+    2300002: Aluminium|Ball (NURBS)_Aluminium|Dupli|0.0.0.0.0.0.0.0.0
+    2300004: Aluminium|Ball (NURBS)_Aluminium|Dupli|1.0.0.0.0.0.0.0.0
+    2300006: Aluminium|Ball (NURBS)_Aluminium|Dupli|10.0.0.0.0.0.0.0.0
+    2300008: Aluminium|Ball (NURBS)_Aluminium|Dupli|11.0.0.0.0.0.0.0.0
+    2300010: Aluminium|Ball (NURBS)_Aluminium|Dupli|12.0.0.0.0.0.0.0.0
+    2300012: Aluminium|Ball (NURBS)_Aluminium|Dupli|13.0.0.0.0.0.0.0.0
+    2300014: Aluminium|Ball (NURBS)_Aluminium|Dupli|14.0.0.0.0.0.0.0.0
+    2300016: Aluminium|Ball (NURBS)_Aluminium|Dupli|15.0.0.0.0.0.0.0.0
+    2300018: Aluminium|Ball (NURBS)_Aluminium|Dupli|16.0.0.0.0.0.0.0.0
+    2300020: Aluminium|Ball (NURBS)_Aluminium|Dupli|17.0.0.0.0.0.0.0.0
+    2300022: Aluminium|Ball (NURBS)_Aluminium|Dupli|18.0.0.0.0.0.0.0.0
+    2300024: Aluminium|Ball (NURBS)_Aluminium|Dupli|19.0.0.0.0.0.0.0.0
+    2300026: Aluminium|Ball (NURBS)_Aluminium|Dupli|2.0.0.0.0.0.0.0.0
+    2300028: Aluminium|Ball (NURBS)_Aluminium|Dupli|20.0.0.0.0.0.0.0.0
+    2300030: Aluminium|Ball (NURBS)_Aluminium|Dupli|21.0.0.0.0.0.0.0.0
+    2300032: Aluminium|Ball (NURBS)_Aluminium|Dupli|22.0.0.0.0.0.0.0.0
+    2300034: Aluminium|Ball (NURBS)_Aluminium|Dupli|23.0.0.0.0.0.0.0.0
+    2300036: Aluminium|Ball (NURBS)_Aluminium|Dupli|24.0.0.0.0.0.0.0.0
+    2300038: Aluminium|Ball (NURBS)_Aluminium|Dupli|25.0.0.0.0.0.0.0.0
+    2300040: Aluminium|Ball (NURBS)_Aluminium|Dupli|26.0.0.0.0.0.0.0.0
+    2300042: Aluminium|Ball (NURBS)_Aluminium|Dupli|27.0.0.0.0.0.0.0.0
+    2300044: Aluminium|Ball (NURBS)_Aluminium|Dupli|28.0.0.0.0.0.0.0.0
+    2300046: Aluminium|Ball (NURBS)_Aluminium|Dupli|29.0.0.0.0.0.0.0.0
+    2300048: Aluminium|Ball (NURBS)_Aluminium|Dupli|3.0.0.0.0.0.0.0.0
+    2300050: Aluminium|Ball (NURBS)_Aluminium|Dupli|30.0.0.0.0.0.0.0.0
+    2300052: Aluminium|Ball (NURBS)_Aluminium|Dupli|31.0.0.0.0.0.0.0.0
+    2300054: Aluminium|Ball (NURBS)_Aluminium|Dupli|32.0.0.0.0.0.0.0.0
+    2300056: Aluminium|Ball (NURBS)_Aluminium|Dupli|33.0.0.0.0.0.0.0.0
+    2300058: Aluminium|Ball (NURBS)_Aluminium|Dupli|34.0.0.0.0.0.0.0.0
+    2300060: Aluminium|Ball (NURBS)_Aluminium|Dupli|4.0.0.0.0.0.0.0.0
+    2300062: Aluminium|Ball (NURBS)_Aluminium|Dupli|5.0.0.0.0.0.0.0.0
+    2300064: Aluminium|Ball (NURBS)_Aluminium|Dupli|6.0.0.0.0.0.0.0.0
+    2300066: Aluminium|Ball (NURBS)_Aluminium|Dupli|7.0.0.0.0.0.0.0.0
+    2300068: Aluminium|Ball (NURBS)_Aluminium|Dupli|8.0.0.0.0.0.0.0.0
+    2300070: Aluminium|Ball (NURBS)_Aluminium|Dupli|9.0.0.0.0.0.0.0.0
+    2300072: Ball (NURBS)_Aluminium
+    2300074: Ball (NURBS)_Lanthanum
+    2300076: Ball (NURBS)_Oxygen
+    2300078: Lanthanum
+    2300080: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|0.0.0.0.0.0.0.0.0
+    2300082: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|1.0.0.0.0.0.0.0.0
+    2300084: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|10.0.0.0.0.0.0.0.0
+    2300086: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|11.0.0.0.0.0.0.0.0
+    2300088: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|12.0.0.0.0.0.0.0.0
+    2300090: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|13.0.0.0.0.0.0.0.0
+    2300092: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|14.0.0.0.0.0.0.0.0
+    2300094: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|15.0.0.0.0.0.0.0.0
+    2300096: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|2.0.0.0.0.0.0.0.0
+    2300098: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|3.0.0.0.0.0.0.0.0
+    2300100: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|4.0.0.0.0.0.0.0.0
+    2300102: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|5.0.0.0.0.0.0.0.0
+    2300104: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|6.0.0.0.0.0.0.0.0
+    2300106: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|7.0.0.0.0.0.0.0.0
+    2300108: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|8.0.0.0.0.0.0.0.0
+    2300110: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|9.0.0.0.0.0.0.0.0
+    2300112: Oxygen
+    2300114: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    2300116: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    2300118: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    2300120: Oxygen|Ball (NURBS)_Oxygen|Dupli|100.0.0.0.0.0.0.0.0
+    2300122: Oxygen|Ball (NURBS)_Oxygen|Dupli|101.0.0.0.0.0.0.0.0
+    2300124: Oxygen|Ball (NURBS)_Oxygen|Dupli|102.0.0.0.0.0.0.0.0
+    2300126: Oxygen|Ball (NURBS)_Oxygen|Dupli|103.0.0.0.0.0.0.0.0
+    2300128: Oxygen|Ball (NURBS)_Oxygen|Dupli|104.0.0.0.0.0.0.0.0
+    2300130: Oxygen|Ball (NURBS)_Oxygen|Dupli|105.0.0.0.0.0.0.0.0
+    2300132: Oxygen|Ball (NURBS)_Oxygen|Dupli|106.0.0.0.0.0.0.0.0
+    2300134: Oxygen|Ball (NURBS)_Oxygen|Dupli|107.0.0.0.0.0.0.0.0
+    2300136: Oxygen|Ball (NURBS)_Oxygen|Dupli|108.0.0.0.0.0.0.0.0
+    2300138: Oxygen|Ball (NURBS)_Oxygen|Dupli|109.0.0.0.0.0.0.0.0
+    2300140: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    2300142: Oxygen|Ball (NURBS)_Oxygen|Dupli|110.0.0.0.0.0.0.0.0
+    2300144: Oxygen|Ball (NURBS)_Oxygen|Dupli|111.0.0.0.0.0.0.0.0
+    2300146: Oxygen|Ball (NURBS)_Oxygen|Dupli|112.0.0.0.0.0.0.0.0
+    2300148: Oxygen|Ball (NURBS)_Oxygen|Dupli|113.0.0.0.0.0.0.0.0
+    2300150: Oxygen|Ball (NURBS)_Oxygen|Dupli|114.0.0.0.0.0.0.0.0
+    2300152: Oxygen|Ball (NURBS)_Oxygen|Dupli|115.0.0.0.0.0.0.0.0
+    2300154: Oxygen|Ball (NURBS)_Oxygen|Dupli|116.0.0.0.0.0.0.0.0
+    2300156: Oxygen|Ball (NURBS)_Oxygen|Dupli|117.0.0.0.0.0.0.0.0
+    2300158: Oxygen|Ball (NURBS)_Oxygen|Dupli|118.0.0.0.0.0.0.0.0
+    2300160: Oxygen|Ball (NURBS)_Oxygen|Dupli|119.0.0.0.0.0.0.0.0
+    2300162: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    2300164: Oxygen|Ball (NURBS)_Oxygen|Dupli|120.0.0.0.0.0.0.0.0
+    2300166: Oxygen|Ball (NURBS)_Oxygen|Dupli|121.0.0.0.0.0.0.0.0
+    2300168: Oxygen|Ball (NURBS)_Oxygen|Dupli|122.0.0.0.0.0.0.0.0
+    2300170: Oxygen|Ball (NURBS)_Oxygen|Dupli|123.0.0.0.0.0.0.0.0
+    2300172: Oxygen|Ball (NURBS)_Oxygen|Dupli|124.0.0.0.0.0.0.0.0
+    2300174: Oxygen|Ball (NURBS)_Oxygen|Dupli|125.0.0.0.0.0.0.0.0
+    2300176: Oxygen|Ball (NURBS)_Oxygen|Dupli|126.0.0.0.0.0.0.0.0
+    2300178: Oxygen|Ball (NURBS)_Oxygen|Dupli|127.0.0.0.0.0.0.0.0
+    2300180: Oxygen|Ball (NURBS)_Oxygen|Dupli|128.0.0.0.0.0.0.0.0
+    2300182: Oxygen|Ball (NURBS)_Oxygen|Dupli|129.0.0.0.0.0.0.0.0
+    2300184: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    2300186: Oxygen|Ball (NURBS)_Oxygen|Dupli|130.0.0.0.0.0.0.0.0
+    2300188: Oxygen|Ball (NURBS)_Oxygen|Dupli|131.0.0.0.0.0.0.0.0
+    2300190: Oxygen|Ball (NURBS)_Oxygen|Dupli|132.0.0.0.0.0.0.0.0
+    2300192: Oxygen|Ball (NURBS)_Oxygen|Dupli|133.0.0.0.0.0.0.0.0
+    2300194: Oxygen|Ball (NURBS)_Oxygen|Dupli|134.0.0.0.0.0.0.0.0
+    2300196: Oxygen|Ball (NURBS)_Oxygen|Dupli|135.0.0.0.0.0.0.0.0
+    2300198: Oxygen|Ball (NURBS)_Oxygen|Dupli|136.0.0.0.0.0.0.0.0
+    2300200: Oxygen|Ball (NURBS)_Oxygen|Dupli|137.0.0.0.0.0.0.0.0
+    2300202: Oxygen|Ball (NURBS)_Oxygen|Dupli|138.0.0.0.0.0.0.0.0
+    2300204: Oxygen|Ball (NURBS)_Oxygen|Dupli|139.0.0.0.0.0.0.0.0
+    2300206: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    2300208: Oxygen|Ball (NURBS)_Oxygen|Dupli|140.0.0.0.0.0.0.0.0
+    2300210: Oxygen|Ball (NURBS)_Oxygen|Dupli|141.0.0.0.0.0.0.0.0
+    2300212: Oxygen|Ball (NURBS)_Oxygen|Dupli|142.0.0.0.0.0.0.0.0
+    2300214: Oxygen|Ball (NURBS)_Oxygen|Dupli|143.0.0.0.0.0.0.0.0
+    2300216: Oxygen|Ball (NURBS)_Oxygen|Dupli|144.0.0.0.0.0.0.0.0
+    2300218: Oxygen|Ball (NURBS)_Oxygen|Dupli|145.0.0.0.0.0.0.0.0
+    2300220: Oxygen|Ball (NURBS)_Oxygen|Dupli|146.0.0.0.0.0.0.0.0
+    2300222: Oxygen|Ball (NURBS)_Oxygen|Dupli|147.0.0.0.0.0.0.0.0
+    2300224: Oxygen|Ball (NURBS)_Oxygen|Dupli|148.0.0.0.0.0.0.0.0
+    2300226: Oxygen|Ball (NURBS)_Oxygen|Dupli|149.0.0.0.0.0.0.0.0
+    2300228: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    2300230: Oxygen|Ball (NURBS)_Oxygen|Dupli|150.0.0.0.0.0.0.0.0
+    2300232: Oxygen|Ball (NURBS)_Oxygen|Dupli|151.0.0.0.0.0.0.0.0
+    2300234: Oxygen|Ball (NURBS)_Oxygen|Dupli|152.0.0.0.0.0.0.0.0
+    2300236: Oxygen|Ball (NURBS)_Oxygen|Dupli|153.0.0.0.0.0.0.0.0
+    2300238: Oxygen|Ball (NURBS)_Oxygen|Dupli|154.0.0.0.0.0.0.0.0
+    2300240: Oxygen|Ball (NURBS)_Oxygen|Dupli|155.0.0.0.0.0.0.0.0
+    2300242: Oxygen|Ball (NURBS)_Oxygen|Dupli|156.0.0.0.0.0.0.0.0
+    2300244: Oxygen|Ball (NURBS)_Oxygen|Dupli|157.0.0.0.0.0.0.0.0
+    2300246: Oxygen|Ball (NURBS)_Oxygen|Dupli|158.0.0.0.0.0.0.0.0
+    2300248: Oxygen|Ball (NURBS)_Oxygen|Dupli|159.0.0.0.0.0.0.0.0
+    2300250: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    2300252: Oxygen|Ball (NURBS)_Oxygen|Dupli|160.0.0.0.0.0.0.0.0
+    2300254: Oxygen|Ball (NURBS)_Oxygen|Dupli|161.0.0.0.0.0.0.0.0
+    2300256: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    2300258: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    2300260: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    2300262: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    2300264: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    2300266: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    2300268: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    2300270: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    2300272: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    2300274: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    2300276: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    2300278: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    2300280: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    2300282: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    2300284: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    2300286: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    2300288: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    2300290: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    2300292: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    2300294: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    2300296: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    2300298: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    2300300: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    2300302: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    2300304: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    2300306: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    2300308: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    2300310: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    2300312: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    2300314: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    2300316: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    2300318: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    2300320: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    2300322: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    2300324: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    2300326: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    2300328: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    2300330: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    2300332: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    2300334: Oxygen|Ball (NURBS)_Oxygen|Dupli|52.0.0.0.0.0.0.0.0
+    2300336: Oxygen|Ball (NURBS)_Oxygen|Dupli|53.0.0.0.0.0.0.0.0
+    2300338: Oxygen|Ball (NURBS)_Oxygen|Dupli|54.0.0.0.0.0.0.0.0
+    2300340: Oxygen|Ball (NURBS)_Oxygen|Dupli|55.0.0.0.0.0.0.0.0
+    2300342: Oxygen|Ball (NURBS)_Oxygen|Dupli|56.0.0.0.0.0.0.0.0
+    2300344: Oxygen|Ball (NURBS)_Oxygen|Dupli|57.0.0.0.0.0.0.0.0
+    2300346: Oxygen|Ball (NURBS)_Oxygen|Dupli|58.0.0.0.0.0.0.0.0
+    2300348: Oxygen|Ball (NURBS)_Oxygen|Dupli|59.0.0.0.0.0.0.0.0
+    2300350: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    2300352: Oxygen|Ball (NURBS)_Oxygen|Dupli|60.0.0.0.0.0.0.0.0
+    2300354: Oxygen|Ball (NURBS)_Oxygen|Dupli|61.0.0.0.0.0.0.0.0
+    2300356: Oxygen|Ball (NURBS)_Oxygen|Dupli|62.0.0.0.0.0.0.0.0
+    2300358: Oxygen|Ball (NURBS)_Oxygen|Dupli|63.0.0.0.0.0.0.0.0
+    2300360: Oxygen|Ball (NURBS)_Oxygen|Dupli|64.0.0.0.0.0.0.0.0
+    2300362: Oxygen|Ball (NURBS)_Oxygen|Dupli|65.0.0.0.0.0.0.0.0
+    2300364: Oxygen|Ball (NURBS)_Oxygen|Dupli|66.0.0.0.0.0.0.0.0
+    2300366: Oxygen|Ball (NURBS)_Oxygen|Dupli|67.0.0.0.0.0.0.0.0
+    2300368: Oxygen|Ball (NURBS)_Oxygen|Dupli|68.0.0.0.0.0.0.0.0
+    2300370: Oxygen|Ball (NURBS)_Oxygen|Dupli|69.0.0.0.0.0.0.0.0
+    2300372: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    2300374: Oxygen|Ball (NURBS)_Oxygen|Dupli|70.0.0.0.0.0.0.0.0
+    2300376: Oxygen|Ball (NURBS)_Oxygen|Dupli|71.0.0.0.0.0.0.0.0
+    2300378: Oxygen|Ball (NURBS)_Oxygen|Dupli|72.0.0.0.0.0.0.0.0
+    2300380: Oxygen|Ball (NURBS)_Oxygen|Dupli|73.0.0.0.0.0.0.0.0
+    2300382: Oxygen|Ball (NURBS)_Oxygen|Dupli|74.0.0.0.0.0.0.0.0
+    2300384: Oxygen|Ball (NURBS)_Oxygen|Dupli|75.0.0.0.0.0.0.0.0
+    2300386: Oxygen|Ball (NURBS)_Oxygen|Dupli|76.0.0.0.0.0.0.0.0
+    2300388: Oxygen|Ball (NURBS)_Oxygen|Dupli|77.0.0.0.0.0.0.0.0
+    2300390: Oxygen|Ball (NURBS)_Oxygen|Dupli|78.0.0.0.0.0.0.0.0
+    2300392: Oxygen|Ball (NURBS)_Oxygen|Dupli|79.0.0.0.0.0.0.0.0
+    2300394: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    2300396: Oxygen|Ball (NURBS)_Oxygen|Dupli|80.0.0.0.0.0.0.0.0
+    2300398: Oxygen|Ball (NURBS)_Oxygen|Dupli|81.0.0.0.0.0.0.0.0
+    2300400: Oxygen|Ball (NURBS)_Oxygen|Dupli|82.0.0.0.0.0.0.0.0
+    2300402: Oxygen|Ball (NURBS)_Oxygen|Dupli|83.0.0.0.0.0.0.0.0
+    2300404: Oxygen|Ball (NURBS)_Oxygen|Dupli|84.0.0.0.0.0.0.0.0
+    2300406: Oxygen|Ball (NURBS)_Oxygen|Dupli|85.0.0.0.0.0.0.0.0
+    2300408: Oxygen|Ball (NURBS)_Oxygen|Dupli|86.0.0.0.0.0.0.0.0
+    2300410: Oxygen|Ball (NURBS)_Oxygen|Dupli|87.0.0.0.0.0.0.0.0
+    2300412: Oxygen|Ball (NURBS)_Oxygen|Dupli|88.0.0.0.0.0.0.0.0
+    2300414: Oxygen|Ball (NURBS)_Oxygen|Dupli|89.0.0.0.0.0.0.0.0
+    2300416: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    2300418: Oxygen|Ball (NURBS)_Oxygen|Dupli|90.0.0.0.0.0.0.0.0
+    2300420: Oxygen|Ball (NURBS)_Oxygen|Dupli|91.0.0.0.0.0.0.0.0
+    2300422: Oxygen|Ball (NURBS)_Oxygen|Dupli|92.0.0.0.0.0.0.0.0
+    2300424: Oxygen|Ball (NURBS)_Oxygen|Dupli|93.0.0.0.0.0.0.0.0
+    2300426: Oxygen|Ball (NURBS)_Oxygen|Dupli|94.0.0.0.0.0.0.0.0
+    2300428: Oxygen|Ball (NURBS)_Oxygen|Dupli|95.0.0.0.0.0.0.0.0
+    2300430: Oxygen|Ball (NURBS)_Oxygen|Dupli|96.0.0.0.0.0.0.0.0
+    2300432: Oxygen|Ball (NURBS)_Oxygen|Dupli|97.0.0.0.0.0.0.0.0
+    2300434: Oxygen|Ball (NURBS)_Oxygen|Dupli|98.0.0.0.0.0.0.0.0
+    2300436: Oxygen|Ball (NURBS)_Oxygen|Dupli|99.0.0.0.0.0.0.0.0
+    3300000: Aluminium
+    3300002: Aluminium|Ball (NURBS)_Aluminium|Dupli|0.0.0.0.0.0.0.0.0
+    3300004: Aluminium|Ball (NURBS)_Aluminium|Dupli|1.0.0.0.0.0.0.0.0
+    3300006: Aluminium|Ball (NURBS)_Aluminium|Dupli|10.0.0.0.0.0.0.0.0
+    3300008: Aluminium|Ball (NURBS)_Aluminium|Dupli|11.0.0.0.0.0.0.0.0
+    3300010: Aluminium|Ball (NURBS)_Aluminium|Dupli|12.0.0.0.0.0.0.0.0
+    3300012: Aluminium|Ball (NURBS)_Aluminium|Dupli|13.0.0.0.0.0.0.0.0
+    3300014: Aluminium|Ball (NURBS)_Aluminium|Dupli|14.0.0.0.0.0.0.0.0
+    3300016: Aluminium|Ball (NURBS)_Aluminium|Dupli|15.0.0.0.0.0.0.0.0
+    3300018: Aluminium|Ball (NURBS)_Aluminium|Dupli|16.0.0.0.0.0.0.0.0
+    3300020: Aluminium|Ball (NURBS)_Aluminium|Dupli|17.0.0.0.0.0.0.0.0
+    3300022: Aluminium|Ball (NURBS)_Aluminium|Dupli|18.0.0.0.0.0.0.0.0
+    3300024: Aluminium|Ball (NURBS)_Aluminium|Dupli|19.0.0.0.0.0.0.0.0
+    3300026: Aluminium|Ball (NURBS)_Aluminium|Dupli|2.0.0.0.0.0.0.0.0
+    3300028: Aluminium|Ball (NURBS)_Aluminium|Dupli|20.0.0.0.0.0.0.0.0
+    3300030: Aluminium|Ball (NURBS)_Aluminium|Dupli|21.0.0.0.0.0.0.0.0
+    3300032: Aluminium|Ball (NURBS)_Aluminium|Dupli|22.0.0.0.0.0.0.0.0
+    3300034: Aluminium|Ball (NURBS)_Aluminium|Dupli|23.0.0.0.0.0.0.0.0
+    3300036: Aluminium|Ball (NURBS)_Aluminium|Dupli|24.0.0.0.0.0.0.0.0
+    3300038: Aluminium|Ball (NURBS)_Aluminium|Dupli|25.0.0.0.0.0.0.0.0
+    3300040: Aluminium|Ball (NURBS)_Aluminium|Dupli|26.0.0.0.0.0.0.0.0
+    3300042: Aluminium|Ball (NURBS)_Aluminium|Dupli|27.0.0.0.0.0.0.0.0
+    3300044: Aluminium|Ball (NURBS)_Aluminium|Dupli|28.0.0.0.0.0.0.0.0
+    3300046: Aluminium|Ball (NURBS)_Aluminium|Dupli|29.0.0.0.0.0.0.0.0
+    3300048: Aluminium|Ball (NURBS)_Aluminium|Dupli|3.0.0.0.0.0.0.0.0
+    3300050: Aluminium|Ball (NURBS)_Aluminium|Dupli|30.0.0.0.0.0.0.0.0
+    3300052: Aluminium|Ball (NURBS)_Aluminium|Dupli|31.0.0.0.0.0.0.0.0
+    3300054: Aluminium|Ball (NURBS)_Aluminium|Dupli|32.0.0.0.0.0.0.0.0
+    3300056: Aluminium|Ball (NURBS)_Aluminium|Dupli|33.0.0.0.0.0.0.0.0
+    3300058: Aluminium|Ball (NURBS)_Aluminium|Dupli|34.0.0.0.0.0.0.0.0
+    3300060: Aluminium|Ball (NURBS)_Aluminium|Dupli|4.0.0.0.0.0.0.0.0
+    3300062: Aluminium|Ball (NURBS)_Aluminium|Dupli|5.0.0.0.0.0.0.0.0
+    3300064: Aluminium|Ball (NURBS)_Aluminium|Dupli|6.0.0.0.0.0.0.0.0
+    3300066: Aluminium|Ball (NURBS)_Aluminium|Dupli|7.0.0.0.0.0.0.0.0
+    3300068: Aluminium|Ball (NURBS)_Aluminium|Dupli|8.0.0.0.0.0.0.0.0
+    3300070: Aluminium|Ball (NURBS)_Aluminium|Dupli|9.0.0.0.0.0.0.0.0
+    3300072: Ball (NURBS)_Aluminium
+    3300074: Ball (NURBS)_Lanthanum
+    3300076: Ball (NURBS)_Oxygen
+    3300078: Lanthanum
+    3300080: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|0.0.0.0.0.0.0.0.0
+    3300082: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|1.0.0.0.0.0.0.0.0
+    3300084: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|10.0.0.0.0.0.0.0.0
+    3300086: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|11.0.0.0.0.0.0.0.0
+    3300088: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|12.0.0.0.0.0.0.0.0
+    3300090: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|13.0.0.0.0.0.0.0.0
+    3300092: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|14.0.0.0.0.0.0.0.0
+    3300094: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|15.0.0.0.0.0.0.0.0
+    3300096: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|2.0.0.0.0.0.0.0.0
+    3300098: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|3.0.0.0.0.0.0.0.0
+    3300100: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|4.0.0.0.0.0.0.0.0
+    3300102: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|5.0.0.0.0.0.0.0.0
+    3300104: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|6.0.0.0.0.0.0.0.0
+    3300106: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|7.0.0.0.0.0.0.0.0
+    3300108: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|8.0.0.0.0.0.0.0.0
+    3300110: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|9.0.0.0.0.0.0.0.0
+    3300112: Oxygen
+    3300114: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    3300116: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    3300118: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    3300120: Oxygen|Ball (NURBS)_Oxygen|Dupli|100.0.0.0.0.0.0.0.0
+    3300122: Oxygen|Ball (NURBS)_Oxygen|Dupli|101.0.0.0.0.0.0.0.0
+    3300124: Oxygen|Ball (NURBS)_Oxygen|Dupli|102.0.0.0.0.0.0.0.0
+    3300126: Oxygen|Ball (NURBS)_Oxygen|Dupli|103.0.0.0.0.0.0.0.0
+    3300128: Oxygen|Ball (NURBS)_Oxygen|Dupli|104.0.0.0.0.0.0.0.0
+    3300130: Oxygen|Ball (NURBS)_Oxygen|Dupli|105.0.0.0.0.0.0.0.0
+    3300132: Oxygen|Ball (NURBS)_Oxygen|Dupli|106.0.0.0.0.0.0.0.0
+    3300134: Oxygen|Ball (NURBS)_Oxygen|Dupli|107.0.0.0.0.0.0.0.0
+    3300136: Oxygen|Ball (NURBS)_Oxygen|Dupli|108.0.0.0.0.0.0.0.0
+    3300138: Oxygen|Ball (NURBS)_Oxygen|Dupli|109.0.0.0.0.0.0.0.0
+    3300140: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    3300142: Oxygen|Ball (NURBS)_Oxygen|Dupli|110.0.0.0.0.0.0.0.0
+    3300144: Oxygen|Ball (NURBS)_Oxygen|Dupli|111.0.0.0.0.0.0.0.0
+    3300146: Oxygen|Ball (NURBS)_Oxygen|Dupli|112.0.0.0.0.0.0.0.0
+    3300148: Oxygen|Ball (NURBS)_Oxygen|Dupli|113.0.0.0.0.0.0.0.0
+    3300150: Oxygen|Ball (NURBS)_Oxygen|Dupli|114.0.0.0.0.0.0.0.0
+    3300152: Oxygen|Ball (NURBS)_Oxygen|Dupli|115.0.0.0.0.0.0.0.0
+    3300154: Oxygen|Ball (NURBS)_Oxygen|Dupli|116.0.0.0.0.0.0.0.0
+    3300156: Oxygen|Ball (NURBS)_Oxygen|Dupli|117.0.0.0.0.0.0.0.0
+    3300158: Oxygen|Ball (NURBS)_Oxygen|Dupli|118.0.0.0.0.0.0.0.0
+    3300160: Oxygen|Ball (NURBS)_Oxygen|Dupli|119.0.0.0.0.0.0.0.0
+    3300162: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    3300164: Oxygen|Ball (NURBS)_Oxygen|Dupli|120.0.0.0.0.0.0.0.0
+    3300166: Oxygen|Ball (NURBS)_Oxygen|Dupli|121.0.0.0.0.0.0.0.0
+    3300168: Oxygen|Ball (NURBS)_Oxygen|Dupli|122.0.0.0.0.0.0.0.0
+    3300170: Oxygen|Ball (NURBS)_Oxygen|Dupli|123.0.0.0.0.0.0.0.0
+    3300172: Oxygen|Ball (NURBS)_Oxygen|Dupli|124.0.0.0.0.0.0.0.0
+    3300174: Oxygen|Ball (NURBS)_Oxygen|Dupli|125.0.0.0.0.0.0.0.0
+    3300176: Oxygen|Ball (NURBS)_Oxygen|Dupli|126.0.0.0.0.0.0.0.0
+    3300178: Oxygen|Ball (NURBS)_Oxygen|Dupli|127.0.0.0.0.0.0.0.0
+    3300180: Oxygen|Ball (NURBS)_Oxygen|Dupli|128.0.0.0.0.0.0.0.0
+    3300182: Oxygen|Ball (NURBS)_Oxygen|Dupli|129.0.0.0.0.0.0.0.0
+    3300184: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    3300186: Oxygen|Ball (NURBS)_Oxygen|Dupli|130.0.0.0.0.0.0.0.0
+    3300188: Oxygen|Ball (NURBS)_Oxygen|Dupli|131.0.0.0.0.0.0.0.0
+    3300190: Oxygen|Ball (NURBS)_Oxygen|Dupli|132.0.0.0.0.0.0.0.0
+    3300192: Oxygen|Ball (NURBS)_Oxygen|Dupli|133.0.0.0.0.0.0.0.0
+    3300194: Oxygen|Ball (NURBS)_Oxygen|Dupli|134.0.0.0.0.0.0.0.0
+    3300196: Oxygen|Ball (NURBS)_Oxygen|Dupli|135.0.0.0.0.0.0.0.0
+    3300198: Oxygen|Ball (NURBS)_Oxygen|Dupli|136.0.0.0.0.0.0.0.0
+    3300200: Oxygen|Ball (NURBS)_Oxygen|Dupli|137.0.0.0.0.0.0.0.0
+    3300202: Oxygen|Ball (NURBS)_Oxygen|Dupli|138.0.0.0.0.0.0.0.0
+    3300204: Oxygen|Ball (NURBS)_Oxygen|Dupli|139.0.0.0.0.0.0.0.0
+    3300206: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    3300208: Oxygen|Ball (NURBS)_Oxygen|Dupli|140.0.0.0.0.0.0.0.0
+    3300210: Oxygen|Ball (NURBS)_Oxygen|Dupli|141.0.0.0.0.0.0.0.0
+    3300212: Oxygen|Ball (NURBS)_Oxygen|Dupli|142.0.0.0.0.0.0.0.0
+    3300214: Oxygen|Ball (NURBS)_Oxygen|Dupli|143.0.0.0.0.0.0.0.0
+    3300216: Oxygen|Ball (NURBS)_Oxygen|Dupli|144.0.0.0.0.0.0.0.0
+    3300218: Oxygen|Ball (NURBS)_Oxygen|Dupli|145.0.0.0.0.0.0.0.0
+    3300220: Oxygen|Ball (NURBS)_Oxygen|Dupli|146.0.0.0.0.0.0.0.0
+    3300222: Oxygen|Ball (NURBS)_Oxygen|Dupli|147.0.0.0.0.0.0.0.0
+    3300224: Oxygen|Ball (NURBS)_Oxygen|Dupli|148.0.0.0.0.0.0.0.0
+    3300226: Oxygen|Ball (NURBS)_Oxygen|Dupli|149.0.0.0.0.0.0.0.0
+    3300228: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    3300230: Oxygen|Ball (NURBS)_Oxygen|Dupli|150.0.0.0.0.0.0.0.0
+    3300232: Oxygen|Ball (NURBS)_Oxygen|Dupli|151.0.0.0.0.0.0.0.0
+    3300234: Oxygen|Ball (NURBS)_Oxygen|Dupli|152.0.0.0.0.0.0.0.0
+    3300236: Oxygen|Ball (NURBS)_Oxygen|Dupli|153.0.0.0.0.0.0.0.0
+    3300238: Oxygen|Ball (NURBS)_Oxygen|Dupli|154.0.0.0.0.0.0.0.0
+    3300240: Oxygen|Ball (NURBS)_Oxygen|Dupli|155.0.0.0.0.0.0.0.0
+    3300242: Oxygen|Ball (NURBS)_Oxygen|Dupli|156.0.0.0.0.0.0.0.0
+    3300244: Oxygen|Ball (NURBS)_Oxygen|Dupli|157.0.0.0.0.0.0.0.0
+    3300246: Oxygen|Ball (NURBS)_Oxygen|Dupli|158.0.0.0.0.0.0.0.0
+    3300248: Oxygen|Ball (NURBS)_Oxygen|Dupli|159.0.0.0.0.0.0.0.0
+    3300250: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    3300252: Oxygen|Ball (NURBS)_Oxygen|Dupli|160.0.0.0.0.0.0.0.0
+    3300254: Oxygen|Ball (NURBS)_Oxygen|Dupli|161.0.0.0.0.0.0.0.0
+    3300256: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    3300258: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    3300260: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    3300262: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    3300264: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    3300266: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    3300268: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    3300270: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    3300272: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    3300274: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    3300276: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    3300278: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    3300280: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    3300282: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    3300284: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    3300286: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    3300288: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    3300290: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    3300292: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    3300294: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    3300296: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    3300298: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    3300300: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    3300302: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    3300304: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    3300306: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    3300308: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    3300310: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    3300312: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    3300314: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    3300316: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    3300318: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    3300320: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    3300322: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    3300324: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    3300326: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    3300328: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    3300330: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    3300332: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    3300334: Oxygen|Ball (NURBS)_Oxygen|Dupli|52.0.0.0.0.0.0.0.0
+    3300336: Oxygen|Ball (NURBS)_Oxygen|Dupli|53.0.0.0.0.0.0.0.0
+    3300338: Oxygen|Ball (NURBS)_Oxygen|Dupli|54.0.0.0.0.0.0.0.0
+    3300340: Oxygen|Ball (NURBS)_Oxygen|Dupli|55.0.0.0.0.0.0.0.0
+    3300342: Oxygen|Ball (NURBS)_Oxygen|Dupli|56.0.0.0.0.0.0.0.0
+    3300344: Oxygen|Ball (NURBS)_Oxygen|Dupli|57.0.0.0.0.0.0.0.0
+    3300346: Oxygen|Ball (NURBS)_Oxygen|Dupli|58.0.0.0.0.0.0.0.0
+    3300348: Oxygen|Ball (NURBS)_Oxygen|Dupli|59.0.0.0.0.0.0.0.0
+    3300350: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    3300352: Oxygen|Ball (NURBS)_Oxygen|Dupli|60.0.0.0.0.0.0.0.0
+    3300354: Oxygen|Ball (NURBS)_Oxygen|Dupli|61.0.0.0.0.0.0.0.0
+    3300356: Oxygen|Ball (NURBS)_Oxygen|Dupli|62.0.0.0.0.0.0.0.0
+    3300358: Oxygen|Ball (NURBS)_Oxygen|Dupli|63.0.0.0.0.0.0.0.0
+    3300360: Oxygen|Ball (NURBS)_Oxygen|Dupli|64.0.0.0.0.0.0.0.0
+    3300362: Oxygen|Ball (NURBS)_Oxygen|Dupli|65.0.0.0.0.0.0.0.0
+    3300364: Oxygen|Ball (NURBS)_Oxygen|Dupli|66.0.0.0.0.0.0.0.0
+    3300366: Oxygen|Ball (NURBS)_Oxygen|Dupli|67.0.0.0.0.0.0.0.0
+    3300368: Oxygen|Ball (NURBS)_Oxygen|Dupli|68.0.0.0.0.0.0.0.0
+    3300370: Oxygen|Ball (NURBS)_Oxygen|Dupli|69.0.0.0.0.0.0.0.0
+    3300372: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    3300374: Oxygen|Ball (NURBS)_Oxygen|Dupli|70.0.0.0.0.0.0.0.0
+    3300376: Oxygen|Ball (NURBS)_Oxygen|Dupli|71.0.0.0.0.0.0.0.0
+    3300378: Oxygen|Ball (NURBS)_Oxygen|Dupli|72.0.0.0.0.0.0.0.0
+    3300380: Oxygen|Ball (NURBS)_Oxygen|Dupli|73.0.0.0.0.0.0.0.0
+    3300382: Oxygen|Ball (NURBS)_Oxygen|Dupli|74.0.0.0.0.0.0.0.0
+    3300384: Oxygen|Ball (NURBS)_Oxygen|Dupli|75.0.0.0.0.0.0.0.0
+    3300386: Oxygen|Ball (NURBS)_Oxygen|Dupli|76.0.0.0.0.0.0.0.0
+    3300388: Oxygen|Ball (NURBS)_Oxygen|Dupli|77.0.0.0.0.0.0.0.0
+    3300390: Oxygen|Ball (NURBS)_Oxygen|Dupli|78.0.0.0.0.0.0.0.0
+    3300392: Oxygen|Ball (NURBS)_Oxygen|Dupli|79.0.0.0.0.0.0.0.0
+    3300394: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    3300396: Oxygen|Ball (NURBS)_Oxygen|Dupli|80.0.0.0.0.0.0.0.0
+    3300398: Oxygen|Ball (NURBS)_Oxygen|Dupli|81.0.0.0.0.0.0.0.0
+    3300400: Oxygen|Ball (NURBS)_Oxygen|Dupli|82.0.0.0.0.0.0.0.0
+    3300402: Oxygen|Ball (NURBS)_Oxygen|Dupli|83.0.0.0.0.0.0.0.0
+    3300404: Oxygen|Ball (NURBS)_Oxygen|Dupli|84.0.0.0.0.0.0.0.0
+    3300406: Oxygen|Ball (NURBS)_Oxygen|Dupli|85.0.0.0.0.0.0.0.0
+    3300408: Oxygen|Ball (NURBS)_Oxygen|Dupli|86.0.0.0.0.0.0.0.0
+    3300410: Oxygen|Ball (NURBS)_Oxygen|Dupli|87.0.0.0.0.0.0.0.0
+    3300412: Oxygen|Ball (NURBS)_Oxygen|Dupli|88.0.0.0.0.0.0.0.0
+    3300414: Oxygen|Ball (NURBS)_Oxygen|Dupli|89.0.0.0.0.0.0.0.0
+    3300416: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    3300418: Oxygen|Ball (NURBS)_Oxygen|Dupli|90.0.0.0.0.0.0.0.0
+    3300420: Oxygen|Ball (NURBS)_Oxygen|Dupli|91.0.0.0.0.0.0.0.0
+    3300422: Oxygen|Ball (NURBS)_Oxygen|Dupli|92.0.0.0.0.0.0.0.0
+    3300424: Oxygen|Ball (NURBS)_Oxygen|Dupli|93.0.0.0.0.0.0.0.0
+    3300426: Oxygen|Ball (NURBS)_Oxygen|Dupli|94.0.0.0.0.0.0.0.0
+    3300428: Oxygen|Ball (NURBS)_Oxygen|Dupli|95.0.0.0.0.0.0.0.0
+    3300430: Oxygen|Ball (NURBS)_Oxygen|Dupli|96.0.0.0.0.0.0.0.0
+    3300432: Oxygen|Ball (NURBS)_Oxygen|Dupli|97.0.0.0.0.0.0.0.0
+    3300434: Oxygen|Ball (NURBS)_Oxygen|Dupli|98.0.0.0.0.0.0.0.0
+    3300436: Oxygen|Ball (NURBS)_Oxygen|Dupli|99.0.0.0.0.0.0.0.0
+    4300000: Oxygen
+    4300002: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    4300004: Ball (NURBS)_Oxygen
+    4300006: Aluminium
+    4300008: Aluminium|Ball (NURBS)_Aluminium|Dupli|0.0.0.0.0.0.0.0.0
+    4300010: Ball (NURBS)_Aluminium
+    4300012: Lanthanum
+    4300014: Lanthanum|Ball (NURBS)_Lanthanum|Dupli|0.0.0.0.0.0.0.0.0
+    4300016: Ball (NURBS)_Lanthanum
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: molecules
+  assetBundleVariant: 

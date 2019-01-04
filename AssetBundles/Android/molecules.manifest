@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2106477392
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 23072672657a4666f5ca421fea19e540
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7b3e506932349f67a7c4cb6d46637ab0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Molecules/KP(HO2)2.fbx
+- Assets/Molecules/Alum_structure.fbx
+- Assets/Molecules/K3Fe(CN)6.fbx
+- Assets/Molecules/CuZnSnS.fbx
+- Assets/Molecules/La2Al2O6.fbx
+- Assets/Molecules/BN_ZnO.fbx
+Dependencies: []

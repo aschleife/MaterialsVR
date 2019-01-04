@@ -1,0 +1,7 @@
+*.csproj
+
+Library/
+
+ProjectSetting/
+
+VESTA_data/
