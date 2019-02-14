@@ -21,26 +21,30 @@ public class LoadAssets: MonoBehaviour
 
     public IEnumerator DownloadModel()
     {
-        /*
+        
+        while (!Caching.ready)
+            yield return null;
     	// load assetBundle from web server
-        WWW www = new WWW(url);
+        // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
+        WWW www = WWW.LoadFromCacheOrDownload(url, 1);
         yield return www;
         AssetBundle assetBundle = www.assetBundle;
         if(string.IsNullOrEmpty(www.error))
         {
             Debug.Log("There was a problem loading asset bundles.");
         }
-        */
-        
+
+        /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules";
         var assetBundle = AssetBundle.LoadFromFile(url);
         if (assetBundle == null) {
             Debug.Log("Failed to load AssetBundle!");
         }
-        
+        */
         // between 0 ~ (count-1)
-        int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
+        // Note: change back tp count-1 here after update assetbundle
+        int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 2));
         // copy and set
         GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
         Vector3 size = new Vector3(5f, 5f, 5f);

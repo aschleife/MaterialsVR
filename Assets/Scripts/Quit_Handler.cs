@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Quit_Handler : MonoBehaviour, IPointerClickHandler {
-
 	public void OnPointerClick(PointerEventData data){
         // if clicked at button
         // if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)

@@ -24,8 +24,11 @@ public class rotational : MonoBehaviour
     }
 
     public IEnumerator LoadObject(){
+        // may need unload assetbundle somewhere
+        while (!Caching.ready)
+            yield return null;
         // load assetBundle from remote server
-        WWW www = new WWW(url);
+        WWW www = WWW.LoadFromCacheOrDownload(url, 1);
         yield return www;
         AssetBundle assetBundle = www.assetBundle;
         if (!string.IsNullOrEmpty(www.error))
