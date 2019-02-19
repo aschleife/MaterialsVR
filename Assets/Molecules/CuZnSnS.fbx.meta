@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: ff3bf8776cd684515b3112c2697c3504
+timeCreated: 1529530114
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Ball (NURBS)_Copper
+    100002: Ball (NURBS)_Sulfur
+    100004: Ball (NURBS)_Tin
+    100006: Ball (NURBS)_Zinc
+    100008: Copper
+    100010: Copper|Ball (NURBS)_Copper|Dupli|0.0.0.0.0.0.0.0.0
+    100012: Copper|Ball (NURBS)_Copper|Dupli|1.0.0.0.0.0.0.0.0
+    100014: Copper|Ball (NURBS)_Copper|Dupli|10.0.0.0.0.0.0.0.0
+    100016: Copper|Ball (NURBS)_Copper|Dupli|11.0.0.0.0.0.0.0.0
+    100018: Copper|Ball (NURBS)_Copper|Dupli|12.0.0.0.0.0.0.0.0
+    100020: Copper|Ball (NURBS)_Copper|Dupli|2.0.0.0.0.0.0.0.0
+    100022: Copper|Ball (NURBS)_Copper|Dupli|3.0.0.0.0.0.0.0.0
+    100024: Copper|Ball (NURBS)_Copper|Dupli|4.0.0.0.0.0.0.0.0
+    100026: Copper|Ball (NURBS)_Copper|Dupli|5.0.0.0.0.0.0.0.0
+    100028: Copper|Ball (NURBS)_Copper|Dupli|6.0.0.0.0.0.0.0.0
+    100030: Copper|Ball (NURBS)_Copper|Dupli|7.0.0.0.0.0.0.0.0
+    100032: Copper|Ball (NURBS)_Copper|Dupli|8.0.0.0.0.0.0.0.0
+    100034: Copper|Ball (NURBS)_Copper|Dupli|9.0.0.0.0.0.0.0.0
+    100036: //RootNode
+    100038: Sulfur
+    100040: Sulfur|Ball (NURBS)_Sulfur|Dupli|0.0.0.0.0.0.0.0.0
+    100042: Sulfur|Ball (NURBS)_Sulfur|Dupli|1.0.0.0.0.0.0.0.0
+    100044: Sulfur|Ball (NURBS)_Sulfur|Dupli|10.0.0.0.0.0.0.0.0
+    100046: Sulfur|Ball (NURBS)_Sulfur|Dupli|11.0.0.0.0.0.0.0.0
+    100048: Sulfur|Ball (NURBS)_Sulfur|Dupli|12.0.0.0.0.0.0.0.0
+    100050: Sulfur|Ball (NURBS)_Sulfur|Dupli|13.0.0.0.0.0.0.0.0
+    100052: Sulfur|Ball (NURBS)_Sulfur|Dupli|14.0.0.0.0.0.0.0.0
+    100054: Sulfur|Ball (NURBS)_Sulfur|Dupli|15.0.0.0.0.0.0.0.0
+    100056: Sulfur|Ball (NURBS)_Sulfur|Dupli|16.0.0.0.0.0.0.0.0
+    100058: Sulfur|Ball (NURBS)_Sulfur|Dupli|17.0.0.0.0.0.0.0.0
+    100060: Sulfur|Ball (NURBS)_Sulfur|Dupli|18.0.0.0.0.0.0.0.0
+    100062: Sulfur|Ball (NURBS)_Sulfur|Dupli|19.0.0.0.0.0.0.0.0
+    100064: Sulfur|Ball (NURBS)_Sulfur|Dupli|2.0.0.0.0.0.0.0.0
+    100066: Sulfur|Ball (NURBS)_Sulfur|Dupli|20.0.0.0.0.0.0.0.0
+    100068: Sulfur|Ball (NURBS)_Sulfur|Dupli|21.0.0.0.0.0.0.0.0
+    100070: Sulfur|Ball (NURBS)_Sulfur|Dupli|22.0.0.0.0.0.0.0.0
+    100072: Sulfur|Ball (NURBS)_Sulfur|Dupli|23.0.0.0.0.0.0.0.0
+    100074: Sulfur|Ball (NURBS)_Sulfur|Dupli|24.0.0.0.0.0.0.0.0
+    100076: Sulfur|Ball (NURBS)_Sulfur|Dupli|25.0.0.0.0.0.0.0.0
+    100078: Sulfur|Ball (NURBS)_Sulfur|Dupli|26.0.0.0.0.0.0.0.0
+    100080: Sulfur|Ball (NURBS)_Sulfur|Dupli|27.0.0.0.0.0.0.0.0
+    100082: Sulfur|Ball (NURBS)_Sulfur|Dupli|28.0.0.0.0.0.0.0.0
+    100084: Sulfur|Ball (NURBS)_Sulfur|Dupli|29.0.0.0.0.0.0.0.0
+    100086: Sulfur|Ball (NURBS)_Sulfur|Dupli|3.0.0.0.0.0.0.0.0
+    100088: Sulfur|Ball (NURBS)_Sulfur|Dupli|30.0.0.0.0.0.0.0.0
+    100090: Sulfur|Ball (NURBS)_Sulfur|Dupli|31.0.0.0.0.0.0.0.0
+    100092: Sulfur|Ball (NURBS)_Sulfur|Dupli|32.0.0.0.0.0.0.0.0
+    100094: Sulfur|Ball (NURBS)_Sulfur|Dupli|33.0.0.0.0.0.0.0.0
+    100096: Sulfur|Ball (NURBS)_Sulfur|Dupli|34.0.0.0.0.0.0.0.0
+    100098: Sulfur|Ball (NURBS)_Sulfur|Dupli|35.0.0.0.0.0.0.0.0
+    100100: Sulfur|Ball (NURBS)_Sulfur|Dupli|36.0.0.0.0.0.0.0.0
+    100102: Sulfur|Ball (NURBS)_Sulfur|Dupli|37.0.0.0.0.0.0.0.0
+    100104: Sulfur|Ball (NURBS)_Sulfur|Dupli|38.0.0.0.0.0.0.0.0
+    100106: Sulfur|Ball (NURBS)_Sulfur|Dupli|39.0.0.0.0.0.0.0.0
+    100108: Sulfur|Ball (NURBS)_Sulfur|Dupli|4.0.0.0.0.0.0.0.0
+    100110: Sulfur|Ball (NURBS)_Sulfur|Dupli|40.0.0.0.0.0.0.0.0
+    100112: Sulfur|Ball (NURBS)_Sulfur|Dupli|41.0.0.0.0.0.0.0.0
+    100114: Sulfur|Ball (NURBS)_Sulfur|Dupli|42.0.0.0.0.0.0.0.0
+    100116: Sulfur|Ball (NURBS)_Sulfur|Dupli|43.0.0.0.0.0.0.0.0
+    100118: Sulfur|Ball (NURBS)_Sulfur|Dupli|44.0.0.0.0.0.0.0.0
+    100120: Sulfur|Ball (NURBS)_Sulfur|Dupli|45.0.0.0.0.0.0.0.0
+    100122: Sulfur|Ball (NURBS)_Sulfur|Dupli|46.0.0.0.0.0.0.0.0
+    100124: Sulfur|Ball (NURBS)_Sulfur|Dupli|47.0.0.0.0.0.0.0.0
+    100126: Sulfur|Ball (NURBS)_Sulfur|Dupli|5.0.0.0.0.0.0.0.0
+    100128: Sulfur|Ball (NURBS)_Sulfur|Dupli|6.0.0.0.0.0.0.0.0
+    100130: Sulfur|Ball (NURBS)_Sulfur|Dupli|7.0.0.0.0.0.0.0.0
+    100132: Sulfur|Ball (NURBS)_Sulfur|Dupli|8.0.0.0.0.0.0.0.0
+    100134: Sulfur|Ball (NURBS)_Sulfur|Dupli|9.0.0.0.0.0.0.0.0
+    100136: Tin
+    100138: Tin|Ball (NURBS)_Tin|Dupli|0.0.0.0.0.0.0.0.0
+    100140: Tin|Ball (NURBS)_Tin|Dupli|1.0.0.0.0.0.0.0.0
+    100142: Tin|Ball (NURBS)_Tin|Dupli|2.0.0.0.0.0.0.0.0
+    100144: Tin|Ball (NURBS)_Tin|Dupli|3.0.0.0.0.0.0.0.0
+    100146: Tin|Ball (NURBS)_Tin|Dupli|4.0.0.0.0.0.0.0.0
+    100148: Tin|Ball (NURBS)_Tin|Dupli|5.0.0.0.0.0.0.0.0
+    100150: Zinc
+    100152: Zinc|Ball (NURBS)_Zinc|Dupli|0.0.0.0.0.0.0.0.0
+    100154: Zinc|Ball (NURBS)_Zinc|Dupli|1.0.0.0.0.0.0.0.0
+    100156: Zinc|Ball (NURBS)_Zinc|Dupli|2.0.0.0.0.0.0.0.0
+    100158: Zinc|Ball (NURBS)_Zinc|Dupli|3.0.0.0.0.0.0.0.0
+    400000: Ball (NURBS)_Copper
+    400002: Ball (NURBS)_Sulfur
+    400004: Ball (NURBS)_Tin
+    400006: Ball (NURBS)_Zinc
+    400008: Copper
+    400010: Copper|Ball (NURBS)_Copper|Dupli|0.0.0.0.0.0.0.0.0
+    400012: Copper|Ball (NURBS)_Copper|Dupli|1.0.0.0.0.0.0.0.0
+    400014: Copper|Ball (NURBS)_Copper|Dupli|10.0.0.0.0.0.0.0.0
+    400016: Copper|Ball (NURBS)_Copper|Dupli|11.0.0.0.0.0.0.0.0
+    400018: Copper|Ball (NURBS)_Copper|Dupli|12.0.0.0.0.0.0.0.0
+    400020: Copper|Ball (NURBS)_Copper|Dupli|2.0.0.0.0.0.0.0.0
+    400022: Copper|Ball (NURBS)_Copper|Dupli|3.0.0.0.0.0.0.0.0
+    400024: Copper|Ball (NURBS)_Copper|Dupli|4.0.0.0.0.0.0.0.0
+    400026: Copper|Ball (NURBS)_Copper|Dupli|5.0.0.0.0.0.0.0.0
+    400028: Copper|Ball (NURBS)_Copper|Dupli|6.0.0.0.0.0.0.0.0
+    400030: Copper|Ball (NURBS)_Copper|Dupli|7.0.0.0.0.0.0.0.0
+    400032: Copper|Ball (NURBS)_Copper|Dupli|8.0.0.0.0.0.0.0.0
+    400034: Copper|Ball (NURBS)_Copper|Dupli|9.0.0.0.0.0.0.0.0
+    400036: //RootNode
+    400038: Sulfur
+    400040: Sulfur|Ball (NURBS)_Sulfur|Dupli|0.0.0.0.0.0.0.0.0
+    400042: Sulfur|Ball (NURBS)_Sulfur|Dupli|1.0.0.0.0.0.0.0.0
+    400044: Sulfur|Ball (NURBS)_Sulfur|Dupli|10.0.0.0.0.0.0.0.0
+    400046: Sulfur|Ball (NURBS)_Sulfur|Dupli|11.0.0.0.0.0.0.0.0
+    400048: Sulfur|Ball (NURBS)_Sulfur|Dupli|12.0.0.0.0.0.0.0.0
+    400050: Sulfur|Ball (NURBS)_Sulfur|Dupli|13.0.0.0.0.0.0.0.0
+    400052: Sulfur|Ball (NURBS)_Sulfur|Dupli|14.0.0.0.0.0.0.0.0
+    400054: Sulfur|Ball (NURBS)_Sulfur|Dupli|15.0.0.0.0.0.0.0.0
+    400056: Sulfur|Ball (NURBS)_Sulfur|Dupli|16.0.0.0.0.0.0.0.0
+    400058: Sulfur|Ball (NURBS)_Sulfur|Dupli|17.0.0.0.0.0.0.0.0
+    400060: Sulfur|Ball (NURBS)_Sulfur|Dupli|18.0.0.0.0.0.0.0.0
+    400062: Sulfur|Ball (NURBS)_Sulfur|Dupli|19.0.0.0.0.0.0.0.0
+    400064: Sulfur|Ball (NURBS)_Sulfur|Dupli|2.0.0.0.0.0.0.0.0
+    400066: Sulfur|Ball (NURBS)_Sulfur|Dupli|20.0.0.0.0.0.0.0.0
+    400068: Sulfur|Ball (NURBS)_Sulfur|Dupli|21.0.0.0.0.0.0.0.0
+    400070: Sulfur|Ball (NURBS)_Sulfur|Dupli|22.0.0.0.0.0.0.0.0
+    400072: Sulfur|Ball (NURBS)_Sulfur|Dupli|23.0.0.0.0.0.0.0.0
+    400074: Sulfur|Ball (NURBS)_Sulfur|Dupli|24.0.0.0.0.0.0.0.0
+    400076: Sulfur|Ball (NURBS)_Sulfur|Dupli|25.0.0.0.0.0.0.0.0
+    400078: Sulfur|Ball (NURBS)_Sulfur|Dupli|26.0.0.0.0.0.0.0.0
+    400080: Sulfur|Ball (NURBS)_Sulfur|Dupli|27.0.0.0.0.0.0.0.0
+    400082: Sulfur|Ball (NURBS)_Sulfur|Dupli|28.0.0.0.0.0.0.0.0
+    400084: Sulfur|Ball (NURBS)_Sulfur|Dupli|29.0.0.0.0.0.0.0.0
+    400086: Sulfur|Ball (NURBS)_Sulfur|Dupli|3.0.0.0.0.0.0.0.0
+    400088: Sulfur|Ball (NURBS)_Sulfur|Dupli|30.0.0.0.0.0.0.0.0
+    400090: Sulfur|Ball (NURBS)_Sulfur|Dupli|31.0.0.0.0.0.0.0.0
+    400092: Sulfur|Ball (NURBS)_Sulfur|Dupli|32.0.0.0.0.0.0.0.0
+    400094: Sulfur|Ball (NURBS)_Sulfur|Dupli|33.0.0.0.0.0.0.0.0
+    400096: Sulfur|Ball (NURBS)_Sulfur|Dupli|34.0.0.0.0.0.0.0.0
+    400098: Sulfur|Ball (NURBS)_Sulfur|Dupli|35.0.0.0.0.0.0.0.0
+    400100: Sulfur|Ball (NURBS)_Sulfur|Dupli|36.0.0.0.0.0.0.0.0
+    400102: Sulfur|Ball (NURBS)_Sulfur|Dupli|37.0.0.0.0.0.0.0.0
+    400104: Sulfur|Ball (NURBS)_Sulfur|Dupli|38.0.0.0.0.0.0.0.0
+    400106: Sulfur|Ball (NURBS)_Sulfur|Dupli|39.0.0.0.0.0.0.0.0
+    400108: Sulfur|Ball (NURBS)_Sulfur|Dupli|4.0.0.0.0.0.0.0.0
+    400110: Sulfur|Ball (NURBS)_Sulfur|Dupli|40.0.0.0.0.0.0.0.0
+    400112: Sulfur|Ball (NURBS)_Sulfur|Dupli|41.0.0.0.0.0.0.0.0
+    400114: Sulfur|Ball (NURBS)_Sulfur|Dupli|42.0.0.0.0.0.0.0.0
+    400116: Sulfur|Ball (NURBS)_Sulfur|Dupli|43.0.0.0.0.0.0.0.0
+    400118: Sulfur|Ball (NURBS)_Sulfur|Dupli|44.0.0.0.0.0.0.0.0
+    400120: Sulfur|Ball (NURBS)_Sulfur|Dupli|45.0.0.0.0.0.0.0.0
+    400122: Sulfur|Ball (NURBS)_Sulfur|Dupli|46.0.0.0.0.0.0.0.0
+    400124: Sulfur|Ball (NURBS)_Sulfur|Dupli|47.0.0.0.0.0.0.0.0
+    400126: Sulfur|Ball (NURBS)_Sulfur|Dupli|5.0.0.0.0.0.0.0.0
+    400128: Sulfur|Ball (NURBS)_Sulfur|Dupli|6.0.0.0.0.0.0.0.0
+    400130: Sulfur|Ball (NURBS)_Sulfur|Dupli|7.0.0.0.0.0.0.0.0
+    400132: Sulfur|Ball (NURBS)_Sulfur|Dupli|8.0.0.0.0.0.0.0.0
+    400134: Sulfur|Ball (NURBS)_Sulfur|Dupli|9.0.0.0.0.0.0.0.0
+    400136: Tin
+    400138: Tin|Ball (NURBS)_Tin|Dupli|0.0.0.0.0.0.0.0.0
+    400140: Tin|Ball (NURBS)_Tin|Dupli|1.0.0.0.0.0.0.0.0
+    400142: Tin|Ball (NURBS)_Tin|Dupli|2.0.0.0.0.0.0.0.0
+    400144: Tin|Ball (NURBS)_Tin|Dupli|3.0.0.0.0.0.0.0.0
+    400146: Tin|Ball (NURBS)_Tin|Dupli|4.0.0.0.0.0.0.0.0
+    400148: Tin|Ball (NURBS)_Tin|Dupli|5.0.0.0.0.0.0.0.0
+    400150: Zinc
+    400152: Zinc|Ball (NURBS)_Zinc|Dupli|0.0.0.0.0.0.0.0.0
+    400154: Zinc|Ball (NURBS)_Zinc|Dupli|1.0.0.0.0.0.0.0.0
+    400156: Zinc|Ball (NURBS)_Zinc|Dupli|2.0.0.0.0.0.0.0.0
+    400158: Zinc|Ball (NURBS)_Zinc|Dupli|3.0.0.0.0.0.0.0.0
+    2300000: Ball (NURBS)_Copper
+    2300002: Ball (NURBS)_Sulfur
+    2300004: Ball (NURBS)_Tin
+    2300006: Ball (NURBS)_Zinc
+    2300008: Copper
+    2300010: Copper|Ball (NURBS)_Copper|Dupli|0.0.0.0.0.0.0.0.0
+    2300012: Copper|Ball (NURBS)_Copper|Dupli|1.0.0.0.0.0.0.0.0
+    2300014: Copper|Ball (NURBS)_Copper|Dupli|10.0.0.0.0.0.0.0.0
+    2300016: Copper|Ball (NURBS)_Copper|Dupli|11.0.0.0.0.0.0.0.0
+    2300018: Copper|Ball (NURBS)_Copper|Dupli|12.0.0.0.0.0.0.0.0
+    2300020: Copper|Ball (NURBS)_Copper|Dupli|2.0.0.0.0.0.0.0.0
+    2300022: Copper|Ball (NURBS)_Copper|Dupli|3.0.0.0.0.0.0.0.0
+    2300024: Copper|Ball (NURBS)_Copper|Dupli|4.0.0.0.0.0.0.0.0
+    2300026: Copper|Ball (NURBS)_Copper|Dupli|5.0.0.0.0.0.0.0.0
+    2300028: Copper|Ball (NURBS)_Copper|Dupli|6.0.0.0.0.0.0.0.0
+    2300030: Copper|Ball (NURBS)_Copper|Dupli|7.0.0.0.0.0.0.0.0
+    2300032: Copper|Ball (NURBS)_Copper|Dupli|8.0.0.0.0.0.0.0.0
+    2300034: Copper|Ball (NURBS)_Copper|Dupli|9.0.0.0.0.0.0.0.0
+    2300036: Sulfur
+    2300038: Sulfur|Ball (NURBS)_Sulfur|Dupli|0.0.0.0.0.0.0.0.0
+    2300040: Sulfur|Ball (NURBS)_Sulfur|Dupli|1.0.0.0.0.0.0.0.0
+    2300042: Sulfur|Ball (NURBS)_Sulfur|Dupli|10.0.0.0.0.0.0.0.0
+    2300044: Sulfur|Ball (NURBS)_Sulfur|Dupli|11.0.0.0.0.0.0.0.0
+    2300046: Sulfur|Ball (NURBS)_Sulfur|Dupli|12.0.0.0.0.0.0.0.0
+    2300048: Sulfur|Ball (NURBS)_Sulfur|Dupli|13.0.0.0.0.0.0.0.0
+    2300050: Sulfur|Ball (NURBS)_Sulfur|Dupli|14.0.0.0.0.0.0.0.0
+    2300052: Sulfur|Ball (NURBS)_Sulfur|Dupli|15.0.0.0.0.0.0.0.0
+    2300054: Sulfur|Ball (NURBS)_Sulfur|Dupli|16.0.0.0.0.0.0.0.0
+    2300056: Sulfur|Ball (NURBS)_Sulfur|Dupli|17.0.0.0.0.0.0.0.0
+    2300058: Sulfur|Ball (NURBS)_Sulfur|Dupli|18.0.0.0.0.0.0.0.0
+    2300060: Sulfur|Ball (NURBS)_Sulfur|Dupli|19.0.0.0.0.0.0.0.0
+    2300062: Sulfur|Ball (NURBS)_Sulfur|Dupli|2.0.0.0.0.0.0.0.0
+    2300064: Sulfur|Ball (NURBS)_Sulfur|Dupli|20.0.0.0.0.0.0.0.0
+    2300066: Sulfur|Ball (NURBS)_Sulfur|Dupli|21.0.0.0.0.0.0.0.0
+    2300068: Sulfur|Ball (NURBS)_Sulfur|Dupli|22.0.0.0.0.0.0.0.0
+    2300070: Sulfur|Ball (NURBS)_Sulfur|Dupli|23.0.0.0.0.0.0.0.0
+    2300072: Sulfur|Ball (NURBS)_Sulfur|Dupli|24.0.0.0.0.0.0.0.0
+    2300074: Sulfur|Ball (NURBS)_Sulfur|Dupli|25.0.0.0.0.0.0.0.0
+    2300076: Sulfur|Ball (NURBS)_Sulfur|Dupli|26.0.0.0.0.0.0.0.0
+    2300078: Sulfur|Ball (NURBS)_Sulfur|Dupli|27.0.0.0.0.0.0.0.0
+    2300080: Sulfur|Ball (NURBS)_Sulfur|Dupli|28.0.0.0.0.0.0.0.0
+    2300082: Sulfur|Ball (NURBS)_Sulfur|Dupli|29.0.0.0.0.0.0.0.0
+    2300084: Sulfur|Ball (NURBS)_Sulfur|Dupli|3.0.0.0.0.0.0.0.0
+    2300086: Sulfur|Ball (NURBS)_Sulfur|Dupli|30.0.0.0.0.0.0.0.0
+    2300088: Sulfur|Ball (NURBS)_Sulfur|Dupli|31.0.0.0.0.0.0.0.0
+    2300090: Sulfur|Ball (NURBS)_Sulfur|Dupli|32.0.0.0.0.0.0.0.0
+    2300092: Sulfur|Ball (NURBS)_Sulfur|Dupli|33.0.0.0.0.0.0.0.0
+    2300094: Sulfur|Ball (NURBS)_Sulfur|Dupli|34.0.0.0.0.0.0.0.0
+    2300096: Sulfur|Ball (NURBS)_Sulfur|Dupli|35.0.0.0.0.0.0.0.0
+    2300098: Sulfur|Ball (NURBS)_Sulfur|Dupli|36.0.0.0.0.0.0.0.0
+    2300100: Sulfur|Ball (NURBS)_Sulfur|Dupli|37.0.0.0.0.0.0.0.0
+    2300102: Sulfur|Ball (NURBS)_Sulfur|Dupli|38.0.0.0.0.0.0.0.0
+    2300104: Sulfur|Ball (NURBS)_Sulfur|Dupli|39.0.0.0.0.0.0.0.0
+    2300106: Sulfur|Ball (NURBS)_Sulfur|Dupli|4.0.0.0.0.0.0.0.0
+    2300108: Sulfur|Ball (NURBS)_Sulfur|Dupli|40.0.0.0.0.0.0.0.0
+    2300110: Sulfur|Ball (NURBS)_Sulfur|Dupli|41.0.0.0.0.0.0.0.0
+    2300112: Sulfur|Ball (NURBS)_Sulfur|Dupli|42.0.0.0.0.0.0.0.0
+    2300114: Sulfur|Ball (NURBS)_Sulfur|Dupli|43.0.0.0.0.0.0.0.0
+    2300116: Sulfur|Ball (NURBS)_Sulfur|Dupli|44.0.0.0.0.0.0.0.0
+    2300118: Sulfur|Ball (NURBS)_Sulfur|Dupli|45.0.0.0.0.0.0.0.0
+    2300120: Sulfur|Ball (NURBS)_Sulfur|Dupli|46.0.0.0.0.0.0.0.0
+    2300122: Sulfur|Ball (NURBS)_Sulfur|Dupli|47.0.0.0.0.0.0.0.0
+    2300124: Sulfur|Ball (NURBS)_Sulfur|Dupli|5.0.0.0.0.0.0.0.0
+    2300126: Sulfur|Ball (NURBS)_Sulfur|Dupli|6.0.0.0.0.0.0.0.0
+    2300128: Sulfur|Ball (NURBS)_Sulfur|Dupli|7.0.0.0.0.0.0.0.0
+    2300130: Sulfur|Ball (NURBS)_Sulfur|Dupli|8.0.0.0.0.0.0.0.0
+    2300132: Sulfur|Ball (NURBS)_Sulfur|Dupli|9.0.0.0.0.0.0.0.0
+    2300134: Tin
+    2300136: Tin|Ball (NURBS)_Tin|Dupli|0.0.0.0.0.0.0.0.0
+    2300138: Tin|Ball (NURBS)_Tin|Dupli|1.0.0.0.0.0.0.0.0
+    2300140: Tin|Ball (NURBS)_Tin|Dupli|2.0.0.0.0.0.0.0.0
+    2300142: Tin|Ball (NURBS)_Tin|Dupli|3.0.0.0.0.0.0.0.0
+    2300144: Tin|Ball (NURBS)_Tin|Dupli|4.0.0.0.0.0.0.0.0
+    2300146: Tin|Ball (NURBS)_Tin|Dupli|5.0.0.0.0.0.0.0.0
+    2300148: Zinc
+    2300150: Zinc|Ball (NURBS)_Zinc|Dupli|0.0.0.0.0.0.0.0.0
+    2300152: Zinc|Ball (NURBS)_Zinc|Dupli|1.0.0.0.0.0.0.0.0
+    2300154: Zinc|Ball (NURBS)_Zinc|Dupli|2.0.0.0.0.0.0.0.0
+    2300156: Zinc|Ball (NURBS)_Zinc|Dupli|3.0.0.0.0.0.0.0.0
+    3300000: Ball (NURBS)_Copper
+    3300002: Ball (NURBS)_Sulfur
+    3300004: Ball (NURBS)_Tin
+    3300006: Ball (NURBS)_Zinc
+    3300008: Copper
+    3300010: Copper|Ball (NURBS)_Copper|Dupli|0.0.0.0.0.0.0.0.0
+    3300012: Copper|Ball (NURBS)_Copper|Dupli|1.0.0.0.0.0.0.0.0
+    3300014: Copper|Ball (NURBS)_Copper|Dupli|10.0.0.0.0.0.0.0.0
+    3300016: Copper|Ball (NURBS)_Copper|Dupli|11.0.0.0.0.0.0.0.0
+    3300018: Copper|Ball (NURBS)_Copper|Dupli|12.0.0.0.0.0.0.0.0
+    3300020: Copper|Ball (NURBS)_Copper|Dupli|2.0.0.0.0.0.0.0.0
+    3300022: Copper|Ball (NURBS)_Copper|Dupli|3.0.0.0.0.0.0.0.0
+    3300024: Copper|Ball (NURBS)_Copper|Dupli|4.0.0.0.0.0.0.0.0
+    3300026: Copper|Ball (NURBS)_Copper|Dupli|5.0.0.0.0.0.0.0.0
+    3300028: Copper|Ball (NURBS)_Copper|Dupli|6.0.0.0.0.0.0.0.0
+    3300030: Copper|Ball (NURBS)_Copper|Dupli|7.0.0.0.0.0.0.0.0
+    3300032: Copper|Ball (NURBS)_Copper|Dupli|8.0.0.0.0.0.0.0.0
+    3300034: Copper|Ball (NURBS)_Copper|Dupli|9.0.0.0.0.0.0.0.0
+    3300036: Sulfur
+    3300038: Sulfur|Ball (NURBS)_Sulfur|Dupli|0.0.0.0.0.0.0.0.0
+    3300040: Sulfur|Ball (NURBS)_Sulfur|Dupli|1.0.0.0.0.0.0.0.0
+    3300042: Sulfur|Ball (NURBS)_Sulfur|Dupli|10.0.0.0.0.0.0.0.0
+    3300044: Sulfur|Ball (NURBS)_Sulfur|Dupli|11.0.0.0.0.0.0.0.0
+    3300046: Sulfur|Ball (NURBS)_Sulfur|Dupli|12.0.0.0.0.0.0.0.0
+    3300048: Sulfur|Ball (NURBS)_Sulfur|Dupli|13.0.0.0.0.0.0.0.0
+    3300050: Sulfur|Ball (NURBS)_Sulfur|Dupli|14.0.0.0.0.0.0.0.0
+    3300052: Sulfur|Ball (NURBS)_Sulfur|Dupli|15.0.0.0.0.0.0.0.0
+    3300054: Sulfur|Ball (NURBS)_Sulfur|Dupli|16.0.0.0.0.0.0.0.0
+    3300056: Sulfur|Ball (NURBS)_Sulfur|Dupli|17.0.0.0.0.0.0.0.0
+    3300058: Sulfur|Ball (NURBS)_Sulfur|Dupli|18.0.0.0.0.0.0.0.0
+    3300060: Sulfur|Ball (NURBS)_Sulfur|Dupli|19.0.0.0.0.0.0.0.0
+    3300062: Sulfur|Ball (NURBS)_Sulfur|Dupli|2.0.0.0.0.0.0.0.0
+    3300064: Sulfur|Ball (NURBS)_Sulfur|Dupli|20.0.0.0.0.0.0.0.0
+    3300066: Sulfur|Ball (NURBS)_Sulfur|Dupli|21.0.0.0.0.0.0.0.0
+    3300068: Sulfur|Ball (NURBS)_Sulfur|Dupli|22.0.0.0.0.0.0.0.0
+    3300070: Sulfur|Ball (NURBS)_Sulfur|Dupli|23.0.0.0.0.0.0.0.0
+    3300072: Sulfur|Ball (NURBS)_Sulfur|Dupli|24.0.0.0.0.0.0.0.0
+    3300074: Sulfur|Ball (NURBS)_Sulfur|Dupli|25.0.0.0.0.0.0.0.0
+    3300076: Sulfur|Ball (NURBS)_Sulfur|Dupli|26.0.0.0.0.0.0.0.0
+    3300078: Sulfur|Ball (NURBS)_Sulfur|Dupli|27.0.0.0.0.0.0.0.0
+    3300080: Sulfur|Ball (NURBS)_Sulfur|Dupli|28.0.0.0.0.0.0.0.0
+    3300082: Sulfur|Ball (NURBS)_Sulfur|Dupli|29.0.0.0.0.0.0.0.0
+    3300084: Sulfur|Ball (NURBS)_Sulfur|Dupli|3.0.0.0.0.0.0.0.0
+    3300086: Sulfur|Ball (NURBS)_Sulfur|Dupli|30.0.0.0.0.0.0.0.0
+    3300088: Sulfur|Ball (NURBS)_Sulfur|Dupli|31.0.0.0.0.0.0.0.0
+    3300090: Sulfur|Ball (NURBS)_Sulfur|Dupli|32.0.0.0.0.0.0.0.0
+    3300092: Sulfur|Ball (NURBS)_Sulfur|Dupli|33.0.0.0.0.0.0.0.0
+    3300094: Sulfur|Ball (NURBS)_Sulfur|Dupli|34.0.0.0.0.0.0.0.0
+    3300096: Sulfur|Ball (NURBS)_Sulfur|Dupli|35.0.0.0.0.0.0.0.0
+    3300098: Sulfur|Ball (NURBS)_Sulfur|Dupli|36.0.0.0.0.0.0.0.0
+    3300100: Sulfur|Ball (NURBS)_Sulfur|Dupli|37.0.0.0.0.0.0.0.0
+    3300102: Sulfur|Ball (NURBS)_Sulfur|Dupli|38.0.0.0.0.0.0.0.0
+    3300104: Sulfur|Ball (NURBS)_Sulfur|Dupli|39.0.0.0.0.0.0.0.0
+    3300106: Sulfur|Ball (NURBS)_Sulfur|Dupli|4.0.0.0.0.0.0.0.0
+    3300108: Sulfur|Ball (NURBS)_Sulfur|Dupli|40.0.0.0.0.0.0.0.0
+    3300110: Sulfur|Ball (NURBS)_Sulfur|Dupli|41.0.0.0.0.0.0.0.0
+    3300112: Sulfur|Ball (NURBS)_Sulfur|Dupli|42.0.0.0.0.0.0.0.0
+    3300114: Sulfur|Ball (NURBS)_Sulfur|Dupli|43.0.0.0.0.0.0.0.0
+    3300116: Sulfur|Ball (NURBS)_Sulfur|Dupli|44.0.0.0.0.0.0.0.0
+    3300118: Sulfur|Ball (NURBS)_Sulfur|Dupli|45.0.0.0.0.0.0.0.0
+    3300120: Sulfur|Ball (NURBS)_Sulfur|Dupli|46.0.0.0.0.0.0.0.0
+    3300122: Sulfur|Ball (NURBS)_Sulfur|Dupli|47.0.0.0.0.0.0.0.0
+    3300124: Sulfur|Ball (NURBS)_Sulfur|Dupli|5.0.0.0.0.0.0.0.0
+    3300126: Sulfur|Ball (NURBS)_Sulfur|Dupli|6.0.0.0.0.0.0.0.0
+    3300128: Sulfur|Ball (NURBS)_Sulfur|Dupli|7.0.0.0.0.0.0.0.0
+    3300130: Sulfur|Ball (NURBS)_Sulfur|Dupli|8.0.0.0.0.0.0.0.0
+    3300132: Sulfur|Ball (NURBS)_Sulfur|Dupli|9.0.0.0.0.0.0.0.0
+    3300134: Tin
+    3300136: Tin|Ball (NURBS)_Tin|Dupli|0.0.0.0.0.0.0.0.0
+    3300138: Tin|Ball (NURBS)_Tin|Dupli|1.0.0.0.0.0.0.0.0
+    3300140: Tin|Ball (NURBS)_Tin|Dupli|2.0.0.0.0.0.0.0.0
+    3300142: Tin|Ball (NURBS)_Tin|Dupli|3.0.0.0.0.0.0.0.0
+    3300144: Tin|Ball (NURBS)_Tin|Dupli|4.0.0.0.0.0.0.0.0
+    3300146: Tin|Ball (NURBS)_Tin|Dupli|5.0.0.0.0.0.0.0.0
+    3300148: Zinc
+    3300150: Zinc|Ball (NURBS)_Zinc|Dupli|0.0.0.0.0.0.0.0.0
+    3300152: Zinc|Ball (NURBS)_Zinc|Dupli|1.0.0.0.0.0.0.0.0
+    3300154: Zinc|Ball (NURBS)_Zinc|Dupli|2.0.0.0.0.0.0.0.0
+    3300156: Zinc|Ball (NURBS)_Zinc|Dupli|3.0.0.0.0.0.0.0.0
+    4300000: Sulfur
+    4300002: Sulfur|Ball (NURBS)_Sulfur|Dupli|0.0.0.0.0.0.0.0.0
+    4300004: Ball (NURBS)_Sulfur
+    4300006: Tin
+    4300008: Tin|Ball (NURBS)_Tin|Dupli|0.0.0.0.0.0.0.0.0
+    4300010: Ball (NURBS)_Tin
+    4300012: Zinc
+    4300014: Zinc|Ball (NURBS)_Zinc|Dupli|0.0.0.0.0.0.0.0.0
+    4300016: Ball (NURBS)_Zinc
+    4300018: Copper
+    4300020: Copper|Ball (NURBS)_Copper|Dupli|0.0.0.0.0.0.0.0.0
+    4300022: Ball (NURBS)_Copper
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: molecules
+  assetBundleVariant: 

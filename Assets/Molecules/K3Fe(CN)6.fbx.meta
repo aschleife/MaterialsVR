@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: f99e2645932e2446fa4f1dc2aba1e902
+timeCreated: 1529695993
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Ball (NURBS)_Carbon
+    100002: Ball (NURBS)_Iron
+    100004: Ball (NURBS)_Nitrogen
+    100006: Ball (NURBS)_Potassium
+    100008: Carbon
+    100010: Carbon|Ball (NURBS)_Carbon|Dupli|0.0.0.0.0.0.0.0.0
+    100012: Carbon|Ball (NURBS)_Carbon|Dupli|1.0.0.0.0.0.0.0.0
+    100014: Carbon|Ball (NURBS)_Carbon|Dupli|10.0.0.0.0.0.0.0.0
+    100016: Carbon|Ball (NURBS)_Carbon|Dupli|11.0.0.0.0.0.0.0.0
+    100018: Carbon|Ball (NURBS)_Carbon|Dupli|12.0.0.0.0.0.0.0.0
+    100020: Carbon|Ball (NURBS)_Carbon|Dupli|13.0.0.0.0.0.0.0.0
+    100022: Carbon|Ball (NURBS)_Carbon|Dupli|14.0.0.0.0.0.0.0.0
+    100024: Carbon|Ball (NURBS)_Carbon|Dupli|15.0.0.0.0.0.0.0.0
+    100026: Carbon|Ball (NURBS)_Carbon|Dupli|16.0.0.0.0.0.0.0.0
+    100028: Carbon|Ball (NURBS)_Carbon|Dupli|17.0.0.0.0.0.0.0.0
+    100030: Carbon|Ball (NURBS)_Carbon|Dupli|18.0.0.0.0.0.0.0.0
+    100032: Carbon|Ball (NURBS)_Carbon|Dupli|19.0.0.0.0.0.0.0.0
+    100034: Carbon|Ball (NURBS)_Carbon|Dupli|2.0.0.0.0.0.0.0.0
+    100036: Carbon|Ball (NURBS)_Carbon|Dupli|20.0.0.0.0.0.0.0.0
+    100038: Carbon|Ball (NURBS)_Carbon|Dupli|21.0.0.0.0.0.0.0.0
+    100040: Carbon|Ball (NURBS)_Carbon|Dupli|22.0.0.0.0.0.0.0.0
+    100042: Carbon|Ball (NURBS)_Carbon|Dupli|23.0.0.0.0.0.0.0.0
+    100044: Carbon|Ball (NURBS)_Carbon|Dupli|24.0.0.0.0.0.0.0.0
+    100046: Carbon|Ball (NURBS)_Carbon|Dupli|25.0.0.0.0.0.0.0.0
+    100048: Carbon|Ball (NURBS)_Carbon|Dupli|26.0.0.0.0.0.0.0.0
+    100050: Carbon|Ball (NURBS)_Carbon|Dupli|27.0.0.0.0.0.0.0.0
+    100052: Carbon|Ball (NURBS)_Carbon|Dupli|28.0.0.0.0.0.0.0.0
+    100054: Carbon|Ball (NURBS)_Carbon|Dupli|29.0.0.0.0.0.0.0.0
+    100056: Carbon|Ball (NURBS)_Carbon|Dupli|3.0.0.0.0.0.0.0.0
+    100058: Carbon|Ball (NURBS)_Carbon|Dupli|30.0.0.0.0.0.0.0.0
+    100060: Carbon|Ball (NURBS)_Carbon|Dupli|31.0.0.0.0.0.0.0.0
+    100062: Carbon|Ball (NURBS)_Carbon|Dupli|32.0.0.0.0.0.0.0.0
+    100064: Carbon|Ball (NURBS)_Carbon|Dupli|33.0.0.0.0.0.0.0.0
+    100066: Carbon|Ball (NURBS)_Carbon|Dupli|34.0.0.0.0.0.0.0.0
+    100068: Carbon|Ball (NURBS)_Carbon|Dupli|35.0.0.0.0.0.0.0.0
+    100070: Carbon|Ball (NURBS)_Carbon|Dupli|36.0.0.0.0.0.0.0.0
+    100072: Carbon|Ball (NURBS)_Carbon|Dupli|37.0.0.0.0.0.0.0.0
+    100074: Carbon|Ball (NURBS)_Carbon|Dupli|38.0.0.0.0.0.0.0.0
+    100076: Carbon|Ball (NURBS)_Carbon|Dupli|39.0.0.0.0.0.0.0.0
+    100078: Carbon|Ball (NURBS)_Carbon|Dupli|4.0.0.0.0.0.0.0.0
+    100080: Carbon|Ball (NURBS)_Carbon|Dupli|40.0.0.0.0.0.0.0.0
+    100082: Carbon|Ball (NURBS)_Carbon|Dupli|41.0.0.0.0.0.0.0.0
+    100084: Carbon|Ball (NURBS)_Carbon|Dupli|42.0.0.0.0.0.0.0.0
+    100086: Carbon|Ball (NURBS)_Carbon|Dupli|43.0.0.0.0.0.0.0.0
+    100088: Carbon|Ball (NURBS)_Carbon|Dupli|44.0.0.0.0.0.0.0.0
+    100090: Carbon|Ball (NURBS)_Carbon|Dupli|45.0.0.0.0.0.0.0.0
+    100092: Carbon|Ball (NURBS)_Carbon|Dupli|46.0.0.0.0.0.0.0.0
+    100094: Carbon|Ball (NURBS)_Carbon|Dupli|47.0.0.0.0.0.0.0.0
+    100096: Carbon|Ball (NURBS)_Carbon|Dupli|48.0.0.0.0.0.0.0.0
+    100098: Carbon|Ball (NURBS)_Carbon|Dupli|49.0.0.0.0.0.0.0.0
+    100100: Carbon|Ball (NURBS)_Carbon|Dupli|5.0.0.0.0.0.0.0.0
+    100102: Carbon|Ball (NURBS)_Carbon|Dupli|50.0.0.0.0.0.0.0.0
+    100104: Carbon|Ball (NURBS)_Carbon|Dupli|51.0.0.0.0.0.0.0.0
+    100106: Carbon|Ball (NURBS)_Carbon|Dupli|52.0.0.0.0.0.0.0.0
+    100108: Carbon|Ball (NURBS)_Carbon|Dupli|53.0.0.0.0.0.0.0.0
+    100110: Carbon|Ball (NURBS)_Carbon|Dupli|54.0.0.0.0.0.0.0.0
+    100112: Carbon|Ball (NURBS)_Carbon|Dupli|55.0.0.0.0.0.0.0.0
+    100114: Carbon|Ball (NURBS)_Carbon|Dupli|56.0.0.0.0.0.0.0.0
+    100116: Carbon|Ball (NURBS)_Carbon|Dupli|57.0.0.0.0.0.0.0.0
+    100118: Carbon|Ball (NURBS)_Carbon|Dupli|58.0.0.0.0.0.0.0.0
+    100120: Carbon|Ball (NURBS)_Carbon|Dupli|59.0.0.0.0.0.0.0.0
+    100122: Carbon|Ball (NURBS)_Carbon|Dupli|6.0.0.0.0.0.0.0.0
+    100124: Carbon|Ball (NURBS)_Carbon|Dupli|7.0.0.0.0.0.0.0.0
+    100126: Carbon|Ball (NURBS)_Carbon|Dupli|8.0.0.0.0.0.0.0.0
+    100128: Carbon|Ball (NURBS)_Carbon|Dupli|9.0.0.0.0.0.0.0.0
+    100130: Iron
+    100132: Iron|Ball (NURBS)_Iron|Dupli|0.0.0.0.0.0.0.0.0
+    100134: Iron|Ball (NURBS)_Iron|Dupli|1.0.0.0.0.0.0.0.0
+    100136: Iron|Ball (NURBS)_Iron|Dupli|2.0.0.0.0.0.0.0.0
+    100138: Iron|Ball (NURBS)_Iron|Dupli|3.0.0.0.0.0.0.0.0
+    100140: Iron|Ball (NURBS)_Iron|Dupli|4.0.0.0.0.0.0.0.0
+    100142: Iron|Ball (NURBS)_Iron|Dupli|5.0.0.0.0.0.0.0.0
+    100144: Iron|Ball (NURBS)_Iron|Dupli|6.0.0.0.0.0.0.0.0
+    100146: Iron|Ball (NURBS)_Iron|Dupli|7.0.0.0.0.0.0.0.0
+    100148: Iron|Ball (NURBS)_Iron|Dupli|8.0.0.0.0.0.0.0.0
+    100150: Iron|Ball (NURBS)_Iron|Dupli|9.0.0.0.0.0.0.0.0
+    100152: //RootNode
+    100154: Nitrogen
+    100156: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|0.0.0.0.0.0.0.0.0
+    100158: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|1.0.0.0.0.0.0.0.0
+    100160: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|10.0.0.0.0.0.0.0.0
+    100162: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|11.0.0.0.0.0.0.0.0
+    100164: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|12.0.0.0.0.0.0.0.0
+    100166: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|13.0.0.0.0.0.0.0.0
+    100168: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|14.0.0.0.0.0.0.0.0
+    100170: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|15.0.0.0.0.0.0.0.0
+    100172: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|16.0.0.0.0.0.0.0.0
+    100174: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|17.0.0.0.0.0.0.0.0
+    100176: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|18.0.0.0.0.0.0.0.0
+    100178: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|19.0.0.0.0.0.0.0.0
+    100180: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|2.0.0.0.0.0.0.0.0
+    100182: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|20.0.0.0.0.0.0.0.0
+    100184: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|21.0.0.0.0.0.0.0.0
+    100186: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|22.0.0.0.0.0.0.0.0
+    100188: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|23.0.0.0.0.0.0.0.0
+    100190: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|24.0.0.0.0.0.0.0.0
+    100192: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|25.0.0.0.0.0.0.0.0
+    100194: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|26.0.0.0.0.0.0.0.0
+    100196: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|27.0.0.0.0.0.0.0.0
+    100198: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|28.0.0.0.0.0.0.0.0
+    100200: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|29.0.0.0.0.0.0.0.0
+    100202: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|3.0.0.0.0.0.0.0.0
+    100204: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|30.0.0.0.0.0.0.0.0
+    100206: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|31.0.0.0.0.0.0.0.0
+    100208: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|32.0.0.0.0.0.0.0.0
+    100210: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|33.0.0.0.0.0.0.0.0
+    100212: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|34.0.0.0.0.0.0.0.0
+    100214: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|35.0.0.0.0.0.0.0.0
+    100216: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|36.0.0.0.0.0.0.0.0
+    100218: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|37.0.0.0.0.0.0.0.0
+    100220: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|38.0.0.0.0.0.0.0.0
+    100222: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|39.0.0.0.0.0.0.0.0
+    100224: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|4.0.0.0.0.0.0.0.0
+    100226: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|40.0.0.0.0.0.0.0.0
+    100228: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|41.0.0.0.0.0.0.0.0
+    100230: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|42.0.0.0.0.0.0.0.0
+    100232: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|43.0.0.0.0.0.0.0.0
+    100234: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|44.0.0.0.0.0.0.0.0
+    100236: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|45.0.0.0.0.0.0.0.0
+    100238: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|46.0.0.0.0.0.0.0.0
+    100240: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|47.0.0.0.0.0.0.0.0
+    100242: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|48.0.0.0.0.0.0.0.0
+    100244: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|49.0.0.0.0.0.0.0.0
+    100246: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|5.0.0.0.0.0.0.0.0
+    100248: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|50.0.0.0.0.0.0.0.0
+    100250: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|51.0.0.0.0.0.0.0.0
+    100252: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|52.0.0.0.0.0.0.0.0
+    100254: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|53.0.0.0.0.0.0.0.0
+    100256: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|54.0.0.0.0.0.0.0.0
+    100258: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|55.0.0.0.0.0.0.0.0
+    100260: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|56.0.0.0.0.0.0.0.0
+    100262: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|57.0.0.0.0.0.0.0.0
+    100264: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|58.0.0.0.0.0.0.0.0
+    100266: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|59.0.0.0.0.0.0.0.0
+    100268: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|6.0.0.0.0.0.0.0.0
+    100270: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|7.0.0.0.0.0.0.0.0
+    100272: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|8.0.0.0.0.0.0.0.0
+    100274: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|9.0.0.0.0.0.0.0.0
+    100276: Potassium
+    100278: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    100280: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    100282: Potassium|Ball (NURBS)_Potassium|Dupli|10.0.0.0.0.0.0.0.0
+    100284: Potassium|Ball (NURBS)_Potassium|Dupli|11.0.0.0.0.0.0.0.0
+    100286: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    100288: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    100290: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    100292: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    100294: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    100296: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    100298: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    100300: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    400000: Ball (NURBS)_Carbon
+    400002: Ball (NURBS)_Iron
+    400004: Ball (NURBS)_Nitrogen
+    400006: Ball (NURBS)_Potassium
+    400008: Carbon
+    400010: Carbon|Ball (NURBS)_Carbon|Dupli|0.0.0.0.0.0.0.0.0
+    400012: Carbon|Ball (NURBS)_Carbon|Dupli|1.0.0.0.0.0.0.0.0
+    400014: Carbon|Ball (NURBS)_Carbon|Dupli|10.0.0.0.0.0.0.0.0
+    400016: Carbon|Ball (NURBS)_Carbon|Dupli|11.0.0.0.0.0.0.0.0
+    400018: Carbon|Ball (NURBS)_Carbon|Dupli|12.0.0.0.0.0.0.0.0
+    400020: Carbon|Ball (NURBS)_Carbon|Dupli|13.0.0.0.0.0.0.0.0
+    400022: Carbon|Ball (NURBS)_Carbon|Dupli|14.0.0.0.0.0.0.0.0
+    400024: Carbon|Ball (NURBS)_Carbon|Dupli|15.0.0.0.0.0.0.0.0
+    400026: Carbon|Ball (NURBS)_Carbon|Dupli|16.0.0.0.0.0.0.0.0
+    400028: Carbon|Ball (NURBS)_Carbon|Dupli|17.0.0.0.0.0.0.0.0
+    400030: Carbon|Ball (NURBS)_Carbon|Dupli|18.0.0.0.0.0.0.0.0
+    400032: Carbon|Ball (NURBS)_Carbon|Dupli|19.0.0.0.0.0.0.0.0
+    400034: Carbon|Ball (NURBS)_Carbon|Dupli|2.0.0.0.0.0.0.0.0
+    400036: Carbon|Ball (NURBS)_Carbon|Dupli|20.0.0.0.0.0.0.0.0
+    400038: Carbon|Ball (NURBS)_Carbon|Dupli|21.0.0.0.0.0.0.0.0
+    400040: Carbon|Ball (NURBS)_Carbon|Dupli|22.0.0.0.0.0.0.0.0
+    400042: Carbon|Ball (NURBS)_Carbon|Dupli|23.0.0.0.0.0.0.0.0
+    400044: Carbon|Ball (NURBS)_Carbon|Dupli|24.0.0.0.0.0.0.0.0
+    400046: Carbon|Ball (NURBS)_Carbon|Dupli|25.0.0.0.0.0.0.0.0
+    400048: Carbon|Ball (NURBS)_Carbon|Dupli|26.0.0.0.0.0.0.0.0
+    400050: Carbon|Ball (NURBS)_Carbon|Dupli|27.0.0.0.0.0.0.0.0
+    400052: Carbon|Ball (NURBS)_Carbon|Dupli|28.0.0.0.0.0.0.0.0
+    400054: Carbon|Ball (NURBS)_Carbon|Dupli|29.0.0.0.0.0.0.0.0
+    400056: Carbon|Ball (NURBS)_Carbon|Dupli|3.0.0.0.0.0.0.0.0
+    400058: Carbon|Ball (NURBS)_Carbon|Dupli|30.0.0.0.0.0.0.0.0
+    400060: Carbon|Ball (NURBS)_Carbon|Dupli|31.0.0.0.0.0.0.0.0
+    400062: Carbon|Ball (NURBS)_Carbon|Dupli|32.0.0.0.0.0.0.0.0
+    400064: Carbon|Ball (NURBS)_Carbon|Dupli|33.0.0.0.0.0.0.0.0
+    400066: Carbon|Ball (NURBS)_Carbon|Dupli|34.0.0.0.0.0.0.0.0
+    400068: Carbon|Ball (NURBS)_Carbon|Dupli|35.0.0.0.0.0.0.0.0
+    400070: Carbon|Ball (NURBS)_Carbon|Dupli|36.0.0.0.0.0.0.0.0
+    400072: Carbon|Ball (NURBS)_Carbon|Dupli|37.0.0.0.0.0.0.0.0
+    400074: Carbon|Ball (NURBS)_Carbon|Dupli|38.0.0.0.0.0.0.0.0
+    400076: Carbon|Ball (NURBS)_Carbon|Dupli|39.0.0.0.0.0.0.0.0
+    400078: Carbon|Ball (NURBS)_Carbon|Dupli|4.0.0.0.0.0.0.0.0
+    400080: Carbon|Ball (NURBS)_Carbon|Dupli|40.0.0.0.0.0.0.0.0
+    400082: Carbon|Ball (NURBS)_Carbon|Dupli|41.0.0.0.0.0.0.0.0
+    400084: Carbon|Ball (NURBS)_Carbon|Dupli|42.0.0.0.0.0.0.0.0
+    400086: Carbon|Ball (NURBS)_Carbon|Dupli|43.0.0.0.0.0.0.0.0
+    400088: Carbon|Ball (NURBS)_Carbon|Dupli|44.0.0.0.0.0.0.0.0
+    400090: Carbon|Ball (NURBS)_Carbon|Dupli|45.0.0.0.0.0.0.0.0
+    400092: Carbon|Ball (NURBS)_Carbon|Dupli|46.0.0.0.0.0.0.0.0
+    400094: Carbon|Ball (NURBS)_Carbon|Dupli|47.0.0.0.0.0.0.0.0
+    400096: Carbon|Ball (NURBS)_Carbon|Dupli|48.0.0.0.0.0.0.0.0
+    400098: Carbon|Ball (NURBS)_Carbon|Dupli|49.0.0.0.0.0.0.0.0
+    400100: Carbon|Ball (NURBS)_Carbon|Dupli|5.0.0.0.0.0.0.0.0
+    400102: Carbon|Ball (NURBS)_Carbon|Dupli|50.0.0.0.0.0.0.0.0
+    400104: Carbon|Ball (NURBS)_Carbon|Dupli|51.0.0.0.0.0.0.0.0
+    400106: Carbon|Ball (NURBS)_Carbon|Dupli|52.0.0.0.0.0.0.0.0
+    400108: Carbon|Ball (NURBS)_Carbon|Dupli|53.0.0.0.0.0.0.0.0
+    400110: Carbon|Ball (NURBS)_Carbon|Dupli|54.0.0.0.0.0.0.0.0
+    400112: Carbon|Ball (NURBS)_Carbon|Dupli|55.0.0.0.0.0.0.0.0
+    400114: Carbon|Ball (NURBS)_Carbon|Dupli|56.0.0.0.0.0.0.0.0
+    400116: Carbon|Ball (NURBS)_Carbon|Dupli|57.0.0.0.0.0.0.0.0
+    400118: Carbon|Ball (NURBS)_Carbon|Dupli|58.0.0.0.0.0.0.0.0
+    400120: Carbon|Ball (NURBS)_Carbon|Dupli|59.0.0.0.0.0.0.0.0
+    400122: Carbon|Ball (NURBS)_Carbon|Dupli|6.0.0.0.0.0.0.0.0
+    400124: Carbon|Ball (NURBS)_Carbon|Dupli|7.0.0.0.0.0.0.0.0
+    400126: Carbon|Ball (NURBS)_Carbon|Dupli|8.0.0.0.0.0.0.0.0
+    400128: Carbon|Ball (NURBS)_Carbon|Dupli|9.0.0.0.0.0.0.0.0
+    400130: Iron
+    400132: Iron|Ball (NURBS)_Iron|Dupli|0.0.0.0.0.0.0.0.0
+    400134: Iron|Ball (NURBS)_Iron|Dupli|1.0.0.0.0.0.0.0.0
+    400136: Iron|Ball (NURBS)_Iron|Dupli|2.0.0.0.0.0.0.0.0
+    400138: Iron|Ball (NURBS)_Iron|Dupli|3.0.0.0.0.0.0.0.0
+    400140: Iron|Ball (NURBS)_Iron|Dupli|4.0.0.0.0.0.0.0.0
+    400142: Iron|Ball (NURBS)_Iron|Dupli|5.0.0.0.0.0.0.0.0
+    400144: Iron|Ball (NURBS)_Iron|Dupli|6.0.0.0.0.0.0.0.0
+    400146: Iron|Ball (NURBS)_Iron|Dupli|7.0.0.0.0.0.0.0.0
+    400148: Iron|Ball (NURBS)_Iron|Dupli|8.0.0.0.0.0.0.0.0
+    400150: Iron|Ball (NURBS)_Iron|Dupli|9.0.0.0.0.0.0.0.0
+    400152: //RootNode
+    400154: Nitrogen
+    400156: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|0.0.0.0.0.0.0.0.0
+    400158: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|1.0.0.0.0.0.0.0.0
+    400160: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|10.0.0.0.0.0.0.0.0
+    400162: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|11.0.0.0.0.0.0.0.0
+    400164: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|12.0.0.0.0.0.0.0.0
+    400166: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|13.0.0.0.0.0.0.0.0
+    400168: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|14.0.0.0.0.0.0.0.0
+    400170: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|15.0.0.0.0.0.0.0.0
+    400172: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|16.0.0.0.0.0.0.0.0
+    400174: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|17.0.0.0.0.0.0.0.0
+    400176: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|18.0.0.0.0.0.0.0.0
+    400178: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|19.0.0.0.0.0.0.0.0
+    400180: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|2.0.0.0.0.0.0.0.0
+    400182: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|20.0.0.0.0.0.0.0.0
+    400184: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|21.0.0.0.0.0.0.0.0
+    400186: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|22.0.0.0.0.0.0.0.0
+    400188: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|23.0.0.0.0.0.0.0.0
+    400190: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|24.0.0.0.0.0.0.0.0
+    400192: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|25.0.0.0.0.0.0.0.0
+    400194: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|26.0.0.0.0.0.0.0.0
+    400196: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|27.0.0.0.0.0.0.0.0
+    400198: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|28.0.0.0.0.0.0.0.0
+    400200: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|29.0.0.0.0.0.0.0.0
+    400202: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|3.0.0.0.0.0.0.0.0
+    400204: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|30.0.0.0.0.0.0.0.0
+    400206: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|31.0.0.0.0.0.0.0.0
+    400208: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|32.0.0.0.0.0.0.0.0
+    400210: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|33.0.0.0.0.0.0.0.0
+    400212: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|34.0.0.0.0.0.0.0.0
+    400214: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|35.0.0.0.0.0.0.0.0
+    400216: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|36.0.0.0.0.0.0.0.0
+    400218: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|37.0.0.0.0.0.0.0.0
+    400220: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|38.0.0.0.0.0.0.0.0
+    400222: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|39.0.0.0.0.0.0.0.0
+    400224: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|4.0.0.0.0.0.0.0.0
+    400226: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|40.0.0.0.0.0.0.0.0
+    400228: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|41.0.0.0.0.0.0.0.0
+    400230: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|42.0.0.0.0.0.0.0.0
+    400232: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|43.0.0.0.0.0.0.0.0
+    400234: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|44.0.0.0.0.0.0.0.0
+    400236: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|45.0.0.0.0.0.0.0.0
+    400238: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|46.0.0.0.0.0.0.0.0
+    400240: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|47.0.0.0.0.0.0.0.0
+    400242: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|48.0.0.0.0.0.0.0.0
+    400244: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|49.0.0.0.0.0.0.0.0
+    400246: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|5.0.0.0.0.0.0.0.0
+    400248: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|50.0.0.0.0.0.0.0.0
+    400250: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|51.0.0.0.0.0.0.0.0
+    400252: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|52.0.0.0.0.0.0.0.0
+    400254: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|53.0.0.0.0.0.0.0.0
+    400256: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|54.0.0.0.0.0.0.0.0
+    400258: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|55.0.0.0.0.0.0.0.0
+    400260: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|56.0.0.0.0.0.0.0.0
+    400262: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|57.0.0.0.0.0.0.0.0
+    400264: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|58.0.0.0.0.0.0.0.0
+    400266: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|59.0.0.0.0.0.0.0.0
+    400268: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|6.0.0.0.0.0.0.0.0
+    400270: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|7.0.0.0.0.0.0.0.0
+    400272: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|8.0.0.0.0.0.0.0.0
+    400274: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|9.0.0.0.0.0.0.0.0
+    400276: Potassium
+    400278: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    400280: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    400282: Potassium|Ball (NURBS)_Potassium|Dupli|10.0.0.0.0.0.0.0.0
+    400284: Potassium|Ball (NURBS)_Potassium|Dupli|11.0.0.0.0.0.0.0.0
+    400286: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    400288: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    400290: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    400292: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    400294: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    400296: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    400298: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    400300: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    2300000: Ball (NURBS)_Carbon
+    2300002: Ball (NURBS)_Iron
+    2300004: Ball (NURBS)_Nitrogen
+    2300006: Ball (NURBS)_Potassium
+    2300008: Carbon
+    2300010: Carbon|Ball (NURBS)_Carbon|Dupli|0.0.0.0.0.0.0.0.0
+    2300012: Carbon|Ball (NURBS)_Carbon|Dupli|1.0.0.0.0.0.0.0.0
+    2300014: Carbon|Ball (NURBS)_Carbon|Dupli|10.0.0.0.0.0.0.0.0
+    2300016: Carbon|Ball (NURBS)_Carbon|Dupli|11.0.0.0.0.0.0.0.0
+    2300018: Carbon|Ball (NURBS)_Carbon|Dupli|12.0.0.0.0.0.0.0.0
+    2300020: Carbon|Ball (NURBS)_Carbon|Dupli|13.0.0.0.0.0.0.0.0
+    2300022: Carbon|Ball (NURBS)_Carbon|Dupli|14.0.0.0.0.0.0.0.0
+    2300024: Carbon|Ball (NURBS)_Carbon|Dupli|15.0.0.0.0.0.0.0.0
+    2300026: Carbon|Ball (NURBS)_Carbon|Dupli|16.0.0.0.0.0.0.0.0
+    2300028: Carbon|Ball (NURBS)_Carbon|Dupli|17.0.0.0.0.0.0.0.0
+    2300030: Carbon|Ball (NURBS)_Carbon|Dupli|18.0.0.0.0.0.0.0.0
+    2300032: Carbon|Ball (NURBS)_Carbon|Dupli|19.0.0.0.0.0.0.0.0
+    2300034: Carbon|Ball (NURBS)_Carbon|Dupli|2.0.0.0.0.0.0.0.0
+    2300036: Carbon|Ball (NURBS)_Carbon|Dupli|20.0.0.0.0.0.0.0.0
+    2300038: Carbon|Ball (NURBS)_Carbon|Dupli|21.0.0.0.0.0.0.0.0
+    2300040: Carbon|Ball (NURBS)_Carbon|Dupli|22.0.0.0.0.0.0.0.0
+    2300042: Carbon|Ball (NURBS)_Carbon|Dupli|23.0.0.0.0.0.0.0.0
+    2300044: Carbon|Ball (NURBS)_Carbon|Dupli|24.0.0.0.0.0.0.0.0
+    2300046: Carbon|Ball (NURBS)_Carbon|Dupli|25.0.0.0.0.0.0.0.0
+    2300048: Carbon|Ball (NURBS)_Carbon|Dupli|26.0.0.0.0.0.0.0.0
+    2300050: Carbon|Ball (NURBS)_Carbon|Dupli|27.0.0.0.0.0.0.0.0
+    2300052: Carbon|Ball (NURBS)_Carbon|Dupli|28.0.0.0.0.0.0.0.0
+    2300054: Carbon|Ball (NURBS)_Carbon|Dupli|29.0.0.0.0.0.0.0.0
+    2300056: Carbon|Ball (NURBS)_Carbon|Dupli|3.0.0.0.0.0.0.0.0
+    2300058: Carbon|Ball (NURBS)_Carbon|Dupli|30.0.0.0.0.0.0.0.0
+    2300060: Carbon|Ball (NURBS)_Carbon|Dupli|31.0.0.0.0.0.0.0.0
+    2300062: Carbon|Ball (NURBS)_Carbon|Dupli|32.0.0.0.0.0.0.0.0
+    2300064: Carbon|Ball (NURBS)_Carbon|Dupli|33.0.0.0.0.0.0.0.0
+    2300066: Carbon|Ball (NURBS)_Carbon|Dupli|34.0.0.0.0.0.0.0.0
+    2300068: Carbon|Ball (NURBS)_Carbon|Dupli|35.0.0.0.0.0.0.0.0
+    2300070: Carbon|Ball (NURBS)_Carbon|Dupli|36.0.0.0.0.0.0.0.0
+    2300072: Carbon|Ball (NURBS)_Carbon|Dupli|37.0.0.0.0.0.0.0.0
+    2300074: Carbon|Ball (NURBS)_Carbon|Dupli|38.0.0.0.0.0.0.0.0
+    2300076: Carbon|Ball (NURBS)_Carbon|Dupli|39.0.0.0.0.0.0.0.0
+    2300078: Carbon|Ball (NURBS)_Carbon|Dupli|4.0.0.0.0.0.0.0.0
+    2300080: Carbon|Ball (NURBS)_Carbon|Dupli|40.0.0.0.0.0.0.0.0
+    2300082: Carbon|Ball (NURBS)_Carbon|Dupli|41.0.0.0.0.0.0.0.0
+    2300084: Carbon|Ball (NURBS)_Carbon|Dupli|42.0.0.0.0.0.0.0.0
+    2300086: Carbon|Ball (NURBS)_Carbon|Dupli|43.0.0.0.0.0.0.0.0
+    2300088: Carbon|Ball (NURBS)_Carbon|Dupli|44.0.0.0.0.0.0.0.0
+    2300090: Carbon|Ball (NURBS)_Carbon|Dupli|45.0.0.0.0.0.0.0.0
+    2300092: Carbon|Ball (NURBS)_Carbon|Dupli|46.0.0.0.0.0.0.0.0
+    2300094: Carbon|Ball (NURBS)_Carbon|Dupli|47.0.0.0.0.0.0.0.0
+    2300096: Carbon|Ball (NURBS)_Carbon|Dupli|48.0.0.0.0.0.0.0.0
+    2300098: Carbon|Ball (NURBS)_Carbon|Dupli|49.0.0.0.0.0.0.0.0
+    2300100: Carbon|Ball (NURBS)_Carbon|Dupli|5.0.0.0.0.0.0.0.0
+    2300102: Carbon|Ball (NURBS)_Carbon|Dupli|50.0.0.0.0.0.0.0.0
+    2300104: Carbon|Ball (NURBS)_Carbon|Dupli|51.0.0.0.0.0.0.0.0
+    2300106: Carbon|Ball (NURBS)_Carbon|Dupli|52.0.0.0.0.0.0.0.0
+    2300108: Carbon|Ball (NURBS)_Carbon|Dupli|53.0.0.0.0.0.0.0.0
+    2300110: Carbon|Ball (NURBS)_Carbon|Dupli|54.0.0.0.0.0.0.0.0
+    2300112: Carbon|Ball (NURBS)_Carbon|Dupli|55.0.0.0.0.0.0.0.0
+    2300114: Carbon|Ball (NURBS)_Carbon|Dupli|56.0.0.0.0.0.0.0.0
+    2300116: Carbon|Ball (NURBS)_Carbon|Dupli|57.0.0.0.0.0.0.0.0
+    2300118: Carbon|Ball (NURBS)_Carbon|Dupli|58.0.0.0.0.0.0.0.0
+    2300120: Carbon|Ball (NURBS)_Carbon|Dupli|59.0.0.0.0.0.0.0.0
+    2300122: Carbon|Ball (NURBS)_Carbon|Dupli|6.0.0.0.0.0.0.0.0
+    2300124: Carbon|Ball (NURBS)_Carbon|Dupli|7.0.0.0.0.0.0.0.0
+    2300126: Carbon|Ball (NURBS)_Carbon|Dupli|8.0.0.0.0.0.0.0.0
+    2300128: Carbon|Ball (NURBS)_Carbon|Dupli|9.0.0.0.0.0.0.0.0
+    2300130: Iron
+    2300132: Iron|Ball (NURBS)_Iron|Dupli|0.0.0.0.0.0.0.0.0
+    2300134: Iron|Ball (NURBS)_Iron|Dupli|1.0.0.0.0.0.0.0.0
+    2300136: Iron|Ball (NURBS)_Iron|Dupli|2.0.0.0.0.0.0.0.0
+    2300138: Iron|Ball (NURBS)_Iron|Dupli|3.0.0.0.0.0.0.0.0
+    2300140: Iron|Ball (NURBS)_Iron|Dupli|4.0.0.0.0.0.0.0.0
+    2300142: Iron|Ball (NURBS)_Iron|Dupli|5.0.0.0.0.0.0.0.0
+    2300144: Iron|Ball (NURBS)_Iron|Dupli|6.0.0.0.0.0.0.0.0
+    2300146: Iron|Ball (NURBS)_Iron|Dupli|7.0.0.0.0.0.0.0.0
+    2300148: Iron|Ball (NURBS)_Iron|Dupli|8.0.0.0.0.0.0.0.0
+    2300150: Iron|Ball (NURBS)_Iron|Dupli|9.0.0.0.0.0.0.0.0
+    2300152: Nitrogen
+    2300154: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|0.0.0.0.0.0.0.0.0
+    2300156: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|1.0.0.0.0.0.0.0.0
+    2300158: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|10.0.0.0.0.0.0.0.0
+    2300160: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|11.0.0.0.0.0.0.0.0
+    2300162: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|12.0.0.0.0.0.0.0.0
+    2300164: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|13.0.0.0.0.0.0.0.0
+    2300166: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|14.0.0.0.0.0.0.0.0
+    2300168: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|15.0.0.0.0.0.0.0.0
+    2300170: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|16.0.0.0.0.0.0.0.0
+    2300172: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|17.0.0.0.0.0.0.0.0
+    2300174: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|18.0.0.0.0.0.0.0.0
+    2300176: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|19.0.0.0.0.0.0.0.0
+    2300178: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|2.0.0.0.0.0.0.0.0
+    2300180: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|20.0.0.0.0.0.0.0.0
+    2300182: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|21.0.0.0.0.0.0.0.0
+    2300184: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|22.0.0.0.0.0.0.0.0
+    2300186: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|23.0.0.0.0.0.0.0.0
+    2300188: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|24.0.0.0.0.0.0.0.0
+    2300190: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|25.0.0.0.0.0.0.0.0
+    2300192: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|26.0.0.0.0.0.0.0.0
+    2300194: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|27.0.0.0.0.0.0.0.0
+    2300196: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|28.0.0.0.0.0.0.0.0
+    2300198: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|29.0.0.0.0.0.0.0.0
+    2300200: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|3.0.0.0.0.0.0.0.0
+    2300202: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|30.0.0.0.0.0.0.0.0
+    2300204: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|31.0.0.0.0.0.0.0.0
+    2300206: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|32.0.0.0.0.0.0.0.0
+    2300208: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|33.0.0.0.0.0.0.0.0
+    2300210: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|34.0.0.0.0.0.0.0.0
+    2300212: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|35.0.0.0.0.0.0.0.0
+    2300214: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|36.0.0.0.0.0.0.0.0
+    2300216: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|37.0.0.0.0.0.0.0.0
+    2300218: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|38.0.0.0.0.0.0.0.0
+    2300220: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|39.0.0.0.0.0.0.0.0
+    2300222: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|4.0.0.0.0.0.0.0.0
+    2300224: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|40.0.0.0.0.0.0.0.0
+    2300226: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|41.0.0.0.0.0.0.0.0
+    2300228: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|42.0.0.0.0.0.0.0.0
+    2300230: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|43.0.0.0.0.0.0.0.0
+    2300232: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|44.0.0.0.0.0.0.0.0
+    2300234: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|45.0.0.0.0.0.0.0.0
+    2300236: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|46.0.0.0.0.0.0.0.0
+    2300238: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|47.0.0.0.0.0.0.0.0
+    2300240: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|48.0.0.0.0.0.0.0.0
+    2300242: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|49.0.0.0.0.0.0.0.0
+    2300244: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|5.0.0.0.0.0.0.0.0
+    2300246: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|50.0.0.0.0.0.0.0.0
+    2300248: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|51.0.0.0.0.0.0.0.0
+    2300250: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|52.0.0.0.0.0.0.0.0
+    2300252: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|53.0.0.0.0.0.0.0.0
+    2300254: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|54.0.0.0.0.0.0.0.0
+    2300256: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|55.0.0.0.0.0.0.0.0
+    2300258: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|56.0.0.0.0.0.0.0.0
+    2300260: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|57.0.0.0.0.0.0.0.0
+    2300262: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|58.0.0.0.0.0.0.0.0
+    2300264: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|59.0.0.0.0.0.0.0.0
+    2300266: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|6.0.0.0.0.0.0.0.0
+    2300268: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|7.0.0.0.0.0.0.0.0
+    2300270: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|8.0.0.0.0.0.0.0.0
+    2300272: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|9.0.0.0.0.0.0.0.0
+    2300274: Potassium
+    2300276: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    2300278: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    2300280: Potassium|Ball (NURBS)_Potassium|Dupli|10.0.0.0.0.0.0.0.0
+    2300282: Potassium|Ball (NURBS)_Potassium|Dupli|11.0.0.0.0.0.0.0.0
+    2300284: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    2300286: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    2300288: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    2300290: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    2300292: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    2300294: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    2300296: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    2300298: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    3300000: Ball (NURBS)_Carbon
+    3300002: Ball (NURBS)_Iron
+    3300004: Ball (NURBS)_Nitrogen
+    3300006: Ball (NURBS)_Potassium
+    3300008: Carbon
+    3300010: Carbon|Ball (NURBS)_Carbon|Dupli|0.0.0.0.0.0.0.0.0
+    3300012: Carbon|Ball (NURBS)_Carbon|Dupli|1.0.0.0.0.0.0.0.0
+    3300014: Carbon|Ball (NURBS)_Carbon|Dupli|10.0.0.0.0.0.0.0.0
+    3300016: Carbon|Ball (NURBS)_Carbon|Dupli|11.0.0.0.0.0.0.0.0
+    3300018: Carbon|Ball (NURBS)_Carbon|Dupli|12.0.0.0.0.0.0.0.0
+    3300020: Carbon|Ball (NURBS)_Carbon|Dupli|13.0.0.0.0.0.0.0.0
+    3300022: Carbon|Ball (NURBS)_Carbon|Dupli|14.0.0.0.0.0.0.0.0
+    3300024: Carbon|Ball (NURBS)_Carbon|Dupli|15.0.0.0.0.0.0.0.0
+    3300026: Carbon|Ball (NURBS)_Carbon|Dupli|16.0.0.0.0.0.0.0.0
+    3300028: Carbon|Ball (NURBS)_Carbon|Dupli|17.0.0.0.0.0.0.0.0
+    3300030: Carbon|Ball (NURBS)_Carbon|Dupli|18.0.0.0.0.0.0.0.0
+    3300032: Carbon|Ball (NURBS)_Carbon|Dupli|19.0.0.0.0.0.0.0.0
+    3300034: Carbon|Ball (NURBS)_Carbon|Dupli|2.0.0.0.0.0.0.0.0
+    3300036: Carbon|Ball (NURBS)_Carbon|Dupli|20.0.0.0.0.0.0.0.0
+    3300038: Carbon|Ball (NURBS)_Carbon|Dupli|21.0.0.0.0.0.0.0.0
+    3300040: Carbon|Ball (NURBS)_Carbon|Dupli|22.0.0.0.0.0.0.0.0
+    3300042: Carbon|Ball (NURBS)_Carbon|Dupli|23.0.0.0.0.0.0.0.0
+    3300044: Carbon|Ball (NURBS)_Carbon|Dupli|24.0.0.0.0.0.0.0.0
+    3300046: Carbon|Ball (NURBS)_Carbon|Dupli|25.0.0.0.0.0.0.0.0
+    3300048: Carbon|Ball (NURBS)_Carbon|Dupli|26.0.0.0.0.0.0.0.0
+    3300050: Carbon|Ball (NURBS)_Carbon|Dupli|27.0.0.0.0.0.0.0.0
+    3300052: Carbon|Ball (NURBS)_Carbon|Dupli|28.0.0.0.0.0.0.0.0
+    3300054: Carbon|Ball (NURBS)_Carbon|Dupli|29.0.0.0.0.0.0.0.0
+    3300056: Carbon|Ball (NURBS)_Carbon|Dupli|3.0.0.0.0.0.0.0.0
+    3300058: Carbon|Ball (NURBS)_Carbon|Dupli|30.0.0.0.0.0.0.0.0
+    3300060: Carbon|Ball (NURBS)_Carbon|Dupli|31.0.0.0.0.0.0.0.0
+    3300062: Carbon|Ball (NURBS)_Carbon|Dupli|32.0.0.0.0.0.0.0.0
+    3300064: Carbon|Ball (NURBS)_Carbon|Dupli|33.0.0.0.0.0.0.0.0
+    3300066: Carbon|Ball (NURBS)_Carbon|Dupli|34.0.0.0.0.0.0.0.0
+    3300068: Carbon|Ball (NURBS)_Carbon|Dupli|35.0.0.0.0.0.0.0.0
+    3300070: Carbon|Ball (NURBS)_Carbon|Dupli|36.0.0.0.0.0.0.0.0
+    3300072: Carbon|Ball (NURBS)_Carbon|Dupli|37.0.0.0.0.0.0.0.0
+    3300074: Carbon|Ball (NURBS)_Carbon|Dupli|38.0.0.0.0.0.0.0.0
+    3300076: Carbon|Ball (NURBS)_Carbon|Dupli|39.0.0.0.0.0.0.0.0
+    3300078: Carbon|Ball (NURBS)_Carbon|Dupli|4.0.0.0.0.0.0.0.0
+    3300080: Carbon|Ball (NURBS)_Carbon|Dupli|40.0.0.0.0.0.0.0.0
+    3300082: Carbon|Ball (NURBS)_Carbon|Dupli|41.0.0.0.0.0.0.0.0
+    3300084: Carbon|Ball (NURBS)_Carbon|Dupli|42.0.0.0.0.0.0.0.0
+    3300086: Carbon|Ball (NURBS)_Carbon|Dupli|43.0.0.0.0.0.0.0.0
+    3300088: Carbon|Ball (NURBS)_Carbon|Dupli|44.0.0.0.0.0.0.0.0
+    3300090: Carbon|Ball (NURBS)_Carbon|Dupli|45.0.0.0.0.0.0.0.0
+    3300092: Carbon|Ball (NURBS)_Carbon|Dupli|46.0.0.0.0.0.0.0.0
+    3300094: Carbon|Ball (NURBS)_Carbon|Dupli|47.0.0.0.0.0.0.0.0
+    3300096: Carbon|Ball (NURBS)_Carbon|Dupli|48.0.0.0.0.0.0.0.0
+    3300098: Carbon|Ball (NURBS)_Carbon|Dupli|49.0.0.0.0.0.0.0.0
+    3300100: Carbon|Ball (NURBS)_Carbon|Dupli|5.0.0.0.0.0.0.0.0
+    3300102: Carbon|Ball (NURBS)_Carbon|Dupli|50.0.0.0.0.0.0.0.0
+    3300104: Carbon|Ball (NURBS)_Carbon|Dupli|51.0.0.0.0.0.0.0.0
+    3300106: Carbon|Ball (NURBS)_Carbon|Dupli|52.0.0.0.0.0.0.0.0
+    3300108: Carbon|Ball (NURBS)_Carbon|Dupli|53.0.0.0.0.0.0.0.0
+    3300110: Carbon|Ball (NURBS)_Carbon|Dupli|54.0.0.0.0.0.0.0.0
+    3300112: Carbon|Ball (NURBS)_Carbon|Dupli|55.0.0.0.0.0.0.0.0
+    3300114: Carbon|Ball (NURBS)_Carbon|Dupli|56.0.0.0.0.0.0.0.0
+    3300116: Carbon|Ball (NURBS)_Carbon|Dupli|57.0.0.0.0.0.0.0.0
+    3300118: Carbon|Ball (NURBS)_Carbon|Dupli|58.0.0.0.0.0.0.0.0
+    3300120: Carbon|Ball (NURBS)_Carbon|Dupli|59.0.0.0.0.0.0.0.0
+    3300122: Carbon|Ball (NURBS)_Carbon|Dupli|6.0.0.0.0.0.0.0.0
+    3300124: Carbon|Ball (NURBS)_Carbon|Dupli|7.0.0.0.0.0.0.0.0
+    3300126: Carbon|Ball (NURBS)_Carbon|Dupli|8.0.0.0.0.0.0.0.0
+    3300128: Carbon|Ball (NURBS)_Carbon|Dupli|9.0.0.0.0.0.0.0.0
+    3300130: Iron
+    3300132: Iron|Ball (NURBS)_Iron|Dupli|0.0.0.0.0.0.0.0.0
+    3300134: Iron|Ball (NURBS)_Iron|Dupli|1.0.0.0.0.0.0.0.0
+    3300136: Iron|Ball (NURBS)_Iron|Dupli|2.0.0.0.0.0.0.0.0
+    3300138: Iron|Ball (NURBS)_Iron|Dupli|3.0.0.0.0.0.0.0.0
+    3300140: Iron|Ball (NURBS)_Iron|Dupli|4.0.0.0.0.0.0.0.0
+    3300142: Iron|Ball (NURBS)_Iron|Dupli|5.0.0.0.0.0.0.0.0
+    3300144: Iron|Ball (NURBS)_Iron|Dupli|6.0.0.0.0.0.0.0.0
+    3300146: Iron|Ball (NURBS)_Iron|Dupli|7.0.0.0.0.0.0.0.0
+    3300148: Iron|Ball (NURBS)_Iron|Dupli|8.0.0.0.0.0.0.0.0
+    3300150: Iron|Ball (NURBS)_Iron|Dupli|9.0.0.0.0.0.0.0.0
+    3300152: Nitrogen
+    3300154: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|0.0.0.0.0.0.0.0.0
+    3300156: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|1.0.0.0.0.0.0.0.0
+    3300158: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|10.0.0.0.0.0.0.0.0
+    3300160: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|11.0.0.0.0.0.0.0.0
+    3300162: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|12.0.0.0.0.0.0.0.0
+    3300164: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|13.0.0.0.0.0.0.0.0
+    3300166: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|14.0.0.0.0.0.0.0.0
+    3300168: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|15.0.0.0.0.0.0.0.0
+    3300170: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|16.0.0.0.0.0.0.0.0
+    3300172: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|17.0.0.0.0.0.0.0.0
+    3300174: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|18.0.0.0.0.0.0.0.0
+    3300176: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|19.0.0.0.0.0.0.0.0
+    3300178: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|2.0.0.0.0.0.0.0.0
+    3300180: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|20.0.0.0.0.0.0.0.0
+    3300182: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|21.0.0.0.0.0.0.0.0
+    3300184: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|22.0.0.0.0.0.0.0.0
+    3300186: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|23.0.0.0.0.0.0.0.0
+    3300188: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|24.0.0.0.0.0.0.0.0
+    3300190: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|25.0.0.0.0.0.0.0.0
+    3300192: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|26.0.0.0.0.0.0.0.0
+    3300194: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|27.0.0.0.0.0.0.0.0
+    3300196: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|28.0.0.0.0.0.0.0.0
+    3300198: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|29.0.0.0.0.0.0.0.0
+    3300200: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|3.0.0.0.0.0.0.0.0
+    3300202: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|30.0.0.0.0.0.0.0.0
+    3300204: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|31.0.0.0.0.0.0.0.0
+    3300206: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|32.0.0.0.0.0.0.0.0
+    3300208: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|33.0.0.0.0.0.0.0.0
+    3300210: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|34.0.0.0.0.0.0.0.0
+    3300212: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|35.0.0.0.0.0.0.0.0
+    3300214: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|36.0.0.0.0.0.0.0.0
+    3300216: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|37.0.0.0.0.0.0.0.0
+    3300218: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|38.0.0.0.0.0.0.0.0
+    3300220: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|39.0.0.0.0.0.0.0.0
+    3300222: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|4.0.0.0.0.0.0.0.0
+    3300224: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|40.0.0.0.0.0.0.0.0
+    3300226: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|41.0.0.0.0.0.0.0.0
+    3300228: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|42.0.0.0.0.0.0.0.0
+    3300230: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|43.0.0.0.0.0.0.0.0
+    3300232: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|44.0.0.0.0.0.0.0.0
+    3300234: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|45.0.0.0.0.0.0.0.0
+    3300236: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|46.0.0.0.0.0.0.0.0
+    3300238: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|47.0.0.0.0.0.0.0.0
+    3300240: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|48.0.0.0.0.0.0.0.0
+    3300242: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|49.0.0.0.0.0.0.0.0
+    3300244: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|5.0.0.0.0.0.0.0.0
+    3300246: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|50.0.0.0.0.0.0.0.0
+    3300248: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|51.0.0.0.0.0.0.0.0
+    3300250: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|52.0.0.0.0.0.0.0.0
+    3300252: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|53.0.0.0.0.0.0.0.0
+    3300254: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|54.0.0.0.0.0.0.0.0
+    3300256: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|55.0.0.0.0.0.0.0.0
+    3300258: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|56.0.0.0.0.0.0.0.0
+    3300260: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|57.0.0.0.0.0.0.0.0
+    3300262: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|58.0.0.0.0.0.0.0.0
+    3300264: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|59.0.0.0.0.0.0.0.0
+    3300266: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|6.0.0.0.0.0.0.0.0
+    3300268: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|7.0.0.0.0.0.0.0.0
+    3300270: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|8.0.0.0.0.0.0.0.0
+    3300272: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|9.0.0.0.0.0.0.0.0
+    3300274: Potassium
+    3300276: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    3300278: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    3300280: Potassium|Ball (NURBS)_Potassium|Dupli|10.0.0.0.0.0.0.0.0
+    3300282: Potassium|Ball (NURBS)_Potassium|Dupli|11.0.0.0.0.0.0.0.0
+    3300284: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    3300286: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    3300288: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    3300290: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    3300292: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    3300294: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    3300296: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    3300298: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    4300000: Nitrogen
+    4300002: Nitrogen|Ball (NURBS)_Nitrogen|Dupli|0.0.0.0.0.0.0.0.0
+    4300004: Ball (NURBS)_Nitrogen
+    4300006: Carbon
+    4300008: Carbon|Ball (NURBS)_Carbon|Dupli|0.0.0.0.0.0.0.0.0
+    4300010: Ball (NURBS)_Carbon
+    4300012: Iron
+    4300014: Iron|Ball (NURBS)_Iron|Dupli|0.0.0.0.0.0.0.0.0
+    4300016: Ball (NURBS)_Iron
+    4300018: Potassium
+    4300020: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    4300022: Ball (NURBS)_Potassium
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: molecules
+  assetBundleVariant: 

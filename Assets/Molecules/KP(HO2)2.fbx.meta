@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 57e7d63068d3d4c898ce4b3199f5de8b
+timeCreated: 1529695986
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Ball (NURBS)_Hydrogen
+    100002: Ball (NURBS)_Oxygen
+    100004: Ball (NURBS)_Phosphorus
+    100006: Ball (NURBS)_Potassium
+    100008: Hydrogen
+    100010: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|0.0.0.0.0.0.0.0.0
+    100012: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|1.0.0.0.0.0.0.0.0
+    100014: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|10.0.0.0.0.0.0.0.0
+    100016: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|11.0.0.0.0.0.0.0.0
+    100018: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|2.0.0.0.0.0.0.0.0
+    100020: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|3.0.0.0.0.0.0.0.0
+    100022: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|4.0.0.0.0.0.0.0.0
+    100024: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|5.0.0.0.0.0.0.0.0
+    100026: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|6.0.0.0.0.0.0.0.0
+    100028: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|7.0.0.0.0.0.0.0.0
+    100030: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|8.0.0.0.0.0.0.0.0
+    100032: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|9.0.0.0.0.0.0.0.0
+    100034: //RootNode
+    100036: Oxygen
+    100038: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    100040: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    100042: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    100044: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    100046: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    100048: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    100050: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    100052: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    100054: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    100056: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    100058: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    100060: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    100062: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    100064: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    100066: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    100068: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    100070: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    100072: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    100074: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    100076: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    100078: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    100080: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    100082: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    100084: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    100086: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    100088: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    100090: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    100092: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    100094: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    100096: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    100098: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    100100: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    100102: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    100104: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    100106: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    100108: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    100110: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    100112: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    100114: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    100116: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    100118: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    100120: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    100122: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    100124: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    100126: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    100128: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    100130: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    100132: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    100134: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    100136: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    100138: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    100140: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    100142: Phosphorus
+    100144: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|0.0.0.0.0.0.0.0.0
+    100146: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|1.0.0.0.0.0.0.0.0
+    100148: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|10.0.0.0.0.0.0.0.0
+    100150: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|11.0.0.0.0.0.0.0.0
+    100152: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|12.0.0.0.0.0.0.0.0
+    100154: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|2.0.0.0.0.0.0.0.0
+    100156: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|3.0.0.0.0.0.0.0.0
+    100158: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|4.0.0.0.0.0.0.0.0
+    100160: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|5.0.0.0.0.0.0.0.0
+    100162: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|6.0.0.0.0.0.0.0.0
+    100164: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|7.0.0.0.0.0.0.0.0
+    100166: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|8.0.0.0.0.0.0.0.0
+    100168: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|9.0.0.0.0.0.0.0.0
+    100170: Potassium
+    100172: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    100174: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    100176: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    100178: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    100180: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    100182: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    100184: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    100186: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    100188: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    100190: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    400000: Ball (NURBS)_Hydrogen
+    400002: Ball (NURBS)_Oxygen
+    400004: Ball (NURBS)_Phosphorus
+    400006: Ball (NURBS)_Potassium
+    400008: Hydrogen
+    400010: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|0.0.0.0.0.0.0.0.0
+    400012: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|1.0.0.0.0.0.0.0.0
+    400014: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|10.0.0.0.0.0.0.0.0
+    400016: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|11.0.0.0.0.0.0.0.0
+    400018: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|2.0.0.0.0.0.0.0.0
+    400020: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|3.0.0.0.0.0.0.0.0
+    400022: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|4.0.0.0.0.0.0.0.0
+    400024: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|5.0.0.0.0.0.0.0.0
+    400026: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|6.0.0.0.0.0.0.0.0
+    400028: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|7.0.0.0.0.0.0.0.0
+    400030: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|8.0.0.0.0.0.0.0.0
+    400032: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|9.0.0.0.0.0.0.0.0
+    400034: //RootNode
+    400036: Oxygen
+    400038: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    400040: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    400042: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    400044: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    400046: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    400048: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    400050: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    400052: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    400054: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    400056: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    400058: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    400060: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    400062: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    400064: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    400066: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    400068: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    400070: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    400072: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    400074: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    400076: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    400078: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    400080: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    400082: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    400084: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    400086: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    400088: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    400090: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    400092: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    400094: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    400096: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    400098: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    400100: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    400102: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    400104: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    400106: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    400108: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    400110: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    400112: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    400114: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    400116: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    400118: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    400120: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    400122: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    400124: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    400126: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    400128: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    400130: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    400132: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    400134: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    400136: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    400138: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    400140: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    400142: Phosphorus
+    400144: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|0.0.0.0.0.0.0.0.0
+    400146: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|1.0.0.0.0.0.0.0.0
+    400148: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|10.0.0.0.0.0.0.0.0
+    400150: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|11.0.0.0.0.0.0.0.0
+    400152: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|12.0.0.0.0.0.0.0.0
+    400154: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|2.0.0.0.0.0.0.0.0
+    400156: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|3.0.0.0.0.0.0.0.0
+    400158: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|4.0.0.0.0.0.0.0.0
+    400160: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|5.0.0.0.0.0.0.0.0
+    400162: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|6.0.0.0.0.0.0.0.0
+    400164: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|7.0.0.0.0.0.0.0.0
+    400166: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|8.0.0.0.0.0.0.0.0
+    400168: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|9.0.0.0.0.0.0.0.0
+    400170: Potassium
+    400172: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    400174: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    400176: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    400178: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    400180: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    400182: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    400184: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    400186: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    400188: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    400190: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    2300000: Ball (NURBS)_Hydrogen
+    2300002: Ball (NURBS)_Oxygen
+    2300004: Ball (NURBS)_Phosphorus
+    2300006: Ball (NURBS)_Potassium
+    2300008: Hydrogen
+    2300010: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|0.0.0.0.0.0.0.0.0
+    2300012: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|1.0.0.0.0.0.0.0.0
+    2300014: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|10.0.0.0.0.0.0.0.0
+    2300016: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|11.0.0.0.0.0.0.0.0
+    2300018: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|2.0.0.0.0.0.0.0.0
+    2300020: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|3.0.0.0.0.0.0.0.0
+    2300022: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|4.0.0.0.0.0.0.0.0
+    2300024: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|5.0.0.0.0.0.0.0.0
+    2300026: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|6.0.0.0.0.0.0.0.0
+    2300028: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|7.0.0.0.0.0.0.0.0
+    2300030: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|8.0.0.0.0.0.0.0.0
+    2300032: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|9.0.0.0.0.0.0.0.0
+    2300034: Oxygen
+    2300036: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    2300038: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    2300040: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    2300042: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    2300044: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    2300046: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    2300048: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    2300050: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    2300052: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    2300054: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    2300056: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    2300058: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    2300060: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    2300062: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    2300064: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    2300066: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    2300068: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    2300070: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    2300072: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    2300074: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    2300076: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    2300078: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    2300080: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    2300082: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    2300084: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    2300086: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    2300088: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    2300090: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    2300092: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    2300094: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    2300096: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    2300098: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    2300100: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    2300102: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    2300104: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    2300106: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    2300108: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    2300110: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    2300112: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    2300114: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    2300116: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    2300118: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    2300120: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    2300122: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    2300124: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    2300126: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    2300128: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    2300130: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    2300132: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    2300134: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    2300136: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    2300138: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    2300140: Phosphorus
+    2300142: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|0.0.0.0.0.0.0.0.0
+    2300144: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|1.0.0.0.0.0.0.0.0
+    2300146: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|10.0.0.0.0.0.0.0.0
+    2300148: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|11.0.0.0.0.0.0.0.0
+    2300150: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|12.0.0.0.0.0.0.0.0
+    2300152: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|2.0.0.0.0.0.0.0.0
+    2300154: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|3.0.0.0.0.0.0.0.0
+    2300156: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|4.0.0.0.0.0.0.0.0
+    2300158: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|5.0.0.0.0.0.0.0.0
+    2300160: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|6.0.0.0.0.0.0.0.0
+    2300162: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|7.0.0.0.0.0.0.0.0
+    2300164: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|8.0.0.0.0.0.0.0.0
+    2300166: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|9.0.0.0.0.0.0.0.0
+    2300168: Potassium
+    2300170: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    2300172: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    2300174: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    2300176: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    2300178: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    2300180: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    2300182: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    2300184: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    2300186: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    2300188: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    3300000: Ball (NURBS)_Hydrogen
+    3300002: Ball (NURBS)_Oxygen
+    3300004: Ball (NURBS)_Phosphorus
+    3300006: Ball (NURBS)_Potassium
+    3300008: Hydrogen
+    3300010: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|0.0.0.0.0.0.0.0.0
+    3300012: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|1.0.0.0.0.0.0.0.0
+    3300014: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|10.0.0.0.0.0.0.0.0
+    3300016: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|11.0.0.0.0.0.0.0.0
+    3300018: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|2.0.0.0.0.0.0.0.0
+    3300020: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|3.0.0.0.0.0.0.0.0
+    3300022: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|4.0.0.0.0.0.0.0.0
+    3300024: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|5.0.0.0.0.0.0.0.0
+    3300026: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|6.0.0.0.0.0.0.0.0
+    3300028: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|7.0.0.0.0.0.0.0.0
+    3300030: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|8.0.0.0.0.0.0.0.0
+    3300032: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|9.0.0.0.0.0.0.0.0
+    3300034: Oxygen
+    3300036: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    3300038: Oxygen|Ball (NURBS)_Oxygen|Dupli|1.0.0.0.0.0.0.0.0
+    3300040: Oxygen|Ball (NURBS)_Oxygen|Dupli|10.0.0.0.0.0.0.0.0
+    3300042: Oxygen|Ball (NURBS)_Oxygen|Dupli|11.0.0.0.0.0.0.0.0
+    3300044: Oxygen|Ball (NURBS)_Oxygen|Dupli|12.0.0.0.0.0.0.0.0
+    3300046: Oxygen|Ball (NURBS)_Oxygen|Dupli|13.0.0.0.0.0.0.0.0
+    3300048: Oxygen|Ball (NURBS)_Oxygen|Dupli|14.0.0.0.0.0.0.0.0
+    3300050: Oxygen|Ball (NURBS)_Oxygen|Dupli|15.0.0.0.0.0.0.0.0
+    3300052: Oxygen|Ball (NURBS)_Oxygen|Dupli|16.0.0.0.0.0.0.0.0
+    3300054: Oxygen|Ball (NURBS)_Oxygen|Dupli|17.0.0.0.0.0.0.0.0
+    3300056: Oxygen|Ball (NURBS)_Oxygen|Dupli|18.0.0.0.0.0.0.0.0
+    3300058: Oxygen|Ball (NURBS)_Oxygen|Dupli|19.0.0.0.0.0.0.0.0
+    3300060: Oxygen|Ball (NURBS)_Oxygen|Dupli|2.0.0.0.0.0.0.0.0
+    3300062: Oxygen|Ball (NURBS)_Oxygen|Dupli|20.0.0.0.0.0.0.0.0
+    3300064: Oxygen|Ball (NURBS)_Oxygen|Dupli|21.0.0.0.0.0.0.0.0
+    3300066: Oxygen|Ball (NURBS)_Oxygen|Dupli|22.0.0.0.0.0.0.0.0
+    3300068: Oxygen|Ball (NURBS)_Oxygen|Dupli|23.0.0.0.0.0.0.0.0
+    3300070: Oxygen|Ball (NURBS)_Oxygen|Dupli|24.0.0.0.0.0.0.0.0
+    3300072: Oxygen|Ball (NURBS)_Oxygen|Dupli|25.0.0.0.0.0.0.0.0
+    3300074: Oxygen|Ball (NURBS)_Oxygen|Dupli|26.0.0.0.0.0.0.0.0
+    3300076: Oxygen|Ball (NURBS)_Oxygen|Dupli|27.0.0.0.0.0.0.0.0
+    3300078: Oxygen|Ball (NURBS)_Oxygen|Dupli|28.0.0.0.0.0.0.0.0
+    3300080: Oxygen|Ball (NURBS)_Oxygen|Dupli|29.0.0.0.0.0.0.0.0
+    3300082: Oxygen|Ball (NURBS)_Oxygen|Dupli|3.0.0.0.0.0.0.0.0
+    3300084: Oxygen|Ball (NURBS)_Oxygen|Dupli|30.0.0.0.0.0.0.0.0
+    3300086: Oxygen|Ball (NURBS)_Oxygen|Dupli|31.0.0.0.0.0.0.0.0
+    3300088: Oxygen|Ball (NURBS)_Oxygen|Dupli|32.0.0.0.0.0.0.0.0
+    3300090: Oxygen|Ball (NURBS)_Oxygen|Dupli|33.0.0.0.0.0.0.0.0
+    3300092: Oxygen|Ball (NURBS)_Oxygen|Dupli|34.0.0.0.0.0.0.0.0
+    3300094: Oxygen|Ball (NURBS)_Oxygen|Dupli|35.0.0.0.0.0.0.0.0
+    3300096: Oxygen|Ball (NURBS)_Oxygen|Dupli|36.0.0.0.0.0.0.0.0
+    3300098: Oxygen|Ball (NURBS)_Oxygen|Dupli|37.0.0.0.0.0.0.0.0
+    3300100: Oxygen|Ball (NURBS)_Oxygen|Dupli|38.0.0.0.0.0.0.0.0
+    3300102: Oxygen|Ball (NURBS)_Oxygen|Dupli|39.0.0.0.0.0.0.0.0
+    3300104: Oxygen|Ball (NURBS)_Oxygen|Dupli|4.0.0.0.0.0.0.0.0
+    3300106: Oxygen|Ball (NURBS)_Oxygen|Dupli|40.0.0.0.0.0.0.0.0
+    3300108: Oxygen|Ball (NURBS)_Oxygen|Dupli|41.0.0.0.0.0.0.0.0
+    3300110: Oxygen|Ball (NURBS)_Oxygen|Dupli|42.0.0.0.0.0.0.0.0
+    3300112: Oxygen|Ball (NURBS)_Oxygen|Dupli|43.0.0.0.0.0.0.0.0
+    3300114: Oxygen|Ball (NURBS)_Oxygen|Dupli|44.0.0.0.0.0.0.0.0
+    3300116: Oxygen|Ball (NURBS)_Oxygen|Dupli|45.0.0.0.0.0.0.0.0
+    3300118: Oxygen|Ball (NURBS)_Oxygen|Dupli|46.0.0.0.0.0.0.0.0
+    3300120: Oxygen|Ball (NURBS)_Oxygen|Dupli|47.0.0.0.0.0.0.0.0
+    3300122: Oxygen|Ball (NURBS)_Oxygen|Dupli|48.0.0.0.0.0.0.0.0
+    3300124: Oxygen|Ball (NURBS)_Oxygen|Dupli|49.0.0.0.0.0.0.0.0
+    3300126: Oxygen|Ball (NURBS)_Oxygen|Dupli|5.0.0.0.0.0.0.0.0
+    3300128: Oxygen|Ball (NURBS)_Oxygen|Dupli|50.0.0.0.0.0.0.0.0
+    3300130: Oxygen|Ball (NURBS)_Oxygen|Dupli|51.0.0.0.0.0.0.0.0
+    3300132: Oxygen|Ball (NURBS)_Oxygen|Dupli|6.0.0.0.0.0.0.0.0
+    3300134: Oxygen|Ball (NURBS)_Oxygen|Dupli|7.0.0.0.0.0.0.0.0
+    3300136: Oxygen|Ball (NURBS)_Oxygen|Dupli|8.0.0.0.0.0.0.0.0
+    3300138: Oxygen|Ball (NURBS)_Oxygen|Dupli|9.0.0.0.0.0.0.0.0
+    3300140: Phosphorus
+    3300142: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|0.0.0.0.0.0.0.0.0
+    3300144: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|1.0.0.0.0.0.0.0.0
+    3300146: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|10.0.0.0.0.0.0.0.0
+    3300148: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|11.0.0.0.0.0.0.0.0
+    3300150: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|12.0.0.0.0.0.0.0.0
+    3300152: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|2.0.0.0.0.0.0.0.0
+    3300154: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|3.0.0.0.0.0.0.0.0
+    3300156: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|4.0.0.0.0.0.0.0.0
+    3300158: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|5.0.0.0.0.0.0.0.0
+    3300160: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|6.0.0.0.0.0.0.0.0
+    3300162: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|7.0.0.0.0.0.0.0.0
+    3300164: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|8.0.0.0.0.0.0.0.0
+    3300166: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|9.0.0.0.0.0.0.0.0
+    3300168: Potassium
+    3300170: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    3300172: Potassium|Ball (NURBS)_Potassium|Dupli|1.0.0.0.0.0.0.0.0
+    3300174: Potassium|Ball (NURBS)_Potassium|Dupli|2.0.0.0.0.0.0.0.0
+    3300176: Potassium|Ball (NURBS)_Potassium|Dupli|3.0.0.0.0.0.0.0.0
+    3300178: Potassium|Ball (NURBS)_Potassium|Dupli|4.0.0.0.0.0.0.0.0
+    3300180: Potassium|Ball (NURBS)_Potassium|Dupli|5.0.0.0.0.0.0.0.0
+    3300182: Potassium|Ball (NURBS)_Potassium|Dupli|6.0.0.0.0.0.0.0.0
+    3300184: Potassium|Ball (NURBS)_Potassium|Dupli|7.0.0.0.0.0.0.0.0
+    3300186: Potassium|Ball (NURBS)_Potassium|Dupli|8.0.0.0.0.0.0.0.0
+    3300188: Potassium|Ball (NURBS)_Potassium|Dupli|9.0.0.0.0.0.0.0.0
+    4300000: Oxygen
+    4300002: Oxygen|Ball (NURBS)_Oxygen|Dupli|0.0.0.0.0.0.0.0.0
+    4300004: Ball (NURBS)_Oxygen
+    4300006: Hydrogen
+    4300008: Hydrogen|Ball (NURBS)_Hydrogen|Dupli|0.0.0.0.0.0.0.0.0
+    4300010: Ball (NURBS)_Hydrogen
+    4300012: Phosphorus
+    4300014: Phosphorus|Ball (NURBS)_Phosphorus|Dupli|0.0.0.0.0.0.0.0.0
+    4300016: Ball (NURBS)_Phosphorus
+    4300018: Potassium
+    4300020: Potassium|Ball (NURBS)_Potassium|Dupli|0.0.0.0.0.0.0.0.0
+    4300022: Ball (NURBS)_Potassium
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: molecules
+  assetBundleVariant: 
