@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,31 +15,21 @@ public class UIManager : MonoBehaviour
     public int count = 0;
     // list of loaded molecules name, note static
     public static List<string> moleculeNames = new List<string>();
-    public GameObject player;
 
     // Use this for initialization
-    public void Start(){
-        // My thought: this two lines may generate errors
-        // player = GameObject.Find("Player");
-        // DontDestroyOnLoad(player);
-        // start a new sequential processing/function/subroutine (only one is executing at any given time)
-        StartCoroutine(ReadManifest());
-    }
-
-    public IEnumerator ReadManifest(){
-        /*
+    public IEnumerator Start(){
         // start a download in the background by calling WWW(url) which returns a new WWW object
         WWW www = new WWW(manifest);
         yield return www;
-        Debug.Log(string.IsNullOrEmpty(www.error));
         // www.error may return null or empty string
-        if(string.IsNullOrEmpty(www.error)){
-            Debug.Log("Error in retrieving manifest file.");
+        if(!string.IsNullOrEmpty(www.error))
+        {
+            Debug.Log("There was a problem loading asset bundles.");
         }
         else{
-            count = 0;
-            string begLine = "- Assets/Molecules/";
             string stringFromFile = www.text;
+            string begLine = "- Assets/Molecules/";
+            stringFromFile = www.text;
             // split text into string list
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
            foreach(var manifestLine in lines){
@@ -50,7 +41,7 @@ public class UIManager : MonoBehaviour
                 }
             }
         }
-        */
+        /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules.manifest";
         string stringFromFile = System.IO.File.ReadAllText(@url);
@@ -58,7 +49,6 @@ public class UIManager : MonoBehaviour
             Debug.Log("Error in retrieving manifest file.");
         }
         else{
-            count = 0;
             string begLine = "- Assets/Molecules/";
             // split text into string list
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
@@ -72,7 +62,7 @@ public class UIManager : MonoBehaviour
             }
         }
         yield return stringFromFile;
-        
+        */
     }
 
     // Update is called once per frame
@@ -82,12 +72,13 @@ public class UIManager : MonoBehaviour
 
     //Reloads the Level
     public void Reload(){
-        Application.LoadLevel(Application.loadedLevel);
+        //Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     //loads inputted level
     public void LoadLevel(string moleculeName){
-        Application.LoadLevel("SPIN6.26");
+        SceneManager.LoadScene("SPIN6.26");
     }
 
     public void LoadMLevel(BaseEventData data){

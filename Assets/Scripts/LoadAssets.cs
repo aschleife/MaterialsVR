@@ -14,26 +14,25 @@ public class LoadAssets: MonoBehaviour
     {
     	uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
     	// wait ReadManifest finish and update the count
-        yield return uiManager;
+        yield return uiManager.count;
         myCanvas = GameObject.Find("Menu_Canvas");
         StartCoroutine(DownloadModel());
     }
 
     public IEnumerator DownloadModel()
     {
-        
         while (!Caching.ready)
             yield return null;
     	// load assetBundle from web server
         // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
         WWW www = WWW.LoadFromCacheOrDownload(url, 1);
         yield return www;
-        AssetBundle assetBundle = www.assetBundle;
-        if(string.IsNullOrEmpty(www.error))
+        if(!string.IsNullOrEmpty(www.error))
         {
             Debug.Log("There was a problem loading asset bundles.");
+            yield return null;
         }
-
+        AssetBundle assetBundle = www.assetBundle;
         /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules";
@@ -43,8 +42,7 @@ public class LoadAssets: MonoBehaviour
         }
         */
         // between 0 ~ (count-1)
-        // Note: change back tp count-1 here after update assetbundle
-        int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 2));
+        int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
         // copy and set
         GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
         Vector3 size = new Vector3(5f, 5f, 5f);

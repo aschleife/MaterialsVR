@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Handler : MonoBehaviour, IPointerClickHandler{
 
@@ -12,7 +13,7 @@ public class Handler : MonoBehaviour, IPointerClickHandler{
         if(gameObject.tag == "b")
         {
             objMessage.loadMessage(gameObject.name);
-            Application.LoadLevel("SPIN6.26");
+            SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
         }
     }

@@ -17,6 +17,7 @@ public class Swipe_Handler : MonoBehaviour {
 		// wait for loading AssetBundle
 		uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
 		array = GameObject.FindGameObjectsWithTag("edmc");
+		isosurfaces = new Queue<Renderer>();
 		// The touch position is given as a Vector2 where X and Y range from 0 to 1. (0, 0) is the top left of the touchpad and (1, 1) is the bottom right of the touchpad
 		if(GvrControllerInput.IsTouching){
 			previous_scale = GvrControllerInput.TouchPos;
@@ -26,17 +27,19 @@ public class Swipe_Handler : MonoBehaviour {
 	// Update is called once per frame
 	public void Update () {
 		// get molecule
-		if(array == null || molecule == null){
+		if(array == null || array.Length == 0){
 			array = GameObject.FindGameObjectsWithTag("edmc");
 		}
-		else{
+		if(array != null & array.Length != 0 & !molecule){
 			molecule = array[0];
-			Renderer[] objects = molecule.GetComponentsInChildren<Renderer>();
-			isosurfaces = new Queue<Renderer>();
-			foreach(Renderer i in objects){
-				if(i.gameObject.ToString().Contains(keyword))
-					isosurfaces.Enqueue(i);
-			}
+		}
+		if(array == null || array.Length == 0 || !molecule){  // need re-assignment
+			return;
+		}
+		Renderer[] objects = molecule.GetComponentsInChildren<Renderer>();
+		foreach(Renderer i in objects){
+			if(i.gameObject.ToString().Contains(keyword))
+				isosurfaces.Enqueue(i);
 		}
 		bool beingScale = objMessage.loadScale();
 		// click AppButton to toggle beingScale
@@ -51,12 +54,12 @@ public class Swipe_Handler : MonoBehaviour {
 		// if beingScale
 		if(beingScale && GvrControllerInput.IsTouching){
 			Vector2 current_sclae = GvrControllerInput.TouchPos;
-			offset = (convert(current_sclae) - convert(previous_scale)) * 7.0f;
+			offset = (convert(current_sclae) - convert(previous_scale)) * 7.0f;  // need a better scale function
 			molecule.transform.localScale = molecule.transform.localScale + offset;
 			previous_scale = current_sclae;
 		}
 		// if not beingScale
-		else if(!beingScale && GvrControllerInput.IsTouching && isosurfaces.Count != 0){
+		else if(!beingScale && GvrControllerInput.IsTouching && isosurfaces.Count != 0){  // need testing
 			Vector2 current_sclae = GvrControllerInput.TouchPos;
 			float diff = convert2float(previous_scale) - convert2float(current_sclae);
 			if(diff > 0.09f){

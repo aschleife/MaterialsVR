@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EventTriggerFunctions : EventTrigger
 {
@@ -52,7 +53,7 @@ public class EventTriggerFunctions : EventTrigger
     public override void OnPointerDown(PointerEventData data)
     {
         Debug.Log("OnPointerDown called.");
-        Application.LoadLevel("SPIN6.26");
+        SceneManager.LoadScene("SPIN6.26");
     }
 
     public override void OnPointerEnter(PointerEventData data)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Back_Handler : MonoBehaviour, IPointerClickHandler{
 
@@ -10,7 +11,7 @@ public class Back_Handler : MonoBehaviour, IPointerClickHandler{
         // if clicked at button
         // if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
         if(gameObject.tag == "b"){
-            Application.LoadLevel("New_Menu");
+            SceneManager.LoadScene("New_Menu");
         }
     }
 }

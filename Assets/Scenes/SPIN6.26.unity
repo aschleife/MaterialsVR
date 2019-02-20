@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04551956, g: 0.107077606, b: 0.14278284, a: 1}
+  m_IndirectSpecularColor: {r: 0.21451575, g: 0.22888279, b: 0.24147001, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -668,7 +668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 627935322}
   - component: {fileID: 627935321}
-  - component: {fileID: 627935323}
   m_Layer: 0
   m_Name: Molecule_Loader
   m_TagString: Untagged
@@ -703,17 +702,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &627935323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627935320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc3a4ec3b1aa84828914b56d1ba56de7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &633900853
 Prefab:
   m_ObjectHideFlags: 0

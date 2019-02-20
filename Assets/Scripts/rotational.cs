@@ -11,11 +11,9 @@ public class rotational : MonoBehaviour
     private string objectName;
     public GameObject myCanvas;
     public GameObject nameText;
-    public GameObject cube;
     
     // Use this for initialization
     public IEnumerator Start(){
-        cube = GameObject.Find("Cube");
         objectName = objMessage.unLoadMessage();
         myCanvas = GameObject.Find("Canvas");
         nameText = GameObject.Find("Molecule_Name");
