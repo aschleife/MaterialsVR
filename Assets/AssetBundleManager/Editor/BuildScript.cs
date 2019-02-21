@@ -115,12 +115,14 @@ namespace AssetBundles
 			case BuildTarget.StandaloneWindows:
 			case BuildTarget.StandaloneWindows64:
 				return "/test.exe";
-			case BuildTarget.StandaloneOSXIntel:
-			case BuildTarget.StandaloneOSXIntel64:
-			case BuildTarget.StandaloneOSXUniversal:
+            //TODO: change/delete these, depricated in Unity 2018
+            //case BuildTarget.StandaloneOSXIntel:
+            //case BuildTarget.StandaloneOSXIntel64:
+            case BuildTarget.StandaloneOSX:
 				return "/test.app";
-			case BuildTarget.WebPlayer:
-			case BuildTarget.WebPlayerStreamed:
+            //TODO: change/delete these, depricated in Unity 2018
+            //case BuildTarget.WebPlayer:
+            //case BuildTarget.WebPlayerStreamed:
 			case BuildTarget.WebGL:
 				return "";
 				// Add more build targets for your own.
