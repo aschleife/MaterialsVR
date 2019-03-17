@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
 
     // Use this for initialization
     public IEnumerator Start(){
+        
         // start a download in the background by calling WWW(url) which returns a new WWW object
         WWW www = new WWW(manifest);
         yield return www;
@@ -41,6 +42,7 @@ public class UIManager : MonoBehaviour
                 }
             }
         }
+        
         /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules.manifest";

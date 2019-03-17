@@ -33,6 +33,7 @@ public class LoadAssets: MonoBehaviour
             yield return null;
         }
         AssetBundle assetBundle = www.assetBundle;
+        
         /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules";
@@ -42,8 +43,10 @@ public class LoadAssets: MonoBehaviour
         }
         */
         // between 0 ~ (count-1)
+        Debug.Log(uiManager.count);
         int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
         // copy and set
+        Debug.Log(UIManager.moleculeNames[random_number]);
         GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
         Vector3 size = new Vector3(5f, 5f, 5f);
         // scale : 4
