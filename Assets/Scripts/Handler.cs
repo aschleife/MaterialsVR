@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/**
+   Handler for buttons on the menu page. With help of static class objMessage to transfer molecule name to the main page. 
+**/
 public class Handler : MonoBehaviour, IPointerClickHandler{
 
     // maybe use GvrControllerInput.ClickButtonDown later

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+    Static class which store slected molecule names, rotation status and scale status.
+**/
 // enough for now; might need refresh sometime later, thus maybe inherent from MonoBehaviour will be helpful
 public static class objMessage{
 

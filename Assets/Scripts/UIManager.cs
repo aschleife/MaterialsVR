@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System;
-using System.IO;
 using UnityEngine.SceneManagement;
 
+/**
+    Read manifest from local path or remote server, extract molecule names.
+**/
 public class UIManager : MonoBehaviour
 {
     // absolute path storing the assetbundle manifest
@@ -18,7 +22,10 @@ public class UIManager : MonoBehaviour
 
     // Use this for initialization
     public IEnumerator Start(){
-        
+        // use HashSet to avoid duplicates
+        HashSet<string> temp = new HashSet<string>();
+
+        /*
         // start a download in the background by calling WWW(url) which returns a new WWW object
         WWW www = new WWW(manifest);
         yield return www;
@@ -35,15 +42,14 @@ public class UIManager : MonoBehaviour
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
            foreach(var manifestLine in lines){
                 if (manifestLine.Contains(begLine)){
-                    count++;
-                    string line = manifestLine.Remove(manifestLine.Length - ".fbx".Length);
+                    string line = manifestLine.Remove(manifestLine.Length - 8);  // 8 = "_xyz.fbx".Length or "_wrl.fbx".Length 
                     // add new name at the end of the list
-                    moleculeNames.Add(line.Remove(0, begLine.Length));
+                    temp.Add(line.Remove(0, begLine.Length));
                 }
             }
         }
+        */
         
-        /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules.manifest";
         string stringFromFile = System.IO.File.ReadAllText(@url);
@@ -56,15 +62,17 @@ public class UIManager : MonoBehaviour
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
            foreach(var manifestLine in lines){
                 if (manifestLine.Contains(begLine)){
-                    count++;
-                    string line = manifestLine.Remove(manifestLine.Length - ".fbx".Length);
+                    string line = manifestLine.Remove(manifestLine.Length - 8);  // 8 = "_xyz.fbx".Length or "_wrl.fbx".Length 
                     // add new name at the end of the list
-                    moleculeNames.Add(line.Remove(0, begLine.Length));
+                    temp.Add(line.Remove(0, begLine.Length));
                 }
             }
         }
         yield return stringFromFile;
-        */
+        
+        // convert temporary HashSet to List
+        count = temp.Count;
+        moleculeNames = temp.ToList();
     }
 
     // Update is called once per frame

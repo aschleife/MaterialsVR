@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
+/**
+	Handler for both xyz and wrl models scale. Toggle "-" button on the controller to enable/disable the scale mode.
+	Use objMessage to store scale status. With self-design scale function to zoom the models in or out. 
+**/
 public class Swipe_Handler : MonoBehaviour {
 	// GvrControllerInput inherited from MonoBehaviour
 	private GameObject molecule;
@@ -16,7 +21,9 @@ public class Swipe_Handler : MonoBehaviour {
 	public void Start () {
 		// wait for loading AssetBundle
 		uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
-		array = GameObject.FindGameObjectsWithTag("edmc");
+		GameObject[] xyz = GameObject.FindGameObjectsWithTag("xyz");
+		GameObject[] wrl = GameObject.FindGameObjectsWithTag("wrl");
+		array = xyz.Concat(wrl).ToArray();
 		isosurfaces = new Queue<Renderer>();
 		// The touch position is given as a Vector2 where X and Y range from 0 to 1. (0, 0) is the top left of the touchpad and (1, 1) is the bottom right of the touchpad
 		if(GvrControllerInput.IsTouching){
@@ -26,51 +33,49 @@ public class Swipe_Handler : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void Update () {
-		// get molecule
+		// get molecules
 		if(array == null || array.Length == 0){
-			array = GameObject.FindGameObjectsWithTag("edmc");
+			GameObject[] xyz = GameObject.FindGameObjectsWithTag("xyz");
+			GameObject[] wrl = GameObject.FindGameObjectsWithTag("wrl");
+			array = xyz.Concat(wrl).ToArray();
 		}
-		if(array != null & array.Length != 0 & !molecule){
-			molecule = array[0];
-		}
-		if(array == null || array.Length == 0 || !molecule){  // need re-assignment
-			return;
-		}
-		Renderer[] objects = molecule.GetComponentsInChildren<Renderer>();
-		foreach(Renderer i in objects){
-			if(i.gameObject.ToString().Contains(keyword))
-				isosurfaces.Enqueue(i);
-		}
-		bool beingScale = objMessage.loadScale();
-		// click AppButton to toggle beingScale
-		if(GvrControllerInput.AppButtonDown){
-			if(beingScale){
-				objMessage.disable_scale();
+		foreach(GameObject molecule in array){
+			Renderer[] objects = molecule.GetComponentsInChildren<Renderer>();
+			foreach(Renderer i in objects){
+				if(i.gameObject.ToString().Contains(keyword))
+					isosurfaces.Enqueue(i);
 			}
-			else{
-				objMessage.enable_scale();
-			}
-		}
-		// if beingScale
-		if(beingScale && GvrControllerInput.IsTouching){
-			Vector2 current_sclae = GvrControllerInput.TouchPos;
-			offset = (convert(current_sclae) - convert(previous_scale)) * 7.0f;  // need a better scale function
-			molecule.transform.localScale = molecule.transform.localScale + offset;
-			previous_scale = current_sclae;
-		}
-		// if not beingScale
-		else if(!beingScale && GvrControllerInput.IsTouching && isosurfaces.Count != 0){  // need testing
-			Vector2 current_sclae = GvrControllerInput.TouchPos;
-			float diff = convert2float(previous_scale) - convert2float(current_sclae);
-			if(diff > 0.09f){
-				Renderer i = isosurfaces.Dequeue();
-				if(i.enabled == true){
-					i.enabled = false;
+			bool beingScale = objMessage.loadScale();
+			// click AppButton to toggle beingScale
+			if(GvrControllerInput.AppButtonDown){
+				if(beingScale){
+					objMessage.disable_scale();
 				}
 				else{
-					i.enabled = true;
+					objMessage.enable_scale();
 				}
-				isosurfaces.Enqueue(i);
+			}
+			// if beingScale
+			if(beingScale && GvrControllerInput.IsTouching){
+				Vector2 current_sclae = GvrControllerInput.TouchPos;
+				offset = (convert(current_sclae) - convert(previous_scale)) * 7.0f;  // need a better scale function
+				molecule.transform.localScale = molecule.transform.localScale + offset;
+				previous_scale = current_sclae;
+			}
+			// if not beingScale
+			else if(!beingScale && GvrControllerInput.IsTouching && isosurfaces.Count != 0){  // need testing
+				Vector2 current_sclae = GvrControllerInput.TouchPos;
+				float diff = convert2float(previous_scale) - convert2float(current_sclae);
+				if(diff > 0.09f){
+					Renderer i = isosurfaces.Dequeue();
+					if(i.enabled == true){
+						i.enabled = false;
+					}
+					else{
+						i.enabled = true;
+					}
+					isosurfaces.Enqueue(i);
+				}
 			}
 		}
 	}

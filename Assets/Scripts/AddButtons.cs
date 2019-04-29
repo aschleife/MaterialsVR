@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
+/**
+    Create buttons on the menu page. Get information from UImanager object.
+**/
 public class AddButtons : MonoBehaviour {
     // origial button
     public GameObject ButtonPrefab;

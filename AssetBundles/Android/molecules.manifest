@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1445261891
+CRC: 720876355
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3fda1ff54e9745a25d583ccb766798a6
+    Hash: 197503ea1f9d83e3734bb304500ac235
   TypeTreeHash:
     serializedVersion: 2
     Hash: 7b3e506932349f67a7c4cb6d46637ab0
@@ -24,14 +24,20 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 Assets:
-- Assets/Molecules/KP(HO2)2.fbx
-- Assets/Molecules/Cr_bcc.fbx
-- Assets/Molecules/Al_fcc.fbx
-- Assets/Molecules/FeH20S2(NO7)2.fbx
-- Assets/Molecules/Alum_structure.fbx
-- Assets/Molecules/K3Fe(CN)6.fbx
-- Assets/Molecules/BN_ZnO.fbx
-- Assets/Molecules/CuZnSnS.fbx
-- Assets/Molecules/La2Al2O6.fbx
-- Assets/Molecules/test.fbx
+- Assets/Molecules/K3Fe(CN)6_wrl.fbx
+- Assets/Molecules/CH3NH3PbI3_xyz.fbx
+- Assets/Molecules/FeH20S2(NO7)2_wrl.fbx
+- Assets/Molecules/Al_wrl.fbx
+- Assets/Molecules/K3Fe(CN)6_xyz.fbx
+- Assets/Molecules/FeH20S2(NO7)2_xyz.fbx
+- Assets/Molecules/LAO_xyz.fbx
+- Assets/Molecules/ZnO_xyz.fbx
+- Assets/Molecules/Al_xyz.fbx
+- Assets/Molecules/KP(HO2)2_xyz.fbx
+- Assets/Molecules/Cr_wrl.fbx
+- Assets/Molecules/ZnO_wrl.fbx
+- Assets/Molecules/Cr_xyz.fbx
+- Assets/Molecules/KP(HO2)2_wrl.fbx
+- Assets/Molecules/LAO_wrl.fbx
+- Assets/Molecules/CH3NH3PbI3_wrl.fbx
 Dependencies: []

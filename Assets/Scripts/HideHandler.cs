@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/**
+	Hander for polyhedral hide button on the main page. Deal with polyhedral structure of wrl models.
+**/
 public class HideHandler : MonoBehaviour, IPointerClickHandler {
 	private string keyword = "Shape_IndexedFaceSet";
 	private GameObject molecule;
@@ -13,12 +16,12 @@ public class HideHandler : MonoBehaviour, IPointerClickHandler {
 
 	public void Start(){
 		ON_OFF_Button = GameObject.Find("Polyhedral_Controller");
-		array = GameObject.FindGameObjectsWithTag("edmc");
+		array = GameObject.FindGameObjectsWithTag("wrl");
 	}
 
 	public void Update(){
 		if(array.Length == 0 && molecule == null){
-			array = GameObject.FindGameObjectsWithTag("edmc");
+			array = GameObject.FindGameObjectsWithTag("wrl");
 		}
 		else{
 			molecule = array[0];

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/**
+	Handler for both xyz and wrl models. Achieve movement.
+**/
 public class Molecular_Handler : MonoBehaviour {
 
 	// Use this for initialization

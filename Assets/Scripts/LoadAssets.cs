@@ -4,6 +4,9 @@ using AssetBundles;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
+/**
+    Load a random xyz model for the menu page from local/remote assetbundle.
+**/
 public class LoadAssets: MonoBehaviour
 {
     private string url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/Android/molecules";
@@ -23,6 +26,7 @@ public class LoadAssets: MonoBehaviour
     {
         while (!Caching.ready)
             yield return null;
+        /*
     	// load assetBundle from web server
         // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
         WWW www = WWW.LoadFromCacheOrDownload(url, 1);
@@ -33,27 +37,27 @@ public class LoadAssets: MonoBehaviour
             yield return null;
         }
         AssetBundle assetBundle = www.assetBundle;
+        */
         
-        /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules";
         var assetBundle = AssetBundle.LoadFromFile(url);
         if (assetBundle == null) {
             Debug.Log("Failed to load AssetBundle!");
         }
-        */
+        
         // between 0 ~ (count-1)
         Debug.Log(uiManager.count);
         int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
         // copy and set
         Debug.Log(UIManager.moleculeNames[random_number]);
-        GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
+        GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + "_xyz.fbx")) as GameObject;
         Vector3 size = new Vector3(5f, 5f, 5f);
         // scale : 4
         Vector3 position = new Vector3(50f, 0.0f, -250.0f);
         molecule.transform.localScale = size;
         molecule.transform.position = position;
-        molecule.tag = "mc";
+        molecule.tag = "xyz";
         molecule.name = UIManager.moleculeNames[random_number];
         // set molecule parent and set relative position
         molecule.transform.SetParent(myCanvas.transform, false);
