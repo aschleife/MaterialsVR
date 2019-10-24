@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-/**
-	Handler for both xyz and wrl models. Achieve movement.
-**/
 public class Molecular_Handler : MonoBehaviour {
 
 	// Use this for initialization
@@ -13,8 +10,8 @@ public class Molecular_Handler : MonoBehaviour {
 	}
 	
 	public void OnGrab(){
-		Transform pointerTransform = GvrPointerInputModule.Pointer.PointerTransform;
-		transform.SetParent(pointerTransform, true);
+		//Transform pointerTransform = GvrPointerInputModule.Pointer.PointerTransform;
+		//transform.SetParent(pointerTransform, true);
 	}
 
 	public void OnRelease(){

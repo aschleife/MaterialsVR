@@ -5,8 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - b
-  - xyz
-  - wrl
+  - edmc
+  - mc
+  - Tip
+  - UIRaycastCamera
   layers:
   - Default
   - TransparentFX
@@ -39,7 +41,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Spatial Mapping
   m_SortingLayers:
   - name: Default
     uniqueID: 0
