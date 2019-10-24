@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: df55405f9c3bbae4392c9408894a4e1d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: subaru_antenna
+    100004: subaru_body
+    100006: subaru_body_details
+    100008: subaru_bottom
+    100010: subaru_headlights
+    100012: subaru_headlights_glass
+    100014: subaru_interior
+    100016: subaru_logo
+    100018: subaru_mirrors
+    100020: subaru_spoiler
+    100022: subaru_stoplights
+    100024: subaru_wheel_1
+    100026: subaru_wheel_2
+    100028: subaru_wheel_3
+    100030: subaru_wheel_4
+    100032: subaru_windows
+    100034: subaru_windshield_wipers
+    400000: //RootNode
+    400002: subaru_antenna
+    400004: subaru_body
+    400006: subaru_body_details
+    400008: subaru_bottom
+    400010: subaru_headlights
+    400012: subaru_headlights_glass
+    400014: subaru_interior
+    400016: subaru_logo
+    400018: subaru_mirrors
+    400020: subaru_spoiler
+    400022: subaru_stoplights
+    400024: subaru_wheel_1
+    400026: subaru_wheel_2
+    400028: subaru_wheel_3
+    400030: subaru_wheel_4
+    400032: subaru_windows
+    400034: subaru_windshield_wipers
+    2100000: subaru_wheel_tire
+    2100002: subaru_wheel_disk
+    2100004: chrome
+    2100006: subaru_body
+    2100008: plastik_matte_black
+    2100010: subaru_spoiler
+    2100012: glass_pure
+    2100014: glass_orange
+    2100016: subaru_stoplight
+    2100018: glass
+    2100020: plastik_matte_grey
+    2100022: subaru_logo
+    2100024: plastik_coated
+    2300000: subaru_antenna
+    2300002: subaru_body
+    2300004: subaru_body_details
+    2300006: subaru_bottom
+    2300008: subaru_headlights
+    2300010: subaru_headlights_glass
+    2300012: subaru_interior
+    2300014: subaru_logo
+    2300016: subaru_mirrors
+    2300018: subaru_spoiler
+    2300020: subaru_stoplights
+    2300022: subaru_wheel_1
+    2300024: subaru_wheel_2
+    2300026: subaru_wheel_3
+    2300028: subaru_wheel_4
+    2300030: subaru_windows
+    2300032: subaru_windshield_wipers
+    3300000: subaru_antenna
+    3300002: subaru_body
+    3300004: subaru_body_details
+    3300006: subaru_bottom
+    3300008: subaru_headlights
+    3300010: subaru_headlights_glass
+    3300012: subaru_interior
+    3300014: subaru_logo
+    3300016: subaru_mirrors
+    3300018: subaru_spoiler
+    3300020: subaru_stoplights
+    3300022: subaru_wheel_1
+    3300024: subaru_wheel_2
+    3300026: subaru_wheel_3
+    3300028: subaru_wheel_4
+    3300030: subaru_windows
+    3300032: subaru_windshield_wipers
+    4300000: subaru_wheel_2
+    4300002: subaru_body
+    4300004: subaru_body_details
+    4300006: subaru_spoiler
+    4300008: subaru_mirrors
+    4300010: subaru_headlights
+    4300012: subaru_windshield_wipers
+    4300014: subaru_stoplights
+    4300016: subaru_headlights_glass
+    4300018: subaru_interior
+    4300020: subaru_bottom
+    4300022: subaru_logo
+    4300024: subaru_windows
+    4300026: subaru_antenna
+    4300028: subaru_wheel_1
+    4300030: subaru_wheel_4
+    4300032: subaru_wheel_3
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: 7540deb375226cf4fae74501dc084070, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: d7a6bc9cf65536a44b2da2ec11d20972, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_orange
+    second: {fileID: 2100000, guid: 193da442924f08f459f31642dac10a16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_pure
+    second: {fileID: 2100000, guid: 2b0343a9675a9f04a8cc723090e563ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik_coated
+    second: {fileID: 2100000, guid: 37d907a069e849944bfd273da5063f2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik_matte_black
+    second: {fileID: 2100000, guid: 6080bd13e8d202f4087cc6a9ab9ff23d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastik_matte_grey
+    second: {fileID: 2100000, guid: 991ab60413461da4790eb5234f3f6189, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_body
+    second: {fileID: 2100000, guid: 4df141ec313aaf44fa5cc2b7587f3ff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_logo
+    second: {fileID: 2100000, guid: 2f868828fd8ee7e4ca0084c47a0c21eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_spoiler
+    second: {fileID: 2100000, guid: 0e69c96ebfd13354d80cb6139d10c24c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_stoplight
+    second: {fileID: 2100000, guid: 73cd076d0fae67e4e8f14502b3ff1eca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_wheel_disk
+    second: {fileID: 2100000, guid: d2b5e8e9bbaccb64fb8d425f8d2fea5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: subaru_wheel_tire
+    second: {fileID: 2100000, guid: df8a87469847343498be6cd4c6307245, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

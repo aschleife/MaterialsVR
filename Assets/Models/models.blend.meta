@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: c53d07f987340d6408694d0b9dbdbc05
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chair
+    100002: Clock
+    100004: Door
+    100006: Light_Lamp
+    100008: //RootNode
+    100010: Stool
+    100012: Storage
+    100014: Table
+    100016: Window
+    400000: Chair
+    400002: Clock
+    400004: Door
+    400006: Light_Lamp
+    400008: //RootNode
+    400010: Stool
+    400012: Storage
+    400014: Table
+    400016: Window
+    2300000: Chair
+    2300002: Clock
+    2300004: Light_Lamp
+    2300006: Stool
+    2300008: Storage
+    2300010: Table
+    2300012: Window
+    3300000: Chair
+    3300002: Clock
+    3300004: Light_Lamp
+    3300006: Stool
+    3300008: Storage
+    3300010: Table
+    3300012: Window
+    4300000: Clock
+    4300002: Window
+    4300004: Door
+    4300006: Light_Lamp
+    4300008: Chair
+    4300010: Stool
+    4300012: Table
+    4300014: Storage
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: Door
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal
+    second: {fileID: 2100000, guid: 5dc1ec899f911ed4a918ecfbdaab5ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal_001
+    second: {fileID: 2100000, guid: c6be54e4c65e3f14f955b9a1a80799b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics
+    second: {fileID: 2100000, guid: a7ec11cf4de64f94ba9301a7237f46ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics_001
+    second: {fileID: 2100000, guid: 54699ca6cca588047be0798331808db1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light
+    second: {fileID: 2100000, guid: fcac698a3f13cde4dafd39d4155553e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light_001
+    second: {fileID: 2100000, guid: 4f56c58d096074c498bace33ef0f2e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light_002
+    second: {fileID: 2100000, guid: 75bffb5daf3067d4392436ef73b5fdcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_43_Wood
+    second: {fileID: 2100000, guid: 26c17af109623aa41b9af0816f1107a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15
+    second: {fileID: 2100000, guid: 2b35e6d25716aa74e80c4c41fee76358, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_001
+    second: {fileID: 2100000, guid: cd515426bbd45e449a60da3d020003cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_002
+    second: {fileID: 2100000, guid: c56d78e02857e19498ac62c97b2b1db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_003
+    second: {fileID: 2100000, guid: ff0529445937aa242b0b5d54cec4bd41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35
+    second: {fileID: 2100000, guid: 2fbf588752316d845914ed948324426f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35_001
+    second: {fileID: 2100000, guid: 1220be97d52df1a479f1b3583c4e532b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35_002
+    second: {fileID: 2100000, guid: 22e7334a595ca6845a2f630530b522a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40
+    second: {fileID: 2100000, guid: 79ebb92bba446694bae6b454407bd845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40_001
+    second: {fileID: 2100000, guid: 02e526fb9ba28d04597bb4d703d0afcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01_004__Chocofur_Free_Storage_01_diff_01_jpg
+    second: {fileID: 2100000, guid: b498e2cf6912b954ca0ab662be993907, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01_005
+    second: {fileID: 2100000, guid: 22827816e1c29044e997ca431ac9e6be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01__Chocofur_Free_Storage_01_diff_01_jpg
+    second: {fileID: 2100000, guid: 4ff7ba665fc8717448e8b84d739a5baa, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

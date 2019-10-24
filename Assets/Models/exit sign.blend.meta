@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 81651c9e7b628ae41b0e680fad9e8bfd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BezierCircle_BezierCircle_001
+    100002: Bolt_001
+    100004: Bolt_006
+    100006: Bolt_010
+    100008: Bolt_014_Bolt_015
+    100010: Bolt_018_Bolt_019
+    100012: Bolt_022_Bolt_023
+    100014: Bolt_026_Bolt_027
+    100016: Bolt_030_Bolt_031
+    100018: Bolts_001_Bolt_030
+    100020: Case_003_Cube_017
+    100022: Case_Cube_016
+    100024: Chain_Torus_018
+    100026: Chain_Torus_018_MeshPart0
+    100028: Chain_Torus_018_MeshPart1
+    100030: Cylinder_Cylinder_001
+    100032: //RootNode
+    100034: Hookup_Torus_019
+    100036: Torus_012
+    100038: Torus_012_MeshPart0
+    100040: Torus_012_MeshPart1
+    100042: Transmap1_Cube_009
+    100044: Transmap2_Cube_000
+    100046: Wire_BezierCurve
+    400000: BezierCircle_BezierCircle_001
+    400002: Bolt_001
+    400004: Bolt_006
+    400006: Bolt_010
+    400008: Bolt_014_Bolt_015
+    400010: Bolt_018_Bolt_019
+    400012: Bolt_022_Bolt_023
+    400014: Bolt_026_Bolt_027
+    400016: Bolt_030_Bolt_031
+    400018: Bolts_001_Bolt_030
+    400020: Case_003_Cube_017
+    400022: Case_Cube_016
+    400024: Chain_Torus_018
+    400026: Chain_Torus_018_MeshPart0
+    400028: Chain_Torus_018_MeshPart1
+    400030: Cylinder_Cylinder_001
+    400032: //RootNode
+    400034: Hookup_Torus_019
+    400036: Torus_012
+    400038: Torus_012_MeshPart0
+    400040: Torus_012_MeshPart1
+    400042: Transmap1_Cube_009
+    400044: Transmap2_Cube_000
+    400046: Wire_BezierCurve
+    2300000: BezierCircle_BezierCircle_001
+    2300002: Bolt_001
+    2300004: Bolt_006
+    2300006: Bolt_010
+    2300008: Bolt_014_Bolt_015
+    2300010: Bolt_018_Bolt_019
+    2300012: Bolt_022_Bolt_023
+    2300014: Bolt_026_Bolt_027
+    2300016: Bolt_030_Bolt_031
+    2300018: Bolts_001_Bolt_030
+    2300020: Case_003_Cube_017
+    2300022: Case_Cube_016
+    2300024: Chain_Torus_018_MeshPart0
+    2300026: Chain_Torus_018_MeshPart1
+    2300028: Cylinder_Cylinder_001
+    2300030: Hookup_Torus_019
+    2300032: Torus_012_MeshPart0
+    2300034: Torus_012_MeshPart1
+    2300036: Transmap1_Cube_009
+    2300038: Transmap2_Cube_000
+    2300040: Wire_BezierCurve
+    3300000: BezierCircle_BezierCircle_001
+    3300002: Bolt_001
+    3300004: Bolt_006
+    3300006: Bolt_010
+    3300008: Bolt_014_Bolt_015
+    3300010: Bolt_018_Bolt_019
+    3300012: Bolt_022_Bolt_023
+    3300014: Bolt_026_Bolt_027
+    3300016: Bolt_030_Bolt_031
+    3300018: Bolts_001_Bolt_030
+    3300020: Case_003_Cube_017
+    3300022: Case_Cube_016
+    3300024: Chain_Torus_018_MeshPart0
+    3300026: Chain_Torus_018_MeshPart1
+    3300028: Cylinder_Cylinder_001
+    3300030: Hookup_Torus_019
+    3300032: Torus_012_MeshPart0
+    3300034: Torus_012_MeshPart1
+    3300036: Transmap1_Cube_009
+    3300038: Transmap2_Cube_000
+    3300040: Wire_BezierCurve
+    4300000: Bolt_018_Bolt_019
+    4300002: BezierCircle_BezierCircle_001
+    4300004: Bolt_030_Bolt_031
+    4300006: Cylinder_Cylinder_001
+    4300008: Chain_Torus_018_MeshPart0
+    4300010: Chain_Torus_018_MeshPart1
+    4300012: Bolt_014_Bolt_015
+    4300014: Case_Cube_016
+    4300016: Bolt_026_Bolt_027
+    4300018: Wire_BezierCurve
+    4300020: Bolt_001
+    4300022: Bolt_006
+    4300024: Bolt_022_Bolt_023
+    4300026: Torus_012_MeshPart0
+    4300028: Torus_012_MeshPart1
+    4300030: Hookup_Torus_019
+    4300032: Transmap1_Cube_009
+    4300034: Bolts_001_Bolt_030
+    4300036: Transmap2_Cube_000
+    4300038: Case_003_Cube_017
+    4300040: Bolt_010
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bolts
+    second: {fileID: 2100000, guid: e2179af5d2c191a41be81b183eda16f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chain
+    second: {fileID: 2100000, guid: a10a03e132a2ebc4b8c02054b77d73f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hookup
+    second: {fileID: 2100000, guid: 5268a0fdbc7e1424180678e4ed832694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: b894a3559ba357540ad480749119a9de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: c012a2801c943c44ea9e15d57e98d208, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trans1
+    second: {fileID: 2100000, guid: dd37b9ccfca279a4789a28628afba987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trans2
+    second: {fileID: 2100000, guid: 67cf75da938e58543ac5af1c995337ad, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
