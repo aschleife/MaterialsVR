@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Networking;
 
 public class rotational : MonoBehaviour
 {
@@ -26,9 +27,9 @@ public class rotational : MonoBehaviour
         while (!Caching.ready)
             yield return null;
         // load assetBundle from remote server
-        WWW www = WWW.LoadFromCacheOrDownload(url, 1);
-        yield return www;
-        AssetBundle assetBundle = www.assetBundle;
+        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0);
+        yield return www.SendWebRequest();
+        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(www);
         if (!string.IsNullOrEmpty(www.error))
         {
             Debug.Log("There was a problem loading asset bundles.");

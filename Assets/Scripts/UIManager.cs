@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using System;
 using System.IO;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class UIManager : MonoBehaviour
 {
@@ -19,17 +20,17 @@ public class UIManager : MonoBehaviour
     // Use this for initialization
     public IEnumerator Start(){
         // start a download in the background by calling WWW(url) which returns a new WWW object
-        WWW www = new WWW(manifest);
-        yield return www;
+        UnityWebRequest www = UnityWebRequest.Get(manifest);
+        yield return www.SendWebRequest();
         // www.error may return null or empty string
-        if(!string.IsNullOrEmpty(www.error))
+        if(www.isNetworkError || www.isHttpError)
         {
             Debug.Log("There was a problem loading asset bundles.");
         }
         else{
-            string stringFromFile = www.text;
+            string stringFromFile = www.downloadHandler.text;
             string begLine = "- Assets/Molecules/";
-            stringFromFile = www.text;
+            stringFromFile = www.downloadHandler.text;
             // split text into string list
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
            foreach(var manifestLine in lines){
