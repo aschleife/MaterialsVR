@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Atomic_Handler : MonoBehaviour {
 	private Renderer _renderer;
@@ -9,15 +10,17 @@ public class Atomic_Handler : MonoBehaviour {
 	private GameObject[] array;
 	private GameObject molecule;
 	private static int count;
+    private string atomName;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		count = 0;
 		Molecular_info temp = new Molecular_info();
 		elements = temp.load_info();
 		array = GameObject.FindGameObjectsWithTag("edmc");
 		_renderer = gameObject.GetComponent<Renderer>();
 		original = _renderer.material.GetColor("_Color");
+        atomName = _renderer.material.name.Substring(0, _renderer.material.name.Length - 11);
 	}
 
 	public void Update () {
@@ -41,7 +44,11 @@ public class Atomic_Handler : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		List<Renderer> sameColor = elements[original];
+        GameObject atomText = GameObject.Find("Atom_Name");
+        atomText.GetComponent<Text>().text = atomName;
+        atomText.GetComponent<Text>().color = original;
+
+        List <Renderer> sameColor = elements[original];
 		if(count % 2 == 0){
 			foreach(Renderer i in sameColor){
 				i.material.color = Color.magenta;
