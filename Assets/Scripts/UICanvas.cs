@@ -9,7 +9,8 @@ public class UICanvas : MonoBehaviour {
     // Use this for initialization
     void Start () {
         canvas = GetComponent<Canvas>();
-        canvas.worldCamera = GameObject.FindGameObjectWithTag("UIRaycastCamera").GetComponent<Camera>();
+        //canvas.worldCamera = GameObject.FindGameObjectWithTag("MixedRealityPlayspace").GetComponent<Camera>();
+        canvas.worldCamera = GameObject.Find("UIRaycastCamera").GetComponent<Camera>();
     }
 	
 	// Update is called once per frame

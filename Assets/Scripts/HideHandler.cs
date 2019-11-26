@@ -1,11 +1,11 @@
-﻿using HoloToolkit.Unity.InputModule.Tests;
+﻿using Microsoft.MixedReality.Toolkit.Input;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class HideHandler : MonoBehaviour, IPointerClickHandler
+public class HideHandler : MonoBehaviour, IMixedRealityPointerHandler
 {
 	private string keyword = "Shape_IndexedFaceSet";
 	private GameObject molecule;
@@ -61,7 +61,7 @@ public class HideHandler : MonoBehaviour, IPointerClickHandler
 
     */
 
-    public void OnPointerClick(PointerEventData data)
+    public void OnPointerClicked(MixedRealityPointerEventData data)
     {
         MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
         if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Polyhedral OFF")
@@ -86,5 +86,15 @@ public class HideHandler : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    public void OnPointerDown(MixedRealityPointerEventData eventData)
+    {
+    }
 
+    public void OnPointerDragged(MixedRealityPointerEventData eventData)
+    {
+    }
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData)
+    {
+    }
 }

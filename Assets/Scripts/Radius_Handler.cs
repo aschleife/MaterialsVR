@@ -1,5 +1,4 @@
-﻿using HoloToolkit.Unity.InputModule.Tests;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;

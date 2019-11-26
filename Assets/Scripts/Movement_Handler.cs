@@ -1,7 +1,6 @@
-﻿using HoloToolkit.Unity.InputModule;
+﻿using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.UI;
 using System.Linq;
-using HoloToolkit.Unity.InputModule.Examples.Grabbables;
-using HoloToolkit.Unity.InputModule.Tests;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +8,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // maybe later use daydream app button
-public class Movement_Handler : MonoBehaviour, IPointerClickHandler
+public class Movement_Handler : MonoBehaviour, IMixedRealityPointerHandler
 {
 	private string keyword = "Ball";
 	private GameObject[] array = null;
@@ -33,7 +32,7 @@ public class Movement_Handler : MonoBehaviour, IPointerClickHandler
 	}
 
 
-    public void OnPointerClick(PointerEventData data)
+    public void OnPointerClicked(MixedRealityPointerEventData data)
     {
         // GvrControllerInput.AppButton
         if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode ON")
@@ -53,7 +52,7 @@ public class Movement_Handler : MonoBehaviour, IPointerClickHandler
 
 
             // add Sphere Collider
-            molecule.AddComponent<GrabbableSimple>();
+            molecule.AddComponent<NearInteractionGrabbable>();
             Debug.Log("3");
             SphereCollider collider_molecule = molecule.AddComponent<SphereCollider>() as SphereCollider;
             if (molecule.name == "sucrose_soft" || molecule.name == "ethane(Clone)" || molecule.name == "Ethanol(Clone)" || molecule.name == "ethene(Clone)" || molecule.name == "methane(Clone)" || molecule.name == "Polyethylene(Clone)" || molecule.name == "propane(Clone)" || molecule.name == "sucrose(Clone)" || molecule.name == "water(Clone)" || molecule.name == "Sulfuric Acid(Clone)")
@@ -61,16 +60,19 @@ public class Movement_Handler : MonoBehaviour, IPointerClickHandler
             else
                 collider_molecule.radius = 9;
             ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Movement Mode OFF";
-            molecule.AddComponent<HandDraggable>();
-            molecule.AddComponent<RotatableObject>();
+            molecule.AddComponent<ManipulationHandler>();
+            //molecule.AddComponent<RotatableObject>();
         }
         else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode OFF")
         {
-            Destroy(GetComponent<GrabbableSimple>());
+
+            Destroy(molecule.AddComponent<NearInteractionGrabbable>());
             // remove old Sphere Collider
             Destroy(molecule.GetComponent<SphereCollider>());
-            Destroy(molecule.GetComponent<HandDraggable>());
-            Destroy(molecule.GetComponent<RotatableObject>());
+            Destroy(molecule.AddComponent<ManipulationHandler>());
+            //Destroy(GetComponent<GrabbableSimple>());
+            //Destroy(molecule.GetComponent<HandDraggable>());
+            //Destroy(molecule.GetComponent<RotatableObject>());
             // add Sphere Collider 
             MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
             foreach (MeshRenderer i in objects)
@@ -86,41 +88,54 @@ public class Movement_Handler : MonoBehaviour, IPointerClickHandler
         }
 
     }
-    /*
-    [SerializeField]
-    private TestButton button = null;
-    public void OnPointerClick(PointerEventData data)
+
+    public void OnPointerDown(MixedRealityPointerEventData eventData)
     {
-		// GvrControllerInput.AppButton
-		if(ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode ON"){ // not able to move
-			// remove old Sphere Collider
-			MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
-			foreach (MeshRenderer i in objects){
-				GameObject atom = i.gameObject;
-				Destroy(atom.GetComponent<SphereCollider>());
-			}
-        	// add Sphere Collider
-			SphereCollider collider_molecule = molecule.AddComponent<SphereCollider>() as SphereCollider;
-    		collider_molecule.radius = 10;
-			ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Movement Mode OFF";
-		}
-		else if(ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode OFF"){
-			// remove old Sphere Collider
-			Destroy(molecule.GetComponent<SphereCollider>());
-			// add Sphere Collider 
-			MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
-			foreach (MeshRenderer i in objects){
-				GameObject atom = i.gameObject;
-				if(atom.ToString().Contains(keyword)){
-					SphereCollider collider_atom = atom.AddComponent<SphereCollider>() as SphereCollider;
-				}
-			}
-			ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Movement Mode ON";
-		}
     }
-    */
+
+    public void OnPointerDragged(MixedRealityPointerEventData eventData)
+    {
+    }
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData)
+    {
+    }
+
+    /*
+[SerializeField]
+private TestButton button = null;
+public void OnPointerClick(PointerEventData data)
+{
+   // GvrControllerInput.AppButton
+   if(ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode ON"){ // not able to move
+       // remove old Sphere Collider
+       MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
+       foreach (MeshRenderer i in objects){
+           GameObject atom = i.gameObject;
+           Destroy(atom.GetComponent<SphereCollider>());
+       }
+       // add Sphere Collider
+       SphereCollider collider_molecule = molecule.AddComponent<SphereCollider>() as SphereCollider;
+       collider_molecule.radius = 10;
+       ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Movement Mode OFF";
+   }
+   else if(ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode OFF"){
+       // remove old Sphere Collider
+       Destroy(molecule.GetComponent<SphereCollider>());
+       // add Sphere Collider 
+       MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
+       foreach (MeshRenderer i in objects){
+           GameObject atom = i.gameObject;
+           if(atom.ToString().Contains(keyword)){
+               SphereCollider collider_atom = atom.AddComponent<SphereCollider>() as SphereCollider;
+           }
+       }
+       ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Movement Mode ON";
+   }
+}
+*/
 
 
-   
+
 
 }
