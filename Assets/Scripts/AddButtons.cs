@@ -54,6 +54,9 @@ public class AddButtons : MonoBehaviour {
         //DestroyImmediate(ButtonPrefab, true);
         // maybe a better way: DontDestoryOnLoad(Menu_Canvas)
         DontDestroyOnLoad(uiManager);
+        DontDestroyOnLoad(GameObject.Find("MixedRealityToolkit"));
+        DontDestroyOnLoad(GameObject.Find("MixedRealityPlayspace"));
+        DontDestroyOnLoad(GameObject.Find("UIRaycastCamera"));
     }
 
 

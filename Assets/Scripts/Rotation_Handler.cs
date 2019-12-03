@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Microsoft.MixedReality.Toolkit.Input;
 
 // may transfer to scroll controller later
-public class Rotation_Handler : MonoBehaviour, IPointerClickHandler {
+public class Rotation_Handler : MonoBehaviour, IMixedRealityPointerHandler
+{
 	private GameObject molecule;
 	private GameObject[] array;
 	// use one button toggled
@@ -70,7 +72,7 @@ public class Rotation_Handler : MonoBehaviour, IPointerClickHandler {
         }
     }
 
-    public void OnPointerClick(PointerEventData data)
+    public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
 
         if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Rotation Mode OFF")
@@ -84,6 +86,10 @@ public class Rotation_Handler : MonoBehaviour, IPointerClickHandler {
             ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Rotation Mode OFF";
         }
     }
+    public void OnPointerDown(MixedRealityPointerEventData eventData) {}
 
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) {}
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData) {}
 
 }

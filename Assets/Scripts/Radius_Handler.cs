@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using Microsoft.MixedReality.Toolkit.Input;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Radius_Handler : MonoBehaviour, IPointerClickHandler
+public class Radius_Handler : MonoBehaviour, IMixedRealityPointerHandler
 {
     private string keyword = "Ball";
     private GameObject[] array;
@@ -31,7 +32,7 @@ public class Radius_Handler : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData data)
+    public void OnPointerClicked(MixedRealityPointerEventData data)
     {
         Vector3 delta = new Vector3(0.05f, 0.05f, 0.05f);
         MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
@@ -84,4 +85,10 @@ public class Radius_Handler : MonoBehaviour, IPointerClickHandler
         //    ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Change Atom Size OFF";
         //}
     }
+
+    public void OnPointerDown(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData) { }
 }

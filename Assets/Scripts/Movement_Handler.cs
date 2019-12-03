@@ -66,10 +66,10 @@ public class Movement_Handler : MonoBehaviour, IMixedRealityPointerHandler
         else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Movement Mode OFF")
         {
 
-            Destroy(molecule.AddComponent<NearInteractionGrabbable>());
+            Destroy(molecule.GetComponent<NearInteractionGrabbable>());
             // remove old Sphere Collider
             Destroy(molecule.GetComponent<SphereCollider>());
-            Destroy(molecule.AddComponent<ManipulationHandler>());
+            Destroy(molecule.GetComponent<ManipulationHandler>());
             //Destroy(GetComponent<GrabbableSimple>());
             //Destroy(molecule.GetComponent<HandDraggable>());
             //Destroy(molecule.GetComponent<RotatableObject>());
@@ -89,17 +89,11 @@ public class Movement_Handler : MonoBehaviour, IMixedRealityPointerHandler
 
     }
 
-    public void OnPointerDown(MixedRealityPointerEventData eventData)
-    {
-    }
+    public void OnPointerDown(MixedRealityPointerEventData eventData) { }
 
-    public void OnPointerDragged(MixedRealityPointerEventData eventData)
-    {
-    }
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
 
-    public void OnPointerUp(MixedRealityPointerEventData eventData)
-    {
-    }
+    public void OnPointerUp(MixedRealityPointerEventData eventData) { }
 
     /*
 [SerializeField]

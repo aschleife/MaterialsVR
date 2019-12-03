@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using Microsoft.MixedReality.Toolkit.Input;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Quit_Handler : MonoBehaviour, IPointerClickHandler{
+public class Quit_Handler : MonoBehaviour, IMixedRealityPointerHandler
+{
 
     /*
     [SerializeField]
@@ -17,7 +19,7 @@ public class Quit_Handler : MonoBehaviour, IPointerClickHandler{
 
     */
 
-    public void OnPointerClick(PointerEventData data)
+    public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
         Debug.Log("Quit hit");
         // if clicked at button
@@ -29,4 +31,10 @@ public class Quit_Handler : MonoBehaviour, IPointerClickHandler{
         #endif
         
     }
+
+    public void OnPointerDown(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData) { }
 }
