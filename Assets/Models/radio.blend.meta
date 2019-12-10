@@ -8,6 +8,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Radio_002
+    4300002: Radio.002
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -25,8 +26,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: blue emmmisision
+    second: {fileID: 2100000, guid: d763c2df8417d704e91b0f3e8d0a6050, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: blue_emmmisision
     second: {fileID: 2100000, guid: 3aa18aaeae39b2f4999e416864dfa731, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark grey
+    second: {fileID: 2100000, guid: fe10346fdeb7dc34d9cd5f0d5a90aafb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -89,7 +100,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

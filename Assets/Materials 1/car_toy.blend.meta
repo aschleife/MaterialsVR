@@ -21,6 +21,11 @@ ModelImporter:
     100030: subaru_wheel_4
     100032: subaru_windows
     100034: subaru_windshield_wipers
+    100036: subaru_wheel.1
+    100038: subaru_wheel.2
+    100040: subaru_wheel.3
+    100042: subaru_wheel.4
+    100044: Sun
     400000: //RootNode
     400002: subaru_antenna
     400004: subaru_body
@@ -39,6 +44,11 @@ ModelImporter:
     400030: subaru_wheel_4
     400032: subaru_windows
     400034: subaru_windshield_wipers
+    400036: subaru_wheel.1
+    400038: subaru_wheel.2
+    400040: subaru_wheel.3
+    400042: subaru_wheel.4
+    400044: Sun
     2100000: subaru_wheel_tire
     2100002: subaru_wheel_disk
     2100004: chrome
@@ -69,6 +79,10 @@ ModelImporter:
     2300028: subaru_wheel_4
     2300030: subaru_windows
     2300032: subaru_windshield_wipers
+    2300034: subaru_wheel.1
+    2300036: subaru_wheel.2
+    2300038: subaru_wheel.3
+    2300040: subaru_wheel.4
     3300000: subaru_antenna
     3300002: subaru_body
     3300004: subaru_body_details
@@ -86,6 +100,10 @@ ModelImporter:
     3300028: subaru_wheel_4
     3300030: subaru_windows
     3300032: subaru_windshield_wipers
+    3300034: subaru_wheel.1
+    3300036: subaru_wheel.2
+    3300038: subaru_wheel.3
+    3300040: subaru_wheel.4
     4300000: subaru_wheel_2
     4300002: subaru_body
     4300004: subaru_body_details
@@ -103,8 +121,13 @@ ModelImporter:
     4300028: subaru_wheel_1
     4300030: subaru_wheel_4
     4300032: subaru_wheel_3
+    4300034: subaru_wheel.2
+    4300036: subaru_wheel.1
+    4300038: subaru_wheel.4
+    4300040: subaru_wheel.3
     7400000: Default Take
     9500000: //RootNode
+    10800000: Sun
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -205,6 +228,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -229,6 +253,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -243,7 +270,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

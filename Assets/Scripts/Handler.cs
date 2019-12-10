@@ -6,11 +6,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Microsoft.MixedReality.Toolkit.Input;
 
-public class Handler : MonoBehaviour, IMixedRealityPointerHandler
+public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityFocusHandler
 {
+    public void OnFocusEnter(FocusEventData eventData)
+    {
+        if (gameObject.tag == "b")
+            gameObject.GetComponentInChildren<Button>().Select();
+    }
+
+    public void OnFocusExit(FocusEventData eventData) {}
 
     // maybe use GvrControllerInput.ClickButtonDown later
-	public void OnPointerClicked(MixedRealityPointerEventData eventData){
+    public void OnPointerClicked(MixedRealityPointerEventData eventData){
         Debug.Log("Click registered");
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
         if(gameObject.tag == "b")

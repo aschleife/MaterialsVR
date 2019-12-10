@@ -29,6 +29,32 @@ ModelImporter:
     100046: Plane_015
     100048: Plane_016
     100050: //RootNode
+    100052: Camera
+    100054: Cylinder.001
+    100056: Cylinder.002
+    100058: Cylinder.003
+    100060: Cylinder.004
+    100062: Cylinder.005
+    100064: Cylinder.006
+    100066: Plane.001
+    100068: Plane.002
+    100070: Plane.003
+    100072: Plane.004
+    100074: Plane.005
+    100076: Plane.006
+    100078: Plane.007
+    100080: Plane.008
+    100082: Plane.009
+    100084: Plane.010
+    100086: Plane.011
+    100088: Plane.012
+    100090: Plane.013
+    100092: Plane.014
+    100094: Plane.015
+    100096: Plane.016
+    100098: Point
+    100100: Point.001
+    100102: Sun
     400000: Cube
     400002: Cylinder
     400004: Cylinder_001
@@ -55,6 +81,33 @@ ModelImporter:
     400046: Plane_015
     400048: Plane_016
     400050: //RootNode
+    400052: Camera
+    400054: Cylinder.001
+    400056: Cylinder.002
+    400058: Cylinder.003
+    400060: Cylinder.004
+    400062: Cylinder.005
+    400064: Cylinder.006
+    400066: Plane.001
+    400068: Plane.002
+    400070: Plane.003
+    400072: Plane.004
+    400074: Plane.005
+    400076: Plane.006
+    400078: Plane.007
+    400080: Plane.008
+    400082: Plane.009
+    400084: Plane.010
+    400086: Plane.011
+    400088: Plane.012
+    400090: Plane.013
+    400092: Plane.014
+    400094: Plane.015
+    400096: Plane.016
+    400098: Point
+    400100: Point.001
+    400102: Sun
+    2000000: Camera
     2300000: Cube
     2300002: Cylinder
     2300004: Cylinder_001
@@ -80,6 +133,28 @@ ModelImporter:
     2300044: Plane_014
     2300046: Plane_015
     2300048: Plane_016
+    2300050: Cylinder.001
+    2300052: Cylinder.002
+    2300054: Cylinder.003
+    2300056: Cylinder.004
+    2300058: Cylinder.005
+    2300060: Cylinder.006
+    2300062: Plane.001
+    2300064: Plane.002
+    2300066: Plane.003
+    2300068: Plane.004
+    2300070: Plane.005
+    2300072: Plane.006
+    2300074: Plane.007
+    2300076: Plane.008
+    2300078: Plane.009
+    2300080: Plane.010
+    2300082: Plane.011
+    2300084: Plane.012
+    2300086: Plane.013
+    2300088: Plane.014
+    2300090: Plane.015
+    2300092: Plane.016
     3300000: Cube
     3300002: Cylinder
     3300004: Cylinder_001
@@ -105,6 +180,28 @@ ModelImporter:
     3300044: Plane_014
     3300046: Plane_015
     3300048: Plane_016
+    3300050: Cylinder.001
+    3300052: Cylinder.002
+    3300054: Cylinder.003
+    3300056: Cylinder.004
+    3300058: Cylinder.005
+    3300060: Cylinder.006
+    3300062: Plane.001
+    3300064: Plane.002
+    3300066: Plane.003
+    3300068: Plane.004
+    3300070: Plane.005
+    3300072: Plane.006
+    3300074: Plane.007
+    3300076: Plane.008
+    3300078: Plane.009
+    3300080: Plane.010
+    3300082: Plane.011
+    3300084: Plane.012
+    3300086: Plane.013
+    3300088: Plane.014
+    3300090: Plane.015
+    3300092: Plane.016
     4300000: Cylinder_006
     4300002: Plane_016
     4300004: Plane_015
@@ -130,10 +227,80 @@ ModelImporter:
     4300044: Plane_002
     4300046: Plane_001
     4300048: Plane
+    4300050: Cylinder.006
+    4300052: Plane.016
+    4300054: Plane.015
+    4300056: Plane.014
+    4300058: Cylinder.005
+    4300060: Plane.010
+    4300062: Plane.013
+    4300064: Cylinder.004
+    4300066: Plane.012
+    4300068: Plane.011
+    4300070: Plane.009
+    4300072: Cylinder.003
+    4300074: Cylinder.002
+    4300076: Plane.008
+    4300078: Plane.007
+    4300080: Cylinder.001
+    4300082: Plane.006
+    4300084: Plane.005
+    4300086: Plane.004
+    4300088: Plane.003
+    4300090: Plane.002
+    4300092: Plane.001
     7400000: Default Take
     9500000: //RootNode
+    10800000: Point
+    10800002: Point.001
+    10800004: Sun
     2186277476908879412: ImportLogs
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: de0e3bff3f7f74c738fb47eca2eba03e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 541e404f5a00f1149a1932f11e105585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 220f4e2534b1d574a8abf2ee6066d697, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: c63128ae6f5b65a4e920131f95802e4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: c6d01e4b47b49374c957018eefcc4832, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 0d5510ab801ecb74eb89856bf81028ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 8894f506b329c384badbdea8623155c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 9703b2fd6b7420048b4c261d3829e43b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 040d37b8443cd9e4397d3c0dff76b0d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -179,6 +346,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material_009
     second: {fileID: 2100000, guid: 9913fa5ec7bb23040a0ea0df7f324707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: c7c1165d01683400c848fb373bedd268, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -236,7 +408,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -21,6 +21,15 @@ ModelImporter:
     100030: Window
     100032: Window_001
     100034: Window_002
+    100036: Board.001
+    100038: Camera
+    100040: Cube.003
+    100042: Desk Chair
+    100044: Light Lamp.001
+    100046: Light Lamp.002
+    100048: Moving Board
+    100050: Storage.001
+    100052: Window.002
     400000: Board_001
     400002: Chair
     400004: Chalkboard
@@ -39,6 +48,16 @@ ModelImporter:
     400030: Window
     400032: Window_001
     400034: Window_002
+    400036: Board.001
+    400038: Camera
+    400040: Cube.003
+    400042: Desk Chair
+    400044: Light Lamp.001
+    400046: Light Lamp.002
+    400048: Moving Board
+    400050: Storage.001
+    400052: Window.002
+    2000000: Camera
     2300000: Chair
     2300002: Chalkboard
     2300004: Clock
@@ -54,6 +73,13 @@ ModelImporter:
     2300024: Window
     2300026: Window_001
     2300028: Window_002
+    2300030: Cube.003
+    2300032: Desk Chair
+    2300034: Light Lamp.001
+    2300036: Light Lamp.002
+    2300038: Moving Board
+    2300040: Storage.001
+    2300042: Window.002
     3300000: Chair
     3300002: Chalkboard
     3300004: Clock
@@ -69,6 +95,13 @@ ModelImporter:
     3300024: Window
     3300026: Window_001
     3300028: Window_002
+    3300030: Cube.003
+    3300032: Desk Chair
+    3300034: Light Lamp.001
+    3300036: Light Lamp.002
+    3300038: Moving Board
+    3300040: Storage.001
+    3300042: Window.002
     4300000: Moving_Board
     4300002: Window_002
     4300004: Light_Lamp_002
@@ -85,7 +118,16 @@ ModelImporter:
     4300026: Storage
     4300028: Table
     4300030: Desk_Chair
+    4300032: Moving Board
+    4300034: Window.002
+    4300036: Light Lamp.002
+    4300038: Light Lamp.001
+    4300040: Storage.001
+    4300042: Cube.003
+    4300044: Desk Chair
     7400000: Default Take
+    7400002: Board.001|Board.001|Take 001|BaseLayer
+    7400004: Chalkboard|Board.001|Take 001|BaseLayer
     9500000: //RootNode
     13700000: Door
     2186277476908879412: ImportLogs
@@ -108,6 +150,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal.001
+    second: {fileID: 2100000, guid: 7d77090320263554fbd69e2b459d3ed8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_09_Metal_001
     second: {fileID: 2100000, guid: c6be54e4c65e3f14f955b9a1a80799b8, type: 2}
   - first:
@@ -115,6 +162,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Chocofur_Free_12_Plastic
     second: {fileID: 2100000, guid: b0f884773e0af0843bd3c6b7564b3635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic.001
+    second: {fileID: 2100000, guid: bd7ab1cfc6be01f499a91c26e8ed2468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic.002
+    second: {fileID: 2100000, guid: 541ed3a43aaa95d43b8404033cabc6cd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -128,8 +185,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics.003
+    second: {fileID: 2100000, guid: ed96cd74cea0aa84991a3f5a8f03d027, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_18_Fabrics_003
     second: {fileID: 2100000, guid: 885d4b06bb3765641aaad3984501e25a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.003
+    second: {fileID: 2100000, guid: 6521c63a422a45a4d846bda3c2353bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.004
+    second: {fileID: 2100000, guid: db37980ff3b9fa644816ea2aa7e79b54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.005
+    second: {fileID: 2100000, guid: 7d585815b9801b4439d098a69eb4cdbb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -145,6 +222,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Chocofur_Free_27_Light_005
     second: {fileID: 2100000, guid: 3b92e2c800cdb1043b6d11d470f1ca2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.004
+    second: {fileID: 2100000, guid: 3b47d12ee87d8ba41a6b9569d9ca2b2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.005
+    second: {fileID: 2100000, guid: 5474d4686b37774418b0dfa947f94b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.006
+    second: {fileID: 2100000, guid: ac18724589123dd4990488c33fd1015b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.007
+    second: {fileID: 2100000, guid: ae3a1ed2ffc4ee043958c38169043c41, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -168,6 +265,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.003
+    second: {fileID: 2100000, guid: 1bd667e6c743fd04d82878afd3925f73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.004
+    second: {fileID: 2100000, guid: f5cc93d009540604aaaa8bdb9c73490c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.005
+    second: {fileID: 2100000, guid: c77f7f78ebcd47f4b8238ef556e037af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_Details_35_003
     second: {fileID: 2100000, guid: fd365bb1fdf1be8468cba304a7e0b44e, type: 2}
   - first:
@@ -188,8 +300,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40.001
+    second: {fileID: 2100000, guid: 59f8ed840be75b84ab84dd42c012233d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_Details_40_001
     second: {fileID: 2100000, guid: 02e526fb9ba28d04597bb4d703d0afcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.001
+    second: {fileID: 2100000, guid: 3dd70e2555e69114eb7032ab52624aef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.002
+    second: {fileID: 2100000, guid: 453436cdb8ca55645b18a29e6d4623ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.003
+    second: {fileID: 2100000, guid: 64c840a32fe308c438a5bf302c5b34ae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -210,6 +342,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: d3322f73b953f4e3f8b776cc22dd0e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: de0e3bff3f7f74c738fb47eca2eba03e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 8894f506b329c384badbdea8623155c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 9703b2fd6b7420048b4c261d3829e43b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: b1a8c99462f839b4b9e9fbabe6a90956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: b519cbe92da1d3a46b2512eeec924c1a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -249,7 +406,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WoodBoard
-    second: {fileID: 2100000, guid: 950f444739faa944b9d4d879d7b4aa73, type: 2}
+    second: {fileID: 2100000, guid: de759aa91fd0e5f4a8c7f7aeb126ac34, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -302,7 +459,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

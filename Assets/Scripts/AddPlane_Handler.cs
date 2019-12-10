@@ -8,6 +8,7 @@ public class AddPlane_Handler : MonoBehaviour, IMixedRealityPointerHandler
     public GameObject PlanePrefab;
     private GameObject molecule;
     private GameObject[] array;
+    private float size = 0.4f;
 
     public void Start()
     {
@@ -50,7 +51,9 @@ public class AddPlane_Handler : MonoBehaviour, IMixedRealityPointerHandler
         if (PlanePrefab != null)
         {
             var result = eventData.Pointer.Result;
-            Instantiate(PlanePrefab, molecule.transform.position, Quaternion.LookRotation(result.Details.Normal));
+            GameObject plane = Instantiate(PlanePrefab, molecule.transform.position, Quaternion.LookRotation(result.Details.Normal));
+            plane.tag = "plane";
+            plane.transform.localScale *= size;
             Debug.Log(molecule.transform.position);
         }
     }

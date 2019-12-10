@@ -74,18 +74,18 @@ public class rotational : MonoBehaviour
             // add EventTrigger
             EventTrigger trigger_atom = atom.AddComponent<EventTrigger>() as EventTrigger;
             // create Enter and Exit events for components
-            EventTrigger.Entry entry_enter = new EventTrigger.Entry();
-            entry_enter.eventID = EventTriggerType.PointerEnter;
-            entry_enter.callback.AddListener((data) => { ah.OnEnter(); });
-            trigger_atom.triggers.Add(entry_enter);
-            EventTrigger.Entry entry_exit = new EventTrigger.Entry();
-            entry_exit.eventID = EventTriggerType.PointerExit;
-            entry_exit.callback.AddListener((data) => { ah.OnExit(); });
-            trigger_atom.triggers.Add(entry_exit);
-            EventTrigger.Entry entry_click = new EventTrigger.Entry();
-            entry_click.eventID = EventTriggerType.PointerClick;
-            entry_click.callback.AddListener((data) => { ah.OnClick(); });
-            trigger_atom.triggers.Add(entry_click);
+            //EventTrigger.Entry entry_enter = new EventTrigger.Entry();
+            //entry_enter.eventID = EventTriggerType.PointerEnter;
+            //entry_enter.callback.AddListener((data) => { ah.OnEnter(); });
+            //trigger_atom.triggers.Add(entry_enter);
+            //EventTrigger.Entry entry_exit = new EventTrigger.Entry();
+            //entry_exit.eventID = EventTriggerType.PointerExit;
+            //entry_exit.callback.AddListener((data) => { ah.OnExit(); });
+            //trigger_atom.triggers.Add(entry_exit);
+            //EventTrigger.Entry entry_click = new EventTrigger.Entry();
+            //entry_click.eventID = EventTriggerType.PointerClick;
+            //entry_click.callback.AddListener((data) => { ah.OnClick(); });
+            //trigger_atom.triggers.Add(entry_click);
             // add Sphere Collider
             if(atom.ToString().Contains(keyword)){
                 SphereCollider collider_atom = atom.AddComponent<SphereCollider>() as SphereCollider;
@@ -97,13 +97,18 @@ public class rotational : MonoBehaviour
 
     public void Update(){
         GameObject []copy = GameObject.FindGameObjectsWithTag("edmc");
-        if(objMessage.loadBoolean() == true){
+        GameObject []planes = GameObject.FindGameObjectsWithTag("plane");
+        if (objMessage.loadBoolean() == true){
             foreach (GameObject i in copy) 
-                i.transform.Rotate(Vector3.down * Time.deltaTime * 10.0f);
+                i.transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
+            foreach (GameObject p in planes)
+                p.transform.RotateAround(copy[0].transform.position, Vector3.down, Time.deltaTime * 10.0f);
         }
         else{
             foreach (GameObject i in copy) 
                 i.transform.Rotate(Vector3.zero);
+            foreach (GameObject p in planes)
+                p.transform.Rotate(Vector3.zero);
         }
     }
 }

@@ -49,6 +49,45 @@ ModelImporter:
     100086: White_Rook1
     100088: White_Rook2
     100090: White_Rooks
+    100092: ' White Pawn5'
+    100094: ' White Pawn7'
+    100096: Black Bishops
+    100098: Black King
+    100100: Black Knight
+    100102: Black Knight2
+    100104: Black Knights
+    100106: Black Pawn1
+    100108: Black Pawn2
+    100110: Black Pawn3
+    100112: Black Pawn4
+    100114: Black Pawn5
+    100116: Black Pawn6
+    100118: Black Pawn7
+    100120: Black Pawn8
+    100122: Black Pawns
+    100124: Black Peices
+    100126: Black Queen
+    100128: Black Rook1
+    100130: Black Rook2
+    100132: Black Rooks
+    100134: Chess Board
+    100136: White Bishop1
+    100138: White Bishop2
+    100140: White Bishops
+    100142: White King
+    100144: White Knights
+    100146: White Pawn1
+    100148: White Pawn2
+    100150: White Pawn3
+    100152: White Pawn4
+    100154: White Pawn6
+    100156: White Pawn8
+    100158: White Pawns
+    100160: White Pieces
+    100162: White Queen
+    100164: White Rook1
+    100166: White Rook2
+    100168: White Rooks
     400000: _White_Pawn5
     400002: _White_Pawn7
     400004: Black_Bishops
@@ -95,11 +134,54 @@ ModelImporter:
     400086: White_Rook1
     400088: White_Rook2
     400090: White_Rooks
+    400092: ' White Pawn5'
+    400094: ' White Pawn7'
+    400096: Black Bishops
+    400098: Black King
+    400100: Black Knight
+    400102: Black Knight2
+    400104: Black Knights
+    400106: Black Pawn1
+    400108: Black Pawn2
+    400110: Black Pawn3
+    400112: Black Pawn4
+    400114: Black Pawn5
+    400116: Black Pawn6
+    400118: Black Pawn7
+    400120: Black Pawn8
+    400122: Black Pawns
+    400124: Black Peices
+    400126: Black Queen
+    400128: Black Rook1
+    400130: Black Rook2
+    400132: Black Rooks
+    400134: Chess Board
+    400136: White Bishop1
+    400138: White Bishop2
+    400140: White Bishops
+    400142: White King
+    400144: White Knights
+    400146: White Pawn1
+    400148: White Pawn2
+    400150: White Pawn3
+    400152: White Pawn4
+    400154: White Pawn6
+    400156: White Pawn8
+    400158: White Pawns
+    400160: White Pieces
+    400162: White Queen
+    400164: White Rook1
+    400166: White Rook2
+    400168: White Rooks
     2100000: Black_Pieces
     2100002: Box
     2100004: Black_Sq
     2100006: White_Sq
     2100008: Piece_White
+    2100010: Black Pieces
+    2100012: Black Sq
+    2100014: White Sq
+    2100016: Piece White
     2300000: _White_Pawn5
     2300002: _White_Pawn7
     2300004: Black_King
@@ -134,6 +216,34 @@ ModelImporter:
     2300062: White_Queen
     2300064: White_Rook1
     2300066: White_Rook2
+    2300068: ' White Pawn5'
+    2300070: ' White Pawn7'
+    2300072: Black King
+    2300074: Black Knight
+    2300076: Black Knight2
+    2300078: Black Pawn1
+    2300080: Black Pawn2
+    2300082: Black Pawn3
+    2300084: Black Pawn4
+    2300086: Black Pawn5
+    2300088: Black Pawn6
+    2300090: Black Pawn7
+    2300092: Black Pawn8
+    2300094: Black Queen
+    2300096: Black Rook1
+    2300098: Black Rook2
+    2300100: White Bishop1
+    2300102: White Bishop2
+    2300104: White King
+    2300106: White Pawn1
+    2300108: White Pawn2
+    2300110: White Pawn3
+    2300112: White Pawn4
+    2300114: White Pawn6
+    2300116: White Pawn8
+    2300118: White Queen
+    2300120: White Rook1
+    2300122: White Rook2
     3300000: _White_Pawn5
     3300002: _White_Pawn7
     3300004: Black_King
@@ -168,6 +278,34 @@ ModelImporter:
     3300062: White_Queen
     3300064: White_Rook1
     3300066: White_Rook2
+    3300068: ' White Pawn5'
+    3300070: ' White Pawn7'
+    3300072: Black King
+    3300074: Black Knight
+    3300076: Black Knight2
+    3300078: Black Pawn1
+    3300080: Black Pawn2
+    3300082: Black Pawn3
+    3300084: Black Pawn4
+    3300086: Black Pawn5
+    3300088: Black Pawn6
+    3300090: Black Pawn7
+    3300092: Black Pawn8
+    3300094: Black Queen
+    3300096: Black Rook1
+    3300098: Black Rook2
+    3300100: White Bishop1
+    3300102: White Bishop2
+    3300104: White King
+    3300106: White Pawn1
+    3300108: White Pawn2
+    3300110: White Pawn3
+    3300112: White Pawn4
+    3300114: White Pawn6
+    3300116: White Pawn8
+    3300118: White Queen
+    3300120: White Rook1
+    3300122: White Rook2
     4300000: Black_Queen
     4300002: Black_King
     4300004: BlackBishop1
@@ -202,6 +340,17 @@ ModelImporter:
     4300062: White_Pawn1
     4300064: White_Bishop2
     4300066: White_Bishop1
+    4300068: Black Knight2
+    4300070: Black Knight
+    4300072: Black Rook1
+    4300074: Black Pawn1
+    4300076: Black Queen
+    4300078: Black King
+    4300080: White Rook2
+    4300082: White Pawn8
+    4300084: White Bishop2
+    4300086: White King
+    4300088: White Queen
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

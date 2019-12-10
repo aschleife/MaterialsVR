@@ -9,6 +9,7 @@ TagManager:
   - mc
   - Tip
   - UIRaycastCamera
+  - plane
   layers:
   - Default
   - TransparentFX

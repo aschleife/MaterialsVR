@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Microsoft.MixedReality.Toolkit.Input;
 
-public class Atomic_Handler : MonoBehaviour {
+public class Atomic_Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityFocusHandler
+{
 	private Renderer _renderer;
 	private Dictionary<Color, List<Renderer>> elements;
 	private Color original;
@@ -33,17 +35,22 @@ public class Atomic_Handler : MonoBehaviour {
 			original = _renderer.material.GetColor("_Color");
 		}
 	}
-	public void OnEnter(){
-		_renderer.material.color = Color.cyan;
+	public void OnFocusEnter(FocusEventData eventData)
+    {
+        if (_renderer.material.color == original)
+		    _renderer.material.color = Color.cyan;
 //		Debug.Log(gameObject);
 	}
 
-	public void OnExit(){
-		_renderer.material.color = original;
+	public void OnFocusExit(FocusEventData eventData)
+    {
+        if (_renderer.material.color == Color.cyan)
+            _renderer.material.color = original;
 //		Debug.Log(gameObject);
 	}
 
-	public void OnClick(){
+	public void OnPointerClicked(MixedRealityPointerEventData eventData)
+    {
         GameObject atomText = GameObject.Find("Atom_Name");
         atomText.GetComponent<Text>().text = atomName;
         atomText.GetComponent<Text>().color = original;
@@ -61,4 +68,10 @@ public class Atomic_Handler : MonoBehaviour {
 		}
 		count++;
 	}
+
+    public void OnPointerDown(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
+
+    public void OnPointerUp(MixedRealityPointerEventData eventData) { }
 }

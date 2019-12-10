@@ -27,6 +27,24 @@ ModelImporter:
     100042: Transmap1_Cube_009
     100044: Transmap2_Cube_000
     100046: Wire_BezierCurve
+    100048: BezierCircle_BezierCircle.001
+    100050: Bolt.001
+    100052: Bolt.006
+    100054: Bolt.010
+    100056: Bolt.014_Bolt.015
+    100058: Bolt.018_Bolt.019
+    100060: Bolt.022_Bolt.023
+    100062: Bolt.026_Bolt.027
+    100064: Bolt.030_Bolt.031
+    100066: Bolts.001_Bolt.030
+    100068: Case.003_Cube.017
+    100070: Case_Cube.016
+    100072: Chain_Torus.018
+    100074: Cylinder_Cylinder.001
+    100076: Hookup_Torus.019
+    100078: Torus.012
+    100080: Transmap1_Cube.009
+    100082: Transmap2_Cube.000
     400000: BezierCircle_BezierCircle_001
     400002: Bolt_001
     400004: Bolt_006
@@ -51,6 +69,24 @@ ModelImporter:
     400042: Transmap1_Cube_009
     400044: Transmap2_Cube_000
     400046: Wire_BezierCurve
+    400048: BezierCircle_BezierCircle.001
+    400050: Bolt.001
+    400052: Bolt.006
+    400054: Bolt.010
+    400056: Bolt.014_Bolt.015
+    400058: Bolt.018_Bolt.019
+    400060: Bolt.022_Bolt.023
+    400062: Bolt.026_Bolt.027
+    400064: Bolt.030_Bolt.031
+    400066: Bolts.001_Bolt.030
+    400068: Case.003_Cube.017
+    400070: Case_Cube.016
+    400072: Chain_Torus.018
+    400074: Cylinder_Cylinder.001
+    400076: Hookup_Torus.019
+    400078: Torus.012
+    400080: Transmap1_Cube.009
+    400082: Transmap2_Cube.000
     2300000: BezierCircle_BezierCircle_001
     2300002: Bolt_001
     2300004: Bolt_006
@@ -72,6 +108,24 @@ ModelImporter:
     2300036: Transmap1_Cube_009
     2300038: Transmap2_Cube_000
     2300040: Wire_BezierCurve
+    2300042: BezierCircle_BezierCircle.001
+    2300044: Bolt.001
+    2300046: Bolt.006
+    2300048: Bolt.010
+    2300050: Bolt.014_Bolt.015
+    2300052: Bolt.018_Bolt.019
+    2300054: Bolt.022_Bolt.023
+    2300056: Bolt.026_Bolt.027
+    2300058: Bolt.030_Bolt.031
+    2300060: Bolts.001_Bolt.030
+    2300062: Case.003_Cube.017
+    2300064: Case_Cube.016
+    2300066: Chain_Torus.018
+    2300068: Cylinder_Cylinder.001
+    2300070: Hookup_Torus.019
+    2300072: Torus.012
+    2300074: Transmap1_Cube.009
+    2300076: Transmap2_Cube.000
     3300000: BezierCircle_BezierCircle_001
     3300002: Bolt_001
     3300004: Bolt_006
@@ -93,6 +147,24 @@ ModelImporter:
     3300036: Transmap1_Cube_009
     3300038: Transmap2_Cube_000
     3300040: Wire_BezierCurve
+    3300042: BezierCircle_BezierCircle.001
+    3300044: Bolt.001
+    3300046: Bolt.006
+    3300048: Bolt.010
+    3300050: Bolt.014_Bolt.015
+    3300052: Bolt.018_Bolt.019
+    3300054: Bolt.022_Bolt.023
+    3300056: Bolt.026_Bolt.027
+    3300058: Bolt.030_Bolt.031
+    3300060: Bolts.001_Bolt.030
+    3300062: Case.003_Cube.017
+    3300064: Case_Cube.016
+    3300066: Chain_Torus.018
+    3300068: Cylinder_Cylinder.001
+    3300070: Hookup_Torus.019
+    3300072: Torus.012
+    3300074: Transmap1_Cube.009
+    3300076: Transmap2_Cube.000
     4300000: Bolt_018_Bolt_019
     4300002: BezierCircle_BezierCircle_001
     4300004: Bolt_030_Bolt_031
@@ -114,6 +186,24 @@ ModelImporter:
     4300036: Transmap2_Cube_000
     4300038: Case_003_Cube_017
     4300040: Bolt_010
+    4300042: Bolt.018_Bolt.019
+    4300044: BezierCircle_BezierCircle.001
+    4300046: Bolt.030_Bolt.031
+    4300048: Cylinder_Cylinder.001
+    4300050: Chain_Torus.018
+    4300052: Bolt.014_Bolt.015
+    4300054: Case_Cube.016
+    4300056: Bolt.026_Bolt.027
+    4300058: Bolt.001
+    4300060: Bolt.006
+    4300062: Bolt.022_Bolt.023
+    4300064: Torus.012
+    4300066: Hookup_Torus.019
+    4300068: Transmap1_Cube.009
+    4300070: Bolts.001_Bolt.030
+    4300072: Transmap2_Cube.000
+    4300074: Case.003_Cube.017
+    4300076: Bolt.010
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -205,7 +295,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

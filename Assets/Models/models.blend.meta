@@ -12,6 +12,7 @@ ModelImporter:
     100012: Storage
     100014: Table
     100016: Window
+    100018: Light Lamp
     400000: Chair
     400002: Clock
     400004: Door
@@ -21,6 +22,7 @@ ModelImporter:
     400012: Storage
     400014: Table
     400016: Window
+    400018: Light Lamp
     2300000: Chair
     2300002: Clock
     2300004: Light_Lamp
@@ -28,6 +30,7 @@ ModelImporter:
     2300008: Storage
     2300010: Table
     2300012: Window
+    2300014: Light Lamp
     3300000: Chair
     3300002: Clock
     3300004: Light_Lamp
@@ -35,6 +38,7 @@ ModelImporter:
     3300008: Storage
     3300010: Table
     3300012: Window
+    3300014: Light Lamp
     4300000: Clock
     4300002: Window
     4300004: Door
@@ -43,6 +47,7 @@ ModelImporter:
     4300010: Stool
     4300012: Table
     4300014: Storage
+    4300016: Light Lamp
     7400000: Default Take
     9500000: //RootNode
     13700000: Door
@@ -56,6 +61,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal.001
+    second: {fileID: 2100000, guid: 7d77090320263554fbd69e2b459d3ed8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_09_Metal_001
     second: {fileID: 2100000, guid: c6be54e4c65e3f14f955b9a1a80799b8, type: 2}
   - first:
@@ -66,6 +76,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics.001
+    second: {fileID: 2100000, guid: 6212f399f9049d0428434d5e22012b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_18_Fabrics_001
     second: {fileID: 2100000, guid: 54699ca6cca588047be0798331808db1, type: 2}
   - first:
@@ -73,6 +88,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Chocofur_Free_27_Light
     second: {fileID: 2100000, guid: fcac698a3f13cde4dafd39d4155553e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.001
+    second: {fileID: 2100000, guid: 2841fbef10bf95b4f977a26335a6ed9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.002
+    second: {fileID: 2100000, guid: 72d66c8fe43a20a4e94c6b9f0907a447, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -96,6 +121,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.001
+    second: {fileID: 2100000, guid: ab8e329985b950248b458a5dff2db33c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.002
+    second: {fileID: 2100000, guid: 3453e28aec1d17d45b197d102088303b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.003
+    second: {fileID: 2100000, guid: 3cbfad3069c50684a8ffec0e66915fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_Accessories_15_001
     second: {fileID: 2100000, guid: cd515426bbd45e449a60da3d020003cd, type: 2}
   - first:
@@ -116,6 +156,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.001
+    second: {fileID: 2100000, guid: 7818c15b04acf9a4684c7e0b85501527, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.002
+    second: {fileID: 2100000, guid: 73ec8443e9cb8ca4fbe50e95dd6b7235, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_Details_35_001
     second: {fileID: 2100000, guid: 1220be97d52df1a479f1b3583c4e532b, type: 2}
   - first:
@@ -131,8 +181,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40.001
+    second: {fileID: 2100000, guid: 59f8ed840be75b84ab84dd42c012233d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Chocofur_Free_Details_40_001
     second: {fileID: 2100000, guid: 02e526fb9ba28d04597bb4d703d0afcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01
+    second: {fileID: 2100000, guid: 5dd69bbf7a4c2cd4b802a0926fbd476e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.004
+    second: {fileID: 2100000, guid: 65e3fa506f8408c4a996d9e2bc097769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.005
+    second: {fileID: 2100000, guid: 85519d7ef3bdafc45901f93bae00adc5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -200,7 +270,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

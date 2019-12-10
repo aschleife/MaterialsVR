@@ -10,9 +10,12 @@ ModelImporter:
     2100004: gray
     2100006: blue_emmmisision
     2100008: dark_grey
+    2100010: blue emmmisision
+    2100012: dark grey
     2300000: //RootNode
     3300000: //RootNode
     4300000: Radio_002
+    4300002: Radio.002
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

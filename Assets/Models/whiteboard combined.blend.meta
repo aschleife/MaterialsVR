@@ -6,13 +6,27 @@ ModelImporter:
     100000: Board_001
     100002: FacetsBase
     100004: //RootNode
+    100006: Board.001
     400000: Board_001
     400002: FacetsBase
     400004: //RootNode
+    400006: Board.001
     2300000: FacetsBase
     3300000: FacetsBase
     4300000: FacetsBase
     7400000: Default Take
+    7400002: Board.001|Board.001|Take 001|BaseLayer
+    7400004: Board.001|Canvas|Take 001|BaseLayer
+    7400006: Board.001|FacetsBase|Take 001|BaseLayer
+    7400008: Board.001|FacetsSide|Take 001|BaseLayer
+    7400010: Board.001|MetalParts|Take 001|BaseLayer
+    7400012: Board.001|Stand|Take 001|BaseLayer
+    7400014: FacetsBase|Board.001|Take 001|BaseLayer
+    7400016: FacetsBase|Canvas|Take 001|BaseLayer
+    7400018: FacetsBase|FacetsBase|Take 001|BaseLayer
+    7400020: FacetsBase|FacetsSide|Take 001|BaseLayer
+    7400022: FacetsBase|MetalParts|Take 001|BaseLayer
+    7400024: FacetsBase|Stand|Take 001|BaseLayer
     9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects:
@@ -83,7 +97,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
