@@ -41,7 +41,11 @@ public class Isosurface : MonoBehaviour
         if (objMessage.unLoadIsosurface())
             gameObject.SetActive(true);
         else
+        {
             gameObject.SetActive(false);
+            return;
+        }
+            
         string moleculeName = objMessage.unLoadMessage();
 
         switch (moleculeName)
@@ -165,7 +169,7 @@ public class Isosurface : MonoBehaviour
         myLine.AddComponent<LineRenderer>();
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.useWorldSpace = false;
-        lr.material = new Material(Shader.Find("Standard"));
+        lr.material = new Material(Shader.Find("Mixed Reality Toolkit/Standard"));
         lr.startColor = color;
         lr.endColor = color;
         lr.startWidth = grid_width;

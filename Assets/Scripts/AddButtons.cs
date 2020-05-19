@@ -32,7 +32,8 @@ public class AddButtons : MonoBehaviour {
 
         moveButtonDown = new Vector3(225.7f, 25.08f, -247.1f);
 
-        yield return new WaitForSeconds(0.5f);
+        while (!UIManager.init)
+            yield return new WaitForSeconds(0.1f);
         for (int i = 0; i < uiManager.isosurfaceStart; i++)
         {
             Debug.Log("Instantiated Button");
@@ -55,6 +56,7 @@ public class AddButtons : MonoBehaviour {
         for (int i = uiManager.isosurfaceStart; i < uiManager.count; i++)
         {
             Debug.Log("Instantiated Button");
+            Debug.Log("Isosurface" + i);
             // copy a button and set property
             newButton = Instantiate(ButtonPrefab) as GameObject;
             //Handler handler = newButton.AddComponent<Handler>() as Handler;

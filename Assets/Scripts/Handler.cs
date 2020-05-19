@@ -22,8 +22,7 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
         if(gameObject.tag == "b" || gameObject.tag == "isosurface")
         {
-            objMessage.loadMessage(gameObject.name);
-            objMessage.loadIsosurface(gameObject.tag == "isosurface");
+            objMessage.loadMessage(gameObject.name, gameObject.tag == "isosurface");
             SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
         }

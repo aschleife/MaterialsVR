@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
     public static List<string> moleculeNames = new List<string>();
     // index of list where CHGCAR files start 
     public int isosurfaceStart = 0;
+    // true if initialized
+    public static bool init = false;
 
     // Use this for initialization
     public IEnumerator Start(){
@@ -96,6 +98,8 @@ public class UIManager : MonoBehaviour
             string line = file.Remove(file.Length - ".vasp".Length);
             moleculeNames.Add(line.Remove(0, isoPath.Length));
         }
+
+        init = true;
     }
 
     // Update is called once per frame

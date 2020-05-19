@@ -8,17 +8,14 @@ public static class objMessage{
     private static string moleculeName;
     private static bool isIsosurface;
 
-    public static void loadMessage(string name){
+    public static void loadMessage(string name, bool iso_flag)
+    {
         moleculeName = name;
+        isIsosurface = iso_flag;
     }
 
     public static string unLoadMessage(){
     	return moleculeName;
-    }
-
-    public static void loadIsosurface(bool value)
-    {
-        isIsosurface = value;
     }
 
     public static bool unLoadIsosurface()

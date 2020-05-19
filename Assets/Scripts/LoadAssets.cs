@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using AssetBundles;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.Networking;
@@ -30,7 +29,7 @@ public class LoadAssets: MonoBehaviour
         // load assetBundle from web server
         // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
         AssetBundle assetBundle;
-        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 2, 0))
+        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0))
         {
             yield return uwr.SendWebRequest();
             if (uwr.isNetworkError || uwr.isHttpError)
@@ -58,11 +57,19 @@ public class LoadAssets: MonoBehaviour
         }
         */
         // between 0 ~ (count-1)
-        yield return new WaitForSeconds(0.1f);
+        while (!UIManager.init)
+            yield return new WaitForSeconds(0.1f);
+        
         int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
         // copy and set
         Debug.Log(random_number);
         GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
+        MeshRenderer[] renderers = molecule.GetComponentsInChildren<MeshRenderer>();
+        Shader shader = Shader.Find("Mixed Reality Toolkit/Standard");
+        foreach (MeshRenderer r in renderers)
+        {
+            r.material.shader = shader;
+        }
         Vector3 size = new Vector3(5f, 5f, 5f);
         // scale : 4
         Vector3 position = new Vector3(50f, 0.0f, -250.0f);

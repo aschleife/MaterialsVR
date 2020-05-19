@@ -18,7 +18,15 @@ public class rotational : MonoBehaviour
     public IEnumerator Start(){
         objectName = objMessage.unLoadMessage();
         if (objMessage.unLoadIsosurface())
+        {
             gameObject.SetActive(false);
+            yield return null;
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+            
         //myCanvas = GameObject.Find("Canvas");
         //nameText = GameObject.Find("Molecule_Name");
         nameText.GetComponent<Text>().text = objectName;

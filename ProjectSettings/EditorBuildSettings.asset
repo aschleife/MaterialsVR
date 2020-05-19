@@ -17,4 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New_Menu_without_MR_Rig.unity
     guid: 525577c9e1f311043954ba46cd557a64
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 826314b877e5d96458c6b4bd6c466a50,
+      type: 2}
