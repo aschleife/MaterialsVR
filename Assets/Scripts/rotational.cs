@@ -10,12 +10,15 @@ public class rotational : MonoBehaviour
     private string url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/Android/molecules";
     private string keyword = "Ball";
     private string objectName;
+    private bool isIsosurface;
     public GameObject myCanvas;
     public GameObject nameText;
     
     // Use this for initialization
     public IEnumerator Start(){
         objectName = objMessage.unLoadMessage();
+        if (objMessage.unLoadIsosurface())
+            gameObject.SetActive(false);
         //myCanvas = GameObject.Find("Canvas");
         //nameText = GameObject.Find("Molecule_Name");
         nameText.GetComponent<Text>().text = objectName;
@@ -26,14 +29,29 @@ public class rotational : MonoBehaviour
         // may need unload assetbundle somewhere
         while (!Caching.ready)
             yield return null;
+        Caching.ClearCache();
+        while (!Caching.ready)
+            yield return null;
         // load assetBundle from remote server
-        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0);
-        yield return www.SendWebRequest();
-        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(www);
-        if (!string.IsNullOrEmpty(www.error))
+        AssetBundle assetBundle;
+        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0))
         {
-            Debug.Log("There was a problem loading asset bundles.");
+            yield return uwr.SendWebRequest();
+            if (uwr.isNetworkError || uwr.isHttpError)
+            {
+                Debug.Log(uwr.error);
+            }
+            assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
         }
+        // using www
+        //WWW www = WWW.LoadFromCacheOrDownload(url, 1);
+        //yield return www;
+        //if (!string.IsNullOrEmpty(www.error))
+        //{
+        //    Debug.LogError("There was a problem loading asset bundles.");
+        //    yield return null;
+        //}
+        //AssetBundle assetBundle = www.assetBundle;
         /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules";

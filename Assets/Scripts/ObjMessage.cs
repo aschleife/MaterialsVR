@@ -6,6 +6,7 @@ using UnityEngine;
 public static class objMessage{
 
     private static string moleculeName;
+    private static bool isIsosurface;
 
     public static void loadMessage(string name){
         moleculeName = name;
@@ -13,6 +14,16 @@ public static class objMessage{
 
     public static string unLoadMessage(){
     	return moleculeName;
+    }
+
+    public static void loadIsosurface(bool value)
+    {
+        isIsosurface = value;
+    }
+
+    public static bool unLoadIsosurface()
+    {
+        return isIsosurface;
     }
 
     private static bool isRotational = true;

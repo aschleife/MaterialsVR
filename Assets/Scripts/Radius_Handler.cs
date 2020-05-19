@@ -10,6 +10,7 @@ public class Radius_Handler : MonoBehaviour, IMixedRealityPointerHandler
     private string keyword = "Ball";
     private GameObject[] array;
     private GameObject molecule;
+    private GameObject isosurface;
     // use one button toggled
     public GameObject ON_OFF_Button;
 
@@ -17,6 +18,7 @@ public class Radius_Handler : MonoBehaviour, IMixedRealityPointerHandler
     public void Start()
     {
         array = GameObject.FindGameObjectsWithTag("edmc");
+        isosurface = GameObject.Find("Isosurface");
     }
 
     // Update is called once per frame
@@ -34,35 +36,49 @@ public class Radius_Handler : MonoBehaviour, IMixedRealityPointerHandler
 
     public void OnPointerClicked(MixedRealityPointerEventData data)
     {
-        Vector3 delta = new Vector3(0.05f, 0.05f, 0.05f);
-        MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
 
-        if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size +")
+        if (objMessage.unLoadIsosurface())
         {
-            foreach (MeshRenderer i in objects)
+            float delta = 1f;
+            if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size +")
+                isosurface.GetComponent<Isosurface>().UpdateAtomSize(delta);
+            else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size -")
+                isosurface.GetComponent<Isosurface>().UpdateAtomSize(-delta);
+        }
+        else
+        {
+            float delta_radius = 0.05f;
+            Vector3 delta = Vector3.one * delta_radius;
+            MeshRenderer[] objects = molecule.GetComponentsInChildren<MeshRenderer>();
+
+            if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size +")
             {
-                GameObject atom = i.gameObject;
-                if (atom.ToString().Contains(keyword))
+                foreach (MeshRenderer i in objects)
                 {
-                    if (atom.transform.localScale[0] < 2.0f)
-                        atom.transform.localScale += delta;
-                    //Debug.Log(atom.transform.localScale);
+                    GameObject atom = i.gameObject;
+                    if (atom.ToString().Contains(keyword))
+                    {
+                        if (atom.transform.localScale[0] < 2.0f)
+                            atom.transform.localScale += delta;
+                        //Debug.Log(atom.transform.localScale);
+                    }
+                }
+            }
+            else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size -")
+            {
+                foreach (MeshRenderer i in objects)
+                {
+                    GameObject atom = i.gameObject;
+                    if (atom.ToString().Contains(keyword))
+                    {
+                        if (atom.transform.localScale[0] > 0.1f)
+                            atom.transform.localScale -= delta;
+                        //Debug.Log(atom.transform.localScale);
+                    }
                 }
             }
         }
-        else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size -")
-        {
-            foreach (MeshRenderer i in objects)
-            {
-                GameObject atom = i.gameObject;
-                if (atom.ToString().Contains(keyword))
-                {
-                    if (atom.transform.localScale[0] > 0.1f)
-                        atom.transform.localScale -= delta;
-                    //Debug.Log(atom.transform.localScale);
-                }
-            }
-        }
+        
 
         //if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Change Atom Size OFF")
         //{

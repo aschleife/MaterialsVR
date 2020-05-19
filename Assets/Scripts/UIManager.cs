@@ -11,11 +11,13 @@ using UnityEngine.Networking;
 public class UIManager : MonoBehaviour
 {
     // absolute path storing the assetbundle manifest
-    private string manifest = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/Android/molecules.manifest";
+    private string manifest = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules.manifest";
     // number of loaded molecules in assetbundle 
     public int count = 0;
     // list of loaded molecules name, note static
     public static List<string> moleculeNames = new List<string>();
+    // index of list where CHGCAR files start 
+    public int isosurfaceStart = 0;
 
     // Use this for initialization
     public IEnumerator Start(){
@@ -23,20 +25,36 @@ public class UIManager : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Get(manifest);
         yield return www.SendWebRequest();
         // www.error may return null or empty string
-        if(www.isNetworkError || www.isHttpError)
+        if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log("There was a problem loading asset bundles.");
         }
-        else{
+        else
+        {
             string stringFromFile = www.downloadHandler.text;
             string begLine = "- Assets/Molecules/";
             stringFromFile = www.downloadHandler.text;
+
+            // using www
+        //    WWW www = new WWW(manifest);
+        //yield return www;
+        //if (!string.IsNullOrEmpty(www.error))
+        //{
+        //    Debug.LogError("There was a problem loading asset bundles.");
+        //    yield return null;
+        //}
+        //else
+        //{
+        //    string stringFromFile = www.text;
+        //    string begLine = "- Assets/Molecules/";
+        //    stringFromFile = www.text;
+        
             // split text into string list
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
            foreach(var manifestLine in lines){
                 if (manifestLine.Contains(begLine)){
                     count++;
-                    Debug.Log(count);
+                    Debug.Log("Manifest Read:" + count);
                     string line = manifestLine.Remove(manifestLine.Length - ".fbx".Length);
                     // add new name at the end of the list
                     moleculeNames.Add(line.Remove(0, begLine.Length));
@@ -65,6 +83,19 @@ public class UIManager : MonoBehaviour
         }
         yield return stringFromFile;
         */
+
+        // Load Isosurface
+        isosurfaceStart = count;
+        string isoPath = Application.dataPath + "/Isosurface/CHGCAR/";
+        string[] fileList = Directory.GetFiles(isoPath, "*.vasp");
+        foreach (String file in fileList)
+        {
+            count++;
+            Debug.Log("CHGCAR Read:" + count);
+            // add new name at the end of the list
+            string line = file.Remove(file.Length - ".vasp".Length);
+            moleculeNames.Add(line.Remove(0, isoPath.Length));
+        }
     }
 
     // Update is called once per frame

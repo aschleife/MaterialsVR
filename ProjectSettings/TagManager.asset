@@ -10,6 +10,7 @@ TagManager:
   - Tip
   - UIRaycastCamera
   - plane
+  - isosurface
   layers:
   - Default
   - TransparentFX
