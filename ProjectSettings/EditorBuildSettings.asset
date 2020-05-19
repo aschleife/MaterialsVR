@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/New_Menu.unity
     guid: 8a857a8f9d9a74ea28b330bbbf45723a
   - enabled: 1
+    path: Assets/Scenes/New_Menu_without_MR_Rig.unity
+    guid: 525577c9e1f311043954ba46cd557a64
+  - enabled: 1
     path: Assets/Scenes/SPIN6.26.unity
     guid: 1497ae5d4f73747dbbf44dd294bde7c2
   - enabled: 0
     path: Assets/Scenes/Menutest.unity
     guid: e0f0e5bccd3ffa740bc72962333fe7b9
-  - enabled: 1
-    path: Assets/Scenes/New_Menu_without_MR_Rig.unity
-    guid: 525577c9e1f311043954ba46cd557a64
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 826314b877e5d96458c6b4bd6c466a50,
       type: 2}

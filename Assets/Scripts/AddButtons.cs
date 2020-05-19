@@ -32,7 +32,7 @@ public class AddButtons : MonoBehaviour {
 
         moveButtonDown = new Vector3(225.7f, 25.08f, -247.1f);
 
-        while (!UIManager.init)
+        while (!uiManager.init)
             yield return new WaitForSeconds(0.1f);
         for (int i = 0; i < uiManager.isosurfaceStart; i++)
         {

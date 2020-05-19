@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     // index of list where CHGCAR files start 
     public int isosurfaceStart = 0;
     // true if initialized
-    public static bool init = false;
+    public bool init = false;
 
     // Use this for initialization
     public IEnumerator Start(){

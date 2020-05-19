@@ -57,10 +57,10 @@ public class LoadAssets: MonoBehaviour
         }
         */
         // between 0 ~ (count-1)
-        while (!UIManager.init)
+        while (!uiManager.init)
             yield return new WaitForSeconds(0.1f);
         
-        int random_number = Mathf.RoundToInt(Random.value * (uiManager.count - 1));
+        int random_number = Mathf.RoundToInt(Random.value * (uiManager.isosurfaceStart - 1));
         // copy and set
         Debug.Log(random_number);
         GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
