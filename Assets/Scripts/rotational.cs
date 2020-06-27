@@ -13,6 +13,7 @@ public class rotational : MonoBehaviour
     private bool isIsosurface;
     public GameObject myCanvas;
     public GameObject nameText;
+    [SerializeField] ToggleIndicator indicator;
     
     // Use this for initialization
     public IEnumerator Start(){
@@ -34,6 +35,7 @@ public class rotational : MonoBehaviour
     }
 
     public IEnumerator LoadObject(){
+
         // may need unload assetbundle somewhere
         while (!Caching.ready)
             yield return null;
@@ -69,6 +71,7 @@ public class rotational : MonoBehaviour
         }
         */
         GameObject molecule = Instantiate(assetBundle.LoadAsset(objectName + ".fbx")) as GameObject;
+        indicator.Toggle(molecule);
         Vector3 size = new Vector3(0.15f, 0.15f, 0.15f);
         // coordinate with camera
         Vector3 slideRight = new Vector3(0, 0.3f, 3.11f);
@@ -117,6 +120,8 @@ public class rotational : MonoBehaviour
                 SphereCollider collider_atom = atom.AddComponent<SphereCollider>() as SphereCollider;
             }
         }
+        indicator.Toggle(molecule);
+
         assetBundle.Unload(false);
         yield return assetBundle;
     }
@@ -137,4 +142,5 @@ public class rotational : MonoBehaviour
                 p.transform.Rotate(Vector3.zero);
         }
     }
+
 }

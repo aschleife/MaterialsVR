@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Microsoft.MixedReality.Toolkit.Input;
 
-public class Back_Handler : MonoBehaviour, IMixedRealityPointerHandler
+public class Back_Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityFocusHandler
 {
     private GameObject MR;
     private GameObject UI;
@@ -38,11 +38,18 @@ public class Back_Handler : MonoBehaviour, IMixedRealityPointerHandler
         UI = GameObject.Find("UIManager MR");
     }
 
+    public void OnFocusEnter(FocusEventData eventData)
+    {
+        gameObject.GetComponentInChildren<Button>().Select();
+    }
+
+    public void OnFocusExit(FocusEventData eventData) { }
+
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
         // if clicked at button
         // if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
-        SceneManager.LoadScene("New_Menu_without_MR_Rig");
+        SceneManager.LoadScene("Menu_womr");
         //Destroy(MR);
         //Destroy(UI);
     }

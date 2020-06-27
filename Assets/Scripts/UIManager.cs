@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -20,9 +21,18 @@ public class UIManager : MonoBehaviour
     public int isosurfaceStart = 0;
     // true if initialized
     public bool init = false;
+    // Progress indicator
+    [SerializeField] GameObject Canvas;
+    [SerializeField] GameObject indicatorObject;
+    private IProgressIndicator indicator;
+    // active list tag
+    public static string activeTag = "b_mol";
 
     // Use this for initialization
     public IEnumerator Start(){
+
+        indicator = indicatorObject.GetComponent<IProgressIndicator>();
+        ToggleIndicator(Canvas);
         // start a download in the background by calling WWW(url) which returns a new WWW object
         UnityWebRequest www = UnityWebRequest.Get(manifest);
         yield return www.SendWebRequest();
@@ -100,6 +110,7 @@ public class UIManager : MonoBehaviour
         }
 
         init = true;
+        ToggleIndicator(Canvas);
     }
 
     // Update is called once per frame
@@ -120,6 +131,27 @@ public class UIManager : MonoBehaviour
 
     public void LoadMLevel(BaseEventData data){
 
+    }
+
+    //
+    private async void ToggleIndicator(GameObject obj)
+    {
+        await indicator.AwaitTransitionAsync();
+
+        switch (indicator.State)
+        {
+            case ProgressIndicatorState.Closed:
+                obj.SetActive(false);
+                indicatorObject.SetActive(true);
+                await indicator.OpenAsync();
+                break;
+
+            case ProgressIndicatorState.Open:
+                await indicator.CloseAsync();
+                indicatorObject.SetActive(false);
+                obj.SetActive(true);
+                break;
+        }
     }
 
 }

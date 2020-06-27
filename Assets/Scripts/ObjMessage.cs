@@ -5,22 +5,22 @@ using UnityEngine;
 // enough for now; might need refresh sometime later, thus maybe inherent from MonoBehaviour will be helpful
 public static class objMessage{
 
-    private static string moleculeName;
-    private static bool isIsosurface;
+    private static string name;
+    private static string tag;
 
-    public static void loadMessage(string name, bool iso_flag)
+    public static void loadMessage(string cur_name, string cur_tag)
     {
-        moleculeName = name;
-        isIsosurface = iso_flag;
+        name = cur_name;
+        tag = cur_tag;
     }
 
     public static string unLoadMessage(){
-    	return moleculeName;
+    	return name;
     }
 
     public static bool unLoadIsosurface()
     {
-        return isIsosurface;
+        return tag == "b_iso";
     }
 
     private static bool isRotational = true;

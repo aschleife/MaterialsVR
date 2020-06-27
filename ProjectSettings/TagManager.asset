@@ -4,13 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - b
   - edmc
   - mc
   - Tip
   - UIRaycastCamera
   - plane
   - isosurface
+  - UI
+  - b_mol
+  - b_iso
   layers:
   - Default
   - TransparentFX

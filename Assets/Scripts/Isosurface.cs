@@ -3,21 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class Isosurface : MonoBehaviour
 {
     Vector3Int dimensions;
 
+    [SerializeField] ToggleIndicator indicator;
+    [SerializeField] PinchSlider pinchslider;
+    [SerializeField] Material BoxMaterial;
+    [SerializeField] Material BoxGrabbedMaterial;
+    [SerializeField] Material HandleMaterial;
+    [SerializeField] Material HandleGrabbedMaterial;
+
+    [SerializeField] bool draw_grid = true;
+    [SerializeField] bool draw_atom = true;
+    [SerializeField] string file_name = "CHGCAR";
+    [SerializeField] float atom_size = 5f;
+    [SerializeField] float grid_width = 0.05f;
+
+
     float[,,] data;
     private List<List<Vector3>> atoms_position;
     private List<int> atom_count;
     private List<string> atom_name;
-
-    public string file_name = "CHGCAR";
-    public float atom_size = 5f;
-    public float grid_width = 0.05f;
-    public bool draw_grid = true;
-    public bool draw_atom = true;
+    
     Vector3 scale;
     string data_path;
     private List<GameObject> sphereList;    // List of All spheres from DrawAtom
@@ -26,6 +36,7 @@ public class Isosurface : MonoBehaviour
     float surface = 9.57048371525f; // CHGCAR
     //float surface = 429.8f; // CdS
     //float surface = 349.928951293f; //HgS
+    private float surface_init = 9.57048371525f;
 
     float surface_change = 0.0f;
 
@@ -38,11 +49,18 @@ public class Isosurface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        indicator.gameObject.SetActive(false);
         if (objMessage.unLoadIsosurface())
+        {
             gameObject.SetActive(true);
+            pinchslider.gameObject.SetActive(true);
+        }
+            
+
         else
         {
             gameObject.SetActive(false);
+            pinchslider.gameObject.SetActive(false);
             return;
         }
             
@@ -51,17 +69,18 @@ public class Isosurface : MonoBehaviour
         switch (moleculeName)
         {
             case "CHGCAR":
-                surface = 9.57048371525f;
+                surface_init = 9.57048371525f;
                 break;
             case "CHGCAR_CdS":
-                surface = 429.8f;
+                surface_init = 429.8f;
                 break;
             case "CHGCAR_HgS":
-                surface = 349.928951293f;
+                surface_init = 349.928951293f;
                 break;
             default:
                 break;
         }
+        surface = surface_init;
 
         scale = transform.localScale;
         data_path = "Assets/Isosurface/CHGCAR/" + moleculeName + ".vasp";
@@ -69,7 +88,11 @@ public class Isosurface : MonoBehaviour
         localMesh = new Mesh();
         meshFilter = GetComponent<MeshFilter>();
         ReadData();
+        if (draw_atom)
+            DrawAtoms();
         GenerateMesh();
+        UpdateBoxCollider();
+        DrawGrid();
     }
 
     // Update is called once per frame
@@ -77,13 +100,13 @@ public class Isosurface : MonoBehaviour
     {
         Rotation(objMessage.loadBoolean());
         //bool updateMesh = false;
-        float speed = 0.10f;
-        Vector3 scalar = new Vector3(0.01f, 0.01f, 0.01f);
-        float surface_delta = 0.02f;
-        //surface += Input.GetAxis("AXIS_4") * speed;
-        this.transform.position -= Camera.main.transform.right * Input.GetAxis("AXIS_4") * speed;
-        this.transform.position += Camera.main.transform.forward * Input.GetAxis("AXIS_5") * speed;
-        surface_change += Input.GetAxis("AXIS_2") * surface_delta;
+        //float speed = 0.10f;
+        //Vector3 scalar = new Vector3(0.01f, 0.01f, 0.01f);
+        //float surface_delta = 0.02f;
+        ////surface += Input.GetAxis("AXIS_4") * speed;
+        //this.transform.position -= Camera.main.transform.right * Input.GetAxis("AXIS_4") * speed;
+        //this.transform.position += Camera.main.transform.forward * Input.GetAxis("AXIS_5") * speed;
+        //surface_change += Input.GetAxis("AXIS_2") * surface_delta;
         //this.transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
         //if ((Input.GetAxis("AXIS_2") == 0) && (surface_change != 0) )
         //{
@@ -91,43 +114,63 @@ public class Isosurface : MonoBehaviour
         //    surface_change = 0;
         //    GenerateMesh();
         //}
-        if (Input.GetKey(KeyCode.O))
-        {
-            surface += surface * surface_delta;
-        }
-        if (Input.GetKey(KeyCode.I))
-        {
-            surface -= surface * surface_delta;
-        }
-        if (Input.GetKeyUp(KeyCode.O) || Input.GetKeyUp(KeyCode.I))
-        {
-            GenerateMesh();
-        }
+        //if (Input.GetKey(KeyCode.O))
+        //{
+        //    surface += surface * surface_delta;
+        //}
+        //if (Input.GetKey(KeyCode.I))
+        //{
+        //    surface -= surface * surface_delta;
+        //}
+        //if (Input.GetKeyUp(KeyCode.O) || Input.GetKeyUp(KeyCode.I))
+        //{
+        //    GenerateMesh();
+        //}
+    }
+
+    public void OnInteractionEnded(SliderEventData eventData)
+    {
+        surface = surface_init * eventData.NewValue * 2;
+        Debug.Log(surface);
+        GenerateMesh();
     }
 
     private void DrawGrid()
     {
-        Color line_color = Color.black;
-        Vector3 point_0 = Vector3.zero;
-        Vector3 point_1 = new Vector3(0.0f, dimensions.y, 0.0f);
-        Vector3 point_2 = new Vector3(dimensions.x, dimensions.y, 0.0f);
-        Vector3 point_3 = new Vector3(dimensions.x, 0.0f, 0.0f);
-        Vector3 point_4 = new Vector3(0.0f, 0.0f, dimensions.z);
-        Vector3 point_5 = new Vector3(0.0f, dimensions.y, dimensions.z);
-        Vector3 point_6 = new Vector3(dimensions.x, dimensions.y, dimensions.z);
-        Vector3 point_7 = new Vector3(dimensions.x, 0.0f, dimensions.z);
-        DrawLine(point_0, point_1, line_color);
-        DrawLine(point_1, point_2, line_color);
-        DrawLine(point_2, point_3, line_color);
-        DrawLine(point_3, point_0, line_color);
-        DrawLine(point_4, point_5, line_color);
-        DrawLine(point_5, point_6, line_color);
-        DrawLine(point_6, point_7, line_color);
-        DrawLine(point_7, point_4, line_color);
-        DrawLine(point_0, point_4, line_color);
-        DrawLine(point_1, point_5, line_color);
-        DrawLine(point_2, point_6, line_color);
-        DrawLine(point_3, point_7, line_color);
+        BoundingBox bbox;
+        bbox = gameObject.AddComponent<BoundingBox>();
+        // Make the scale handles large
+        bbox.ScaleHandleSize = 0.02f;
+        bbox.BoxMaterial = BoxMaterial;
+        bbox.BoxGrabbedMaterial = BoxGrabbedMaterial;
+        bbox.HandleMaterial = HandleMaterial;
+        bbox.HandleGrabbedMaterial = HandleGrabbedMaterial;
+        // Hide rotation handles
+        bbox.ShowRotationHandleForX = false;
+        bbox.ShowRotationHandleForY = false;
+        bbox.ShowRotationHandleForZ = false;
+
+        //Color line_color = Color.black;
+        //Vector3 point_0 = Vector3.zero;
+        //Vector3 point_1 = new Vector3(0.0f, dimensions.y, 0.0f);
+        //Vector3 point_2 = new Vector3(dimensions.x, dimensions.y, 0.0f);
+        //Vector3 point_3 = new Vector3(dimensions.x, 0.0f, 0.0f);
+        //Vector3 point_4 = new Vector3(0.0f, 0.0f, dimensions.z);
+        //Vector3 point_5 = new Vector3(0.0f, dimensions.y, dimensions.z);
+        //Vector3 point_6 = new Vector3(dimensions.x, dimensions.y, dimensions.z);
+        //Vector3 point_7 = new Vector3(dimensions.x, 0.0f, dimensions.z);
+        //DrawLine(point_0, point_1, line_color);
+        //DrawLine(point_1, point_2, line_color);
+        //DrawLine(point_2, point_3, line_color);
+        //DrawLine(point_3, point_0, line_color);
+        //DrawLine(point_4, point_5, line_color);
+        //DrawLine(point_5, point_6, line_color);
+        //DrawLine(point_6, point_7, line_color);
+        //DrawLine(point_7, point_4, line_color);
+        //DrawLine(point_0, point_4, line_color);
+        //DrawLine(point_1, point_5, line_color);
+        //DrawLine(point_2, point_6, line_color);
+        //DrawLine(point_3, point_7, line_color);
     }
 
     private void UpdateBoxCollider()
@@ -188,8 +231,8 @@ public class Isosurface : MonoBehaviour
     }
     private void Rotation(bool rotate)
     {
-        if (rotate)
-            transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
+        //if (rotate)
+        //    transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
     }
 
     private void ReadData()
@@ -538,12 +581,6 @@ public class Isosurface : MonoBehaviour
             localMesh.RecalculateBounds();
         }
         meshFilter.mesh = localMesh;
-
-        if (draw_grid) { }
-            DrawGrid();
-        if (draw_atom)
-            DrawAtoms();
-        UpdateBoxCollider();
     }
 
 }

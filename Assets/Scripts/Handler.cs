@@ -10,7 +10,7 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
 {
     public void OnFocusEnter(FocusEventData eventData)
     {
-        if (gameObject.tag == "b")
+        if (gameObject.tag == UIManager.activeTag)
             gameObject.GetComponentInChildren<Button>().Select();
     }
 
@@ -20,9 +20,9 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
     public void OnPointerClicked(MixedRealityPointerEventData eventData){
         Debug.Log("Click registered");
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
-        if(gameObject.tag == "b" || gameObject.tag == "isosurface")
+        if(gameObject.tag == UIManager.activeTag)
         {
-            objMessage.loadMessage(gameObject.name, gameObject.tag == "isosurface");
+            objMessage.loadMessage(gameObject.name, gameObject.tag);
             SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
         }

@@ -1,8 +1,18 @@
 {
+    "scopedRegistries": [
+        {
+            "name": "MS Build for Unity",
+            "url": "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/npm/registry",
+            "scopes": [
+                "com.microsoft"
+            ]
+        }
+    ],
   "dependencies": {
+    "com.microsoft.msbuildforunity": "0.9.1-20200131.14",
     "com.unity.addressables": "1.8.3",
     "com.unity.ads": "2.0.8",
-    "com.unity.analytics": "3.2.2",
+    "com.unity.analytics": "3.2.3",
     "com.unity.collab-proxy": "1.2.15",
     "com.unity.package-manager-ui": "2.0.8",
     "com.unity.purchasing": "2.0.3",

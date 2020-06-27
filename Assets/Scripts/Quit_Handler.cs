@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Quit_Handler : MonoBehaviour, IMixedRealityPointerHandler
+public class Quit_Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityFocusHandler
 {
 
     /*
@@ -18,6 +18,12 @@ public class Quit_Handler : MonoBehaviour, IMixedRealityPointerHandler
     }
 
     */
+
+    public void OnFocusEnter(FocusEventData eventData)
+    {
+        gameObject.GetComponentInChildren<Button>().Select();
+    }
+    public void OnFocusExit(FocusEventData eventData) { }
 
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
