@@ -4,21 +4,24 @@ using UnityEngine;
 using System;
 using System.IO;
 using Microsoft.MixedReality.Toolkit.UI;
+using System.Security.Cryptography;
+using UnityEngine.Networking;
+using System.Runtime.InteropServices.ComTypes;
+using System.Resources;
 
 public class Isosurface : MonoBehaviour
 {
-    Vector3Int dimensions;
+    private string chgcar_path = "http://ccluo.altervista.org/mat/";
 
-    [SerializeField] ToggleIndicator indicator;
+    private Vector3 dim;
+    private Vector3Int dimInt;
+    private BoxCollider bc;
+
+    [SerializeField] Loader loader;
     [SerializeField] PinchSlider pinchslider;
-    [SerializeField] Material BoxMaterial;
-    [SerializeField] Material BoxGrabbedMaterial;
-    [SerializeField] Material HandleMaterial;
-    [SerializeField] Material HandleGrabbedMaterial;
 
-    [SerializeField] bool draw_grid = true;
     [SerializeField] bool draw_atom = true;
-    [SerializeField] string file_name = "CHGCAR";
+    private string file_name = "CHGCAR";
     [SerializeField] float atom_size = 5f;
     [SerializeField] float grid_width = 0.05f;
 
@@ -28,8 +31,7 @@ public class Isosurface : MonoBehaviour
     private List<int> atom_count;
     private List<string> atom_name;
     
-    Vector3 scale;
-    string data_path;
+    float scale;
     private List<GameObject> sphereList;    // List of All spheres from DrawAtom
 
     //public float surface;
@@ -49,23 +51,21 @@ public class Isosurface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        indicator.gameObject.SetActive(false);
-        if (objMessage.unLoadIsosurface())
-        {
-            gameObject.SetActive(true);
-            pinchslider.gameObject.SetActive(true);
-        }
-            
+        bc = loader.GetComponent<BoxCollider>() as BoxCollider;
+        //bc = gameObject.AddComponent<BoxCollider>() as BoxCollider;
+        surface = surface_init;
 
-        else
-        {
-            gameObject.SetActive(false);
-            pinchslider.gameObject.SetActive(false);
-            return;
-        }
-            
-        string moleculeName = objMessage.unLoadMessage();
+        atoms_position = new List<List<Vector3>>();
+        atom_count = new List<int>();
+        atom_name = new List<string>();
+        sphereList = new List<GameObject>();
+        localMesh = new Mesh();
+        meshFilter = GetComponent<MeshFilter>();
+    }
 
+    public IEnumerator Load(string moleculeName)
+    {
+        file_name = moleculeName;
         switch (moleculeName)
         {
             case "CHGCAR":
@@ -80,25 +80,27 @@ public class Isosurface : MonoBehaviour
             default:
                 break;
         }
-        surface = surface_init;
-
-        scale = transform.localScale;
-        data_path = "Assets/Isosurface/CHGCAR/" + moleculeName + ".vasp";
-        sphereList = new List<GameObject>();
-        localMesh = new Mesh();
-        meshFilter = GetComponent<MeshFilter>();
-        ReadData();
-        if (draw_atom)
-            DrawAtoms();
-        GenerateMesh();
+        yield return ReadData();
+        scale = loader.target_size / dim.magnitude;
+        Debug.Log(dim.magnitude);
+        transform.localScale = Vector3.one * scale;
+        transform.localPosition = -dim * scale / 2f;
+        StartCoroutine(DrawAtoms());
+        yield return GenerateMesh();
         UpdateBoxCollider();
-        DrawGrid();
+    }
+
+    public void Unload()
+    {
+        localMesh.Clear();
+        foreach (Transform child in transform)
+            Destroy(child.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Rotation(objMessage.loadBoolean());
+        //Rotation(objMessage.loadBoolean());
         //bool updateMesh = false;
         //float speed = 0.10f;
         //Vector3 scalar = new Vector3(0.01f, 0.01f, 0.01f);
@@ -135,80 +137,36 @@ public class Isosurface : MonoBehaviour
         GenerateMesh();
     }
 
-    private void DrawGrid()
-    {
-        BoundingBox bbox;
-        bbox = gameObject.AddComponent<BoundingBox>();
-        // Make the scale handles large
-        bbox.ScaleHandleSize = 0.02f;
-        bbox.BoxMaterial = BoxMaterial;
-        bbox.BoxGrabbedMaterial = BoxGrabbedMaterial;
-        bbox.HandleMaterial = HandleMaterial;
-        bbox.HandleGrabbedMaterial = HandleGrabbedMaterial;
-        // Hide rotation handles
-        bbox.ShowRotationHandleForX = false;
-        bbox.ShowRotationHandleForY = false;
-        bbox.ShowRotationHandleForZ = false;
-
-        //Color line_color = Color.black;
-        //Vector3 point_0 = Vector3.zero;
-        //Vector3 point_1 = new Vector3(0.0f, dimensions.y, 0.0f);
-        //Vector3 point_2 = new Vector3(dimensions.x, dimensions.y, 0.0f);
-        //Vector3 point_3 = new Vector3(dimensions.x, 0.0f, 0.0f);
-        //Vector3 point_4 = new Vector3(0.0f, 0.0f, dimensions.z);
-        //Vector3 point_5 = new Vector3(0.0f, dimensions.y, dimensions.z);
-        //Vector3 point_6 = new Vector3(dimensions.x, dimensions.y, dimensions.z);
-        //Vector3 point_7 = new Vector3(dimensions.x, 0.0f, dimensions.z);
-        //DrawLine(point_0, point_1, line_color);
-        //DrawLine(point_1, point_2, line_color);
-        //DrawLine(point_2, point_3, line_color);
-        //DrawLine(point_3, point_0, line_color);
-        //DrawLine(point_4, point_5, line_color);
-        //DrawLine(point_5, point_6, line_color);
-        //DrawLine(point_6, point_7, line_color);
-        //DrawLine(point_7, point_4, line_color);
-        //DrawLine(point_0, point_4, line_color);
-        //DrawLine(point_1, point_5, line_color);
-        //DrawLine(point_2, point_6, line_color);
-        //DrawLine(point_3, point_7, line_color);
-    }
-
     private void UpdateBoxCollider()
     {
-        BoxCollider box = GetComponent<BoxCollider>();
-        Vector3 dim = dimensions;
-        box.center = dim / 2f;
-        box.size = dim;
-
+        bc.center = dim / 2f;
+        bc.size = dim;
     }
 
-    private void DrawAtoms()
+    private IEnumerator DrawAtoms()
     {
         foreach (List<Vector3> atom_list in atoms_position)
         {
             Color draw_color = new Color(UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f));
+            sphereList.Clear();
             foreach (Vector3 atom in atom_list)
             {
-                DrawSphere(Vector3.Scale(atom, dimensions), draw_color);
+                GameObject mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                sphereList.Add(mySphere);
+                mySphere.transform.parent = transform;
+                mySphere.transform.localPosition = Vector3.Scale(atom, dimInt);
+                mySphere.transform.localScale = Vector3.one * atom_size;
+                mySphere.GetComponent<MeshRenderer>().material.color = draw_color;
             }
         }
-    }
-
-    private void DrawSphere(Vector3 position, Color color)
-    {
-        GameObject mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphereList.Add(mySphere);
-        mySphere.transform.parent = transform;
-        mySphere.transform.localPosition = position;
-        mySphere.transform.localScale = Vector3.one * atom_size;
-        mySphere.GetComponent<MeshRenderer>().material.color = color;
+        yield return null;
     }
 
     private void DrawLine(Vector3 start, Vector3 end, Color color)
     {
         GameObject myLine = new GameObject();
         myLine.transform.parent = transform;
-        myLine.transform.localPosition = Vector3.Scale(start, scale);
+        myLine.transform.localPosition = start * scale;
         myLine.AddComponent<LineRenderer>();
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.useWorldSpace = false;
@@ -217,8 +175,8 @@ public class Isosurface : MonoBehaviour
         lr.endColor = color;
         lr.startWidth = grid_width;
         lr.endWidth = grid_width;
-        lr.SetPosition(0, Vector3.Scale(start, scale));
-        lr.SetPosition(1, Vector3.Scale(end, scale));
+        lr.SetPosition(0, start * scale);
+        lr.SetPosition(1, end * scale);
     }
 
     public void UpdateAtomSize(float delta)
@@ -235,8 +193,32 @@ public class Isosurface : MonoBehaviour
         //    transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
     }
 
-    private void ReadData()
+    private IEnumerator DownloadData()
     {
+        string local_path = Application.persistentDataPath + "/CHGCAR/";
+        string data_path = local_path + file_name + ".vasp";
+        Debug.Log("File not present. Downloading");
+        UnityWebRequest uwr = UnityWebRequest.Get(chgcar_path + file_name + ".vasp");
+        yield return uwr.SendWebRequest();
+        // www.error may return null or empty string
+        if (uwr.isNetworkError || uwr.isHttpError)
+        {
+            Debug.Log("There was a problem loading asset bundles.");
+        }
+        else
+        {
+            File.WriteAllText(data_path, uwr.downloadHandler.text);
+        }
+    }
+
+    private IEnumerator ReadData()
+    {
+        string local_path = Application.persistentDataPath + "/CHGCAR/";
+        string data_path = local_path + file_name + ".vasp";
+        if (!File.Exists(data_path))
+        {
+            yield return DownloadData();
+        }
         using (StreamReader reader = new StreamReader(data_path))
         {
             string line;
@@ -255,14 +237,14 @@ public class Isosurface : MonoBehaviour
             }
             line = reader.ReadLine();
             entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            atom_name = new List<string>();
+            atom_name.Clear();
             foreach (string entry in entries)
             {
                 atom_name.Add(entry);
             }
             line = reader.ReadLine();
             entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            atom_count = new List<int>();
+            atom_count.Clear();
             int line_count = 0;
             foreach (string entry in entries)
             {
@@ -271,7 +253,7 @@ public class Isosurface : MonoBehaviour
             }
             line = reader.ReadLine();
 
-            atoms_position = new List<List<Vector3>>();
+            atoms_position.Clear();
             foreach (int atom_num in atom_count)
             {
                 List<Vector3> atom_list = new List<Vector3>();
@@ -286,27 +268,30 @@ public class Isosurface : MonoBehaviour
             }
             line = reader.ReadLine();
 
-            // Read dimensions
+            // Read dimInt
             line = reader.ReadLine();
             
             entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            dimensions.x = Convert.ToInt32(entries[0]);
-            dimensions.y = Convert.ToInt32(entries[1]);
-            dimensions.z = Convert.ToInt32(entries[2]);
+            dimInt.x = Convert.ToInt32(entries[0]);
+            dimInt.y = Convert.ToInt32(entries[1]);
+            dimInt.z = Convert.ToInt32(entries[2]);
+            dim = dimInt;
             float delta = 0.1f;
-            Debug.Log(dimensions);
-            data = new float[dimensions.x, dimensions.y, dimensions.z];
+            Debug.Log(dimInt);
+            if (data != null)
+                Array.Clear(data, 0, data.Length);
+            data = new float[dimInt.x, dimInt.y, dimInt.z];
             int ent_per_line = 10;
             
             // Read data
-            for (int z = 0; z < dimensions.z; z++)
+            for (int z = 0; z < dimInt.z; z++)
             {
-                for (int y = 0; y < dimensions.y; y++)
+                for (int y = 0; y < dimInt.y; y++)
                 {
-                    for (int x = 0; x < dimensions.x; x++)
+                    for (int x = 0; x < dimInt.x; x++)
                     {
                         
-                        int idx = x + y * dimensions.x + z * dimensions.x * dimensions.y;
+                        int idx = x + y * dimInt.x + z * dimInt.x * dimInt.y;
                         if (idx == 0)
                         {
                              line = reader.ReadLine();
@@ -340,11 +325,11 @@ public class Isosurface : MonoBehaviour
             Debug.Log(data_max);
             Debug.Log(data_sum);
             // Set surface to average
-            //surface = data_sum / dimensions.x / dimensions.y / dimensions.z;
+            //surface = data_sum / dimInt.x / dimInt.y / dimInt.z;
         }
     }
 
-    private void GenerateMesh()
+    private IEnumerator GenerateMesh()
     {
         int vertexIndex = 0;
         Vector3[] interpolatedValues = new Vector3[12];
@@ -352,11 +337,11 @@ public class Isosurface : MonoBehaviour
         List<Vector3> vertices = new List<Vector3>();
         List<int> triangleIndices = new List<int>();
 
-        for (int x = 0; x < dimensions.x - 1; x++)
+        for (int x = 0; x < dimInt.x - 1; x++)
         {
-            for (int y = 0; y < dimensions.y - 1; y++)
+            for (int y = 0; y < dimInt.y - 1; y++)
             {
-                for (int z = 0; z < dimensions.z - 1; z++)
+                for (int z = 0; z < dimInt.z - 1; z++)
                 {
                     //if (vertices.Count > 64000)
                     //{
@@ -508,8 +493,10 @@ public class Isosurface : MonoBehaviour
                         vertexIndex += 3;
                         triangleIndex += 3;
                     }
+                    
                 }
             }
+            yield return null;
         }
 
         List<Vector2> texCoords = new List<Vector2>();

@@ -8,11 +8,15 @@ using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.UI;
+using System.Security.Policy;
+using UnityEngine.SocialPlatforms;
 
 public class UIManager : MonoBehaviour
 {
     // absolute path storing the assetbundle manifest
-    private string manifest = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules.manifest";
+    //private string manifest = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules.manifest";
+    private string manifest = "http://ccluo.altervista.org/mat/molecules.manifest";
+    private string chgcar_path = "http://ccluo.altervista.org/mat/";
     // number of loaded molecules in assetbundle 
     public int count = 0;
     // list of loaded molecules name, note static
@@ -23,29 +27,29 @@ public class UIManager : MonoBehaviour
     public bool init = false;
     // Progress indicator
     [SerializeField] GameObject Canvas;
-    [SerializeField] GameObject indicatorObject;
-    private IProgressIndicator indicator;
+    //[SerializeField] GameObject indicatorObject;
+    //private IProgressIndicator indicator;
     // active list tag
     public static string activeTag = "b_mol";
 
     // Use this for initialization
     public IEnumerator Start(){
 
-        indicator = indicatorObject.GetComponent<IProgressIndicator>();
-        ToggleIndicator(Canvas);
+        //indicator = indicatorObject.GetComponent<IProgressIndicator>();
+        //ToggleIndicator(Canvas);
         // start a download in the background by calling WWW(url) which returns a new WWW object
-        UnityWebRequest www = UnityWebRequest.Get(manifest);
-        yield return www.SendWebRequest();
+        UnityWebRequest uwr = UnityWebRequest.Get(manifest);
+        yield return uwr.SendWebRequest();
         // www.error may return null or empty string
-        if (www.isNetworkError || www.isHttpError)
+        if (uwr.isNetworkError || uwr.isHttpError)
         {
             Debug.Log("There was a problem loading asset bundles.");
         }
         else
         {
-            string stringFromFile = www.downloadHandler.text;
+            string stringFromFile = uwr.downloadHandler.text;
             string begLine = "- Assets/Molecules/";
-            stringFromFile = www.downloadHandler.text;
+            stringFromFile = uwr.downloadHandler.text;
 
             // using www
         //    WWW www = new WWW(manifest);
@@ -98,19 +102,54 @@ public class UIManager : MonoBehaviour
 
         // Load Isosurface
         isosurfaceStart = count;
-        string isoPath = Application.dataPath + "/Isosurface/CHGCAR/";
-        string[] fileList = Directory.GetFiles(isoPath, "*.vasp");
-        foreach (String file in fileList)
+        uwr = UnityWebRequest.Get(chgcar_path + "filelist.txt");
+        yield return uwr.SendWebRequest();
+        // www.error may return null or empty string
+        if (uwr.isNetworkError || uwr.isHttpError)
         {
-            count++;
-            Debug.Log("CHGCAR Read:" + count);
-            // add new name at the end of the list
-            string line = file.Remove(file.Length - ".vasp".Length);
-            moleculeNames.Add(line.Remove(0, isoPath.Length));
+            Debug.Log("There was a problem loading chgcar files.");
+        }
+        else
+        {
+            string stringFromFile = uwr.downloadHandler.text;
+            string begLine = "CHGCAR: ";
+            // Save file
+            string local_path = Application.persistentDataPath + "/CHGCAR";
+            if (!Directory.Exists(local_path))
+                Directory.CreateDirectory(local_path);
+            string savePath = local_path + "filelist.txt";
+            File.WriteAllText(savePath, uwr.downloadHandler.text);
+            // Read filenames
+            List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
+            foreach (string line in lines)
+            {
+                if (line.Contains(begLine))
+                {
+                    count++;
+                    Debug.Log("CHGCAR Read:" + count);
+                    string fname = line.Remove(line.Length - ".vasp".Length);
+
+                    // add new name at the end of the list
+                    moleculeNames.Add(fname.Remove(0, begLine.Length));
+                }
+            }
+
         }
 
-        init = true;
-        ToggleIndicator(Canvas);
+        // load from local
+            //string isoPath = Application.dataPath + "/Isosurface/CHGCAR/";
+            //string[] fileList = Directory.GetFiles(isoPath, "*.vasp");
+            //foreach (String file in fileList)
+            //{
+            //    count++;
+            //    Debug.Log("CHGCAR Read:" + count);
+            //    // add new name at the end of the list
+            //    string line = file.Remove(file.Length - ".vasp".Length);
+            //    moleculeNames.Add(line.Remove(0, isoPath.Length));
+            //}
+
+            init = true;
+        //ToggleIndicator(Canvas);
     }
 
     // Update is called once per frame
@@ -134,24 +173,24 @@ public class UIManager : MonoBehaviour
     }
 
     //
-    private async void ToggleIndicator(GameObject obj)
-    {
-        await indicator.AwaitTransitionAsync();
+    //private async void ToggleIndicator(GameObject obj)
+    //{
+    //    await indicator.AwaitTransitionAsync();
 
-        switch (indicator.State)
-        {
-            case ProgressIndicatorState.Closed:
-                obj.SetActive(false);
-                indicatorObject.SetActive(true);
-                await indicator.OpenAsync();
-                break;
+    //    switch (indicator.State)
+    //    {
+    //        case ProgressIndicatorState.Closed:
+    //            obj.SetActive(false);
+    //            indicatorObject.SetActive(true);
+    //            await indicator.OpenAsync();
+    //            break;
 
-            case ProgressIndicatorState.Open:
-                await indicator.CloseAsync();
-                indicatorObject.SetActive(false);
-                obj.SetActive(true);
-                break;
-        }
-    }
+    //        case ProgressIndicatorState.Open:
+    //            await indicator.CloseAsync();
+    //            indicatorObject.SetActive(false);
+    //            obj.SetActive(true);
+    //            break;
+    //    }
+    //}
 
 }

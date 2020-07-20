@@ -6,14 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 4002c2678710ff94197b5699188b6603
-  - enabled: 1
-    path: Assets/Scenes/Menu_womr.unity
-    guid: 3795118b7d46c004a9dfe2f7637a8ca9
-  - enabled: 1
-    path: Assets/Scenes/SPIN6.26.unity
-    guid: 1497ae5d4f73747dbbf44dd294bde7c2
+    path: Assets/Scenes/Main.unity
+    guid: 0ef1c5932ec5ec441bfd0781a0ceaa9e
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 826314b877e5d96458c6b4bd6c466a50,
       type: 2}

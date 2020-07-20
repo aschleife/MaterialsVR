@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CustomMixedRealityPointerProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  pointingExtent: 200
+  pointingExtent: 300
   pointingRaycastLayerMasks:
   - serializedVersion: 2
     m_Bits: 4294967291
@@ -31,10 +31,6 @@ MonoBehaviour:
   useHeadGazeOverride: 1
   isEyeTrackingEnabled: 0
   pointerOptions:
-  - controllerType: 1071
-    handedness: 7
-    pointerPrefab: {fileID: 1247086986094436, guid: d5b94136462644c9873bb3347169ae7e,
-      type: 3}
   - controllerType: 47
     handedness: 7
     pointerPrefab: {fileID: 1196247974088106, guid: c4fd3c6fc7ff484eb434775066e7f327,
@@ -58,6 +54,10 @@ MonoBehaviour:
   - controllerType: 2048
     handedness: 7
     pointerPrefab: {fileID: 1247086986094436, guid: 039b325c9e8fd0545a0475fd4aa35b10,
+      type: 3}
+  - controllerType: 33
+    handedness: 7
+    pointerPrefab: {fileID: 1247086986094436, guid: d5b94136462644c9873bb3347169ae7e,
       type: 3}
   pointerMediator:
     reference: Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator, Microsoft.MixedReality.Toolkit.SDK

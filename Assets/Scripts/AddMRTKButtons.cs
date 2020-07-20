@@ -23,7 +23,7 @@ public class AddMRTKButtons : MonoBehaviour {
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         // wait ReadManifest finish and update the count
         // better way: Setting isPlaying delays the result until after all script code has completed for this frame
-        yield return uiManager.count;
+        yield return uiManager.init;
         //ButtonPrefab = GameObject.Find("ButtonPrefab");
         //myCanvas = GameObject.Find("Menu_Canvas");
         //_Handler = GameObject.Find("_Handler").GetComponent<Handler>();
@@ -47,7 +47,7 @@ public class AddMRTKButtons : MonoBehaviour {
             b.GetComponentInChildren<Text>().text = UIManager.moleculeNames[i];
             b.name = UIManager.moleculeNames[i];
             // we can use tag to create click event
-            b.tag = "b_mol";
+            b.gameObject.tag = "b_mol";
             // set buttons parent and set relative position
             newButton.transform.SetParent(mol_list, false);
         }
@@ -68,7 +68,7 @@ public class AddMRTKButtons : MonoBehaviour {
             b.GetComponentInChildren<Text>().text = UIManager.moleculeNames[i];
             b.name = UIManager.moleculeNames[i];
             // we can use tag to create click event
-            b.tag = "b_iso";
+            b.gameObject.tag = "b_iso";
             // set buttons parent and set relative position
             newButton.transform.SetParent(iso_list, false);
         }
@@ -78,10 +78,6 @@ public class AddMRTKButtons : MonoBehaviour {
         //Destroy(ButtonPrefab);
         //DestroyImmediate(ButtonPrefab, true);
         // maybe a better way: DontDestoryOnLoad(Menu_Canvas)
-        DontDestroyOnLoad(uiManager);
-        DontDestroyOnLoad(GameObject.Find("MixedRealityToolkit"));
-        DontDestroyOnLoad(GameObject.Find("MixedRealityPlayspace"));
-        DontDestroyOnLoad(GameObject.Find("UIRaycastCamera"));
     }
 
     public void setActiveTag(string tag)

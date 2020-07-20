@@ -15,7 +15,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
-    RenderType: Transparent
+    RenderType: Fade
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bd30f98596e69f7469fda20a47760dd1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7029cbbbce5f0ac4dbc4e93267bfddf4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -113,6 +113,7 @@ Material:
     - _Glossiness: 0.5
     - _HoverLight: 0
     - _IgnoreZScale: 0
+    - _IndependentCorners: 0
     - _InnerGlow: 0
     - _InnerGlowPower: 4
     - _InstancedColor: 0
@@ -178,3 +179,4 @@ Material:
     - _ProximityLightMiddleColorOverride: {r: 0, g: 1, b: 0, a: 0.5}
     - _ProximityLightOuterColorOverride: {r: 0, g: 0, b: 1, a: 1}
     - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _RoundCornersRadius: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

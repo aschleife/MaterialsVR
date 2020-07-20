@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Microsoft.MixedReality.Toolkit.Input;
+using TMPro;
 
 // may transfer to scroll controller later
 public class Rotation_Handler : MonoBehaviour, IMixedRealityPointerHandler
 {
 	private GameObject molecule;
 	private GameObject[] array;
-	// use one button toggled
-	public GameObject ON_OFF_Button;
+    // use one button toggled
+    [SerializeField] TextMeshPro buttonText;
 
     /*
 
@@ -75,15 +76,15 @@ public class Rotation_Handler : MonoBehaviour, IMixedRealityPointerHandler
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
     {
 
-        if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Rotation Mode OFF")
+        if (buttonText.text == "Rotation OFF")
         { // rotating
             objMessage.pause();
-            ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Rotation Mode ON";
+            buttonText.text = "Rotation ON";
         }
-        else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Rotation Mode ON")
+        else if (buttonText.text == "Rotation ON")
         {
             objMessage.revolve();
-            ON_OFF_Button.GetComponentsInChildren<Text>()[0].text = "Rotation Mode OFF";
+            buttonText.text = "Rotation OFF";
         }
     }
     public void OnPointerDown(MixedRealityPointerEventData eventData) {}

@@ -21,9 +21,9 @@
     <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
     <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
     
-    <UnityMajorVersion>2018</UnityMajorVersion>
+    <UnityMajorVersion>2019</UnityMajorVersion>
     <UnityMinorVersion>4</UnityMinorVersion>
-    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2018.4.22f1\Editor</UnityEditorInstallPath>
+    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2019.4.4f1\Editor</UnityEditorInstallPath>
   </PropertyGroup>
   
   <PropertyGroup>

@@ -10,27 +10,25 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
 {
     public void OnFocusEnter(FocusEventData eventData)
     {
-        if (gameObject.tag == UIManager.activeTag)
-            gameObject.GetComponentInChildren<Button>().Select();
+        gameObject.GetComponent<Button>().Select();
     }
 
     public void OnFocusExit(FocusEventData eventData) {}
 
     // maybe use GvrControllerInput.ClickButtonDown later
     public void OnPointerClicked(MixedRealityPointerEventData eventData){
-        Debug.Log("Click registered");
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
         if(gameObject.tag == UIManager.activeTag)
         {
             objMessage.loadMessage(gameObject.name, gameObject.tag);
-            SceneManager.LoadScene("SPIN6.26");
+            //SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
+            StartCoroutine(GameObject.Find("Loader").GetComponent<Loader>().LoadObject());
         }
     }
 
     public void OnPointerDown(MixedRealityPointerEventData eventData)
     {
-        Debug.Log("Click registered");
     }
 
     public void OnPointerDragged(MixedRealityPointerEventData eventData)
