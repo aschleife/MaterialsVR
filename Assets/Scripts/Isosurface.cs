@@ -4,45 +4,37 @@ using UnityEngine;
 using System;
 using System.IO;
 using Microsoft.MixedReality.Toolkit.UI;
-using System.Security.Cryptography;
 using UnityEngine.Networking;
-using System.Runtime.InteropServices.ComTypes;
-using System.Resources;
 
 public class Isosurface : MonoBehaviour
 {
-    private string chgcar_path = "http://ccluo.altervista.org/mat/";
-
     private Vector3 dim;
     private Vector3Int dimInt;
     private BoxCollider bc;
+    private string data_path;
 
-    [SerializeField] Loader loader;
-    [SerializeField] PinchSlider pinchslider;
+    [SerializeField] private PinchSlider pinchslider;
 
-    [SerializeField] bool draw_atom = true;
+    [SerializeField] private bool draw_atom = true;
     private string file_name = "CHGCAR";
-    [SerializeField] float atom_size = 5f;
-    [SerializeField] float grid_width = 0.05f;
+    [SerializeField] private float atom_size_init = 5f;
+    private float atom_size;
+    [SerializeField] private float grid_width = 0.05f;
+    [SerializeField] private float surface_level_param = 2.10f;
 
 
     float[,,] data;
     private List<List<Vector3>> atoms_position;
     private List<int> atom_count;
     private List<string> atom_name;
+    private float progress_atom, progress_iso, progress;
     
-    float scale;
+    private float scale;
     private List<GameObject> sphereList;    // List of All spheres from DrawAtom
 
     //public float surface;
-    float surface = 9.57048371525f; // CHGCAR
-    //float surface = 429.8f; // CdS
-    //float surface = 349.928951293f; //HgS
+    private float surface; // CHGCAR
     private float surface_init = 9.57048371525f;
-
-    float surface_change = 0.0f;
-
-    public float noise = 20.0f;
 
     Mesh localMesh;
 
@@ -51,10 +43,9 @@ public class Isosurface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bc = loader.GetComponent<BoxCollider>() as BoxCollider;
-        //bc = gameObject.AddComponent<BoxCollider>() as BoxCollider;
+        bc = UIManager.loader.GetComponent<BoxCollider>();
         surface = surface_init;
-
+        atom_size = atom_size_init;
         atoms_position = new List<List<Vector3>>();
         atom_count = new List<int>();
         atom_name = new List<string>();
@@ -66,33 +57,28 @@ public class Isosurface : MonoBehaviour
     public IEnumerator Load(string moleculeName)
     {
         file_name = moleculeName;
-        switch (moleculeName)
-        {
-            case "CHGCAR":
-                surface_init = 9.57048371525f;
-                break;
-            case "CHGCAR_CdS":
-                surface_init = 429.8f;
-                break;
-            case "CHGCAR_HgS":
-                surface_init = 349.928951293f;
-                break;
-            default:
-                break;
-        }
+        progress = 0.0f;
+
         yield return ReadData();
-        scale = loader.target_size / dim.magnitude;
+        StartCoroutine(DrawAtoms());
+        StartCoroutine(GenerateMesh());
+        
+        while (progress < 1.0f)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+        scale = UIManager.loader.GetComponent<Loader>().target_size / dim.magnitude;
         Debug.Log(dim.magnitude);
         transform.localScale = Vector3.one * scale;
         transform.localPosition = -dim * scale / 2f;
-        StartCoroutine(DrawAtoms());
-        yield return GenerateMesh();
-        UpdateBoxCollider();
+        // Update Box Collider
+        UIManager.loader.GetComponent<Loader>().DrawBoxCollider(dim / 2f, dim);
     }
 
     public void Unload()
     {
-        localMesh.Clear();
+        if (localMesh != null)
+            localMesh.Clear();
         foreach (Transform child in transform)
             Destroy(child.gameObject);
     }
@@ -100,107 +86,166 @@ public class Isosurface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Rotation(objMessage.loadBoolean());
-        //bool updateMesh = false;
-        //float speed = 0.10f;
-        //Vector3 scalar = new Vector3(0.01f, 0.01f, 0.01f);
-        //float surface_delta = 0.02f;
-        ////surface += Input.GetAxis("AXIS_4") * speed;
-        //this.transform.position -= Camera.main.transform.right * Input.GetAxis("AXIS_4") * speed;
-        //this.transform.position += Camera.main.transform.forward * Input.GetAxis("AXIS_5") * speed;
-        //surface_change += Input.GetAxis("AXIS_2") * surface_delta;
-        //this.transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
-        //if ((Input.GetAxis("AXIS_2") == 0) && (surface_change != 0) )
-        //{
-        //    surface += surface_change;
-        //    surface_change = 0;
-        //    GenerateMesh();
-        //}
-        //if (Input.GetKey(KeyCode.O))
-        //{
-        //    surface += surface * surface_delta;
-        //}
-        //if (Input.GetKey(KeyCode.I))
-        //{
-        //    surface -= surface * surface_delta;
-        //}
-        //if (Input.GetKeyUp(KeyCode.O) || Input.GetKeyUp(KeyCode.I))
-        //{
-        //    GenerateMesh();
-        //}
+        
     }
 
-    public void OnInteractionEnded(SliderEventData eventData)
+    public void SurfaceSliderUpdate(SliderEventData eventData)
     {
         surface = surface_init * eventData.NewValue * 2;
         Debug.Log(surface);
-        GenerateMesh();
+        StartCoroutine(GenerateMesh());
     }
 
-    private void UpdateBoxCollider()
+    public void RadiusUpdate(float radius_scale)
     {
-        bc.center = dim / 2f;
-        bc.size = dim;
-    }
-
-    private IEnumerator DrawAtoms()
-    {
-        foreach (List<Vector3> atom_list in atoms_position)
-        {
-            Color draw_color = new Color(UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f));
-            sphereList.Clear();
-            foreach (Vector3 atom in atom_list)
-            {
-                GameObject mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                sphereList.Add(mySphere);
-                mySphere.transform.parent = transform;
-                mySphere.transform.localPosition = Vector3.Scale(atom, dimInt);
-                mySphere.transform.localScale = Vector3.one * atom_size;
-                mySphere.GetComponent<MeshRenderer>().material.color = draw_color;
-            }
-        }
-        yield return null;
-    }
-
-    private void DrawLine(Vector3 start, Vector3 end, Color color)
-    {
-        GameObject myLine = new GameObject();
-        myLine.transform.parent = transform;
-        myLine.transform.localPosition = start * scale;
-        myLine.AddComponent<LineRenderer>();
-        LineRenderer lr = myLine.GetComponent<LineRenderer>();
-        lr.useWorldSpace = false;
-        lr.material = new Material(Shader.Find("Mixed Reality Toolkit/Standard"));
-        lr.startColor = color;
-        lr.endColor = color;
-        lr.startWidth = grid_width;
-        lr.endWidth = grid_width;
-        lr.SetPosition(0, start * scale);
-        lr.SetPosition(1, end * scale);
-    }
-
-    public void UpdateAtomSize(float delta)
-    {
-        atom_size += delta;
+        atom_size = atom_size_init * radius_scale;
+        Debug.Log(surface);
         foreach (GameObject sphere in sphereList)
         {
             sphere.transform.localScale = Vector3.one * atom_size;
         }
     }
-    private void Rotation(bool rotate)
+
+    private IEnumerator ReadData()
     {
-        //if (rotate)
-        //    transform.Rotate(Vector3.down, Time.deltaTime * 10.0f);
+        Debug.Log("Reading Data");
+        if (UIManager.load_from_local)
+        {
+            data_path = file_name;
+            Loader.UpdateProgress("dl", 1.0f);
+        }
+        else
+        {
+            data_path = Application.persistentDataPath + "/CHGCAR/" + file_name + ".vasp";
+            if (!File.Exists(data_path))
+            {
+                yield return DownloadData();
+            }
+            Loader.UpdateProgress("dl", 1.0f);
+        }
+
+        StreamReader reader = new StreamReader(data_path);
+        
+        string line;
+        string[] entries;
+        char[] separator = new char[] {' '};
+
+        // Skip to isosurface data
+        for (int i = 0; i < 5; i++)
+        {
+            line = reader.ReadLine();
+        }
+        line = reader.ReadLine();
+        entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        atom_name.Clear();
+        foreach (string entry in entries)
+        {
+            atom_name.Add(entry);
+        }
+        line = reader.ReadLine();
+        entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        atom_count.Clear();
+        int line_count = 0;
+        foreach (string entry in entries)
+        {
+            line_count += Convert.ToInt32(entry);
+            atom_count.Add(Convert.ToInt32(entry));
+        }
+        line = reader.ReadLine();
+
+        atoms_position.Clear();
+        foreach (int atom_num in atom_count)
+        {
+            List<Vector3> atom_list = new List<Vector3>();
+            for (int i = 0; i < atom_num; i++)
+            {
+                line = reader.ReadLine();
+                entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+                Vector3 atom_pos = new Vector3(Convert.ToSingle(entries[0]), Convert.ToSingle(entries[1]), Convert.ToSingle(entries[2]));
+                atom_list.Add(atom_pos);
+            }
+            atoms_position.Add(atom_list);
+        }
+        line = reader.ReadLine();
+
+        // Read dimInt
+        line = reader.ReadLine();
+            
+        entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        dimInt.x = Convert.ToInt32(entries[0]);
+        dimInt.y = Convert.ToInt32(entries[1]);
+        dimInt.z = Convert.ToInt32(entries[2]);
+        dim = dimInt;
+        Debug.Log("Dimensions: " + dimInt);
+        if (data != null)
+            Array.Clear(data, 0, data.Length);
+        data = new float[dimInt.x, dimInt.y, dimInt.z];
+        int ent_per_line = 10;
+
+        int cnt = 0;
+        int yield_count = 0;
+        double mean = 0.0f;
+        double m2 = 0.0f;
+        float[] values = new float[dimInt.x* dimInt.y* dimInt.z];
+        // Read data
+        for (int z = 0; z < dimInt.z; z++)
+        {
+            for (int y = 0; y < dimInt.y; y++)
+            {
+                for (int x = 0; x < dimInt.x; x++)
+                {
+                    yield_count++;
+                    if (yield_count > 20000)
+                    {
+                        yield_count -= 20000;
+                        yield return null;
+                    }
+                    int idx = x + y * dimInt.x + z * dimInt.x * dimInt.y;
+                    if (idx == 0)
+                    {
+                            line = reader.ReadLine();
+                            entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+                            ent_per_line = entries.Length;
+                    }
+                    else if (idx % ent_per_line == 0)
+                    {
+                        line = reader.ReadLine();
+                        entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+                    }
+                    data[x,y,z] = Convert.ToSingle(entries[idx % ent_per_line]);
+
+                    // Welford's update
+                    cnt++;
+                    double del = data[x, y, z] - mean;
+                    mean += del / cnt;
+                    double del2 = data[x, y, z] - mean;
+                    m2 += del * del2;
+                }
+            }
+        }
+
+        reader.Close();
+
+        // Welford's finalize
+        double std = Math.Sqrt(m2 / cnt);
+
+        surface_init = Convert.ToSingle(mean + std * surface_level_param);
+        surface = surface_init;
+        Debug.Log("Data Processed");
     }
 
     private IEnumerator DownloadData()
     {
-        string local_path = Application.persistentDataPath + "/CHGCAR/";
-        string data_path = local_path + file_name + ".vasp";
         Debug.Log("File not present. Downloading");
-        UnityWebRequest uwr = UnityWebRequest.Get(chgcar_path + file_name + ".vasp");
-        yield return uwr.SendWebRequest();
+        UnityWebRequest uwr = UnityWebRequest.Get(UIManager.chgcar_url + file_name + ".vasp");
+        uwr.SendWebRequest();
         // www.error may return null or empty string
+        while (!uwr.isDone)
+        {
+            Loader.UpdateProgress("dl", uwr.downloadProgress);
+            yield return null;
+        }
+
         if (uwr.isNetworkError || uwr.isHttpError)
         {
             Debug.Log("There was a problem loading asset bundles.");
@@ -211,127 +256,42 @@ public class Isosurface : MonoBehaviour
         }
     }
 
-    private IEnumerator ReadData()
+    private IEnumerator DrawAtoms()
     {
-        string local_path = Application.persistentDataPath + "/CHGCAR/";
-        string data_path = local_path + file_name + ".vasp";
-        if (!File.Exists(data_path))
+        Debug.Log("Drawing Atoms");
+        sphereList.Clear();
+        int count = 0;
+        for (int i = 0; i < atoms_position.Count; i++)
+        //foreach (List<Vector3> atom_list in atoms_position)
         {
-            yield return DownloadData();
+            List<Vector3> atom_list = atoms_position[i];
+            Color draw_color = new Color(UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f), UnityEngine.Random.Range(0f, 1f));
+            foreach (Vector3 atom in atom_list)
+            {
+                GameObject mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                sphereList.Add(mySphere);
+                mySphere.transform.parent = transform;
+                mySphere.transform.localPosition = Vector3.Scale(atom, dimInt);
+                mySphere.transform.localScale = Vector3.one * atom_size;
+                mySphere.GetComponent<MeshRenderer>().material.color = draw_color;
+            }
+            progress_atom = i / (float)(atoms_position.Count - 1);
+            progress = 0.5f * (progress_atom + progress_iso);
+            Loader.UpdateProgress("rd", progress);
+            if (count > 20000)
+            {
+                count -= 20000;
+                yield return null;
+            }
         }
-        using (StreamReader reader = new StreamReader(data_path))
-        {
-            string line;
-            string[] entries;
-            char[] separator = new char[] {' '};
-
-            int counter = 0;
-            int counter2 = 0;
-            float data_max = 0.0f;
-            float data_sum = 0.0f;
-
-            // Skip to isosurface data
-            for (int i = 0; i < 5; i++)
-            {
-                line = reader.ReadLine();
-            }
-            line = reader.ReadLine();
-            entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            atom_name.Clear();
-            foreach (string entry in entries)
-            {
-                atom_name.Add(entry);
-            }
-            line = reader.ReadLine();
-            entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            atom_count.Clear();
-            int line_count = 0;
-            foreach (string entry in entries)
-            {
-                line_count += Convert.ToInt32(entry);
-                atom_count.Add(Convert.ToInt32(entry));
-            }
-            line = reader.ReadLine();
-
-            atoms_position.Clear();
-            foreach (int atom_num in atom_count)
-            {
-                List<Vector3> atom_list = new List<Vector3>();
-                for (int i = 0; i < atom_num; i++)
-                {
-                    line = reader.ReadLine();
-                    entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                    Vector3 atom_pos = new Vector3(Convert.ToSingle(entries[0]), Convert.ToSingle(entries[1]), Convert.ToSingle(entries[2]));
-                    atom_list.Add(atom_pos);
-                }
-                atoms_position.Add(atom_list);
-            }
-            line = reader.ReadLine();
-
-            // Read dimInt
-            line = reader.ReadLine();
-            
-            entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            dimInt.x = Convert.ToInt32(entries[0]);
-            dimInt.y = Convert.ToInt32(entries[1]);
-            dimInt.z = Convert.ToInt32(entries[2]);
-            dim = dimInt;
-            float delta = 0.1f;
-            Debug.Log(dimInt);
-            if (data != null)
-                Array.Clear(data, 0, data.Length);
-            data = new float[dimInt.x, dimInt.y, dimInt.z];
-            int ent_per_line = 10;
-            
-            // Read data
-            for (int z = 0; z < dimInt.z; z++)
-            {
-                for (int y = 0; y < dimInt.y; y++)
-                {
-                    for (int x = 0; x < dimInt.x; x++)
-                    {
-                        
-                        int idx = x + y * dimInt.x + z * dimInt.x * dimInt.y;
-                        if (idx == 0)
-                        {
-                             line = reader.ReadLine();
-                             entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                             ent_per_line = entries.Length;
-                        }
-                        else if (idx % ent_per_line == 0)
-                        {
-                            line = reader.ReadLine();
-                            entries = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                        }
-                        data[x,y,z] = Convert.ToSingle(entries[idx % ent_per_line]);
-                        counter++;
-                        data_sum += data[x, y, z];
-                        if (data[x,y,z] > data_max)
-                        {
-                            data_max = data[x, y, z];
-                        }
-                        if (Math.Abs(data[x, y, z] - surface) < delta)
-                        {
-                        //    var mySphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                        //    mySphere.transform.position = new Vector3(x, y, z);
-                        //    mySphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                            counter2++;
-                        }
-                    }
-                }
-            }
-            // Debug.Log(counter);
-            // Debug.Log(counter2);
-            Debug.Log(data_max);
-            Debug.Log(data_sum);
-            // Set surface to average
-            //surface = data_sum / dimInt.x / dimInt.y / dimInt.z;
-        }
+        count++;
     }
 
     private IEnumerator GenerateMesh()
     {
+        Debug.Log("Generating Mesh");
         int vertexIndex = 0;
+        int count = 0;
         Vector3[] interpolatedValues = new Vector3[12];
 
         List<Vector3> vertices = new List<Vector3>();
@@ -343,6 +303,12 @@ public class Isosurface : MonoBehaviour
             {
                 for (int z = 0; z < dimInt.z - 1; z++)
                 {
+                    count++;
+                    if (count > 20000)
+                    {
+                        count -= 20000;
+                        yield return null;
+                    }
                     //if (vertices.Count > 64000)
                     //{
                     //    Debug.Log("Vertice Limit Reached");
@@ -496,7 +462,9 @@ public class Isosurface : MonoBehaviour
                     
                 }
             }
-            yield return null;
+            progress_iso = x / (float) (dim.x - 2);
+            progress = 0.5f * (progress_atom + progress_iso);
+            Loader.UpdateProgress("rd", progress);
         }
 
         List<Vector2> texCoords = new List<Vector2>();
@@ -564,7 +532,8 @@ public class Isosurface : MonoBehaviour
 
 
             localMesh.uv = texCoords.ToArray();
-            localMesh.RecalculateNormals();
+            //localMesh.RecalculateNormals();
+            NormalSolver.RecalculateNormals(localMesh, 34);
             localMesh.RecalculateBounds();
         }
         meshFilter.mesh = localMesh;

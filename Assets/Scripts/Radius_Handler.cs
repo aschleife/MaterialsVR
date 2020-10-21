@@ -39,11 +39,11 @@ public class Radius_Handler : MonoBehaviour, IMixedRealityPointerHandler
 
         if (objMessage.unLoadIsosurface())
         {
-            float delta = 1f;
-            if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size +")
-                isosurface.GetComponent<Isosurface>().UpdateAtomSize(delta);
-            else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size -")
-                isosurface.GetComponent<Isosurface>().UpdateAtomSize(-delta);
+            //float delta = 1f;
+            //    if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size +")
+            //        isosurface.GetComponent<Isosurface>().UpdateAtomSize(delta);
+            //    else if (ON_OFF_Button.GetComponentsInChildren<Text>()[0].text == "Atom Size -")
+            //        isosurface.GetComponent<Isosurface>().UpdateAtomSize(-delta);
         }
         else
         {

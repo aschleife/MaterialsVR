@@ -14,15 +14,15 @@ public class InputHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var devices = new List<UnityEngine.XR.InputDevice>();
-        InputDevices.GetDevices(devices);
-        var device = devices[0];
-        bool menuValue;
-        if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out menuValue) && menuValue)
-        {
-            Debug.Log("menu pressed");
-            ToggleMenu();
-        }
+        //var devices = new List<UnityEngine.XR.InputDevice>();
+        //InputDevices.GetDevices(devices);
+        //var device = devices[0];
+        //bool menuValue;
+        //if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.menuButton, out menuValue) && menuValue)
+        //{
+        //    Debug.Log("menu pressed");
+        //    ToggleMenu();
+        //}
 
 
     }

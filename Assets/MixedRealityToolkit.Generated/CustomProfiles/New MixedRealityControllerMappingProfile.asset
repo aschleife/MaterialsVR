@@ -403,9 +403,9 @@ MonoBehaviour:
       axisType: 4
       inputType: 21
       inputAction:
-        id: 0
-        description: None
-        axisConstraint: 0
+        id: 11
+        description: Scroll
+        axisConstraint: 4
       keyCode: 0
       axisCodeX: 
       axisCodeY: 
@@ -1051,9 +1051,9 @@ MonoBehaviour:
       axisType: 4
       inputType: 21
       inputAction:
-        id: 0
-        description: None
-        axisConstraint: 0
+        id: 11
+        description: Scroll
+        axisConstraint: 4
       keyCode: 0
       axisCodeX: 
       axisCodeY: 
@@ -2866,9 +2866,9 @@ MonoBehaviour:
       axisType: 4
       inputType: 21
       inputAction:
-        id: 0
-        description: None
-        axisConstraint: 0
+        id: 11
+        description: Scroll
+        axisConstraint: 4
       keyCode: 0
       axisCodeX: AXIS_19
       axisCodeY: AXIS_20

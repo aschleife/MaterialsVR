@@ -1,22 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.UI;
-using System.Security.Policy;
-using UnityEngine.SocialPlatforms;
+using SFB;
 
 public class UIManager : MonoBehaviour
 {
     // absolute path storing the assetbundle manifest
-    //private string manifest = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules.manifest";
-    private string manifest = "http://ccluo.altervista.org/mat/molecules.manifest";
-    private string chgcar_path = "http://ccluo.altervista.org/mat/";
+    public static string molecule_url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules";
+    private string manifest = molecule_url + ".manifest";
+    public static string chgcar_url = "http://web.engr.illinois.edu/~schleife/vr_app/charge_density/";
     // number of loaded molecules in assetbundle 
     public int count = 0;
     // list of loaded molecules name, note static
@@ -25,18 +23,22 @@ public class UIManager : MonoBehaviour
     public int isosurfaceStart = 0;
     // true if initialized
     public bool init = false;
-    // Progress indicator
-    [SerializeField] GameObject Canvas;
-    //[SerializeField] GameObject indicatorObject;
-    //private IProgressIndicator indicator;
+    // load local file flag
+    public static bool load_from_local = false;
     // active list tag
     public static string activeTag = "b_mol";
+    // menu
+    public static GameObject menu;
+    private Vector3 menu_scale;
+    // loader
+    public static GameObject loader;
 
     // Use this for initialization
     public IEnumerator Start(){
+        menu = GameObject.Find("Menu_Canvas");
+        menu_scale = menu.transform.localScale;
+        loader = GameObject.Find("Loader");
 
-        //indicator = indicatorObject.GetComponent<IProgressIndicator>();
-        //ToggleIndicator(Canvas);
         // start a download in the background by calling WWW(url) which returns a new WWW object
         UnityWebRequest uwr = UnityWebRequest.Get(manifest);
         yield return uwr.SendWebRequest();
@@ -49,21 +51,6 @@ public class UIManager : MonoBehaviour
         {
             string stringFromFile = uwr.downloadHandler.text;
             string begLine = "- Assets/Molecules/";
-            stringFromFile = uwr.downloadHandler.text;
-
-            // using www
-        //    WWW www = new WWW(manifest);
-        //yield return www;
-        //if (!string.IsNullOrEmpty(www.error))
-        //{
-        //    Debug.LogError("There was a problem loading asset bundles.");
-        //    yield return null;
-        //}
-        //else
-        //{
-        //    string stringFromFile = www.text;
-        //    string begLine = "- Assets/Molecules/";
-        //    stringFromFile = www.text;
         
             // split text into string list
             List<string> lines = new List<string>(stringFromFile.Split(new string[] { "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries));
@@ -102,7 +89,7 @@ public class UIManager : MonoBehaviour
 
         // Load Isosurface
         isosurfaceStart = count;
-        uwr = UnityWebRequest.Get(chgcar_path + "filelist.txt");
+        uwr = UnityWebRequest.Get(chgcar_url + "filelist.txt"); ;
         yield return uwr.SendWebRequest();
         // www.error may return null or empty string
         if (uwr.isNetworkError || uwr.isHttpError)
@@ -149,7 +136,6 @@ public class UIManager : MonoBehaviour
             //}
 
             init = true;
-        //ToggleIndicator(Canvas);
     }
 
     // Update is called once per frame
@@ -193,4 +179,50 @@ public class UIManager : MonoBehaviour
     //    }
     //}
 
+    // Button Functions
+
+    public void ToggleTag(AddMRTKButtons addMRTKButtons, string switch_to_tag)
+    {
+        addMRTKButtons.setActiveTag(switch_to_tag);
+        Debug.Log("Menu Toggled");
+    }
+
+    public void ToggleRotate(Interactable button)
+    {
+        if (button.IsToggled)
+            objMessage.pause();
+        else
+            objMessage.revolve();
+    }
+    
+
+    public void Menu()
+    {
+        menu.transform.localScale = menu_scale;
+        loader.GetComponent<Loader>().UnLoadObject();
+    }
+
+    public void AddPlane(GameObject PlanePrefab)
+    {
+        if (PlanePrefab == null) return;
+
+        GameObject plane;
+        plane = Instantiate(PlanePrefab, loader.transform.position, Quaternion.identity);
+        plane.tag = "plane";
+        plane.transform.parent = loader.transform;
+    }
+
+    public void Quit()
+    {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                        Application.Quit();
+        #endif
+    }
+
+    public void OpenFile()
+    {
+        var paths = StandaloneFileBrowser.OpenFilePanel("Open File", "", "", false);
+    }
 }

@@ -20,10 +20,11 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>() != null)
         if(gameObject.tag == UIManager.activeTag)
         {
+            UIManager.menu.transform.localScale = Vector3.zero;
             objMessage.loadMessage(gameObject.name, gameObject.tag);
             //SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
-            StartCoroutine(GameObject.Find("Loader").GetComponent<Loader>().LoadObject());
+            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject());
         }
     }
 
