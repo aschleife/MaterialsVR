@@ -8,6 +8,12 @@ using Microsoft.MixedReality.Toolkit.Input;
 
 public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealityFocusHandler
 {
+    void Start()
+    {
+        UIManager uIManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+        if (uIManager == null)
+            Debug.LogError("UIManager not found!");
+    }
     public void OnFocusEnter(FocusEventData eventData)
     {
         gameObject.GetComponent<Button>().Select();
@@ -24,7 +30,7 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
             objMessage.loadMessage(gameObject.name, gameObject.tag);
             //SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
-            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject());
+            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject(gameObject.name, gameObject.tag));
         }
     }
 

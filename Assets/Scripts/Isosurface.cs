@@ -10,7 +10,6 @@ public class Isosurface : MonoBehaviour
 {
     private Vector3 dim;
     private Vector3Int dimInt;
-    private BoxCollider bc;
     private string data_path;
 
     [SerializeField] private PinchSlider pinchslider;
@@ -41,9 +40,8 @@ public class Isosurface : MonoBehaviour
     MeshFilter meshFilter;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        bc = UIManager.loader.GetComponent<BoxCollider>();
         surface = surface_init;
         atom_size = atom_size_init;
         atoms_position = new List<List<Vector3>>();
@@ -67,12 +65,12 @@ public class Isosurface : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
         }
-        scale = UIManager.loader.GetComponent<Loader>().target_size / dim.magnitude;
+        scale = transform.parent.GetComponent<Loader>().target_size / dim.magnitude;
         Debug.Log(dim.magnitude);
         transform.localScale = Vector3.one * scale;
         transform.localPosition = -dim * scale / 2f;
         // Update Box Collider
-        UIManager.loader.GetComponent<Loader>().DrawBoxCollider(dim / 2f, dim);
+        transform.parent.GetComponent<Loader>().SetBoxParam(dim / 2f, dim);
     }
 
     public void Unload()

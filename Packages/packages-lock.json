@@ -1,5 +1,51 @@
 {
   "dependencies": {
+    "com.microsoft.mixedreality.toolkit.examples": {
+      "version": "2.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.foundation": "2.5.1",
+        "com.microsoft.mixedreality.toolkit.extensions": "2.5.1"
+      },
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
+    "com.microsoft.mixedreality.toolkit.extensions": {
+      "version": "2.5.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.foundation": "2.5.1"
+      },
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
+    "com.microsoft.mixedreality.toolkit.foundation": {
+      "version": "2.5.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.standardassets": "2.5.1"
+      },
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
+    "com.microsoft.mixedreality.toolkit.standardassets": {
+      "version": "2.5.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.textmeshpro": "2.1.1"
+      },
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
+    "com.microsoft.mixedreality.toolkit.tools": {
+      "version": "2.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.foundation": "2.5.1"
+      },
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
     "com.microsoft.msbuildforunity": {
       "version": "0.9.1-20200131.14",
       "depth": 0,
@@ -20,7 +66,7 @@
       "dependencies": {}
     },
     "com.unity.addressables": {
-      "version": "1.8.4",
+      "version": "1.8.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -32,7 +78,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ads": {
-      "version": "3.4.7",
+      "version": "3.5.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -73,7 +119,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.1",
+      "version": "1.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -89,10 +135,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "2.0.6",
+      "version": "2.1.1",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
@@ -103,7 +151,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.14",
+      "version": "1.1.18",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -114,8 +162,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "2.0.1",
-      "depth": 0,
+      "version": "2.1.1",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
@@ -134,7 +182,8 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.modules.ui": "1.0.0"
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       }
     },
     "com.unity.xr.legacyinputhelpers": {

@@ -16,6 +16,9 @@ public class Tutorial : MonoBehaviour, IMixedRealityPointerHandler
     [SerializeField] private Text button_text;
     [SerializeField] private PinchSlider atom_slider;
     [SerializeField] private PinchSlider iso_slider;
+    [SerializeField] private LineRenderer tutorialIndicator;
+    [SerializeField] private GameObject tutorialInfo;
+    public static bool tutorial_enabled;
     private bool inactive;
     public int step;
     private Vector3 vec3;
@@ -28,6 +31,8 @@ public class Tutorial : MonoBehaviour, IMixedRealityPointerHandler
         inactive = true;
         SetTutorialText("Welcome to MaterialsVR");
         button_text.text = "Tutorial";
+        if (StartScene_Handler.tutorial_enabled)
+            ToggleTutorial();
     }
 
     public void OnPointerClicked(MixedRealityPointerEventData eventData)
@@ -69,6 +74,9 @@ public class Tutorial : MonoBehaviour, IMixedRealityPointerHandler
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(tutorialIndicator.gameObject.transform.position + "to " + tutorialInfo.transform.position);
+        tutorialIndicator.SetPosition(0, tutorialIndicator.gameObject.transform.position);
+        tutorialIndicator.SetPosition(1, tutorialInfo.transform.position);
         if (inactive) return;
         switch (step)
         {
@@ -227,6 +235,7 @@ public class Tutorial : MonoBehaviour, IMixedRealityPointerHandler
                 break;
 
         }
+        
     }
 
     public void OnPointerDown(MixedRealityPointerEventData eventData)

@@ -57,7 +57,7 @@ public class OpenFile : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealit
             objMessage.loadMessage(file_path, gameObject.tag);
             objMessage.revolve();
             UIManager.load_from_local = true;
-            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject());
+            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject(file_path, "b_iso"));
         }
     }
 

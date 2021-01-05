@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
-using Microsoft.MixedReality.Toolkit.Experimental.UI;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class AddMRTKButtons : MonoBehaviour {
     // origial button
@@ -20,6 +20,7 @@ public class AddMRTKButtons : MonoBehaviour {
 
     IEnumerator Start()
     {
+        Debug.LogWarning("This" + gameObject.name);
         uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         // wait ReadManifest finish and update the count
         // better way: Setting isPlaying delays the result until after all script code has completed for this frame
@@ -49,10 +50,10 @@ public class AddMRTKButtons : MonoBehaviour {
             // we can use tag to create click event
             b.gameObject.tag = "b_mol";
             // set buttons parent and set relative position
-            newButton.transform.SetParent(mol_list, false);
+            newButton.transform.SetParent(mol_list.Find("Container"), true);
         }
 
-        mol_list.GetComponent<ScrollingObjectCollection>().UpdateCollection();
+        mol_list.GetComponent<ScrollingObjectCollection>().UpdateContent();
 
 
         // Load CHGCAR files
@@ -70,10 +71,10 @@ public class AddMRTKButtons : MonoBehaviour {
             // we can use tag to create click event
             b.gameObject.tag = "b_iso";
             // set buttons parent and set relative position
-            newButton.transform.SetParent(iso_list, false);
+            newButton.transform.SetParent(iso_list.Find("Container"), true);
         }
 
-        iso_list.GetComponent<ScrollingObjectCollection>().UpdateCollection();
+        iso_list.GetComponent<ScrollingObjectCollection>().UpdateContent();
 
         //Destroy(ButtonPrefab);
         //DestroyImmediate(ButtonPrefab, true);

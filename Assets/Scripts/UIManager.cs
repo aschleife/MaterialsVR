@@ -8,13 +8,20 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.UI;
 using SFB;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager UIMan;
+
     // absolute path storing the assetbundle manifest
     public static string molecule_url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules";
+    //public static string molecule_url = "http://ccluo.altervista.org/mat/molecules";
     private string manifest = molecule_url + ".manifest";
     public static string chgcar_url = "http://web.engr.illinois.edu/~schleife/vr_app/charge_density/";
+    //public static string chgcar_url = "http://ccluo.altervista.org/mat/";
+    // asset bundle
+    private AssetBundle assetBundle;
     // number of loaded molecules in assetbundle 
     public int count = 0;
     // list of loaded molecules name, note static
@@ -32,12 +39,43 @@ public class UIManager : MonoBehaviour
     private Vector3 menu_scale;
     // loader
     public static GameObject loader;
+    //
+    private GameObject objectContainer;
+    // Tooltip List
+    private ToolTipSpawner [] toolTipSpawners;
+    // transform used for cross section and spawning
+    private Transform crossSectionTransform;
+    public Vector3 planePosition;
+
+    [SerializeField]
+    private GameObject moleculePrefab;
+
+    private void Awake()
+    {
+        if (UIMan != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            UIMan = this;
+        }
+    }
 
     // Use this for initialization
     public IEnumerator Start(){
         menu = GameObject.Find("Menu_Canvas");
         menu_scale = menu.transform.localScale;
         loader = GameObject.Find("Loader");
+        objectContainer = GameObject.Find("ObjectContainer");
+        crossSectionTransform = GameObject.Find("PlanePrefab").transform;
+
+        // Find all tooltip spawners
+        toolTipSpawners = FindObjectsOfType<ToolTipSpawner>();
+        foreach (ToolTipSpawner t in toolTipSpawners)
+        {
+            t.FocusEnabled = false;
+        }
 
         // start a download in the background by calling WWW(url) which returns a new WWW object
         UnityWebRequest uwr = UnityWebRequest.Get(manifest);
@@ -64,6 +102,25 @@ public class UIManager : MonoBehaviour
                 }
             }
         }
+        // Load AssetBundle
+
+        // may need unload assetbundle somewhere
+        while (!Caching.ready)
+            yield return null;
+        Caching.ClearCache();
+        while (!Caching.ready)
+            yield return null;
+        // Load AssetBundle from remote
+        using (uwr = UnityWebRequestAssetBundle.GetAssetBundle(molecule_url, 1, 0))
+        {
+            yield return uwr.SendWebRequest();
+            if (uwr.isNetworkError || uwr.isHttpError)
+            {
+                Debug.Log(uwr.error);
+            }
+            assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
+        }
+
         /*
         // load assetBundle from local path
         string url = Application.dataPath + "/../AssetBundles/Android/molecules.manifest";
@@ -140,22 +197,14 @@ public class UIManager : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-
+        // Update Cross Section
+        UpdateCrossSection();
     }
 
     //Reloads the Level
     public void Reload(){
         //Application.LoadLevel(Application.loadedLevel);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    //loads inputted level
-    public void LoadLevel(string moleculeName){
-        SceneManager.LoadScene("SPIN6.26");
-    }
-
-    public void LoadMLevel(BaseEventData data){
-
     }
 
     //
@@ -194,22 +243,48 @@ public class UIManager : MonoBehaviour
         else
             objMessage.revolve();
     }
-    
+
+    public void ToggleTooltip(Interactable button)
+    {
+        foreach (ToolTipSpawner t in toolTipSpawners)
+        {
+            t.FocusEnabled = button.IsToggled;
+        }
+    }
 
     public void Menu()
     {
         menu.transform.localScale = menu_scale;
-        loader.GetComponent<Loader>().UnLoadObject();
     }
 
-    public void AddPlane(GameObject PlanePrefab)
+    public void LoadObject(GameObject card)
     {
-        if (PlanePrefab == null) return;
+        
+        string objectName = card.GetComponentInChildren<TextMeshPro>().text;
 
-        GameObject plane;
-        plane = Instantiate(PlanePrefab, loader.transform.position, Quaternion.identity);
-        plane.tag = "plane";
-        plane.transform.parent = loader.transform;
+        Debug.Log("Loading molecule: " + objectName);
+        GameObject new_loader = Instantiate(objectContainer);
+        new_loader.transform.position = loader.transform.position;
+        new_loader.SetActive(true);
+        StartCoroutine(new_loader.GetComponentInChildren<Loader>().LoadObject(objectName, card.tag));
+        //molecule_loader.gameObject.SetActive(true);
+        //yield return molecule_loader.Load(objectName);
+    }
+
+    public GameObject LoadAssetFromBundle(string objectName)
+    {
+        return Instantiate(assetBundle.LoadAsset(objectName + ".fbx")) as GameObject;
+    }
+
+    public void SetCrossSectionPlane(Transform plane)
+    {
+        crossSectionTransform = plane;
+    }
+
+    private void UpdateCrossSection()
+    {
+        Shader.SetGlobalVector("_PlanePosition", crossSectionTransform.position);
+        Shader.SetGlobalVector("_PlaneNormal", crossSectionTransform.forward);
     }
 
     public void Quit()

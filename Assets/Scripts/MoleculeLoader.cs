@@ -7,61 +7,50 @@ using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit;
+using TMPro;
 
 public class MoleculeLoader : MonoBehaviour
 {
     private string url = UIManager.molecule_url;
     private string keyword_atom = "Ball";
     private string keyword_poly = "Shape_IndexedFaceSet";
-    private string objectName;
     //[SerializeField] ToggleIndicator indicator;
-    [SerializeField] Loader loader;
+    [SerializeField] private Loader loader;
+    [SerializeField] public GameObject atomName;
 
     private AssetBundle assetBundle;
     private GameObject molecule;
     private MeshRenderer[] mesh_array;
+    private Shader crossSectionShader;
+
 
     // Use this for initialization
-    public IEnumerator Start(){
-
-        // may need unload assetbundle somewhere
-        while (!Caching.ready)
-            yield return null;
-        Caching.ClearCache();
-        while (!Caching.ready)
-            yield return null;
-        // Load AssetBundle from remote
-        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0))
-        {
-            yield return uwr.SendWebRequest();
-            if (uwr.isNetworkError || uwr.isHttpError)
-            {
-                Debug.Log(uwr.error);
-            }
-            assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
-        }
+    public void Start(){
+        crossSectionShader = Shader.Find("CrossSection/OnePlaneBSP");
+    }
+    public void Load(TextMeshPro objectName)
+    {
+        StartCoroutine(Load(objectName.text));
     }
 
     public IEnumerator Load(string objectName)
     {
-        if (assetBundle == null)
-        {
-            Debug.LogError("Failed to load AssetBundle!");
-        }
-        else
-        {
-            Debug.Log("Loading molecule");
-            Loader.UpdateProgress("dl", 1.0f);
-        }
-        
-        molecule = Instantiate(assetBundle.LoadAsset(objectName + ".fbx")) as GameObject;
+        //if (assetBundle == null)
+        //{
+        //    Debug.LogError("Failed to load AssetBundle!");
+        //}
+        //else
+        //{
+        //    Debug.Log("Loading molecule");
+            
+        //}
+        Loader.UpdateProgress("dl", 1.0f);
+
+        molecule = UIManager.UIMan.LoadAssetFromBundle(objectName);
         molecule.transform.SetParent(transform);
         //indicator.Toggle(molecule);
-        Vector3 size = new Vector3(0.15f, 0.15f, 0.15f);
-        // coordinate with camera
-        Vector3 slideRight = new Vector3(0, 0.3f, 3.11f);
-        molecule.transform.localScale = size;
-        molecule.transform.position = slideRight;
+        molecule.transform.localScale = 0.08f * Vector3.one;
+        molecule.transform.localPosition = Vector3.zero;
         molecule.tag = "edmc";
         // set molecule parent and set relative position
         // molecule.transform.SetParent(myCanvas.transform, false);
@@ -81,13 +70,16 @@ public class MoleculeLoader : MonoBehaviour
         // for each atom
         mesh_array = molecule.GetComponentsInChildren<MeshRenderer>();
         Bounds bbox = mesh_array[0].bounds;
-
-        for (int i = 0; i < mesh_array.Length; i++) {
-            MeshRenderer m = mesh_array[i]; 
-
+        Transform atomText = transform.parent.parent.Find("AtomText");
+        for (int i = 0; i < mesh_array.Length; i++)
+        {
+            MeshRenderer m = mesh_array[i];
+            m.receiveShadows = false;
+            m.material.shader = crossSectionShader;
             GameObject atom = m.gameObject;
             // add Atomic_Handler
-            Atomic_Handler ah = atom.AddComponent<Atomic_Handler>() as Atomic_Handler;
+            Atomic_Handler ah = atom.AddComponent<Atomic_Handler>();
+            ah.Construct(molecule, atomName.GetComponent<TextMeshPro>());
             // add EventTrigger
             //EventTrigger trigger_atom = atom.AddComponent<EventTrigger>() as EventTrigger;
             // create Enter and Exit events for components
@@ -104,17 +96,17 @@ public class MoleculeLoader : MonoBehaviour
             //entry_click.callback.AddListener((data) => { ah.OnClick(); });
             //trigger_atom.triggers.Add(entry_click);
             // add Sphere Collider
-            if(atom.ToString().Contains(keyword_atom)){
+            if (atom.ToString().Contains(keyword_atom))
+            {
                 SphereCollider collider_atom = atom.AddComponent<SphereCollider>() as SphereCollider;
                 collider_atom.center = Vector3.zero;
                 collider_atom.radius = 0.01f;
                 bbox.Encapsulate(m.bounds);
             }
-            
             Loader.UpdateProgress("rd", i / (mesh_array.Length - 1));
             yield return null;
         }
-        UIManager.loader.GetComponent<Loader>().DrawBoxCollider(bbox.center - transform.position, bbox.size);
+        transform.parent.GetComponent<Loader>().SetBoxParam(bbox.center - transform.position, bbox.size);
     }
 
     public void RadiusUpdate(float radius_scale)

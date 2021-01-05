@@ -4,86 +4,86 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
-public class LoadAssets: MonoBehaviour
-{
-    private string url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules";
-    public GameObject myCanvas;
-    public UIManager uiManager;
+//public class LoadAssets: MonoBehaviour
+//{
+//    private string url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules";
+//    public GameObject myCanvas;
+//    public UIManager uiManager;
 
-    public IEnumerator Start()
-    {
-    	uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
-    	// wait ReadManifest finish and update the count
-        yield return uiManager.count;
-        myCanvas = GameObject.Find("Menu_Canvas");
-        StartCoroutine(DownloadModel());
-    }
+//    public IEnumerator Start()
+//    {
+//    	uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+//    	// wait ReadManifest finish and update the count
+//        yield return uiManager.count;
+//        myCanvas = GameObject.Find("Menu_Canvas");
+//        StartCoroutine(DownloadModel());
+//    }
 
-    public IEnumerator DownloadModel()
-    {
-        while (!Caching.ready)
-            yield return null;
-        Caching.ClearCache();
-        while (!Caching.ready)
-            yield return null;
-        // load assetBundle from web server
-        // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
-        AssetBundle assetBundle;
-        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0))
-        {
-            yield return uwr.SendWebRequest();
-            if (uwr.isNetworkError || uwr.isHttpError)
-            {
-                Debug.Log(uwr.error);
-            }
-            assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
-        }
+//    public IEnumerator DownloadModel()
+//    {
+//        while (!Caching.ready)
+//            yield return null;
+//        Caching.ClearCache();
+//        while (!Caching.ready)
+//            yield return null;
+//        // load assetBundle from web server
+//        // The file will only be loaded from the disk cache if it has previously been downloaded with the same version parameter
+//        AssetBundle assetBundle;
+//        using (UnityWebRequest uwr = UnityWebRequestAssetBundle.GetAssetBundle(url, 1, 0))
+//        {
+//            yield return uwr.SendWebRequest();
+//            if (uwr.isNetworkError || uwr.isHttpError)
+//            {
+//                Debug.Log(uwr.error);
+//            }
+//            assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
+//        }
 
-        // using WWW
-        //WWW www = WWW.LoadFromCacheOrDownload(url, 1);
-        //yield return www;
-        //if (!string.IsNullOrEmpty(www.error))
-        //{
-        //    Debug.LogError("There was a problem loading asset bundles.");
-        //    yield return null;
-        //}
-        //AssetBundle assetBundle = www.assetBundle;
-        /*
-        // load assetBundle from local path
-        string url = Application.dataPath + "/../AssetBundles/Android/molecules";
-        var assetBundle = AssetBundle.LoadFromFile(url);
-        if (assetBundle == null) {
-            Debug.Log("Failed to load AssetBundle!");
-        }
-        */
-        // between 0 ~ (count-1)
-        while (!uiManager.init)
-            yield return new WaitForSeconds(0.1f);
+//        // using WWW
+//        //WWW www = WWW.LoadFromCacheOrDownload(url, 1);
+//        //yield return www;
+//        //if (!string.IsNullOrEmpty(www.error))
+//        //{
+//        //    Debug.LogError("There was a problem loading asset bundles.");
+//        //    yield return null;
+//        //}
+//        //AssetBundle assetBundle = www.assetBundle;
+//        /*
+//        // load assetBundle from local path
+//        string url = Application.dataPath + "/../AssetBundles/Android/molecules";
+//        var assetBundle = AssetBundle.LoadFromFile(url);
+//        if (assetBundle == null) {
+//            Debug.Log("Failed to load AssetBundle!");
+//        }
+//        */
+//        // between 0 ~ (count-1)
+//        while (!uiManager.init)
+//            yield return new WaitForSeconds(0.1f);
         
-        int random_number = Mathf.RoundToInt(Random.value * (uiManager.isosurfaceStart - 1));
-        // copy and set
-        Debug.Log(random_number);
-        GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
-        MeshRenderer[] renderers = molecule.GetComponentsInChildren<MeshRenderer>();
-        Shader shader = Shader.Find("Mixed Reality Toolkit/Standard");
-        foreach (MeshRenderer r in renderers)
-        {
-            r.material.shader = shader;
-        }
-        Vector3 size = new Vector3(5f, 5f, 5f);
-        // scale : 4
-        Vector3 position = new Vector3(50f, 0.0f, -250.0f);
-        molecule.transform.localScale = size;
-        molecule.transform.position = position;
-        molecule.tag = "mc";
-        molecule.name = UIManager.moleculeNames[random_number];
-        // set molecule parent and set relative position
-        molecule.transform.SetParent(myCanvas.transform, false);
-        // free assetbundle and real object will be intact
-        assetBundle.Unload(false);
-        yield return assetBundle;
-    }
-}
+//        int random_number = Mathf.RoundToInt(Random.value * (uiManager.isosurfaceStart - 1));
+//        // copy and set
+//        Debug.Log(random_number);
+//        GameObject molecule = Instantiate(assetBundle.LoadAsset(UIManager.moleculeNames[random_number] + ".fbx")) as GameObject;
+//        MeshRenderer[] renderers = molecule.GetComponentsInChildren<MeshRenderer>();
+//        Shader shader = Shader.Find("Mixed Reality Toolkit/Standard");
+//        foreach (MeshRenderer r in renderers)
+//        {
+//            r.material.shader = shader;
+//        }
+//        Vector3 size = new Vector3(5f, 5f, 5f);
+//        // scale : 4
+//        Vector3 position = new Vector3(50f, 0.0f, -250.0f);
+//        molecule.transform.localScale = size;
+//        molecule.transform.position = position;
+//        molecule.tag = "mc";
+//        molecule.name = UIManager.moleculeNames[random_number];
+//        // set molecule parent and set relative position
+//        molecule.transform.SetParent(myCanvas.transform, false);
+//        // free assetbundle and real object will be intact
+//        assetBundle.Unload(false);
+//        yield return assetBundle;
+//    }
+//}
 
 // maybe try this out later
 /*

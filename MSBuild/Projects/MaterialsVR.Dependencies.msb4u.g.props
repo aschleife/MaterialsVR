@@ -26,7 +26,7 @@
 
   <ItemGroup>
     <!--PROJECT_REFERENCE_TEMPLATE_START-->
-    <ProjectReference Include="D:\ZLO\Desktop\MaterialsVR\MaterialsVR_MR\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\DotNetAdapter.csproj" Condition="">
+    <ProjectReference Include="D:\ZLO\Desktop\MaterialsVR\MaterialsVR_MR\Library\PackageCache\com.microsoft.mixedreality.toolkit.foundation@2.5.1\Providers\WindowsMixedReality\Shared\DotNetAdapter\DotNetAdapter.csproj" Condition="">
         <!--PRIVATE_REFERENCE_TEMPLATE_START--><!--PRIVATE_REFERENCE_TEMPLATE_END-->
     </ProjectReference>
     <!--PROJECT_REFERENCE_TEMPLATE_END-->
