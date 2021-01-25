@@ -1,12 +1,9 @@
-﻿Shader "CrossSection/OnePlaneBSP" {
+﻿Shader "Custom/CrossSectionShader" {
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
-		_CrossColor("Cross Section Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
-		_PlaneNormal("PlaneNormal",Vector) = (0,1,0,0)
-		_PlanePosition("PlanePosition",Vector) = (0,0,0,1)
 		_StencilMask("Stencil Mask", Range(0, 255)) = 255
 	}
 		SubShader{
@@ -40,9 +37,8 @@
 		half _Glossiness;
 		half _Metallic;
 		fixed4 _Color;
-		fixed4 _CrossColor;
-		fixed3 _PlaneNormal;
-		fixed3 _PlanePosition;
+		uniform fixed3 _PlaneNormal;
+		uniform fixed3 _PlanePosition;
 		bool checkVisability(fixed3 worldPos)
 		{
 			float dotProd1 = dot(worldPos - _PlanePosition, _PlaneNormal);
@@ -70,9 +66,8 @@
 		};
 		sampler2D _MainTex;
 		fixed4 _Color;
-		fixed4 _CrossColor;
-		fixed3 _PlaneNormal;
-		fixed3 _PlanePosition;
+		uniform fixed3 _PlaneNormal;
+		uniform fixed3 _PlanePosition;
 		bool checkVisability(fixed3 worldPos)
 		{
 			float dotProd1 = dot(worldPos - _PlanePosition, _PlaneNormal);
@@ -89,7 +84,7 @@
 		void surf(Input IN, inout SurfaceOutput o)
 		{
 			if (checkVisability(IN.worldPos))discard;
-			o.Albedo = _CrossColor;
+			o.Albedo = _Color;
 
 		}
 			ENDCG

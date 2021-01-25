@@ -52,7 +52,7 @@ public class OptionBar : MonoBehaviour
         GameObject plane;
         plane = Instantiate(planePrefab, loader.transform.position, Quaternion.identity);
         plane.tag = "plane";
-        UIManager.UIMan.SetCrossSectionPlane(plane.transform);
+        
         plane.transform.parent = loader.transform;
     }
 
@@ -62,8 +62,24 @@ public class OptionBar : MonoBehaviour
         sliders.gameObject.SetActive(button.IsToggled);
     }
 
+    public void ButtonCrossSec()
+    {
+        if (UIManager.UIMan.crossSectionTransform == followObject.transform)
+        {
+            UIManager.UIMan.SetCrossSectionPlane(planePrefab.transform);
+        }
+        else
+        {
+            UIManager.UIMan.SetCrossSectionPlane(followObject.transform);
+        }
+    }
+
     public void ButtonDelete()
     {
+        if (followObject.tag != "plane" || UIManager.UIMan.crossSectionTransform == followObject.transform)
+        {
+            UIManager.UIMan.SetCrossSectionPlane(planePrefab.transform);
+        }
         Destroy(transform.parent.gameObject);
     }
 }

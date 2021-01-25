@@ -9,7 +9,7 @@ Shader "CrossSection/Others/StencilledUnlitTexture"
 	}
 	SubShader
 	{
-		Tags { "RenderType"="Transparent" "Queue" = "Transparent" }
+		Tags { "RenderType"="Transparent" "Queue" = "Geometry-100" }
 		LOD 100
 		ZTest On
 		//Cull Off

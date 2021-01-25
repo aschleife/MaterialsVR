@@ -44,7 +44,7 @@ public class UIManager : MonoBehaviour
     // Tooltip List
     private ToolTipSpawner [] toolTipSpawners;
     // transform used for cross section and spawning
-    private Transform crossSectionTransform;
+    public Transform crossSectionTransform;
     public Vector3 planePosition;
 
     [SerializeField]

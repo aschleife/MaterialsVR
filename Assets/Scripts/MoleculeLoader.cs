@@ -26,7 +26,7 @@ public class MoleculeLoader : MonoBehaviour
 
     // Use this for initialization
     public void Start(){
-        crossSectionShader = Shader.Find("CrossSection/OnePlaneBSP");
+        crossSectionShader = Shader.Find("Custom/CrossSectionShader");
     }
     public void Load(TextMeshPro objectName)
     {
@@ -137,9 +137,6 @@ public class MoleculeLoader : MonoBehaviour
     {
         StopAllCoroutines();
         Destroy(molecule);
-    }
-
-    public void Update(){
     }
 
 }
