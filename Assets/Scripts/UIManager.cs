@@ -35,8 +35,8 @@ public class UIManager : MonoBehaviour
     // active list tag
     public static string activeTag = "b_mol";
     // menu
-    public static GameObject menu;
-    private Vector3 menu_scale;
+    //public static GameObject menu;
+    //private Vector3 menu_scale;
     // loader
     public static GameObject loader;
     //
@@ -64,8 +64,8 @@ public class UIManager : MonoBehaviour
 
     // Use this for initialization
     public IEnumerator Start(){
-        menu = GameObject.Find("Menu_Canvas");
-        menu_scale = menu.transform.localScale;
+        //menu = GameObject.Find("Menu_Canvas");
+        //menu_scale = menu.transform.localScale;
         loader = GameObject.Find("Loader");
         objectContainer = GameObject.Find("ObjectContainer");
         crossSectionTransform = GameObject.Find("PlanePrefab").transform;
@@ -252,11 +252,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void Menu()
-    {
-        menu.transform.localScale = menu_scale;
-    }
-
     public void LoadObject(GameObject card)
     {
         
@@ -298,6 +293,6 @@ public class UIManager : MonoBehaviour
 
     public void OpenFile()
     {
-        var paths = StandaloneFileBrowser.OpenFilePanel("Open File", "", "", false);
+        //var paths = StandaloneFileBrowser.OpenFilePanel("Open File", "", "", false);
     }
 }

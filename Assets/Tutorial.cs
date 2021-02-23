@@ -82,7 +82,6 @@ public class Tutorial : MonoBehaviour, IMixedRealityPointerHandler
         {
             case 0:
                 SetTutorialText("Click on a Molecule.");
-                ui_manager.Menu();
                 step++;
                 break;
             case 1:

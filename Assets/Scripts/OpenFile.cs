@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Microsoft.MixedReality.Toolkit.Input;
-using SFB;
 using SimpleFileBrowser;
 using System.IO;
 
@@ -53,7 +52,6 @@ public class OpenFile : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealit
             // Contrary to File.ReadAllBytes, this function works on Android 10+, as well
             byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(FileBrowser.Result[0]);
 
-            UIManager.menu.transform.localScale = Vector3.zero;
             objMessage.loadMessage(file_path, gameObject.tag);
             objMessage.revolve();
             UIManager.load_from_local = true;

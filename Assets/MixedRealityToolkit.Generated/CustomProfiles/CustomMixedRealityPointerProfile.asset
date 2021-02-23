@@ -57,7 +57,7 @@ MonoBehaviour:
       type: 3}
   - controllerType: 33
     handedness: 7
-    pointerPrefab: {fileID: 1247086986094436, guid: d5b94136462644c9873bb3347169ae7e,
+    pointerPrefab: {fileID: 1247086986094436, guid: cb284bbea35f5344eb15cd79a650641e,
       type: 3}
   pointerMediator:
     reference: Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator, Microsoft.MixedReality.Toolkit.SDK

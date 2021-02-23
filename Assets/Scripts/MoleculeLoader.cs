@@ -21,12 +21,12 @@ public class MoleculeLoader : MonoBehaviour
     private AssetBundle assetBundle;
     private GameObject molecule;
     private MeshRenderer[] mesh_array;
-    private Shader crossSectionShader;
+    [SerializeField] private Shader crossSectionShader;
 
 
     // Use this for initialization
     public void Start(){
-        crossSectionShader = Shader.Find("Custom/CrossSectionShader");
+        //crossSectionShader = Shader.Find("Custom/CrossSectionShader");
     }
     public void Load(TextMeshPro objectName)
     {
