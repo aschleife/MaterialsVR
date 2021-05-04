@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 87cd38e85b25d774f827a547cd722452
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Board_001
+    100002: Chair
+    100004: Chalkboard
+    100006: Clock
+    100008: Cube
+    100010: Cube_003
+    100012: Desk_Chair
+    100014: Door
+    100016: Light_Lamp_001
+    100018: Light_Lamp_002
+    100020: Moving_Board
+    100022: //RootNode
+    100024: Storage
+    100026: Storage_001
+    100028: Table
+    100030: Window
+    100032: Window_001
+    100034: Window_002
+    100036: Board.001
+    100038: Camera
+    100040: Cube.003
+    100042: Desk Chair
+    100044: Light Lamp.001
+    100046: Light Lamp.002
+    100048: Moving Board
+    100050: Storage.001
+    100052: Window.002
+    400000: Board_001
+    400002: Chair
+    400004: Chalkboard
+    400006: Clock
+    400008: Cube
+    400010: Cube_003
+    400012: Desk_Chair
+    400014: Door
+    400016: Light_Lamp_001
+    400018: Light_Lamp_002
+    400020: Moving_Board
+    400022: //RootNode
+    400024: Storage
+    400026: Storage_001
+    400028: Table
+    400030: Window
+    400032: Window_001
+    400034: Window_002
+    400036: Board.001
+    400038: Camera
+    400040: Cube.003
+    400042: Desk Chair
+    400044: Light Lamp.001
+    400046: Light Lamp.002
+    400048: Moving Board
+    400050: Storage.001
+    400052: Window.002
+    2000000: Camera
+    2300000: Chair
+    2300002: Chalkboard
+    2300004: Clock
+    2300006: Cube
+    2300008: Cube_003
+    2300010: Desk_Chair
+    2300012: Light_Lamp_001
+    2300014: Light_Lamp_002
+    2300016: Moving_Board
+    2300018: Storage
+    2300020: Storage_001
+    2300022: Table
+    2300024: Window
+    2300026: Window_001
+    2300028: Window_002
+    2300030: Cube.003
+    2300032: Desk Chair
+    2300034: Light Lamp.001
+    2300036: Light Lamp.002
+    2300038: Moving Board
+    2300040: Storage.001
+    2300042: Window.002
+    3300000: Chair
+    3300002: Chalkboard
+    3300004: Clock
+    3300006: Cube
+    3300008: Cube_003
+    3300010: Desk_Chair
+    3300012: Light_Lamp_001
+    3300014: Light_Lamp_002
+    3300016: Moving_Board
+    3300018: Storage
+    3300020: Storage_001
+    3300022: Table
+    3300024: Window
+    3300026: Window_001
+    3300028: Window_002
+    3300030: Cube.003
+    3300032: Desk Chair
+    3300034: Light Lamp.001
+    3300036: Light Lamp.002
+    3300038: Moving Board
+    3300040: Storage.001
+    3300042: Window.002
+    4300000: Moving_Board
+    4300002: Window_002
+    4300004: Light_Lamp_002
+    4300006: Light_Lamp_001
+    4300008: Storage_001
+    4300010: Window_001
+    4300012: Cube_003
+    4300014: Cube
+    4300016: Window
+    4300018: Chalkboard
+    4300020: Chair
+    4300022: Clock
+    4300024: Door
+    4300026: Storage
+    4300028: Table
+    4300030: Desk_Chair
+    4300032: Moving Board
+    4300034: Window.002
+    4300036: Light Lamp.002
+    4300038: Light Lamp.001
+    4300040: Storage.001
+    4300042: Cube.003
+    4300044: Desk Chair
+    7400000: Default Take
+    7400002: Board.001|Board.001|Take 001|BaseLayer
+    7400004: Chalkboard|Board.001|Take 001|BaseLayer
+    9500000: //RootNode
+    13700000: Door
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board
+    second: {fileID: 2100000, guid: 6f970f955845a7e4e9190b6d18adcb92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C01
+    second: {fileID: 2100000, guid: bb3776ee3fc7eac499167a293988e668, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal
+    second: {fileID: 2100000, guid: 5dc1ec899f911ed4a918ecfbdaab5ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal.001
+    second: {fileID: 2100000, guid: 7d77090320263554fbd69e2b459d3ed8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_09_Metal_001
+    second: {fileID: 2100000, guid: c6be54e4c65e3f14f955b9a1a80799b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic
+    second: {fileID: 2100000, guid: b0f884773e0af0843bd3c6b7564b3635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic.001
+    second: {fileID: 2100000, guid: bd7ab1cfc6be01f499a91c26e8ed2468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic.002
+    second: {fileID: 2100000, guid: 541ed3a43aaa95d43b8404033cabc6cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic_001
+    second: {fileID: 2100000, guid: c45a9e7b914737f4f808ab9e326b7cd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_12_Plastic_002
+    second: {fileID: 2100000, guid: 5c8ef70dd8855834bb66790cf75e2012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics.003
+    second: {fileID: 2100000, guid: ed96cd74cea0aa84991a3f5a8f03d027, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_18_Fabrics_003
+    second: {fileID: 2100000, guid: 885d4b06bb3765641aaad3984501e25a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.003
+    second: {fileID: 2100000, guid: 6521c63a422a45a4d846bda3c2353bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.004
+    second: {fileID: 2100000, guid: db37980ff3b9fa644816ea2aa7e79b54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light.005
+    second: {fileID: 2100000, guid: 7d585815b9801b4439d098a69eb4cdbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light_003
+    second: {fileID: 2100000, guid: 474cbcba7548df84a9a22510f39610b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light_004
+    second: {fileID: 2100000, guid: ec82eaba6d922404db662c2eb5b10502, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_27_Light_005
+    second: {fileID: 2100000, guid: 3b92e2c800cdb1043b6d11d470f1ca2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.004
+    second: {fileID: 2100000, guid: 3b47d12ee87d8ba41a6b9569d9ca2b2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.005
+    second: {fileID: 2100000, guid: 5474d4686b37774418b0dfa947f94b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.006
+    second: {fileID: 2100000, guid: ac18724589123dd4990488c33fd1015b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15.007
+    second: {fileID: 2100000, guid: ae3a1ed2ffc4ee043958c38169043c41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_004
+    second: {fileID: 2100000, guid: dce5e1c51b305d347ab9739164b1134c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_005
+    second: {fileID: 2100000, guid: c7af90f68e7069a41adcf77f589dcc57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_006
+    second: {fileID: 2100000, guid: 786183fe98128fc409b0c33ab36425a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Accessories_15_007
+    second: {fileID: 2100000, guid: 9fe9a47f03342ee479fb0944873356b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.003
+    second: {fileID: 2100000, guid: 1bd667e6c743fd04d82878afd3925f73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.004
+    second: {fileID: 2100000, guid: f5cc93d009540604aaaa8bdb9c73490c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35.005
+    second: {fileID: 2100000, guid: c77f7f78ebcd47f4b8238ef556e037af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35_003
+    second: {fileID: 2100000, guid: fd365bb1fdf1be8468cba304a7e0b44e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35_004
+    second: {fileID: 2100000, guid: c5f89097cf901ae4fa1761925f7491b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_35_005
+    second: {fileID: 2100000, guid: 94fa6a83618f8f846a46d4b911f7fde3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40
+    second: {fileID: 2100000, guid: 79ebb92bba446694bae6b454407bd845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40.001
+    second: {fileID: 2100000, guid: 59f8ed840be75b84ab84dd42c012233d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Details_40_001
+    second: {fileID: 2100000, guid: 02e526fb9ba28d04597bb4d703d0afcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.001
+    second: {fileID: 2100000, guid: 3dd70e2555e69114eb7032ab52624aef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.002
+    second: {fileID: 2100000, guid: 453436cdb8ca55645b18a29e6d4623ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01.003
+    second: {fileID: 2100000, guid: 64c840a32fe308c438a5bf302c5b34ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01_001__Chocofur_Free_Storage_01_diff_01_jpg_001
+    second: {fileID: 2100000, guid: a1fdf6226dda3e64083abc0a8f588ced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01_002__Chocofur_Free_Storage_01_diff_01_jpg_001
+    second: {fileID: 2100000, guid: 08815bc0d2c52f243830878efa9d6742, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chocofur_Free_Storage_01_003
+    second: {fileID: 2100000, guid: 22827816e1c29044e997ca431ac9e6be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: d3322f73b953f4e3f8b776cc22dd0e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: de0e3bff3f7f74c738fb47eca2eba03e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 8894f506b329c384badbdea8623155c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 9703b2fd6b7420048b4c261d3829e43b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: b1a8c99462f839b4b9e9fbabe6a90956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: b519cbe92da1d3a46b2512eeec924c1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001
+    second: {fileID: 2100000, guid: c62d56467b20c3d4c98adb76f9c6651d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_007
+    second: {fileID: 2100000, guid: 4ec9b1aeaffc2fa4aa55add64c751e7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_008
+    second: {fileID: 2100000, guid: 34d76ee3cd9252c41acd15549da5cbcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_011
+    second: {fileID: 2100000, guid: ec76fc5fcdc4ba44eb38ccd43ee1041b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_012
+    second: {fileID: 2100000, guid: b3320a1eee2bbcc41bd9e234342384d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal-Aluminium
+    second: {fileID: 2100000, guid: 772adb201d4cfc6479f7fd253fbe56c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal4
+    second: {fileID: 2100000, guid: 974186893b6ce66499c8d9ad37994bd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodBoard
+    second: {fileID: 2100000, guid: de759aa91fd0e5f4a8c7f7aeb126ac34, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
