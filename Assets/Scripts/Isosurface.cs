@@ -31,9 +31,8 @@ public class Isosurface : MonoBehaviour
     private float scale;
     private List<GameObject> sphereList;    // List of All spheres from DrawAtom
 
-    //public float surface;
     private float surface; // CHGCAR
-    private float surface_init = 9.57048371525f;
+    private float surface_init;
 
     Mesh localMesh;
 
@@ -52,12 +51,12 @@ public class Isosurface : MonoBehaviour
         meshFilter = GetComponent<MeshFilter>();
     }
 
-    public IEnumerator Load(string moleculeName)
+    public IEnumerator Load(string moleculeName, bool loadFromLocal = false)
     {
         file_name = moleculeName;
         progress = 0.0f;
 
-        yield return ReadData();
+        yield return ReadData(loadFromLocal);
         StartCoroutine(DrawAtoms());
         StartCoroutine(GenerateMesh());
         
@@ -104,10 +103,10 @@ public class Isosurface : MonoBehaviour
         }
     }
 
-    private IEnumerator ReadData()
+    private IEnumerator ReadData(bool loadFromLocal)
     {
         Debug.Log("Reading Data");
-        if (UIManager.load_from_local)
+        if (loadFromLocal)
         {
             data_path = file_name;
             Loader.UpdateProgress("dl", 1.0f);
@@ -184,7 +183,6 @@ public class Isosurface : MonoBehaviour
         int yield_count = 0;
         double mean = 0.0f;
         double m2 = 0.0f;
-        float[] values = new float[dimInt.x* dimInt.y* dimInt.z];
         // Read data
         for (int z = 0; z < dimInt.z; z++)
         {

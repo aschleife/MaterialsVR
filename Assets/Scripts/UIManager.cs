@@ -9,17 +9,16 @@ using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.UI;
 using SFB;
 using TMPro;
+using SimpleFileBrowser;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager UIMan;
 
-    // absolute path storing the assetbundle manifest
     public static string molecule_url = "http://web.engr.illinois.edu/~schleife/vr_app/AssetBundles/WSAPlayer/molecules";
-    //public static string molecule_url = "http://ccluo.altervista.org/mat/molecules";
-    private string manifest = molecule_url + ".manifest";
     public static string chgcar_url = "http://web.engr.illinois.edu/~schleife/vr_app/charge_density/";
-    //public static string chgcar_url = "http://ccluo.altervista.org/mat/";
+    // absolute path storing the assetbundle manifest
+    private string manifest = molecule_url + ".manifest";
     // asset bundle
     private AssetBundle assetBundle;
     // number of loaded molecules in assetbundle 
@@ -30,15 +29,13 @@ public class UIManager : MonoBehaviour
     public int isosurfaceStart = 0;
     // true if initialized
     public bool init = false;
-    // load local file flag
-    public static bool load_from_local = false;
     // active list tag
     public static string activeTag = "b_mol";
     // menu
     //public static GameObject menu;
     //private Vector3 menu_scale;
     // loader
-    public static GameObject loader;
+    public GameObject loader;
     //
     private GameObject objectContainer;
     // Tooltip List
@@ -254,17 +251,18 @@ public class UIManager : MonoBehaviour
 
     public void LoadObject(GameObject card)
     {
-        
-        string objectName = card.GetComponentInChildren<TextMeshPro>().text;
+        LoadObject(card.GetComponentInChildren<TextMeshPro>().text, card.tag);
+    }
 
-        Debug.Log("Loading molecule: " + objectName);
+    public void LoadObject(string objectName, string tag, bool loadFromLocal = false)
+    {
+        Debug.Log("Loading: " + objectName);
         GameObject new_loader = Instantiate(objectContainer);
         new_loader.transform.position = loader.transform.position;
         new_loader.SetActive(true);
-        StartCoroutine(new_loader.GetComponentInChildren<Loader>().LoadObject(objectName, card.tag));
-        //molecule_loader.gameObject.SetActive(true);
-        //yield return molecule_loader.Load(objectName);
+        StartCoroutine(new_loader.GetComponentInChildren<Loader>().LoadObject(objectName, tag, loadFromLocal));
     }
+
 
     public GameObject LoadAssetFromBundle(string objectName)
     {
@@ -293,6 +291,34 @@ public class UIManager : MonoBehaviour
 
     public void OpenFile()
     {
-        //var paths = StandaloneFileBrowser.OpenFilePanel("Open File", "", "", false);
+        StartCoroutine(ShowLoadDialogCoroutine());
+    }
+
+    IEnumerator ShowLoadDialogCoroutine()
+    {
+        // Show a load file dialog and wait for a response from user
+        // Load file/folder: file, Allow multiple selection: true
+        // Initial path: default (Documents), Title: "Load File", submit button text: "Load"
+        yield return FileBrowser.WaitForLoadDialog(false, true, null, "Load File", "Load");
+
+        // Dialog is closed
+        // Print whether the user has selected some files/folders or cancelled the operation (FileBrowser.Success)
+        Debug.Log(FileBrowser.Success);
+
+        if (FileBrowser.Success)
+        {
+            // Print paths of the selected files (FileBrowser.Result) (null, if FileBrowser.Success is false)
+            for (int i = 0; i < FileBrowser.Result.Length; i++)
+                Debug.Log(FileBrowser.Result[i]);
+            string filePath = FileBrowser.Result[0];
+            string fileName = Path.GetFileName(filePath);
+            // Read the bytes of the first file via FileBrowserHelpers
+            // Contrary to File.ReadAllBytes, this function works on Android 10+, as well
+            byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(FileBrowser.Result[0]);
+
+            objMessage.loadMessage(fileName, gameObject.tag);
+            objMessage.revolve();
+            LoadObject(filePath, "b_iso", true);
+        }
     }
 }

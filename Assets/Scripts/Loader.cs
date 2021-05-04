@@ -74,7 +74,7 @@ public class Loader : MonoBehaviour
         }
     }
 
-    public IEnumerator LoadObject(string objectName, string tag)
+    public IEnumerator LoadObject(string objectName, string tag, bool loadFromLocal = false)
     {
         
         //UnLoadObject();
@@ -93,7 +93,15 @@ public class Loader : MonoBehaviour
         molecule_loader.atomName.SetActive(false);
         poly_button.SetActive(false);
 
-        moleculeName_text.text = objectName;
+        if (loadFromLocal)
+        {
+            moleculeName_text.text = System.IO.Path.GetFileNameWithoutExtension(objectName);
+        }
+        else
+        {
+            moleculeName_text.text = objectName;
+        }
+        
         transform.position = def_position;
 
         switch (tag)
@@ -102,7 +110,7 @@ public class Loader : MonoBehaviour
                 Debug.Log("Loading isosurface: " + objectName);
                 isosurface.gameObject.SetActive(true);
                 isosurface_slider.SetActive(true);
-                yield return isosurface.Load(objectName);
+                yield return isosurface.Load(objectName, loadFromLocal);
                 break;
             case "b_mol":
                 Debug.Log("Loading molecule: " + objectName);

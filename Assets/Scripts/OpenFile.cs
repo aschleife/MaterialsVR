@@ -47,15 +47,15 @@ public class OpenFile : MonoBehaviour, IMixedRealityPointerHandler, IMixedRealit
             // Print paths of the selected files (FileBrowser.Result) (null, if FileBrowser.Success is false)
             for (int i = 0; i < FileBrowser.Result.Length; i++)
                 Debug.Log(FileBrowser.Result[i]);
-            file_path = FileBrowser.Result[0];
+            string filePath = FileBrowser.Result[0];
+            string fileName = Path.GetFileName(filePath);
             // Read the bytes of the first file via FileBrowserHelpers
             // Contrary to File.ReadAllBytes, this function works on Android 10+, as well
             byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(FileBrowser.Result[0]);
 
-            objMessage.loadMessage(file_path, gameObject.tag);
+            objMessage.loadMessage(fileName, gameObject.tag);
             objMessage.revolve();
-            UIManager.load_from_local = true;
-            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject(file_path, "b_iso"));
+            //StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject(filePath, "b_iso", true));
         }
     }
 

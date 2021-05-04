@@ -29,7 +29,7 @@ public class Handler : MonoBehaviour, IMixedRealityPointerHandler, IMixedReality
             objMessage.loadMessage(gameObject.name, gameObject.tag);
             //SceneManager.LoadScene("SPIN6.26");
             objMessage.revolve();
-            StartCoroutine(UIManager.loader.GetComponent<Loader>().LoadObject(gameObject.name, gameObject.tag));
+            //StartCoroutine(UIManager.UIMan.loader.LoadObject(gameObject.name, gameObject.tag));
         }
     }
 
