@@ -1,4 +1,7 @@
+![MaterialsVR](Images/header.png)
+
 # MaterialsVR
+
 MaterialsVR lets you interact with molecular models in Virtual Reality. Add planes to create cross section. See electron density isosurfaces and load your own CHGCAR files.
 
 Steam page: https://store.steampowered.com/app/1564310/Materials_VR/
@@ -6,6 +9,8 @@ Steam page: https://store.steampowered.com/app/1564310/Materials_VR/
 ## Features
 
 ### Toolbar
+
+![Menu](Images/Menu.png)
 
 Start by selecting a molecule from the menu. Each model is accompanied by a toolbar above. Use it to enable rotation, disable bounding box, or add a plane that intersects with the molecule.
 
@@ -22,9 +27,13 @@ Click on "Tool Tips" to show more insights.
 
 ### Cross Section View
 
+![CrossSection](Images/CrossSection.png)
+
 You can set a plane to be the cross section plane by clicking the button on top. Only meshes on one side of the plane will be rendered.
 
 ### Electron density isosurfaces
+
+![Isosurface](Images/Isosurface.png)
 
 Click on the "Molecule" title bar to switch to isosurface list. From there, you may select a isosurface model generated from CHGCAR files. You can modify the isosurface level in the toolbar.
 
